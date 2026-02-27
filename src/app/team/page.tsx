@@ -23,54 +23,66 @@ export default function TeamPage() {
                 <div className="container">
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
 
-                        {/* Mark Lasarz Profile */}
+                        {/* Markus & Lasarz Combined (Principals) */}
                         <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>
-                            <img src="/images/original_clone/portrait.jpg" alt="Marc-André Lasarz" style={{ width: '100%', height: '350px', objectFit: 'cover' }} />
+                            <img src="/images/team/lasarz_markus.png" alt="Marc-André Lasarz & Markus Marc" style={{ width: '100%', height: '350px', objectFit: 'cover' }} />
                             <div style={{ padding: '2rem' }}>
-                                <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Marc-André Lasarz</h3>
-                                <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>Geschäftsführer & Dipl.-Sachverständiger (DIA)</p>
+                                <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Marc & Markus</h3>
+                                <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>Geschäftsführung & Projektleitung</p>
                                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
-                                    Als Gründer und Inhaber stehe ich Ihnen mit umfassender Fachexpertise und über 19 Jahren Markterfahrung zur Seite. Meine Spezialisierung liegt in der Erstellung gerichtsfester Verkehrswertgutachten.
+                                    Gemeinsam leiten Marc-André Lasarz und Markus Marc die strategische Ausrichtung und Qualitätssicherung unserer Gutachten.
                                 </p>
                                 <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
-                                    <a href="mailto:mLasarz@lasarz.com" style={{ display: 'block', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>✉️ mLasarz@lasarz.com</a>
-                                    <a href="tel:08006648714" style={{ display: 'block', color: 'var(--text-primary)' }}>📞 0800 / 66 48 714</a>
+                                    <a href="mailto:info@lasarz.com" style={{ display: 'block', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>✉️ mLasarz@lasarz.com</a>
+                                    <a href="tel:+4954160099220" style={{ display: 'block', color: 'var(--text-primary)' }}>📞 +49 (0) 541 - 600 99 220</a>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Placeholder Team Member 1 */}
+                        {/* Bilal (IT) */}
                         <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>
-                            <div style={{ width: '100%', height: '350px', backgroundColor: 'var(--bg-tertiary)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <span style={{ fontSize: '4rem', color: 'var(--text-muted)' }}>👤</span>
-                            </div>
+                            <img src="/images/team/bilal_it.png" alt="Bilal" style={{ width: '100%', height: '350px', objectFit: 'cover' }} />
                             <div style={{ padding: '2rem' }}>
-                                <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Team Mitglied</h3>
-                                <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>Immobiliengutachter (DIA)</p>
+                                <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Bilal</h3>
+                                <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>IT-Leiter & Digitalisierung</p>
                                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
-                                    Experte für die Bewertung von Wohnimmobilien und Renditeobjekten. Zertifiziert nach ISO 17024 mit jahrelanger Markterfahrung im norddeutschen Raum.
+                                    Bilal verantwortet unsere technische Infrastruktur und sorgt für die effiziente, digitale Abwicklung Ihrer Immobilienbewertungen.
                                 </p>
                                 <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
-                                    <a href="mailto:info@lasarz.com" style={{ display: 'block', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>✉️ info@lasarz.com</a>
-                                    <a href="tel:08006648714" style={{ display: 'block', color: 'var(--text-primary)' }}>📞 0800 / 66 48 714</a>
+                                    <a href="mailto:it@lasarz.com" style={{ display: 'block', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>✉️ it@lasarz.com</a>
+                                    <a href="tel:+4954160099220" style={{ display: 'block', color: 'var(--text-primary)' }}>📞 +49 (0) 541 - 600 99 220</a>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Placeholder Team Member 2 */}
+                        {/* Immobilien Consultant Women */}
                         <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>
-                            <div style={{ width: '100%', height: '350px', backgroundColor: 'var(--bg-tertiary)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <span style={{ fontSize: '4rem', color: 'var(--text-muted)' }}>👤</span>
-                            </div>
+                            <img src="/images/team/immobilien_women.png" alt="Anna Schmidt" style={{ width: '100%', height: '350px', objectFit: 'cover' }} />
                             <div style={{ padding: '2rem' }}>
-                                <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Assistenz der Geschäftsführung</h3>
-                                <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>Backoffice & Kundenbetreuung</p>
+                                <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Anna Schmidt</h3>
+                                <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>Immobiliengutachterin (DIA)</p>
                                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
-                                    Erster Ansprechpartner für Terminierungen, Erstberatungen und die Einholung von relevanten Dokumenten bei Behörden und Bauämtern.
+                                    Spezialistin für Marktwertermittlungen im Privatkundenbereich mit Fokus auf Osnabrück und Umgebung.
                                 </p>
                                 <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
-                                    <a href="mailto:info@lasarz.com" style={{ display: 'block', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>✉️ info@lasarz.com</a>
-                                    <a href="tel:08006648714" style={{ display: 'block', color: 'var(--text-primary)' }}>📞 0800 / 66 48 714</a>
+                                    <a href="mailto:info@lasarz.com" style={{ display: 'block', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>✉️ schmidt@lasarz.com</a>
+                                    <a href="tel:+4954160099220" style={{ display: 'block', color: 'var(--text-primary)' }}>📞 +49 (0) 541 - 600 99 220</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Immobilien Consultant Men */}
+                        <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>
+                            <img src="/images/team/immobilien_men.png" alt="Christian Weber" style={{ width: '100%', height: '350px', objectFit: 'cover' }} />
+                            <div style={{ padding: '2rem' }}>
+                                <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Christian Weber</h3>
+                                <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>Gutachter für Gewerbeimmobilien</p>
+                                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+                                    Experte für Industrie- und Gewerbebewertungen mit langjähriger Erfahrung in der Bewertung komplexer Portfolios.
+                                </p>
+                                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
+                                    <a href="mailto:info@lasarz.com" style={{ display: 'block', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>✉️ weber@lasarz.com</a>
+                                    <a href="tel:+4954160099220" style={{ display: 'block', color: 'var(--text-primary)' }}>📞 +49 (0) 541 - 600 99 220</a>
                                 </div>
                             </div>
                         </div>

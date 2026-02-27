@@ -10,6 +10,11 @@ export function Footer() {
           <p style={{ color: 'var(--text-muted)' }}>
             Die Immobiliengutachter. Ihr verlässlicher Partner für rechtssichere Immobilienbewertung in Osnabrück und Umgebung.
           </p>
+          <div className="flex gap-sm" style={{ marginTop: '1.5rem' }}>
+            <a href="#" className="social-icon" style={{ fontSize: '1.2rem', color: 'var(--accent-primary)' }}>LinkedIn</a>
+            <a href="#" className="social-icon" style={{ fontSize: '1.2rem', color: 'var(--accent-primary)' }}>Instagram</a>
+            <a href="#" className="social-icon" style={{ fontSize: '1.2rem', color: 'var(--accent-primary)' }}>Facebook</a>
+          </div>
         </div>
 
         <div>
