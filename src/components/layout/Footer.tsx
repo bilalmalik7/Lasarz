@@ -20,20 +20,20 @@ export function Footer() {
         <div>
           <h3 style={{ marginBottom: 'var(--space-sm)' }}>Leistungen</h3>
           <ul className="footer-links">
-            <li><Link href="#">Verkehrswertgutachten</Link></li>
-            <li><Link href="#">Kurzgutachten</Link></li>
-            <li><Link href="#">Kaufberatung</Link></li>
-            <li><Link href="#">Beleihungswertgutachten</Link></li>
+            <li><Link href="/leistungen/verkehrswertgutachten">Verkehrswertgutachten</Link></li>
+            <li><Link href="/leistungen/kurzgutachten">Kurzgutachten</Link></li>
+            <li><Link href="/leistungen/ankaufberatung">Kaufberatung</Link></li>
+            <li><Link href="/leistungen/beleihungswertgutachten">Beleihungswertgutachten</Link></li>
           </ul>
         </div>
 
         <div>
           <h3 style={{ marginBottom: 'var(--space-sm)' }}>Immobilien</h3>
           <ul className="footer-links">
-            <li><Link href="#">Wohnimmobilien</Link></li>
-            <li><Link href="#">Gewerbeimmobilien</Link></li>
-            <li><Link href="#">Sonderimmobilien</Link></li>
-            <li><Link href="#">Grundstücke & Rechte</Link></li>
+            <li><Link href="/immobilien/wohnimmobilien">Wohnimmobilien</Link></li>
+            <li><Link href="/immobilien/gewerbeimmobilien">Gewerbeimmobilien</Link></li>
+            <li><Link href="/immobilien/sonderimmobilien">Sonderimmobilien</Link></li>
+            <li><Link href="/immobilien/grundstuecke-rechte">Grundstücke & Rechte</Link></li>
           </ul>
         </div>
 
