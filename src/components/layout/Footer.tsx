@@ -1,10 +1,16 @@
 'use client';
+import { useState } from 'react';
 import Link from 'next/link';
+import { ContactModal } from '../ui/ContactModal';
 
 export function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <footer className="footer section">
       <div className="container grid md-grid-cols-2 grid-cols-4 gap-lg">
+        {/* ... existing footer content ... */}
+        {/* I will use multi_replace for better precision if needed, but the user wants to update the sticky call icon. */}
         <div>
           <img src="/logo.svg" alt="Lasarz Logo" style={{ height: '40px', marginBottom: 'var(--space-sm)' }} />
           <p style={{ color: 'var(--text-muted)' }}>
@@ -67,8 +73,8 @@ export function Footer() {
 
       {/* Sticky Quick Contact */}
       <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 1000, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-        <a
-          href="tel:+4954160099220"
+        <button
+          onClick={() => setIsModalOpen(true)}
           className="glass-card sticky-contact-btn"
           style={{
             width: '60px',
@@ -81,12 +87,17 @@ export function Footer() {
             color: 'white',
             fontSize: '1.5rem',
             boxShadow: '0 10px 25px rgba(26, 117, 141, 0.4)',
-            transition: 'transform 0.3s'
+            transition: 'transform 0.3s',
+            border: 'none',
+            cursor: 'pointer'
           }}
+          aria-label="Kontaktformular öffnen"
         >
           📞
-        </a>
+        </button>
       </div>
+
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </footer>
   );
 }
