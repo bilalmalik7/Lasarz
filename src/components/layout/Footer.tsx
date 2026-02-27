@@ -43,7 +43,7 @@ export function Footer() {
             <li><Link href="/kontakt">Rheine</Link></li>
           </ul>
           <ul className="footer-links" style={{ marginTop: '1rem' }}>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><span className="text-accent">📞</span> 0541 / 123 456 78</li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><span className="text-accent">📞</span> +49 (0) 541 - 600 99 220</li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><span className="text-accent">✉️</span> info@lasarz.com</li>
           </ul>
         </div>
@@ -63,7 +63,7 @@ export function Footer() {
       {/* Sticky Quick Contact */}
       <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 1000, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <a
-          href="tel:08006648714"
+          href="tel:+4954160099220"
           className="glass-card sticky-contact-btn"
           style={{
             width: '60px',

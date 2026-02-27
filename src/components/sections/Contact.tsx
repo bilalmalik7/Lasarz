@@ -21,13 +21,13 @@ export function Contact() {
 
                         <div className="flex-col gap-sm">
                             <div style={{ color: 'var(--text-primary)', fontWeight: '500' }}>
-                                <span className="text-accent" style={{ marginRight: '0.5rem' }}>📞</span> 0541 / 123 456 78
+                                <span className="text-accent" style={{ marginRight: '0.5rem' }}>📞</span> +49 (0) 541 - 600 99 220
                             </div>
                             <div style={{ color: 'var(--text-primary)', fontWeight: '500' }}>
                                 <span className="text-accent" style={{ marginRight: '0.5rem' }}>✉️</span> info@lasarz.com
                             </div>
                             <div style={{ color: 'var(--text-primary)', fontWeight: '500' }}>
-                                <span className="text-accent" style={{ marginRight: '0.5rem' }}>📍</span> Musterstraße 1, 49074 Osnabrück
+                                <span className="text-accent" style={{ marginRight: '0.5rem' }}>📍</span> Katharinenstraße 111, 49078 Osnabrück
                             </div>
                         </div>
                     </div>

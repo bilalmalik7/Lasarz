@@ -13,17 +13,17 @@ const furtherTopics = [
 ];
 
 const services = [
-    { icon: '💼', title: 'Investmentberatung', href: '/leistungen' },
-    { icon: '🏭', title: 'Bewertung von Gewerbe- und Industrieimmobilien', href: '/leistungen' },
-    { icon: '🏠', title: 'Verkäuferberatung', href: '/leistungen' },
-    { icon: '🧫', title: 'Schimmelgutachten Hannover', href: '/leistungen' },
-    { icon: '💰', title: 'Steuerliche Immobilienbewertung', href: '/leistungen' },
-    { icon: '🔎', title: 'Schadensgutachten', href: '/leistungen' },
-    { icon: '📋', title: 'Beleihungswertgutachten', href: '/leistungen' },
-    { icon: '⚡', title: 'Energieausweis', href: '/leistungen' },
-    { icon: '⚖️', title: 'Verkehrswertgutachten nach §194 BauGB', href: '/leistungen' },
-    { icon: '🔑', title: 'Immobilienkaufberatung', href: '/leistungen' },
-    { icon: '📸', title: 'Beweissicherung', href: '/leistungen' },
+    { icon: '💼', title: 'Investmentberatung', href: '/leistungen/investmentberatung' },
+    { icon: '🏭', title: 'Bewertung von Gewerbe- und Industrieimmobilien', href: '/leistungen/gewerbeimmobilien' },
+    { icon: '🏠', title: 'Verkäuferberatung', href: '/leistungen/verkaeuferbereratung' },
+    { icon: '🧫', title: 'Schimmelgutachten Hannover', href: '/leistungen/schimmelgutachten' },
+    { icon: '💰', title: 'Steuerliche Immobilienbewertung', href: '/leistungen/steuerliche-bewertung' },
+    { icon: '🔎', title: 'Schadensgutachten', href: '/leistungen/schadensgutachten' },
+    { icon: '📋', title: 'Beleihungswertgutachten', href: '/leistungen/beleihungswertgutachten' },
+    { icon: '⚡', title: 'Energieausweis', href: '/leistungen/energieausweis' },
+    { icon: '⚖️', title: 'Verkehrswertgutachten nach §194 BauGB', href: '/leistungen/verkehrswertgutachten' },
+    { icon: '🔑', title: 'Immobilienkaufberatung', href: '/leistungen/ankaufberatung' },
+    { icon: '📸', title: 'Beweissicherung', href: '/leistungen/beweissicherung' },
 ];
 
 export function MoreServicesSection() {
