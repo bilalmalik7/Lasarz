@@ -30,7 +30,7 @@ export function Services() {
                     </p>
                 </div>
 
-                <div className="grid md-grid-cols-2 grid-cols-2 gap-md" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+                <div className="grid md-grid-cols-2 grid-cols-2 gap-md" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))' }}>
                     {services.map((service, i) => (
                         <Card
                             key={i}

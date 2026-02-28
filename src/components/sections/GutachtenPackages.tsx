@@ -71,7 +71,7 @@ export function GutachtenPackages() {
                         Unsere Leistungen
                     </span>
                     <h2 style={{
-                        fontSize: 'clamp(1.8rem, 3vw, 2.8rem)',
+                        fontSize: 'clamp(1.5rem, 3vw, 2.8rem)',
                         color: 'var(--accent-secondary)',
                         marginTop: '0.75rem',
                         marginBottom: '1rem',
@@ -85,7 +85,7 @@ export function GutachtenPackages() {
 
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))',
                     gap: '2rem',
                     alignItems: 'stretch',
                 }}>

@@ -22,7 +22,7 @@ export default function KontaktPage() {
             {/* Contact Form Section */}
             <section className="section">
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '4rem' }}>
 
                         {/* Form Side */}
                         <div className="glass-card">

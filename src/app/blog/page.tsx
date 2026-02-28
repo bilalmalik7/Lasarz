@@ -50,7 +50,7 @@ export default function BlogPage() {
             {/* Blog Grid */}
             <section className="section">
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2.5rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))', gap: '2.5rem' }}>
                         {blogPosts.map((post) => (
                             <article key={post.id} className="glass-card" style={{ padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'transform 0.3s ease' }}>
                                 <div style={{ height: '240px', position: 'relative', overflow: 'hidden' }}>

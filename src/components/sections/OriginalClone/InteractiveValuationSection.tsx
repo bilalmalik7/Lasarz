@@ -17,7 +17,7 @@ export function InteractiveValuationSection() {
     return (
         <section id="bewertung" className="section" style={{ backgroundColor: '#f9f9f9', padding: '80px 0' }}>
             <div className="container">
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '4rem', alignItems: 'center' }}>
 
                     {/* Left Side: Lasarz Picture Slider + Text/Contact Form overlay */}
                     <div style={{ position: 'relative', width: '100%', minHeight: '500px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.15)' }}>

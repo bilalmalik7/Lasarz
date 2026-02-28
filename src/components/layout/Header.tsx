@@ -94,11 +94,12 @@ export function Header() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'center',
+            justifyContent: 'flex-start',
             gap: '1.5rem',
             transition: '0.3s ease-in-out',
             zIndex: 1000,
-            padding: '2rem'
+            padding: '100px 2rem 2rem 2rem',
+            overflowY: 'auto'
           }}
         >
           <Link href="/immobilien" className="nav-link" style={{ fontSize: '1.5rem' }} onClick={toggleMenu}>Immobilien</Link>

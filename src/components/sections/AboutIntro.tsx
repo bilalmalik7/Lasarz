@@ -37,7 +37,7 @@ export function AboutIntro() {
                     </span>
 
                     <h2 style={{
-                        fontSize: 'clamp(2rem, 4vw, 3rem)',
+                        fontSize: 'clamp(1.5rem, 4vw, 3rem)',
                         color: '#fff',
                         marginBottom: '2rem',
                         lineHeight: 1.3,

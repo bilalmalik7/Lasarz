@@ -13,7 +13,7 @@ export default function BeweissicherungPage() {
 
             <section className="section">
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '3rem', alignItems: 'start' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '3rem', alignItems: 'start' }}>
                         <div>
                             <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Zustandsdokumentation und Beweissicherung</h2>
                             <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem' }}>

@@ -27,7 +27,7 @@ export function OriginalHero() {
                 <div style={{ maxWidth: '800px' }}>
 
                     <h1 style={{
-                        fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+                        fontSize: 'clamp(1.8rem, 5vw, 4rem)',
                         fontWeight: 700,
                         marginBottom: '1rem',
                         color: 'white',
@@ -72,7 +72,7 @@ export function OriginalHero() {
                         <p style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: 'rgba(255,255,255,0.8)' }}>
                             Zertifiziert und anerkannt durch:
                         </p>
-                        <div style={{ display: 'inline-flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap', background: 'rgba(255,255,255,0.9)', padding: '10px 20px', borderRadius: '4px' }}>
+                        <div style={{ display: 'inline-flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', background: 'rgba(255,255,255,0.9)', padding: '10px 20px', borderRadius: '4px' }}>
                             <img src="/images/original_clone/bvs_e_v_logo.jpeg" alt="BVS" style={{ height: '40px', objectFit: 'contain' }} />
                             <img src="/images/original_clone/NEU-Logo-DIAzert_7-09-300x228.jpg" alt="DIA Zert" style={{ height: '40px', objectFit: 'contain' }} />
                             <img src="/images/original_clone/REV-Siegel_2018-002.jpg" alt="REV Siegel" style={{ height: '50px', objectFit: 'contain' }} />

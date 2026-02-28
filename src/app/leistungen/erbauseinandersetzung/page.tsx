@@ -35,7 +35,7 @@ export default function ErbauseinandersetzungPage() {
                         </p>
                     </div>
 
-                    <div style={{ marginTop: '4rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                    <div style={{ marginTop: '4rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
                         <div className="glass-card">
                             <h4 style={{ color: 'var(--accent-primary)', marginBottom: '1rem' }}>Pflichtteilsberechnung</h4>
                             <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>Bestimmung des Immobilienwertes zur korrekten Ermittlung von Pflichtteilsansprüchen.</p>

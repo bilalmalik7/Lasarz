@@ -22,7 +22,7 @@ export default function UeberUnsPage() {
             {/* Profile Section */}
             <section className="section">
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'flex-start' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '4rem', alignItems: 'flex-start' }}>
 
                         <div style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
                             <img src="/images/portrait.jpg" alt="Marc-André Lasarz" style={{ width: '100%', display: 'block' }} />

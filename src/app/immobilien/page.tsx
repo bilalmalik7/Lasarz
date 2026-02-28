@@ -60,7 +60,7 @@ export default function ImmobilienPage() {
             {/* Highlight Section */}
             <section style={{ backgroundColor: 'rgba(26, 117, 141, 0.05)', padding: '80px 0' }}>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '3rem', alignItems: 'center' }}>
                         <div>
                             <h2 style={{ fontSize: '2.5rem', color: 'var(--accent-secondary)', marginBottom: '1rem' }}>Suchen Sie Ihre Traumimmobilie?</h2>
                             <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '1.5rem', lineHeight: 1.6 }}>

@@ -32,7 +32,7 @@ export const Testimonials = () => {
                     <h2 style={{ fontSize: '2.5rem', color: 'var(--accent-secondary)', marginTop: '0.5rem' }}>Was unsere Kunden sagen</h2>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
                     {testimonials.map((t, i) => (
                         <div key={i} className="glass-card" style={{ padding: '3rem 2rem', position: 'relative', display: 'flex', flexDirection: 'column' }}>
                             <div style={{ fontSize: '3rem', color: 'var(--accent-primary)', opacity: 0.2, position: 'absolute', top: '1rem', left: '1rem', fontFamily: 'serif' }}>"</div>

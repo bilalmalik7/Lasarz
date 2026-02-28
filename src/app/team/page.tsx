@@ -30,7 +30,7 @@ export default function TeamPage() {
             }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(18, 43, 64, 0.7)' }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '3rem', alignItems: 'center' }}>
                         <div style={{ background: 'white', borderRadius: 'var(--radius-md)', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }}>
                             <img src="/images/team/lasarz_markus_real.jpg" alt="Marc-André Lasarz & Markus Marc" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         </div>
@@ -51,7 +51,7 @@ export default function TeamPage() {
             {/* Team Grid */}
             <section className="section">
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '3rem' }}>
 
                         {/* Bilal (IT) */}
                         <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>

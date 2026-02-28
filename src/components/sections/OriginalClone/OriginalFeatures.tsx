@@ -4,7 +4,7 @@ export function OriginalFeatures() {
     return (
         <section className="section" style={{ padding: '80px 0', backgroundColor: 'white' }}>
             <div className="container">
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '2rem' }}>
 
                     {/* Feature 1 */}
                     <div style={{ textAlign: 'center', padding: '1rem' }}>
