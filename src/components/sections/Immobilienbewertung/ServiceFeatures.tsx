@@ -42,7 +42,7 @@ export function ServiceFeatures() {
                 </div>
                 <div style={{
                     minHeight: '400px',
-                    backgroundImage: 'url(/images/original_clone/HASELAND_11-1024x690.jpg)',
+                    backgroundImage: 'url(/images/original_clone/property_background.jpg)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     position: 'relative'

@@ -24,7 +24,7 @@ export function OriginalFeatures() {
                         </div>
                         <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--accent-secondary)' }}>Gesetzeskonform</h3>
                         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-                            Unsere Sachverständigen halten rechtliche Standards gewissenhaft ein.
+                            Als zertifizierter Sachverständiger halte ich rechtliche Standards gewissenhaft ein.
                         </p>
                     </div>
 
@@ -35,7 +35,7 @@ export function OriginalFeatures() {
                         </div>
                         <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--accent-secondary)' }}>Unabhängige Gutachter</h3>
                         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-                            Unsere Sachverständigen halten den Ehrencodex von verschiedenen Verbänden.
+                            Ich halte mich strikt an den Ehrencodex der Sachverständigenverbände.
                         </p>
                     </div>
 
@@ -46,7 +46,7 @@ export function OriginalFeatures() {
                         </div>
                         <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--accent-secondary)' }}>Zertifiziert</h3>
                         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-                            Unsere Immobiliengutachter verfügen über verschiedene renommierte Zertifizierungen.
+                            Ich verfüge über verschiedene renommierte Zertifizierungen als Immobiliengutachter.
                         </p>
                     </div>
 
@@ -57,7 +57,7 @@ export function OriginalFeatures() {
                         </div>
                         <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--accent-secondary)' }}>Festpreisgarantie</h3>
                         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-                            Den Wert von Immobilien in Osnabrück bewerten wir fair, transparent und ohne versteckte Kosten.
+                            Den Wert von Immobilien in Osnabrück bewerte ich fair, transparent und ohne versteckte Kosten.
                         </p>
                     </div>
 
@@ -66,10 +66,10 @@ export function OriginalFeatures() {
                 <div style={{ marginTop: '4rem', padding: '2rem', backgroundColor: 'var(--bg-secondary)', borderRadius: '8px', borderLeft: '4px solid var(--accent-primary)' }}>
                     <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: 'var(--accent-secondary)' }}>Immobilienbewertung Lasarz in Osnabrück</h2>
                     <p style={{ marginBottom: '1rem', fontSize: '1.05rem', lineHeight: 1.7 }}>
-                        Wir bieten Ihnen als zertifizierte Immobiliengutachter Immobilienbewertungen und Verkehrswertgutachten in Osnabrück und im norddeutschen Raum, sowie nahezu deutschlandweit an. Unsere Immobilien-Sachverständigen erstellen Ihnen sämtliche Gutachten und Bewertungen, wie zum Beispiel ein Verkehrswertgutachten, ein Gutachten zur Nutzungsdauer von Immobilien oder ein Gutachten im Rahmen einer Erbschaft oder Scheidung. Aber auch beim Immobilien- und Grundstückskauf liefern wir Ihnen mit unserer Ankaufberatung wertvolle Tipps für den Immobilienerwerb.
+                        Ich biete Ihnen als zertifizierter Immobiliengutachter Immobilienbewertungen und Verkehrswertgutachten in Osnabrück und im norddeutschen Raum, sowie nahezu deutschlandweit an. Ich erstelle Ihnen sämtliche Gutachten und Bewertungen, wie zum Beispiel ein Verkehrswertgutachten, ein Gutachten zur Nutzungsdauer von Immobilien oder ein Gutachten im Rahmen einer Erbschaft oder Scheidung. Aber auch beim Immobilien- und Grundstückskauf liefere ich Ihnen mit meiner Ankaufberatung wertvolle Tipps für den Immobilienerwerb.
                     </p>
                     <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem', lineHeight: 1.7 }}>
-                        Gerne können Sie uns erste Informationen über das Kontaktformular übermitteln, sodass wir bei der Kontaktaufnahme zielgenau auf Sie zukommen. Wir freuen uns auf Sie!
+                        Gerne können Sie mir erste Informationen über das Kontaktformular übermitteln, sodass ich bei der Kontaktaufnahme zielgenau auf Sie zukommen kann. Ich freue mich auf Sie!
                     </p>
                     <Link href="/kontakt" className="btn btn-primary">Kontakt aufnehmen</Link>
                 </div>

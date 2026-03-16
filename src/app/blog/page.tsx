@@ -12,7 +12,7 @@ const blogPosts = [
         excerpt: 'Viele Immobilienbesitzer verwechseln diese beiden Begriffe. Dabei spielen sie in unterschiedlichen Situationen eine entscheidende Rolle...',
         date: '15. Februar 2024',
         category: 'Grundlagen',
-        image: '/images/original_clone/HASELAND_11-1024x690.jpg'
+        image: '/images/original_clone/property_background.jpg'
     },
     {
         id: '2',
@@ -28,7 +28,7 @@ const blogPosts = [
         excerpt: 'Wie entwickeln sich die Preise in der Friedensstadt? Erfahren Sie mehr über die aktuelle Marktsituation und was das für Verkäufer bedeutet.',
         date: '20. Januar 2024',
         category: 'Marktanalyse',
-        image: '/images/original_clone/HASELAND_11-1024x690.jpg'
+        image: '/images/original_clone/property_background.jpg'
     }
 ];
 

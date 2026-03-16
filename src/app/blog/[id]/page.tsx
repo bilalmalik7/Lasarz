@@ -10,7 +10,7 @@ const blogPosts = [
         title: 'Marktwert vs. Beleihungswert: Was ist der Unterschied?',
         date: '15. Februar 2024',
         category: 'Grundlagen',
-        image: '/images/original_clone/HASELAND_11-1024x690.jpg',
+        image: '/images/original_clone/property_background.jpg',
         excerpt: 'Viele Immobilienbesitzer verwechseln diese beiden Begriffe. Dabei spielen sie in unterschiedlichen Situationen eine entscheidende Rolle...',
         content: `
             <p>Wer sich mit dem Kauf oder Verkauf einer Immobilie beschäftigt, stolpert unweigerlich über die Begriffe <strong>Marktwert</strong> (Verkehrswert) und <strong>Beleihungswert</strong>. Doch was genau verbirgt sich dahinter, und warum gibt es oft signifikante Unterschiede zwischen diesen beiden Werten?</p>
@@ -64,7 +64,7 @@ const blogPosts = [
         title: 'Immobilienmarkt Osnabrück 2024: Trends und Prognosen',
         date: '20. Januar 2024',
         category: 'Marktanalyse',
-        image: '/images/original_clone/HASELAND_11-1024x690.jpg',
+        image: '/images/original_clone/property_background.jpg',
         excerpt: 'Wie entwickeln sich die Preise in der Friedensstadt? Erfahren Sie mehr über die aktuelle Marktsituation und was das für Verkäufer bedeutet.',
         content: `
             <p>Der Immobilienmarkt in Osnabrück und dem Umland zeigt sich auch im Jahr 2024 als dynamisch, aber anspruchsvoller als in den Vorjahren. Die Zinswende hat die Rahmenbedingungen grundlegend verändert.</p>

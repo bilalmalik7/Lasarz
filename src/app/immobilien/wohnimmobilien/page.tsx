@@ -21,7 +21,7 @@ export default function WohnimmobilienPage() {
             <section className="section">
                 <div className="container">
                     <div className="grid grid-cols-2 sm-grid-cols-1 gap-lg">
-                        <div style={{ height: '400px', backgroundImage: 'url(/images/original_clone/HASELAND_11-1024x690.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: 'var(--radius-md)' }}></div>
+                        <div style={{ height: '400px', backgroundImage: 'url(/images/original_clone/property_background.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: 'var(--radius-md)' }}></div>
                         <div>
                             <h2 style={{ marginBottom: '1.5rem' }}>Ihr Zuhause in besten Händen</h2>
                             <p style={{ marginBottom: '1.2rem' }}>

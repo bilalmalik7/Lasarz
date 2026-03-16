@@ -101,7 +101,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     {/* Left Side: Team Info */}
                     <div style={{
                         flex: '1',
-                        background: 'linear-gradient(rgba(18, 43, 64, 0.8), rgba(18, 43, 64, 0.8)), url("/images/original_clone/HASELAND_11-1024x690.jpg")',
+                        background: 'linear-gradient(rgba(18, 43, 64, 0.8), rgba(18, 43, 64, 0.8)), url("/images/original_clone/property_background.jpg")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         padding: '3rem 2rem',
@@ -111,8 +111,8 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         justifyContent: 'center'
                     }}>
                         <img
-                            src="/images/team/lasarz_markus_real.jpg"
-                            alt="Marc & Markus Lasarz"
+                            src="/images/team/marc_lasarz.jpg"
+                            alt="Marc-André Lasarz"
                             style={{
                                 width: '120px',
                                 height: '120px',
@@ -123,9 +123,9 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                 boxShadow: '0 10px 20px rgba(0,0,0,0.3)'
                             }}
                         />
-                        <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'white' }}>Marc & Markus Lasarz</h2>
+                        <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'white' }}>Marc-André Lasarz</h2>
                         <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: 'rgba(255,255,255,0.9)', marginBottom: '2rem' }}>
-                            "Über 25 Jahre Expertise in der Immobilienbewertung. Wir begleiten Sie persönlich und kompetent bei Ihrem Anliegen."
+                            "Über 25 Jahre Expertise in der Immobilienbewertung. Ich begleite Sie persönlich und kompetent bei Ihrem Anliegen."
                         </p>
                         <div className="flex-col gap-sm">
                             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1rem' }}>

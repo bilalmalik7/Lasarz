@@ -1,7 +1,7 @@
 
 export const metadata = {
     title: 'Team | Immobilienbewertung Lasarz',
-    description: 'Lernen Sie das Team hinter Immobilienbewertung Lasarz kennen. Unsere Sachverständigen beraten Sie kompetent und unabhängig.',
+    description: 'Erfahren Sie mehr über Marc-André Lasarz. Ihr kompetenter und unabhängiger Sachverständiger für Immobilienbewertung.',
 };
 
 export default function TeamPage() {
@@ -18,11 +18,11 @@ export default function TeamPage() {
                 </div>
             </section>
 
-            {/* Marc & Markus Parallax Section */}
+            {/* Marc Parallax Section */}
             <section style={{
                 position: 'relative',
                 padding: '100px 0px',
-                backgroundImage: 'url("/images/original_clone/HASELAND_11-1024x690.jpg")',
+                backgroundImage: 'url("/images/original_clone/property_background.jpg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
                 backgroundAttachment: 'fixed',
@@ -32,12 +32,12 @@ export default function TeamPage() {
                 <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '3rem', alignItems: 'center' }}>
                         <div style={{ background: 'white', borderRadius: 'var(--radius-md)', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }}>
-                            <img src="/images/team/lasarz_markus_real.jpg" alt="Marc-André Lasarz & Markus Marc" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                            <img src="/images/team/marc_lasarz.jpg" alt="Marc-André Lasarz" style={{ width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'top center' }} />
                         </div>
                         <div style={{ color: 'white' }}>
-                            <h2 style={{ color: 'white', fontSize: '2.5rem', marginBottom: '1.5rem' }}>Marc & Markus</h2>
+                            <h2 style={{ color: 'white', fontSize: '2.5rem', marginBottom: '1.5rem' }}>Marc-André Lasarz</h2>
                             <p style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.9)', marginBottom: '2rem', lineHeight: 1.6 }}>
-                                Die Köpfe hinter Lasarz Immobilienbewertung. Gemeinsam bündeln wir über 25 Jahre Expertise in der Bewertung und Vermarktung von anspruchsvollen Immobilien.
+                                Der Kopf hinter Lasarz Immobilienbewertung. Mit über 25 Jahren Expertise in der Bewertung von anspruchsvollen Immobilien ist Marc Ihr kompetenter und unabhängiger Ansprechpartner.
                             </p>
                             <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
                                 <a href="mailto:info@lasarz.com" className="btn btn-primary" style={{ background: 'var(--accent-primary)', border: 'none' }}>✉️ Nachricht senden</a>

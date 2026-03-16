@@ -11,10 +11,10 @@ export function MarkeLasarz() {
                             Die Marke Lasarz
                         </div>
                         <h2 className="text-gradient" style={{ fontSize: '2.5rem', marginBottom: 'var(--space-md)' }}>
-                            Marc-André Lasarz – Ihre Experten für Immobilien.
+                            Marc-André Lasarz – Ihr Experte für Immobilienbewertung.
                         </h2>
                         <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: 'var(--space-md)' }}>
-                            Als umsetzungsstarker Immobilienvertreter und Geschäftsführer mit über 19 Jahren Fach- und Führungserfahrung in den Bereichen Vertrieb und Marketing in der Immobilienbranche verfüge ich über ausgeprägte Kompetenzen für die durchdachte Planung und Umsetzung von Projekten.
+                            Als Geschäftsführer und zertifizierter Gutachter mit über 19 Jahren Fach- und Führungserfahrung in der Immobilienbranche verfüge ich über ausgeprägte Kompetenzen für die rechtssichere Planung und Umsetzung von Bewertungsprojekten.
                         </p>
 
                         <div className="flex gap-sm" style={{ marginTop: 'var(--space-lg)' }}>

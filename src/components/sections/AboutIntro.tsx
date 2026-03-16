@@ -5,7 +5,7 @@ export function AboutIntro() {
         <section style={{
             position: 'relative',
             padding: '100px 0',
-            backgroundImage: 'url(/images/original_clone/HASELAND_11-1024x690.jpg)',
+            backgroundImage: 'url(/images/original_clone/property_background.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
@@ -42,7 +42,7 @@ export function AboutIntro() {
                         marginBottom: '2rem',
                         lineHeight: 1.3,
                     }}>
-                        Als Sachverständige für Immobilienbewertung erstellen und prüfen wir <span style={{ color: 'rgba(150,220,240,0.9)' }}>Verkehrswertgutachten</span> im Sinne des § 194 BauGB
+                        Als Sachverständiger für Immobilienbewertung erstelle und prüfe ich <span style={{ color: 'rgba(150,220,240,0.9)' }}>Verkehrswertgutachten</span> im Sinne des § 194 BauGB
                     </h2>
 
                     <p style={{
@@ -51,16 +51,16 @@ export function AboutIntro() {
                         lineHeight: 1.9,
                         marginBottom: '1.5rem',
                     }}>
-                        Wir ermitteln unabhängig und fair den Marktwert Ihrer Immobilie. Die Gutachter von Lasarz Immobilienbewertung verfassen professionelle Immobiliengutachten, die bei Gerichten anerkannt sind und vom Finanzamt geschätzt werden. Diese werden unter Berücksichtigung der gesetzlichen Vorgaben, des Baugesetzbuches (BauGB) sowie der Immobilienwertermittlungsverordnung (ImmoWertV), marktkonform angefertigt.
+                        Ich ermittle unabhängig und fair den Marktwert Ihrer Immobilie. Als Gutachter von Lasarz Immobilienbewertung verfasse ich professionelle Immobiliengutachten, die bei Gerichten anerkannt sind und vom Finanzamt geschätzt werden. Diese werden unter Berücksichtigung der gesetzlichen Vorgaben, des Baugesetzbuches (BauGB) sowie der Immobilienwertermittlungsverordnung (ImmoWertV), marktkonform angefertigt.
                     </p>
 
                     <p style={{
                         fontSize: '1.1rem',
                         color: 'rgba(255,255,255,0.88)',
                         lineHeight: 1.9,
-                        marginBottom: '2.5rem',
+                        marginBottom: '1.5rem',
                     }}>
-                        Selbstverständlich arbeiten wir auch <strong style={{ color: '#fff' }}>Kurzgutachten in Osnabrück</strong> für private Zwecke aus. Gerne unterstützen wir Sie auch bei <strong style={{ color: '#fff' }}>Restnutzungsdauer Gutachten</strong> zur Anhebung Ihrer möglichen Abschreibungen. Darüber hinaus beraten wir Sie kostenlos und unverbindlich bei inhaltlichen sowie rechtlichen Fragestellungen zu Ihrer Grundstücksbewertung in Osnabrück.
+                        Selbstverständlich arbeite ich auch <strong style={{ color: '#fff' }}>Kurzgutachten in Osnabrück</strong> für private Zwecke aus. Gerne unterstütze ich Sie auch bei <strong style={{ color: '#fff' }}>Restnutzungsdauer Gutachten</strong> zur Anhebung Ihrer möglichen Abschreibungen. Darüber hinaus berate ich Sie kostenlos und unverbindlich bei inhaltlichen sowie rechtlichen Fragestellungen zu Ihrer Grundstücksbewertung in Osnabrück.
                     </p>
 
                     <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>

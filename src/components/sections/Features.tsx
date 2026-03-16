@@ -8,7 +8,7 @@ export function Features() {
         },
         {
             title: 'Gesetzeskonform',
-            description: 'Unsere Sachverständigen halten alle rechtlichen Standards nach ImmoWertV und BauGB gewissenhaft ein.'
+            description: 'Als zertifizierter Sachverständiger halte ich alle rechtlichen Standards nach ImmoWertV und BauGB gewissenhaft ein.'
         },
         {
             title: 'Zertifizierte Gutachter',

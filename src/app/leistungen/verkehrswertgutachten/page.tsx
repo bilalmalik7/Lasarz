@@ -28,7 +28,7 @@ export default function VerkehrswertgutachtenPage() {
                             </div>
                         </div>
                         <div className="glass-card" style={{ padding: '0' }}>
-                            <img src="/images/original_clone/HASELAND_11-1024x690.jpg" alt="Verkehrswertgutachten" style={{ width: '100%', borderRadius: 'var(--radius-md)' }} />
+                            <img src="/images/original_clone/property_background.jpg" alt="Verkehrswertgutachten" style={{ width: '100%', borderRadius: 'var(--radius-md)' }} />
                         </div>
                     </div>
 
