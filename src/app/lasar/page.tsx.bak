@@ -1,0 +1,560 @@
+'use client';
+
+import React, { useState } from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+
+// --- Types & Constants ---
+const BRAND_NAME = "Lasarz";
+const BRAND_DOMAIN = "lasarz.com";
+const CONTACT_EMAIL = "info@lasarz.com";
+const CONTACT_PHONE = "+49 5245 8799684";
+
+const COLORS = {
+  primary: '#1A758D', // Teal/Green
+  secondary: '#FF5A3B', // Orange
+  dark: '#333333',
+  lightGray: '#FCF0E8',
+};
+
+const ASSETS = {
+  logo: '/logo.svg',
+  heroBg: 'https://images.unsplash.com/photo-1582408921715-18e7806367c1?q=80&w=2070&auto=format&fit=crop',
+  videoUrl: 'https://player.vimeo.com/video/832145932',
+  thumbnails: [
+    '/images/lasar/munich_mfh.png',
+    '/images/lasar/berlin_etw.png',
+    '/images/lasar/bielefeld_efh.png',
+  ],
+  partnerImmocation: 'https://api.immocation.com/logo.png',
+  partnerSTBV: 'https://www.stbv.de/templates/default/images/logo.png',
+  googleReviews: '/images/lasar/google_reviews.png',
+};
+
+// --- Components ---
+
+const Header = () => (
+  <header className="w-full font-sans sticky top-0 z-[100]">
+    {/* Top Bar */}
+    <div className="bg-[#1a1a1a] text-white py-2 px-6 flex flex-wrap justify-between items-center text-sm">
+      <div className="flex gap-6 items-center flex-wrap">
+        <a href={`tel:${CONTACT_PHONE.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-[#1A758D] transition-colors">
+          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" /></svg>
+          {CONTACT_PHONE}
+        </a>
+        <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-2 hover:text-[#1A758D] transition-colors">
+          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z" /></svg>
+          {CONTACT_EMAIL}
+        </a>
+      </div>
+      <div className="flex gap-4">
+        <button className="bg-[#FF5A3B] text-white px-5 py-2 rounded-lg text-xs font-bold hover:bg-[#e54a2e] transition-all uppercase tracking-wider">
+          Kostenlose Ersteinschätzung
+        </button>
+        <button className="bg-[#1A758D] text-white px-5 py-2 rounded-lg text-xs font-bold hover:bg-[#145A6C] transition-all uppercase tracking-wider">
+          Gutachten beauftragen
+        </button>
+      </div>
+    </div>
+    
+    {/* Main Nav */}
+    <nav className="bg-white border-b border-gray-100 py-5 px-8 flex justify-between items-center shadow-lg">
+      <Link href="/lasar" className="text-3xl font-black tracking-tighter text-[#1a1a1a]">
+        LASARZ<span className="text-[#1A758D]">.COM</span>
+      </Link>
+      
+      <div className="hidden lg:flex gap-10 text-[#1a1a1a] font-bold text-sm items-center uppercase tracking-tight">
+        <Link href="#partner" className="hover:text-[#1A758D] transition-colors">Partner</Link>
+        <Link href="#urteile" className="hover:text-[#1A758D] transition-colors">Urteile</Link>
+        <Link href="#afa-rechner" className="hover:text-[#1A758D] transition-colors">AfA-Rechner</Link>
+        <Link href="#ratgeber" className="hover:text-[#1A758D] transition-colors">Ratgeber</Link>
+        <Link href="#garantie" className="hover:text-[#1A758D] transition-colors">Garantie</Link>
+        <Link href="#preise" className="hover:text-[#1A758D] transition-colors">Preise</Link>
+        <Link href="#karriere" className="hover:text-[#1A758D] transition-colors">Karriere</Link>
+        <Link href="#kontakt" className="bg-[#1a1a1a] text-white px-6 py-2.5 rounded-full hover:bg-black transition-all ml-4 uppercase tracking-widest text-[11px] font-black">
+          Kontakt
+        </Link>
+      </div>
+    </nav>
+  </header>
+);
+
+const Hero = () => {
+  const [activeType, setActiveType] = useState('Eigentumswohnung');
+  const propertyTypes = [
+    'Eigentumswohnung', 'Mehrfamilienhaus', 'Wohn- und Geschäftshaus', 'Einfamilienhaus', 'Gewerbeobjekt'
+  ];
+
+  return (
+    <section className="relative bg-[#1A758D] text-white py-24 lg:py-40 px-6 overflow-hidden">
+      {/* Real Hero Background */}
+      <div 
+        className="absolute inset-0 opacity-15 pointer-events-none bg-cover bg-right lg:bg-center" 
+        style={{ backgroundImage: `url(${ASSETS.heroBg})` }}
+      />
+      
+      <div className="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-20 items-center">
+        <div>
+          <h1 className="text-5xl lg:text-7xl font-black leading-[1.05] mb-10 tracking-tight">
+            Vermieter optimieren Ihre AfA und somit Steuer - mit einem LASARZ Gutachten
+          </h1>
+          
+          <div className="flex flex-wrap gap-4 mb-12">
+            {[
+                { icon: '🏆', text: 'Seit 2017 Marktführer' },
+                { icon: '🛡️', text: 'Geld-zurück-Garantie' },
+                { icon: '✅', text: 'DIN EN ISO/IEC 17024 zertifiziert' }
+            ].map((badge, i) => (
+                <span key={i} className="bg-white/10 backdrop-blur-md border border-white/20 px-5 py-2.5 rounded-full text-xs font-black flex items-center gap-3 uppercase tracking-widest">
+                  <span className="text-lg">{badge.icon}</span>
+                  {badge.text}
+                </span>
+            ))}
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-xl rounded-[2.5rem] p-8 lg:p-10 border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)]">
+            <p className="text-[11px] uppercase tracking-[0.25em] font-black mb-6 opacity-70">Wählen Sie Ihre Objektart:</p>
+            <div className="flex flex-wrap gap-2.5 mb-10">
+              {propertyTypes.map((type) => (
+                <button
+                  key={type}
+                  onClick={() => setActiveType(type)}
+                  className={`px-6 py-3 rounded-2xl text-[13px] font-black transition-all duration-300 ${
+                    activeType === type 
+                    ? 'bg-white text-[#1A758D] shadow-[0_10px_20px_rgba(255,255,255,0.2)] scale-105' 
+                    : 'bg-white/10 text-white hover:bg-white/20'
+                  }`}
+                >
+                  {type}
+                </button>
+              ))}
+            </div>
+            <button className="w-full bg-[#FF5A3B] py-6 rounded-2xl text-xl lg:text-2xl font-black uppercase tracking-[0.1em] hover:bg-[#e54a2e] transition-all transform hover:scale-[1.02] active:scale-95 shadow-[0_20px_40px_rgba(255,90,59,0.3)]">
+              Jetzt Steuern sparen
+            </button>
+          </div>
+        </div>
+
+        <div className="hidden lg:flex flex-col items-center gap-12">
+             <div className="bg-white p-8 rounded-[3rem] shadow-[0_40px_80px_-20px_rgba(0,0,0,0.4)] transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                <img src={ASSETS.googleReviews} alt="Google Reviews" className="h-48 w-auto object-contain" />
+             </div>
+             
+             <div className="grid grid-cols-2 gap-6 w-full max-w-md">
+                <div className="bg-white/10 backdrop-blur-lg p-8 rounded-[2rem] border border-white/20 text-center flex flex-col justify-center">
+                    <p className="text-4xl font-black mb-1">10k+</p>
+                    <p className="text-[10px] uppercase font-black opacity-60 tracking-widest">Gutachten jährlich</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-lg p-8 rounded-[2rem] border border-white/20 text-center flex flex-col justify-center">
+                    <p className="text-4xl font-black mb-1">5,0</p>
+                    <p className="text-[10px] uppercase font-black opacity-60 tracking-widest">Google Bewertung</p>
+                </div>
+             </div>
+        </div>
+      </div>
+      
+      {/* Decorative Wave */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+        <svg className="relative block w-[calc(100%+1.3px)] h-[80px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-white"></path>
+        </svg>
+      </div>
+    </section>
+  );
+};
+
+const VideoSection = () => (
+  <section className="py-32 bg-white px-6">
+    <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-20">
+            <span className="text-[#1A758D] font-black uppercase tracking-[0.3em] text-[11px] mb-4 block">Erklärvideo</span>
+            <h2 className="text-4xl lg:text-6xl font-black text-[#1a1a1a] mb-6 leading-tight">
+                So funktioniert Ihr LASARZ Gutachten
+            </h2>
+            <p className="text-gray-500 text-xl max-w-2xl mx-auto font-medium leading-relaxed">In nur 2 Minuten erklärt: So einfach sparen Sie Steuern mit der verkürzten Lasarz Ihrer Immobilie.</p>
+        </div>
+        <div className="aspect-video rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] border-[12px] border-gray-50 flex items-center justify-center bg-gray-100 relative group cursor-pointer transition-transform hover:scale-[1.01]">
+            <iframe 
+              src={ASSETS.videoUrl} 
+              className="absolute inset-0 w-full h-full" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
+        </div>
+    </div>
+  </section>
+);
+
+const AfACalculator = () => {
+    const [step, setStep] = useState(1);
+    const [savings, setSavings] = useState(0);
+
+    const nextStep = () => {
+        if (step === 4) {
+             setSavings(Math.floor(Math.random() * 50000) + 10000);
+        }
+        setStep(prev => Math.min(prev + 1, 5));
+    };
+    const prevStep = () => setStep(prev => Math.max(prev - 1, 1));
+
+    return (
+        <section id="afa-rechner" className="py-32 bg-[#FCF0E8] px-6 relative">
+            <div className="max-w-5xl mx-auto">
+                <div className="text-center mb-20">
+                    <span className="text-[#1A758D] font-black uppercase tracking-[0.34em] text-[12px] mb-4 block">AfA-Rechner Pro</span>
+                    <h2 className="text-5xl lg:text-7xl font-black text-[#1a1a1a] mb-8 tracking-tighter">Wie viel können Sie sparen?</h2>
+                    <p className="text-gray-600 text-xl max-w-2xl mx-auto font-medium">Berechnen Sie jetzt kostenlos Ihr individuelles Sparpotenzial mit einem offiziellen LASARZ Gutachten.</p>
+                </div>
+
+                <div className="bg-white rounded-[4rem] shadow-[0_60px_120px_-30px_rgba(0,0,0,0.1)] overflow-hidden border border-white/50">
+                    {/* Progress Bar */}
+                    <div className="flex bg-gray-50/50">
+                        {[1, 2, 3, 4, 5].map(s => (
+                            <div key={s} className="flex-1 h-3 relative">
+                                <div className={`absolute inset-0 transition-all duration-700 ${step >= s ? 'bg-[#1A758D]' : 'bg-gray-200'}`}></div>
+                            </div>
+                        ))}
+                    </div>
+                    
+                    <div className="p-8 lg:p-20">
+                        {step === 1 && (
+                            <div className="space-y-10 animate-fade-in">
+                                <h3 className="text-3xl lg:text-4xl font-black mb-10 text-center lg:text-left">1. Angaben zum Kauf</h3>
+                                <div className="grid md:grid-cols-2 gap-10">
+                                    <div>
+                                        <label className="block text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Gesamtkaufpreis (€)</label>
+                                        <input type="number" className="w-full p-6 bg-gray-50 border-2 border-transparent focus:border-[#1A758D]/20 focus:bg-white rounded-2xl outline-none font-bold text-xl transition-all" placeholder="500.000" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Kaufdatum / Übergang</label>
+                                        <input type="date" className="w-full p-6 bg-gray-50 border-2 border-transparent focus:border-[#1A758D]/20 focus:bg-white rounded-2xl outline-none font-bold text-xl transition-all" />
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {step === 2 && (
+                            <div className="space-y-10 animate-fade-in">
+                                <h3 className="text-3xl lg:text-4xl font-black mb-10 text-center lg:text-left">2. Angaben zum Objekt</h3>
+                                <div className="grid md:grid-cols-2 gap-10">
+                                    <div>
+                                        <label className="block text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Baujahr des Gebäudes</label>
+                                        <input type="number" className="w-full p-6 bg-gray-50 border-2 border-transparent focus:border-[#1A758D]/20 focus:bg-white rounded-2xl outline-none font-bold text-xl transition-all" placeholder="1980" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Wohnfläche (qm)</label>
+                                        <input type="number" className="w-full p-6 bg-gray-50 border-2 border-transparent focus:border-[#1A758D]/20 focus:bg-white rounded-2xl outline-none font-bold text-xl transition-all" placeholder="120" />
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {step === 3 && (
+                            <div className="space-y-10 animate-fade-in">
+                                <h3 className="text-3xl lg:text-4xl font-black mb-10 text-center lg:text-left">3. Aktuelle Nutzungsdauer</h3>
+                                <p className="text-gray-500 text-lg mb-8">Welche Nutzungsdauer wird aktuell für die Abschreibung herangezogen?</p>
+                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                                    {['50 Jahre', '40 Jahre', '33 Jahre'].map(year => (
+                                        <button key={year} className="p-8 border-2 border-gray-100 rounded-[2rem] font-black text-xl hover:border-[#1A758D] hover:text-[#1A758D] hover:bg-[#1A758D]/5 transition-all uppercase tracking-tighter">
+                                            {year}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                        {step === 4 && (
+                            <div className="space-y-10 animate-fade-in">
+                                <h3 className="text-3xl lg:text-4xl font-black mb-10 text-center lg:text-left">4. Steuerpflichtige Angaben</h3>
+                                <div>
+                                    <label className="block text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Ihr persönlicher Grenzsteuersatz (%)</label>
+                                    <div className="flex flex-col gap-6">
+                                        <input type="range" min="14" max="45" className="w-full h-3 bg-gray-100 rounded-lg appearance-none cursor-pointer accent-[#1A758D]" />
+                                        <div className="flex justify-between text-2xl font-black text-[#1a1a1a]">
+                                            <span>14%</span>
+                                            <span className="text-4xl text-[#1A758D]">42%</span>
+                                            <span>45%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {step === 5 && (
+                            <div className="text-center space-y-10 animate-bounce-in">
+                                <div className="w-32 h-32 bg-[#1A758D]/10 text-[#1A758D] rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
+                                    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M5 13l4 4L19 7" /></svg>
+                                </div>
+                                <h3 className="text-4xl lg:text-5xl font-black mb-4">Analyse abgeschlossen!</h3>
+                                <p className="text-gray-500 text-xl font-medium mb-12">Ihre potenzielle Steuerersparnis wartet. <br className="hidden md:block"/> Hinterlassen Sie Ihre E-Mail für das detaillierte Ergebnis.</p>
+                                
+                                <div className="max-w-md mx-auto space-y-6">
+                                    <input type="email" className="w-full p-6 bg-gray-50 border-2 border-transparent focus:border-[#1A758D]/20 focus:bg-white rounded-3xl outline-none font-bold text-xl text-center transition-all shadow-sm" placeholder="ihre@email.de" />
+                                    <button className="w-full bg-[#1A758D] text-white py-6 rounded-[2rem] text-2xl font-black uppercase tracking-[0.1em] hover:bg-[#145A6C] transition-all transform hover:scale-[1.05] shadow-[0_30px_60px_-15px_rgba(0,172,64,0.4)]">Ergebnis jetzt senden</button>
+                                </div>
+                            </div>
+                        )}
+
+                        {step < 5 && (
+                            <div className="flex flex-col sm:flex-row gap-6 mt-16 lg:mt-24">
+                                {step > 1 && (
+                                    <button onClick={prevStep} className="flex-1 py-6 border-[3px] border-gray-100 rounded-3xl font-black text-gray-400 hover:bg-gray-50 hover:text-gray-600 transition-all uppercase tracking-widest text-sm">Zurück</button>
+                                )}
+                                <button onClick={nextStep} className="flex-[2] py-6 bg-[#1A758D] text-white rounded-3xl font-black text-xl hover:bg-[#145A6C] transition-all transform hover:scale-[1.03] active:scale-95 shadow-[0_20px_40px_-5px_rgba(0,172,64,0.25)] uppercase tracking-widest">
+                                    {step === 4 ? 'Ergebnis berechnen' : 'Weiter zum nächsten Schritt'}
+                                </button>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const PartnersSection = () => (
+  <section id="partner" className="py-24 bg-white px-6">
+    <div className="max-w-7xl mx-auto">
+        <div className="text-center">
+            <h2 className="text-[12px] font-black text-gray-300 uppercase tracking-[0.5em] mb-16">Bekannt aus & Offizielle Partner</h2>
+            <div className="flex flex-wrap justify-center items-center gap-12 lg:gap-32 opacity-70 grayscale hover:grayscale-0 transition-all duration-1000">
+                <img src={ASSETS.partnerImmocation} alt="Immocation" className="h-14 lg:h-20" />
+                <img src={ASSETS.partnerSTBV} alt="STBV" className="h-12 lg:h-18" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/ZDF_logo.svg" alt="ZDF" className="h-10 lg:h-14" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Focus_Logo_2013.svg" alt="Focus" className="h-8 lg:h-12" />
+            </div>
+        </div>
+    </div>
+  </section>
+);
+
+const ShowcaseSection = () => (
+    <section className="py-32 bg-white px-6">
+        <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col lg:flex-row justify-between items-end mb-24 gap-12 text-center lg:text-left">
+                <div className="max-w-2xl">
+                    <span className="text-[#1A758D] font-black uppercase tracking-[0.34em] text-[12px] mb-4 block">Erfolgsgeschichten</span>
+                    <h2 className="text-5xl lg:text-7xl font-black text-[#1a1a1a] leading-tight tracking-tighter">Praxisbeispiele aus ganz Deutschland</h2>
+                </div>
+                <p className="text-gray-500 text-xl font-medium max-w-sm mb-2 leading-relaxed italic border-l-4 border-[#1A758D] pl-6">„Wir konnten durch das Gutachten unsere Steuerlast um jährlich über 5.000€ senken.“</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                {[
+                    { city: 'München', price: '1.240.000€', saving: '48.921€', type: 'Haus', img: ASSETS.thumbnails[0] },
+                    { city: 'Berlin', price: '785.000€', saving: '34.500€', type: 'ETW', img: ASSETS.thumbnails[1] },
+                    { city: 'Bielefeld', price: '520.000€', saving: '19.820€', type: 'MFH', img: ASSETS.thumbnails[2] },
+                ].map((item, i) => (
+                    <div key={i} className="group bg-white rounded-[3.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.08)] hover:shadow-[0_60px_120px_-30px_rgba(0,172,64,0.15)] transition-all duration-700 border border-gray-50">
+                        <div className="h-[400px] bg-gray-200 overflow-hidden relative">
+                            <img src={item.img} alt={item.city} className="w-full h-full object-cover group-hover:scale-110 transition-all duration-[2000ms]" />
+                            <div className="absolute top-8 left-8 bg-[#1A758D] text-white px-5 py-2 rounded-2xl text-xs font-black uppercase tracking-widest shadow-xl">
+                                {item.type}
+                            </div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-10">
+                                <p className="text-white text-sm font-bold leading-relaxed">Verkürzung der Nutzungsdauer von 50 auf 29 Jahre durch LASARZ Sachverständige bestätigt.</p>
+                            </div>
+                        </div>
+                        <div className="p-12">
+                            <h3 className="text-3xl font-black mb-1 tracking-tight">{item.city}</h3>
+                            <p className="text-xs font-black text-gray-300 uppercase tracking-widest mb-8 border-b border-gray-100 pb-4">Referenzobjekt #00{i+42}</p>
+                            <div className="flex justify-between items-end">
+                                <div>
+                                    <p className="text-gray-400 text-[10px] uppercase font-black tracking-widest mb-1 opacity-60">Gebäudewert</p>
+                                    <p className="text-2xl font-black">{item.price}</p>
+                                </div>
+                                <div className="text-right">
+                                    <p className="text-[#1A758D] text-[10px] uppercase font-black tracking-widest mb-1">Steuervorteil*</p>
+                                    <p className="text-5xl font-black text-[#1A758D] tracking-tighter tabular-nums">{item.saving}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            
+            <div className="mt-24 text-center">
+                 <button className="bg-transparent border-[3px] border-[#1a1a1a] text-[#1a1a1a] px-14 py-6 rounded-3xl font-black text-lg hover:bg-[#1a1a1a] hover:text-white transition-all transform hover:scale-105 uppercase tracking-widest">
+                    Weitere Praxisbeispiele entdecken
+                 </button>
+            </div>
+        </div>
+    </section>
+);
+
+const FaqSection = () => {
+  const [openIndex, setOpenIndex] = useState(0);
+  const faqs = [
+    { q: "Was genau ist ein LASARZ Gutachten?", a: "Ein LASARZ Gutachten ist eine fachkundige, rechtssichere Stellungnahme zur tatsächlich kürzeren Restnutzungsdauer eines Gebäudes. Es basiert auf fundierten Bausubstanz-Analysen und gesetzlichen Bewertungsmethoden, um die Abschreibung (AfA) beim Finanzamt zu optimieren." },
+    { q: "Wird das Gutachten vom Finanzamt anerkannt?", a: "Ja, zu 100%. Unsere Gutachten werden von zertifizierten Sachverständigen nach DIN EN ISO/IEC 17024 erstellt. Diese Qualifikation wird von der Finanzverwaltung seit 2023 ausdrücklich gefordert und sichert die höchste Akzeptanzquote." },
+    { q: "Was kostet die Erstellung?", a: "Unsere transparenten Pauschalpreise richten sich nach der Wohnfläche. Für ein Standard-Einfamilienhaus oder eine ETW liegt das Honorar bei moderaten 946,05€ zzgl. MwSt. In Anbetracht der oft fünfstelligen Steuerersparnis amortisiert sich das Investment meist im ersten Jahr." },
+    { q: "Gibt es eine Geld-zurück-Garantie?", a: "Ja! Sollte ein durch uns erstelltes Gutachten trotz unserer Fachbegleitung im Einspruchsverfahren final vom Finanzamt nicht anerkannt werden, erstatten wir das gezahlte Honorar zu 100% zurück." },
+  ];
+
+  return (
+    <section className="py-32 bg-gray-50 px-6 font-sans">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-24">
+            <span className="text-gray-300 font-black uppercase tracking-[0.4em] text-[11px] mb-4 block">Knowledge Base</span>
+            <h2 className="text-5xl lg:text-7xl font-black tracking-tighter mb-8 leading-tight">Häufig gestellte Fragen</h2>
+            <p className="text-gray-500 text-[11px] font-black uppercase tracking-[0.2em] border-2 border-gray-200 inline-block px-4 py-1.5 rounded-full">Support & Beratung</p>
+        </div>
+        
+        <div className="space-y-6">
+          {faqs.map((faq, i) => (
+            <div key={i} className={`bg-white rounded-[2.5rem] shadow-[0_15px_30px_-5px_rgba(0,0,0,0.03)] border transition-all duration-500 overflow-hidden ${openIndex === i ? 'border-[#1A758D]/30 ring-4 ring-[#1A758D]/5' : 'border-gray-100'}`}>
+              <button 
+                onClick={() => setOpenIndex(openIndex === i ? -1 : i)}
+                className="w-full p-10 text-left flex justify-between items-center hover:bg-gray-50/50 transition-all transition-colors"
+              >
+                <span className="font-black text-xl lg:text-2xl text-[#1a1a1a] tracking-tight pr-10">{faq.q}</span>
+                <div className={`w-12 h-12 rounded-full border-2 flex items-center justify-center transition-all flex-shrink-0 ${openIndex === i ? 'bg-[#1A758D] border-[#1A758D] text-white rotate-45' : 'bg-white border-gray-100 text-gray-400 group-hover:border-[#1A758D]'}`}>
+                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M12 4v16m8-8H4" /></svg>
+                </div>
+              </button>
+              {openIndex === i && (
+                <div className="px-10 pb-10 text-gray-500 text-lg leading-relaxed font-medium animate-slide-down">
+                  {faq.a}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Footer = () => (
+  <footer className="bg-[#1a1a1a] text-white pt-32 pb-16 px-6 font-sans">
+    <div className="max-w-7xl mx-auto grid lg:grid-cols-4 gap-20 lg:gap-32 pb-24 border-b border-white/5">
+      <div className="col-span-2">
+        <p className="text-4xl font-black mb-10 tracking-tighter">LASARZ<span className="text-[#1A758D]">.COM</span></p>
+        <p className="text-gray-400 max-w-sm mb-12 leading-relaxed font-bold text-sm">
+          Führendes Sachverständigenbüro für die rechtssichere Verkürzung der Gebäude-Nutzungsdauer in Deutschland. 
+        </p>
+        <div className="flex gap-6">
+            {['FB', 'LI', 'IG', 'TW'].map((social) => (
+                <a key={social} href="#" className="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center font-black text-sm hover:bg-[#1A758D] hover:border-[#1A758D] hover:-translate-y-2 transition-all duration-300">
+                    {social}
+                </a>
+            ))}
+        </div>
+      </div>
+      
+      <div>
+        <p className="font-black uppercase tracking-[0.3em] text-[11px] text-[#1A758D] mb-10">Unternehmen</p>
+        <ul className="space-y-6 text-sm font-black text-gray-500 uppercase tracking-widest">
+          <li><Link href="#afa-rechner" className="hover:text-white transition-colors">AfA-Rechner</Link></li>
+          <li><Link href="#urteile" className="hover:text-white transition-colors">Urteile</Link></li>
+          <li><Link href="#ratgeber" className="hover:text-white transition-colors">Ratgeber</Link></li>
+          <li><Link href="#karriere" className="hover:text-white transition-colors">Karriere</Link></li>
+        </ul>
+      </div>
+
+      <div>
+        <p className="font-black uppercase tracking-[0.3em] text-[11px] text-[#1A758D] mb-10">Rechtliches</p>
+        <ul className="space-y-6 text-sm font-black text-gray-500 uppercase tracking-widest">
+          <li><Link href="#" className="hover:text-white transition-colors">Impressum</Link></li>
+          <li><Link href="#" className="hover:text-white transition-colors">Datenschutz</Link></li>
+          <li><Link href="#" className="hover:text-white transition-colors">AGB</Link></li>
+          <li><Link href="#" className="hover:text-white transition-colors">Widerruf</Link></li>
+        </ul>
+      </div>
+    </div>
+    <div className="max-w-7xl mx-auto pt-12 flex flex-col md:flex-row justify-between items-center gap-10 text-[10px] font-black uppercase tracking-[0.35em] text-gray-600">
+      <p>&copy; {new Date().getFullYear()} LASARZ APPRAISAL SYSTEMS - EXCELLENCE IN REAL ESTATE</p>
+      <div className="flex gap-10">
+         <span className="hover:text-white transition-colors cursor-help">Status: ISO Certified</span>
+         <span className="hover:text-white transition-colors cursor-help">Server: EU-West</span>
+      </div>
+    </div>
+  </footer>
+);
+
+export default function LasarPage() {
+  return (
+    <main className="min-h-screen bg-white font-sans antialiased text-[#333333] selection:bg-[#1A758D] selection:text-white scroll-smooth cursor-default">
+      <Head>
+        <title>LASARZ | Marktführer für rechtssichere Lasarz-Gutachten</title>
+        <meta name="description" content="Verkürzen Sie Ihre Gebäude-Nutzungsdauer mit einem LASARZ Gutachten und sparen Sie massiv Steuern. Rechtssicher & anerkannt." />
+      </Head>
+      
+      <Header />
+      <Hero />
+      <PartnersSection />
+      
+      {/* Dynamic Counter Banner */}
+      <div className="bg-[#1a1a1a] py-5 overflow-hidden whitespace-nowrap">
+         <div className="flex animate-marquee gap-20 text-[10px] font-black uppercase tracking-[1em] text-white/20">
+            <span>Rechtssicher</span> <span>Zertifiziert</span> <span>Geld-zurück-Garantie</span> <span>Marktführer</span> <span>ISO 17024</span>
+            <span>Rechtssicher</span> <span>Zertifiziert</span> <span>Geld-zurück-Garantie</span> <span>Marktführer</span> <span>ISO 17024</span>
+         </div>
+      </div>
+
+      <VideoSection />
+      <AfACalculator />
+      <ShowcaseSection />
+      
+      {/* History Timeline */}
+      <section className="py-32 bg-gray-50 px-6 border-y border-gray-100">
+          <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-24">
+                  <span className="text-[#1A758D] font-black uppercase tracking-[0.4em] text-[11px] mb-4 block">Proven Track Record</span>
+                  <h2 className="text-5xl lg:text-7xl font-black tracking-tighter">Seit 2017 auf Erfolgskurs</h2>
+              </div>
+              <div className="relative pt-10">
+                  <div className="absolute top-1/2 left-0 w-full h-1 bg-gray-200 -translate-y-1/2 hidden lg:block"></div>
+                  <div className="grid lg:grid-cols-5 gap-12 relative">
+                      {[
+                        { year: '2017', title: 'Gründung', text: 'Pionier für Nutzungsdauer-Expertisen.' },
+                        { year: '2021', title: 'Verfahren', text: 'BFH schafft Rechtssicherheit für Vermieter.' },
+                        { year: '2022', title: 'Marktführer', text: 'Über 10.000 erfolgreiche Gutachten.' },
+                        { year: '2023', title: 'ISO 17024', text: 'Qualitätsstandard für Sachverständige.' },
+                        { year: 'HEUTE', title: 'Service Plus', text: 'Digitale Best-in-Class Plattform.' }
+                      ].map((m, i) => (
+                          <div key={i} className="bg-white p-8 rounded-[2rem] shadow-lg border border-gray-100 relative group hover:-translate-y-4 transition-transform duration-500">
+                              <div className="w-4 h-4 rounded-full bg-[#1A758D] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden lg:block mb-[200px] shadow-[0_0_20px_rgba(0,172,64,0.5)]"></div>
+                              <p className="text-[#1A758D] font-black text-2xl mb-2">{m.year}</p>
+                              <h4 className="text-lg font-black text-[#1a1a1a] mb-2">{m.title}</h4>
+                              <p className="text-gray-400 text-xs font-bold leading-relaxed">{m.text}</p>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <FaqSection />
+      
+      {/* Final Floating CTA */}
+      <div className="fixed bottom-8 right-8 z-[200] hidden lg:block">
+         <button className="bg-[#1A758D] text-white p-6 rounded-full shadow-[0_30px_60px_-10px_rgba(0,172,64,0.4)] hover:scale-110 transition-transform group">
+            <svg className="w-8 h-8 group-hover:rotate-12 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M20,16H5.17L4,17.17V4H20V16Z" /></svg>
+         </button>
+      </div>
+
+      <Footer />
+      
+      <style jsx global>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 0.8s ease-out forwards;
+        }
+        @keyframes slide-down {
+          from { opacity: 0; height: 0; }
+          to { opacity: 1; height: auto; }
+        }
+        .animate-slide-down {
+          animation: slide-down 0.5s ease-out forwards;
+        }
+      `}</style>
+    </main>
+  );
+}

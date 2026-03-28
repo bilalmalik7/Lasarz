@@ -5,6 +5,7 @@ import { AboutIntro } from '@/components/sections/AboutIntro';
 import { HowWeWork } from '@/components/sections/HowWeWork';
 import { GutachtenPackages } from '@/components/sections/GutachtenPackages';
 import { InteractiveValuationSection } from '@/components/sections/OriginalClone/InteractiveValuationSection';
+import { FinanzierungsRechner } from '@/components/sections/FinanzierungsRechner';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
 import { PropertyTypesBig } from '@/components/sections/PropertyTypesBig';
 import { BewertungsAnlaesse } from '@/components/sections/BewertungsAnlaesse';
@@ -38,6 +39,9 @@ export default function Home() {
 
       {/* 7. Interactive online valuation tool */}
       <InteractiveValuationSection />
+
+      {/* 7.5 Financing Calculator */}
+      <FinanzierungsRechner />
 
       {/* 8. Why choose us – 8 USPs on dark parallax bg */}
       <WhyChooseUs />

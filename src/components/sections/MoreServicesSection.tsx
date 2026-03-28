@@ -10,6 +10,7 @@ const furtherTopics = [
     'Wertgutachten Immobilie', 'Wieviel ist meine Immobilie wert?', 'Immobilie bewerten lassen',
     'Immobilien Wertermittlung', 'Wert Immobilie ermitteln', 'Immobilienwert schätzen',
     'Gutachter Hauskauf', 'Sachverständiger Immobilien', 'Was ist meine Immobilie wert?',
+    'Restnutzungsdauergutachten', 'Nutzungsdauer Gebäude AfA',
 ];
 
 const services = [
@@ -24,6 +25,7 @@ const services = [
     { icon: '⚖️', title: 'Verkehrswertgutachten nach §194 BauGB', href: '/leistungen/verkehrswertgutachten' },
     { icon: '🔑', title: 'Immobilienkaufberatung', href: '/leistungen/ankaufberatung' },
     { icon: '📸', title: 'Beweissicherung', href: '/leistungen/beweissicherung' },
+    { icon: '📉', title: 'Immobilien-Abschreibung (AfA)', href: '/immobilien-abschreibung' },
 ];
 
 export function MoreServicesSection() {

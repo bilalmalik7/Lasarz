@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;600&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   /* Original Lasarz.com Color Palette */
   --bg-primary: #ffffff;
@@ -537,6 +540,110 @@ a {
   z-index: 10;
 }
 
+/* V3 Premium Utilities */
+.glass-premium {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.star-rating {
+  display: inline-flex;
+  gap: 2px;
+  color: #ffb400;
+  font-size: 14px;
+}
+
+.star-rating svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* V4 Ultra-Premium Calculator Effects */
+@keyframes mesh-drift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.mesh-gradient {
+  background: linear-gradient(-45deg, #f4f6f9, #e9ecef, #ffffff, #f4f6f9);
+  background-size: 400% 400%;
+  animation: mesh-drift 15s ease infinite;
+}
+
+@keyframes liquid-flow {
+  0% { transform: translateX(-100%) skewX(-20deg); }
+  100% { transform: translateX(200%) skewX(-20deg); }
+}
+
+.liquid-progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  animation: liquid-flow 2s infinite linear;
+}
+
+@keyframes stagger-in {
+  0% { opacity: 0; transform: translateY(20px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.stagger-item {
+  opacity: 0;
+  animation: stagger-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.breath-glow {
+  animation: breath 3s ease-in-out infinite;
+}
+
+@keyframes breath {
+  0%, 100% { box-shadow: 0 0 5px rgba(26, 117, 141, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(26, 117, 141, 0.4); }
+}
+
 .tooltip-text {
   color: var(--text-secondary);
   font-size: 0.875rem;
@@ -544,4 +651,50 @@ a {
   margin: 0;
   position: relative;
   z-index: 10;
+}
+
+/* --- Immobilien-Abschreibung Refinement --- */
+.immo-glass {
+  background: rgba(245, 242, 234, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.immo-card-premium {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.immo-card-premium:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-4px);
+}
+
+.immo-bg-beige {
+  background-color: #F5F2EA;
+}
+
+.immo-text-orange {
+  color: #FF734D;
+}
+
+.immo-btn-green {
+  background-color: #00B32E;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.immo-btn-green:hover {
+  background-color: #008f24;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 179, 46, 0.3);
+}
+
+.immo-source-sans {
+  font-family: 'Source Sans Pro', 'Poppins', sans-serif;
 }

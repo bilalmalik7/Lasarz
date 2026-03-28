@@ -1,4 +1,7 @@
+"use client";
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 const locations = [
     {
@@ -17,7 +20,16 @@ const locations = [
     },
     {
         city: 'Bünde',
+        slug: 'buende',
         address: 'Holzhauser Straße 79\n32257 Bünde',
+        phone: '+49 (0) 5223 7941350',
+        email: 'buende@lasarz.com',
+        isMain: false,
+    },
+    {
+        city: 'Kirchlengern',
+        slug: 'kirchlengern',
+        address: 'Holzhauser Straße 79\n32257 Bünde', // Shared office/area
         phone: '+49 (0) 5223 7941350',
         email: 'buende@lasarz.com',
         isMain: false,
@@ -31,7 +43,7 @@ const gutachterList = [
     'Immobiliengutachter Bramsche', 'Immobiliengutachter Borgholzhausen', 'Immobiliengutachter Georgsmarienhütte',
     'Immobiliengutachter Löhne', 'Immobiliengutachter Halle (Westf.)', 'Immobiliengutachter Warendorf',
     'Immobiliengutachter Bad Oeynhausen', 'Immobiliengutachter Bad Iburg', 'Immobiliengutachter Bad Bentheim',
-    'Immobiliengutachter Bad Laer',
+    'Immobiliengutachter Bad Laer', 'Immobiliengutachter Kirchlengern',
 ];
 
 const bewertungList = [
@@ -41,7 +53,7 @@ const bewertungList = [
     'Immobilienbewertung Wallenhorst', 'Immobilienbewertung Lotte', 'Immobilienbewertung Oelde',
     'Immobilienbewertung Detmold', 'Immobilienbewertung Neuenkirchen', 'Immobilienbewertung Lengerich',
     'Immobilienbewertung Minden', 'Immobilienbewertung Hasbergen', 'Immobilienbewertung Oldenburg',
-    'Immobilienbewertung Flensburg',
+    'Immobilienbewertung Flensburg', 'Immobilienbewertung Bünde', 'Immobilienbewertung Kirchlengern',
 ];
 
 export function StandorteSection() {
@@ -71,7 +83,7 @@ export function StandorteSection() {
                         Immobiliengutachter in Ihrer Nähe
                     </h2>
                     <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto', fontSize: '1.05rem', lineHeight: 1.8 }}>
-                        Das Unternehmen arbeitet zur Zeit an <strong>4 Standorten</strong>. Kompetente Experten vor Ort erzielen höhere Verkaufspreise.
+                        Das Unternehmen arbeitet zur Zeit an <strong>vielen Standorten</strong>. Kompetente Experten vor Ort erzielen höhere Verkaufspreise.
                     </p>
                 </div>
 
@@ -126,9 +138,24 @@ export function StandorteSection() {
                                 📍
                             </div>
 
-                            <h3 style={{ color: loc.isMain ? '#fff' : 'var(--accent-secondary)', fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.75rem' }}>
-                                {loc.city}
-                            </h3>
+                            <Link href={loc.slug ? `/standorte/${loc.slug}` : '#'} style={{ textDecoration: 'none' }}>
+                                <h3 style={{ 
+                                    color: loc.isMain ? '#fff' : 'var(--accent-secondary)', 
+                                    fontSize: '1.4rem', 
+                                    fontWeight: 700, 
+                                    marginBottom: '0.75rem',
+                                    transition: 'color 0.3s ease'
+                                }}
+                                onMouseEnter={(e) => {
+                                    if (!loc.isMain) e.currentTarget.style.color = 'var(--accent-primary)';
+                                }}
+                                onMouseLeave={(e) => {
+                                    if (!loc.isMain) e.currentTarget.style.color = 'var(--accent-secondary)';
+                                }}
+                                >
+                                    {loc.city}
+                                </h3>
+                            </Link>
                             <p style={{ color: loc.isMain ? 'rgba(255,255,255,0.75)' : 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: '1.25rem', whiteSpace: 'pre-line' }}>
                                 {loc.address}
                             </p>
