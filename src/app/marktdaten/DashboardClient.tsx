@@ -119,7 +119,7 @@ export default function DashboardClient() {
                                             contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}
                                             labelStyle={{ color: 'var(--text-muted)', fontWeight: 'bold', marginBottom: '0.5rem' }}
                                             itemStyle={{ color: 'var(--accent-primary)', fontWeight: 'bold', fontSize: '1.2rem' }}
-                                            formatter={(value: number) => [`${value} €`, 'Kaufpreis/m²']}
+                                            formatter={(value: any) => [`${value} €`, 'Kaufpreis/m²']}
                                         />
                                         <Area type="monotone" dataKey="price" stroke="var(--accent-primary)" strokeWidth={4} fillOpacity={1} fill="url(#colorPrice)" animationDuration={1000} />
                                     </AreaChart>
@@ -143,7 +143,7 @@ export default function DashboardClient() {
                                         <Tooltip 
                                             contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}
                                             itemStyle={{ color: 'var(--accent-secondary)', fontWeight: 'bold' }}
-                                            formatter={(value: number) => [`${value} / 100`, 'Score']}
+                                            formatter={(value: any) => [`${value} / 100`, 'Score']}
                                         />
                                     </RadarChart>
                                 </ResponsiveContainer>
@@ -169,7 +169,7 @@ export default function DashboardClient() {
                                         <Tooltip 
                                             cursor={{fill: 'rgba(26, 117, 141, 0.05)'}}
                                             contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}
-                                            formatter={(value: number) => [`${value} €/m²`, 'Marktwert']}
+                                            formatter={(value: any) => [`${value} €/m²`, 'Marktwert']}
                                         />
                                         <Bar dataKey="price" fill="var(--accent-primary)" radius={[0, 4, 4, 0]} barSize={25} animationDuration={1000} />
                                     </BarChart>
@@ -201,7 +201,7 @@ export default function DashboardClient() {
                                         </Pie>
                                         <Tooltip 
                                             contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}
-                                            formatter={(value: number) => [`${value}%`, 'Marktanteil']}
+                                            formatter={(value: any) => [`${value}%`, 'Marktanteil']}
                                         />
                                         <Legend verticalAlign="bottom" height={36} iconType="circle" />
                                     </PieChart>
