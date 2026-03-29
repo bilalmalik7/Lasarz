@@ -3,7 +3,7 @@
 import { CityPageTemplate } from '@/components/sections/CityPageTemplate';
 import { getCityPageBySlug } from '@/lib/cityPages';
 
-export default function ImmobiliengutachterOsnabrueckPage() {
-    const data = getCityPageBySlug('osnabrueck')!;
+export default function ImmobiliengutachterRheinePage() {
+    const data = getCityPageBySlug('rheine')!;
     return <CityPageTemplate data={data} />;
 }

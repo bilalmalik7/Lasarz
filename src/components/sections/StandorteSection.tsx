@@ -10,6 +10,15 @@ const locations = [
         phone: '+49 (0) 541 - 600 99 220',
         email: 'osnabrueck@lasarz.com',
         isMain: true,
+        customUrl: '/immobiliengutachter-osnabrueck',
+    },
+    {
+        city: 'Münster',
+        address: 'c/o Lasarz Sachverständigenbüro\nMünster',
+        phone: '+49 (0) 541 - 600 99 220',
+        email: 'muenster@lasarz.com',
+        isMain: false,
+        customUrl: '/immobiliengutachter-muenster',
     },
     {
         city: 'Flensburg',
@@ -17,6 +26,31 @@ const locations = [
         phone: '+49 (0) 461 - 167 23 002',
         email: 'flensburg@lasarz.com',
         isMain: false,
+        customUrl: '/immobiliengutachter-flensburg',
+    },
+    {
+        city: 'Bielefeld',
+        address: 'c/o Lasarz Sachverständigenbüro\nBielefeld',
+        phone: '+49 (0) 541 - 600 99 220',
+        email: 'bielefeld@lasarz.com',
+        isMain: false,
+        customUrl: '/immobiliengutachter-bielefeld',
+    },
+    {
+        city: 'Melle',
+        address: 'c/o Lasarz Sachverständigenbüro\nMelle',
+        phone: '+49 (0) 541 - 600 99 220',
+        email: 'melle@lasarz.com',
+        isMain: false,
+        customUrl: '/immobiliengutachter-melle',
+    },
+    {
+        city: 'Rheine',
+        address: 'c/o Lasarz Sachverständigenbüro\nRheine',
+        phone: '+49 (0) 541 - 600 99 220',
+        email: 'rheine@lasarz.com',
+        isMain: false,
+        customUrl: '/immobiliengutachter-rheine',
     },
     {
         city: 'Bünde',
@@ -29,7 +63,7 @@ const locations = [
     {
         city: 'Kirchlengern',
         slug: 'kirchlengern',
-        address: 'Holzhauser Straße 79\n32257 Bünde', // Shared office/area
+        address: 'Holzhauser Straße 79\n32257 Bünde',
         phone: '+49 (0) 5223 7941350',
         email: 'buende@lasarz.com',
         isMain: false,
@@ -138,7 +172,7 @@ export function StandorteSection() {
                                 📍
                             </div>
 
-                            <Link href={loc.slug ? `/standorte/${loc.slug}` : '#'} style={{ textDecoration: 'none' }}>
+                            <Link href={loc.customUrl ? loc.customUrl : (loc.slug ? `/standorte/${loc.slug}` : '#')} style={{ textDecoration: 'none' }}>
                                 <h3 style={{ 
                                     color: loc.isMain ? '#fff' : 'var(--accent-secondary)', 
                                     fontSize: '1.4rem', 
