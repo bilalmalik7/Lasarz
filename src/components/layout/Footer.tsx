@@ -31,12 +31,20 @@ export function Footer() {
             <li><Link href="/leistungen/ankaufberatung">Kaufberatung</Link></li>
             <li><Link href="/leistungen/beleihungswertgutachten">Beleihungswertgutachten</Link></li>
             <li><Link href="/immobilien-abschreibung" style={{ fontWeight: 'bold' }}>Immobilien-Abschreibung</Link></li>
+            <li><Link href="/finanzierungsrechner" style={{ fontWeight: 'bold' }}>Finanzierungsrechner</Link></li>
           </ul>
         </div>
 
         <div>
-          <h3 style={{ marginBottom: 'var(--space-sm)' }}>Immobilien</h3>
+          <h3 style={{ marginBottom: 'var(--space-sm)' }}>Unternehmen & Wissen</h3>
           <ul className="footer-links">
+            <li><Link href="/ueber-uns">Über uns</Link></li>
+            <li><Link href="/prozess">Prozess</Link></li>
+            <li><Link href="/honorar">Honorar</Link></li>
+            <li><Link href="/referenzen">Referenzen</Link></li>
+            <li><Link href="/faq">FAQ</Link></li>
+            <li><Link href="/marktdaten">Marktdaten</Link></li>
+            <li style={{ marginTop: '0.5rem' }}><Link href="/immobilien" style={{ fontWeight: 'bold' }}>Immobilien-Typen</Link></li>
             <li><Link href="/immobilien/wohnimmobilien">Wohnimmobilien</Link></li>
             <li><Link href="/immobilien/gewerbeimmobilien">Gewerbeimmobilien</Link></li>
             <li><Link href="/immobilien/sonderimmobilien">Sonderimmobilien</Link></li>
@@ -48,11 +56,11 @@ export function Footer() {
           <h3 style={{ marginBottom: 'var(--space-sm)', color: 'var(--text-primary)' }}>Kontakt & Standorte</h3>
           <ul className="footer-links" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
             <li><Link href="/kontakt">Osnabrück</Link></li>
-            <li><Link href="/kontakt">Flensburg</Link></li>
-            <li><Link href="/kontakt">Münster</Link></li>
-            <li><Link href="/kontakt">Bielefeld</Link></li>
-            <li><Link href="/kontakt">Melle</Link></li>
-            <li><Link href="/kontakt">Rheine</Link></li>
+            <li><Link href="/immobiliengutachter-flensburg">Flensburg</Link></li>
+            <li><Link href="/immobiliengutachter-muenster">Münster</Link></li>
+            <li><Link href="/immobiliengutachter-bielefeld">Bielefeld</Link></li>
+            <li><Link href="/immobiliengutachter-melle">Melle</Link></li>
+            <li><Link href="/immobiliengutachter-rheine">Rheine</Link></li>
           </ul>
           <ul className="footer-links" style={{ marginTop: '1rem' }}>
             <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><span className="text-accent">📞</span> +49 (0) 541 - 600 99 220</li>

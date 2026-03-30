@@ -48,6 +48,12 @@ export function Header() {
         <nav className="desktop-nav flex gap-md items-center hidden-mobile">
           <div className="dropdown-container">
             <Link href="/immobilien" className="nav-link">Immobilien</Link>
+            <div className="dropdown-menu">
+              <Link href="/immobilien/wohnimmobilien" className="dropdown-item">Wohnimmobilien</Link>
+              <Link href="/immobilien/gewerbeimmobilien" className="dropdown-item">Gewerbeimmobilien</Link>
+              <Link href="/immobilien/sonderimmobilien" className="dropdown-item">Sonderimmobilien</Link>
+              <Link href="/immobilien/grundstuecke-rechte" className="dropdown-item">Grundstücke & Rechte</Link>
+            </div>
           </div>
 
           <div className="dropdown-container">
@@ -64,20 +70,40 @@ export function Header() {
             </div>
           </div>
 
-          <Link href="/ueber-uns" className="nav-link">Über uns</Link>
+          <div className="dropdown-container">
+            <Link href="/ueber-uns" className="nav-link">Über uns</Link>
+            <div className="dropdown-menu">
+              <Link href="/prozess" className="dropdown-item">Prozess</Link>
+              <Link href="/honorar" className="dropdown-item">Honorar</Link>
+              <Link href="/referenzen" className="dropdown-item">Referenzen</Link>
+            </div>
+          </div>
           <Link href="/team" className="nav-link">Team</Link>
           <Link href="/blog" className="nav-link">Blog</Link>
 
           <div className="dropdown-container">
             <Link href="/blog" className="nav-link">Ratgeber</Link>
             <div className="dropdown-menu">
+              <Link href="/marktdaten" className="dropdown-item">Marktdaten</Link>
+              <Link href="/faq" className="dropdown-item">FAQ</Link>
+              <div style={{ borderTop: '1px solid var(--border-color)', margin: '0.5rem 0' }}></div>
               <Link href="/ratgeber/notarkosten" className="dropdown-item">Notarkosten Hauskauf</Link>
               <Link href="/ratgeber/grund-und-boden" className="dropdown-item">Grund und Boden AfA</Link>
               <Link href="/ratgeber/nachbarrecht" className="dropdown-item">Nachbarrecht NDS</Link>
             </div>
           </div>
 
-          <Link href="/kontakt" className="nav-link">Standorte</Link>
+          <div className="dropdown-container">
+            <Link href="/kontakt" className="nav-link">Standorte</Link>
+            <div className="dropdown-menu">
+              <Link href="/kontakt" className="dropdown-item">Osnabrück (HQ)</Link>
+              <Link href="/immobiliengutachter-bielefeld" className="dropdown-item">Bielefeld</Link>
+              <Link href="/immobiliengutachter-flensburg" className="dropdown-item">Flensburg</Link>
+              <Link href="/immobiliengutachter-melle" className="dropdown-item">Melle</Link>
+              <Link href="/immobiliengutachter-muenster" className="dropdown-item">Münster</Link>
+              <Link href="/immobiliengutachter-rheine" className="dropdown-item">Rheine</Link>
+            </div>
+          </div>
           <Link href="/kontakt" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.875rem' }}>
             Kontakt
           </Link>
