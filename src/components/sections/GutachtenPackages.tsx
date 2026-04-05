@@ -2,31 +2,7 @@ import Link from 'next/link';
 
 const packages = [
     {
-        name: 'Kurzgutachten',
-        icon: '📋',
-        color: 'var(--accent-primary)',
-        popular: false,
-        features: [
-            'Präzise Wertermittlung nach ImmoWertV',
-            'Für private Zwecke',
-            'Ortsbegehung durch Sachverständigen',
-            'Schriftliche Abhandlung (ca. 40–60 Seiten)',
-        ],
-    },
-    {
-        name: 'Kaufberatung',
-        icon: '🏠',
-        color: '#0d7a4e',
-        popular: false,
-        features: [
-            'Ortsbegehung durch Sachverständigen',
-            'Beurteilung Gebäudesubstanz und Sanierungsbedarf',
-            'Schriftliche Abhandlung (ca. 40–60 Seiten)',
-            'Ausführliche telefonische Besprechung der Ergebnisse',
-        ],
-    },
-    {
-        name: 'Verkehrswertgutachten §194 BauGB',
+        name: 'Verkehrswertgutachten',
         icon: '⚖️',
         color: 'var(--accent-secondary)',
         popular: true,
@@ -39,17 +15,29 @@ const packages = [
         ],
     },
     {
-        name: 'Beleihungswertgutachten',
-        icon: '🏦',
-        color: '#7c3aed',
+        name: 'Restnutzungsdauergutachten',
+        icon: '⏳',
+        color: '#0d7a4e',
         popular: false,
         features: [
-            'Präzise Wertermittlung nach BelWertV',
-            'Von Banken anerkannt',
+            'Kürzere Nutzungsdauer nachweisen',
+            'Höhere AfA und Steuerersparnis für Vermieter',
             'Ortsbegehung durch Sachverständigen',
-            'Ausführliche schriftliche Abhandlung (ca. 40–60 Seiten)',
+            'Schriftliche und fundierte Abhandlung',
         ],
     },
+    {
+        name: 'Kurzgutachten',
+        icon: '📋',
+        color: 'var(--accent-primary)',
+        popular: false,
+        features: [
+            'Präzise Wertermittlung nach ImmoWertV',
+            'Für private Zwecke und außergerichtliche Einigung',
+            'Ortsbegehung durch Sachverständigen',
+            'Schriftliche Abhandlung (ca. 15–20 Seiten)',
+        ],
+    }
 ];
 
 export function GutachtenPackages() {

@@ -71,23 +71,49 @@ const locations = [
 ];
 
 const gutachterList = [
-    'Immobiliengutachter Münster', 'Immobiliengutachter Osnabrück', 'Immobiliengutachter Bünde',
-    'Immobiliengutachter Ibbenbüren', 'Immobiliengutachter Melle', 'Immobiliengutachter Lingen',
-    'Immobiliengutachter Emsdetten', 'Immobiliengutachter Steinfurt', 'Immobiliengutachter Gütersloh',
-    'Immobiliengutachter Bramsche', 'Immobiliengutachter Borgholzhausen', 'Immobiliengutachter Georgsmarienhütte',
-    'Immobiliengutachter Löhne', 'Immobiliengutachter Halle (Westf.)', 'Immobiliengutachter Warendorf',
-    'Immobiliengutachter Bad Oeynhausen', 'Immobiliengutachter Bad Iburg', 'Immobiliengutachter Bad Bentheim',
-    'Immobiliengutachter Bad Laer', 'Immobiliengutachter Kirchlengern',
+    { label: 'Immobiliengutachter Münster', url: '/immobiliengutachter-muenster' },
+    { label: 'Immobiliengutachter Osnabrück', url: '/immobiliengutachter-osnabrueck' },
+    { label: 'Immobiliengutachter Bünde', url: '/immobiliengutachter-buende' },
+    { label: 'Immobiliengutachter Ibbenbüren', url: '/immobiliengutachter-ibbenbueren' },
+    { label: 'Immobiliengutachter Melle', url: '/immobiliengutachter-melle' },
+    { label: 'Immobiliengutachter Lingen', url: '/immobiliengutachter-lingen' },
+    { label: 'Immobiliengutachter Emsdetten', url: '/immobiliengutachter-emsdetten' },
+    { label: 'Immobiliengutachter Steinfurt', url: '/immobiliengutachter-steinfurt' },
+    { label: 'Immobiliengutachter Gütersloh', url: '/immobiliengutachter-guetersloh' },
+    { label: 'Immobiliengutachter Bramsche', url: '/immobiliengutachter-bramsche' },
+    { label: 'Immobiliengutachter Borgholzhausen', url: '/immobiliengutachter-borgholzhausen' },
+    { label: 'Immobiliengutachter Georgsmarienhütte', url: '/immobiliengutachter-georgsmarienhütte' },
+    { label: 'Immobiliengutachter Löhne', url: '/immobiliengutachter-loehne' },
+    { label: 'Immobiliengutachter Halle (Westf.)', url: '/immobiliengutachter-halle-westf' },
+    { label: 'Immobiliengutachter Warendorf', url: '/immobiliengutachter-warendorf' },
+    { label: 'Immobiliengutachter Bad Oeynhausen', url: '/immobiliengutachter-bad-oeynhausen' },
+    { label: 'Immobiliengutachter Bad Iburg', url: '/immobiliengutachter-bad-iburg' },
+    { label: 'Immobiliengutachter Bad Bentheim', url: '/immobiliengutachter-bad-bentheim' },
+    { label: 'Immobiliengutachter Bad Laer', url: '/immobiliengutachter-bad-laer' },
+    { label: 'Immobiliengutachter Kirchlengern', url: '/immobiliengutachter-kirchlengern' },
 ];
 
 const bewertungList = [
-    'Immobilienbewertung Bad Rothenfelde', 'Immobilienbewertung Dissen am Teutoburger Wald',
-    'Immobilienbewertung Versmold', 'Immobilienbewertung Westerkappeln', 'Immobilienbewertung Hörstel',
-    'Immobilienbewertung Sassenberg', 'Immobilienbewertung Spelle', 'Immobilienbewertung Nordhorn',
-    'Immobilienbewertung Wallenhorst', 'Immobilienbewertung Lotte', 'Immobilienbewertung Oelde',
-    'Immobilienbewertung Detmold', 'Immobilienbewertung Neuenkirchen', 'Immobilienbewertung Lengerich',
-    'Immobilienbewertung Minden', 'Immobilienbewertung Hasbergen', 'Immobilienbewertung Oldenburg',
-    'Immobilienbewertung Flensburg', 'Immobilienbewertung Bünde', 'Immobilienbewertung Kirchlengern',
+    { label: 'Immobilienbewertung Bad Rothenfelde', url: '/immobilienbewertung-bad-rothenfelde' },
+    { label: 'Immobilienbewertung Dissen am Teutoburger Wald', url: '/immobilienbewertung-dissen' },
+    { label: 'Immobilienbewertung Versmold', url: '/immobilienbewertung-versmold' },
+    { label: 'Immobilienbewertung Westerkappeln', url: '/immobilienbewertung-westerkappeln' },
+    { label: 'Immobilienbewertung Hörstel', url: '/immobilienbewertung-hoerstel' },
+    { label: 'Immobilienbewertung Sassenberg', url: '/immobilienbewertung-sassenberg' },
+    { label: 'Immobilienbewertung Spelle', url: '/immobilienbewertung-spelle' },
+    { label: 'Immobilienbewertung Nordhorn', url: '/immobilienbewertung-nordhorn' },
+    { label: 'Immobilienbewertung Wallenhorst', url: '/immobilienbewertung-wallenhorst' },
+    { label: 'Immobilienbewertung Lotte', url: '/immobilienbewertung-lotte' },
+    { label: 'Immobilienbewertung Oelde', url: '/immobilienbewertung-oelde' },
+    { label: 'Immobilienbewertung Detmold', url: '/immobilienbewertung-detmold' },
+    { label: 'Immobilienbewertung Neuenkirchen', url: '/immobilienbewertung-neuenkirchen' },
+    { label: 'Immobilienbewertung Lengerich', url: '/immobilienbewertung-lengerich' },
+    { label: 'Immobilienbewertung Minden', url: '/immobilienbewertung-minden' },
+    { label: 'Immobilienbewertung Hasbergen', url: '/immobilienbewertung-hasbergen' },
+    { label: 'Immobilienbewertung Oldenburg', url: '/immobilienbewertung-oldenburg' },
+    { label: 'Immobilienbewertung Flensburg', url: '/immobiliengutachter-flensburg' },
+    { label: 'Immobilienbewertung Bünde', url: '/immobilienbewertung-buende' },
+    { label: 'Immobilienbewertung Kirchlengern', url: '/immobilienbewertung-kirchlengern' },
 ];
 
 export function StandorteSection() {
@@ -274,9 +300,12 @@ export function StandorteSection() {
                             </h4>
                             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                                 {gutachterList.map((item, i) => (
-                                    <li key={i} style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                    <li key={i} style={{ fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                         <span style={{ color: 'var(--accent-primary)', fontSize: '0.7rem' }}>●</span>
-                                        {item}
+                                        <Link href={item.url} style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}
+                                            onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-primary)')}
+                                            onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+                                        >{item.label}</Link>
                                     </li>
                                 ))}
                             </ul>
@@ -288,9 +317,12 @@ export function StandorteSection() {
                             </h4>
                             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                                 {bewertungList.map((item, i) => (
-                                    <li key={i} style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                    <li key={i} style={{ fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                         <span style={{ color: 'var(--accent-primary)', fontSize: '0.7rem' }}>●</span>
-                                        {item}
+                                        <Link href={item.url} style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}
+                                            onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-primary)')}
+                                            onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+                                        >{item.label}</Link>
                                     </li>
                                 ))}
                             </ul>

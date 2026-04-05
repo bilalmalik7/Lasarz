@@ -172,7 +172,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                                 transition={{ delay: 0.5, duration: 0.6 }}
                                 style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-                                {['✓ DIA zertifiziert', '✓ BVS zertifiziert', '✓ §36 GewO', '✓ Gerichtsverwertbar'].map((t) => (
+                                {['✓ DIA zertifiziert', '✓ BVS zertifiziert', '✓ Unabhängig', '✓ Gerichtsverwertbar'].map((t) => (
                                     <span key={t} style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.65)', fontWeight: 600 }}>{t}</span>
                                 ))}
                             </motion.div>
@@ -194,14 +194,14 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                         justifyContent: 'center', fontSize: '1.5rem' }}>🏠</div>
                                     <div>
                                         <div style={{ color: '#fff', fontWeight: 700, fontSize: '1rem' }}>Marc-André Lasarz</div>
-                                        <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>Öff. best. Sachverständiger</div>
+                                        <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>Dipl.-Sachverständiger (DIA)</div>
                                     </div>
                                 </div>
 
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2rem' }}>
                                     {[
                                         { label: 'Standort', value: data.name },
-                                        { label: 'Zertifikate', value: 'DIA · BVS · §36 GewO' },
+                                        { label: 'Zertifikate', value: 'DIAZert · BVS' },
                                         { label: 'Erfahrung', value: '15+ Jahre · 3.500+ Gutachten' },
                                         { label: 'Bewertung', value: '⭐⭐⭐⭐⭐ (4.9/5)' },
                                     ].map((row) => (

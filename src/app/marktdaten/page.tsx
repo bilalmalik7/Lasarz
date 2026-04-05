@@ -40,8 +40,11 @@ export default function MarketDataPage() {
                 <div className="container">
                     <div className="glass-card" style={{ textAlign: 'center', padding: '4rem 2rem', borderTop: '4px solid var(--accent-primary)' }}>
                         <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Ist Ihre Einzelimmobilie den Marktschnitt wert?</h2>
+                        <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1.5rem', fontStyle: 'italic', maxWidth: '700px', margin: '0 auto 1.5rem', lineHeight: 1.5 }}>
+                            * Die angezeigten Daten basieren auf aggregierten Auswertungen der örtlichen Gutachterausschüsse für Grundstückswerte, aktuellen Marktberichten sowie anonymisierten, regionalen Kauffällen.
+                        </p>
                         <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', marginBottom: '2.5rem', maxWidth: '700px', margin: '0 auto 2.5rem', lineHeight: 1.6 }}>
-                            Dashboards zeigen Durchschnittswerte (§ 193 BauGB), doch Ihre Immobilie ist einzigartig. Um den wahren Verkehrswert abzubilden, bedarf es einer Einzelfallprüfung durch einen zertifizierten Gutachter.
+                            Dashboards zeigen Durchschnittswerte (§ 194 BauGB), doch Ihre Immobilie ist einzigartig. Um den wahren Verkehrswert abzubilden, bedarf es einer Einzelfallprüfung durch einen zertifizierten Gutachter.
                         </p>
                         <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                             <Link href="/kontakt" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>Individuelles Gutachten anfragen</Link>

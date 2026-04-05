@@ -46,15 +46,7 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="desktop-nav flex gap-md items-center hidden-mobile">
-          <div className="dropdown-container">
-            <Link href="/immobilien" className="nav-link">Immobilien</Link>
-            <div className="dropdown-menu">
-              <Link href="/immobilien/wohnimmobilien" className="dropdown-item">Wohnimmobilien</Link>
-              <Link href="/immobilien/gewerbeimmobilien" className="dropdown-item">Gewerbeimmobilien</Link>
-              <Link href="/immobilien/sonderimmobilien" className="dropdown-item">Sonderimmobilien</Link>
-              <Link href="/immobilien/grundstuecke-rechte" className="dropdown-item">Grundstücke & Rechte</Link>
-            </div>
-          </div>
+
 
           <div className="dropdown-container">
             <Link href="/ueber-uns" className="nav-link">Leistungen</Link>
@@ -66,7 +58,6 @@ export function Header() {
               <Link href="/leistungen/zugewinn" className="dropdown-item">Zugewinn / Ehe</Link>
               <Link href="/leistungen/betreuung" className="dropdown-item">Betreuung</Link>
               <Link href="/immobilien-abschreibung" className="dropdown-item" style={{ fontWeight: 'bold', borderTop: '1px solid var(--border-color)', marginTop: '0.5rem', paddingTop: '0.5rem' }}>Immobilien-Abschreibung</Link>
-              <Link href="/finanzierungsrechner" className="dropdown-item" style={{ fontWeight: 'bold' }}>Finanzierungsrechner</Link>
             </div>
           </div>
 
@@ -130,7 +121,7 @@ export function Header() {
             overflowY: 'auto'
           }}
         >
-          <Link href="/immobilien" className="nav-link" style={{ fontSize: '1.5rem' }} onClick={toggleMenu}>Immobilien</Link>
+
           <Link href="/ueber-uns" className="nav-link" style={{ fontSize: '1.5rem' }} onClick={toggleMenu}>Leistungen</Link>
           <Link href="/team" className="nav-link" style={{ fontSize: '1.5rem' }} onClick={toggleMenu}>Team</Link>
           <Link href="/blog" className="nav-link" style={{ fontSize: '1.5rem' }} onClick={toggleMenu}>Ratgeber</Link>

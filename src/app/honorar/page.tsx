@@ -60,8 +60,8 @@ export default function HonorarPage() {
                         >
                             <h3 style={{ fontSize: '1.8rem', color: 'var(--text-primary)', marginBottom: '1rem' }}>Kurzgutachten</h3>
                             <p style={{ color: 'var(--text-secondary)', height: '60px' }}>Ideal für den außergerichtlichen Hausverkauf oder den internen Familienkreis.</p>
-                            <div style={{ fontSize: '3rem', fontWeight: 'bold', color: 'var(--accent-secondary)', margin: '1.5rem 0' }}>
-                                ab 750 € <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>*zzgl. MwSt.</span>
+                            <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: 'var(--accent-secondary)', margin: '1.5rem 0' }}>
+                                Abrechnung nach Aufwand oder Festpreis
                             </div>
                             <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2rem 0', flexGrow: 1 }}>
                                 {[
@@ -90,8 +90,8 @@ export default function HonorarPage() {
                             <div style={{ backgroundColor: 'var(--accent-primary)', color: 'white', padding: '0.4rem 1rem', borderRadius: '50px', fontSize: '0.8rem', fontWeight: 'bold', alignSelf: 'flex-start', marginBottom: '1rem' }}>AM BELIEBTESTEN</div>
                             <h3 style={{ fontSize: '1.8rem', color: 'var(--accent-secondary)', marginBottom: '1rem' }}>Verkehrswertgutachten</h3>
                             <p style={{ color: 'var(--text-secondary)', height: 'height: auto' }}>Das vollumfängliche Gutachten (nach § 194 BauGB) für Finanzämter und Gerichte.</p>
-                            <div style={{ fontSize: '3rem', fontWeight: 'bold', color: 'var(--accent-secondary)', margin: '1.5rem 0' }}>
-                                ab 1.800 € <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>*zzgl. MwSt.</span>
+                            <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: 'var(--accent-secondary)', margin: '1.5rem 0' }}>
+                                Abrechnung nach BVS-Honorarrichtlinie
                             </div>
                             <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2rem 0', flexGrow: 1 }}>
                                 {[
@@ -122,9 +122,9 @@ export default function HonorarPage() {
                             Die Honorare für Immobiliengutachter in Osnabrück können sehr unterschiedlich ausfallen. Früher war die Kostenberechnung strikt an die <strong>HOAI</strong> (Honorarordnung für Architekten und Ingenieure) gebunden. Heute sind die Honorare frei verhandelbar.
                         </p>
                         
-                        <h3 style={{ fontSize: '1.5rem', color: 'var(--text-primary)', margin: '2rem 0 1rem' }}>Honorar nach Verkehrswert</h3>
+                        <h3 style={{ fontSize: '1.5rem', color: 'var(--text-primary)', margin: '2rem 0 1rem' }}>BVS-Honorarrichtlinie</h3>
                         <p style={{ marginBottom: '1.5rem' }}>
-                            Ein sehr transparentes und häufig gewähltes Modell ist die Berechnung des Gutachterhonorars auf Basis des ermittelten Verkehrswerts der Immobilie (§ 194 BauGB). Der Gedanke dahinter: Eine Millionen-Villa verlangt dem Gutachter ein wesentlich höheres Haftungsrisiko und meist eine deutlich komplexere Recherche ab als eine Standard-Eigentumswohnung. Hierzu existieren gängige Honorartabellen der Fachverbände.
+                            Unsere Verkehrswertgutachten werden fair und transparent nach der Honorarrichtlinie des Bundesverbandes öffentlich bestellter und vereidigter sowie qualifizierter Sachverständiger e.V. (BVS) abgerechnet. Dabei richtet sich das empfohlene Honorar maßgeblich nach dem ermittelten Verkehrswert des Bewertungsobjekts, aber auch nach dem individuellen Recherche- und Ausarbeitungsaufwand.
                         </p>
 
                         <h3 style={{ fontSize: '1.5rem', color: 'var(--text-primary)', margin: '2rem 0 1rem' }}>Pauschalhonorar ("Festpreis")</h3>

@@ -28,6 +28,18 @@ const faqs = [
     {
         q: "Wir lassen uns scheiden. Benötigen wir zwei getrennte Gutachten?",
         a: "Nein! Im Idealfall beauftragen Sie uns als neutralen Sachverständigen gemeinsam für ein so genanntes 'Schiedsgutachten'. Das spart Ihnen immense Kosten, vermeidet jahrelange Gerichtsstreitigkeiten und liefert eine neutrale Basis für den Zugewinnausgleich."
+    },
+    {
+        q: "Welche Qualifizierung hat ein Dipl.-Sachverständiger (DIA) für Immobilienbewertung?",
+        a: "Ein Dipl.-Sachverständiger (DIA) hat ein spezielles, anerkanntes Studium an der Deutschen Immobilien-Akademie absolviert und verfügt über ein Höchstmaß an Fachexpertise. Zudem unterliegen zertifizierte Sachverständige (DIAZert) strengen Qualitätskontrollen. Dies garantiert ein objektives, unabhängiges und marktgerechtes Gutachten."
+    },
+    {
+        q: "Warum sollte ich keinen Immobilienmakler für die Wertermittlung beauftragen?",
+        a: "Immobilienmakler bieten oft kostenlose Schätzungen an, die jedoch vor allem auf den schnellen Verkauf abzielen. Sie sind oft nicht neutral oder gerichtlich anerkannt. Ein unabhängiges Sachverständigenbüro arbeitet hingegen weisungsfrei, transparent und rechtssicher (z.B. für Finanzämter oder Gerichte) auf Basis gesetzlich normierter Verfahren."
+    },
+    {
+        q: "Können Sie auch Sonderimmobilien oder Spezialfälle bewerten?",
+        a: "Ja, als qualifiziertes Sachverständigenbüro bewerten wir neben klassischen Ein- und Mehrfamilienhäusern auch komplexe Gewerbeimmobilien, Rechte (wie Erbbaurechte, Wohnrechte) und Belastungen sowie Spezialimmobilien. Die entsprechenden Verfahren sind uns durch unsere Ausbildung bestens vertraut."
     }
 ];
 

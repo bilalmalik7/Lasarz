@@ -31,7 +31,6 @@ export function Footer() {
             <li><Link href="/leistungen/ankaufberatung">Kaufberatung</Link></li>
             <li><Link href="/leistungen/beleihungswertgutachten">Beleihungswertgutachten</Link></li>
             <li><Link href="/immobilien-abschreibung" style={{ fontWeight: 'bold' }}>Immobilien-Abschreibung</Link></li>
-            <li><Link href="/finanzierungsrechner" style={{ fontWeight: 'bold' }}>Finanzierungsrechner</Link></li>
           </ul>
         </div>
 
@@ -44,11 +43,7 @@ export function Footer() {
             <li><Link href="/referenzen">Referenzen</Link></li>
             <li><Link href="/faq">FAQ</Link></li>
             <li><Link href="/marktdaten">Marktdaten</Link></li>
-            <li style={{ marginTop: '0.5rem' }}><Link href="/immobilien" style={{ fontWeight: 'bold' }}>Immobilien-Typen</Link></li>
-            <li><Link href="/immobilien/wohnimmobilien">Wohnimmobilien</Link></li>
-            <li><Link href="/immobilien/gewerbeimmobilien">Gewerbeimmobilien</Link></li>
-            <li><Link href="/immobilien/sonderimmobilien">Sonderimmobilien</Link></li>
-            <li><Link href="/immobilien/grundstuecke-rechte">Grundstücke & Rechte</Link></li>
+
           </ul>
         </div>
 

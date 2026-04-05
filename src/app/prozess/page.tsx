@@ -7,28 +7,33 @@ import Link from 'next/link';
 const steps = [
     {
         num: '01',
-        title: 'Kostenloses Erstgespräch',
-        desc: 'Am Telefon oder digital besprechen wir Ihr Anliegen (Verkauf, Erbschaft, Scheidung) und finden heraus, ob ein Kurzgutachten oder ein vollumfängliches Verkehrswertgutachten für Sie das Richtige ist. Sie erhalten ein unverbindliches Festpreisangebot.'
+        title: 'Anfrage & Erstgespräch',
+        desc: 'Am Telefon oder digital besprechen wir Ihr Anliegen (Verkauf, Erbschaft, Scheidung) und finden heraus, ob ein Kurzgutachten oder ein vollumfängliches Gutachten für Sie das Richtige ist.'
     },
     {
         num: '02',
-        title: 'Unterlagenbesorgung',
-        desc: 'Ein Gutachten ist nur so gut wie seine Datenbasis. Wir helfen Ihnen, alle notwendigen Unterlagen in Osnabrück und Umgebung (Grundbuchauszug, Flurkarte, Bauzeichnungen) schnell und stressfrei einzuholen.'
+        title: 'Auftrag',
+        desc: 'Sie erhalten ein transparentes Festpreisangebot für unsere Leistungen. Mit Ihrer verbindlichen Beauftragung starten wir den Bewertungsprozess.'
     },
     {
         num: '03',
-        title: 'Der Ortstermin (Begehung)',
-        desc: 'Ich komme persönlich zu Ihrer Immobilie. Bei der ca. einstündigen detaillierten Inspektion werden alle wertbeeinflussenden Bauschäden, Modernisierungen und Besonderheiten fotografisch und schriftlich dokumentiert.'
+        title: 'Unterlagen besorgen',
+        desc: 'Wir sichten die vorhandenen Dokumente (Grundbuchauszug, Flurkarte, Bauzeichnungen etc.) und unterstützen Sie bei der Einholung fehlender Papiere bei den zuständigen Ämtern.'
     },
     {
         num: '04',
-        title: 'Marktrecherche & Wertermittlung',
-        desc: 'Im Büro findet die eigentliche Arbeit statt: Unter Anwendung strenger normierter Verfahren (Sachwert-, Ertragswert- oder Vergleichswertverfahren) kombiniert mit lokalen Marktdaten aus dem Gutachterausschuss Osnabrück berechnen wir den Wert.'
+        title: 'Ortstermin (Begehung)',
+        desc: 'Wir begehen das Objekt gemeinsam. Zustand, Ausstattungsmerkmale, Modernisierungen sowie etwaige Bauschäden werden von uns fachkundig erfasst und fotografisch dokumentiert.'
     },
     {
         num: '05',
-        title: 'Gutachten-Übergabe',
-        desc: 'Sie erhalten Ihr schriftliches, gerichtsfestes Verkehrswertgutachten (ca. 50 Seiten geballtes Fachwissen) als PDF oder gebundenes Exemplar. Wir besprechen das Ergebnis detailliert, damit keine Fragen offenbleiben.'
+        title: 'Marktrecherche & Erstellung des Verkehrswertgutachtens',
+        desc: 'Unter Anwendung normierter Bewertungsverfahren (Sachwert-, Ertragswert-, Vergleichswertverfahren) und der Analyse von Marktdaten des jeweiligen Gutachterausschusses werten wir alle Fakten aus.'
+    },
+    {
+        num: '06',
+        title: 'Gutachten',
+        desc: 'Sie erhalten Ihr fertiges, rechtssicheres Gutachten als gebundenes Exemplar und/oder als PDF. Alle Ergebnisse erläutern wir Ihnen gerne ausführlich.'
     }
 ];
 
