@@ -1,7 +1,3 @@
-'use client';
-
-import Head from 'next/head';
-
 export const metadata = {
   title: 'Verkehrswertgutachten nach BelWertV | Rechtsicherheit für Ihre Immobilie',
   description: 'Spezialisierte Verkehrswertgutachten nach BelWertV-Kriterien für maximale Rechtsicherheit in Osnabrück und Umgebung.',
@@ -65,12 +61,10 @@ export default function VerkehrswertgutachtenBelWertVPage() {
 
   return (
     <main style={{ paddingTop: '100px', backgroundColor: 'var(--bg-primary)' }}>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </Head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
 
       {/* Hero Section */}
       <section style={{ backgroundColor: 'var(--bg-secondary)', padding: '80px 0', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
