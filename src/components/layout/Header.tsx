@@ -59,6 +59,7 @@ export function Header() {
               <Link href="/leistungen/zugewinn" className="dropdown-item">Zugewinn / Ehe</Link>
               <Link href="/leistungen/betreuung" className="dropdown-item">Betreuung</Link>
               <Link href="/immobilien-abschreibung" className="dropdown-item" style={{ fontWeight: 'bold', borderTop: '1px solid var(--border-color)', marginTop: '0.5rem', paddingTop: '0.5rem' }}>Immobilien-Abschreibung</Link>
+              <Link href="/immobilienwert" className="dropdown-item" style={{ fontWeight: 'bold', borderTop: '1px solid var(--border-color)', marginTop: '0.5rem', paddingTop: '0.5rem' }}>Immobilienwert Rechner</Link>
             </div>
           </div>
 

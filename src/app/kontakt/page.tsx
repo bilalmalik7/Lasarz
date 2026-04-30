@@ -62,7 +62,26 @@ const structuredData = {
             "contactType": "technical support",
             "areaServed": "DE",
             "availableLanguage": ["German"]
+        },
+        {
+            "@type": "ContactPoint",
+            "telephone": "+49 (0) 151 23456789",
+            "contactType": "customer service",
+            "areaServed": "DE",
+            "availableLanguage": ["German"]
         }
+    ],
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Katharinenstraße 111",
+        "addressLocality": "Osnabrück",
+        "postalCode": "49078",
+        "addressCountry": "DE"
+    },
+    "sameAs": [
+        "https://www.facebook.com/lasarz",
+        "https://www.instagram.com/lasarz",
+        "https://www.linkedin.com/company/lasarz"
     ]
 };
 

@@ -32,6 +32,7 @@ export function Footer() {
             <li><Link href="/leistungen/ankaufberatung">Kaufberatung</Link></li>
             <li><Link href="/leistungen/beleihungswertgutachten">Beleihungswertgutachten</Link></li>
             <li><Link href="/immobilien-abschreibung" style={{ fontWeight: 'bold' }}>Immobilien-Abschreibung</Link></li>
+            <li><Link href="/immobilienwert" style={{ fontWeight: 'bold' }}>Immobilienwert Rechner</Link></li>
           </ul>
         </div>
 

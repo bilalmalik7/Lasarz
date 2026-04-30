@@ -413,6 +413,38 @@ a {
   box-shadow: 0 0 0 2px var(--accent-glow);
 }
 
+/* Mobile-specific form adjustments */
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: var(--space-sm);
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+  }
+  
+  .btn {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .glass-card {
+    padding: var(--space-sm);
+  }
+}
+
 /* Legacy components migration for clone */
 .footer {
   border-top: 1px solid var(--border-color);

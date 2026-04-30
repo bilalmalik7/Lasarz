@@ -76,7 +76,8 @@ export default function KontaktContent() {
                                 padding: '2rem', 
                                 borderRadius: '8px', 
                                 marginBottom: '2rem',
-                                border: '1px solid rgba(26, 117, 141, 0.2)'
+                                border: '1px solid rgba(26, 117, 141, 0.2)',
+                                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
                             }}>
                                 <h2 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '1rem' }}>Kostenlose Beratung</h2>
                                 <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
@@ -86,7 +87,7 @@ export default function KontaktContent() {
                                 <button 
                                     onClick={() => document.getElementById('consultation-form')?.scrollIntoView({ behavior: 'smooth' })}
                                     className="btn btn-primary"
-                                    style={{ padding: '0.75rem 1.5rem' }}
+                                    style={{ padding: '0.75rem 1.5rem', width: '100%' }}
                                 >
                                     Jetzt Termin vereinbaren
                                 </button>
@@ -98,7 +99,8 @@ export default function KontaktContent() {
                                 padding: '2rem', 
                                 borderRadius: '8px', 
                                 marginBottom: '2rem',
-                                border: '1px solid rgba(37, 211, 102, 0.2)'
+                                border: '1px solid rgba(37, 211, 102, 0.2)',
+                                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
                             }}>
                                 <h2 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '1rem' }}>Kontakt per WhatsApp</h2>
                                 <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
@@ -113,7 +115,9 @@ export default function KontaktContent() {
                                         padding: '0.75rem 1.5rem',
                                         display: 'inline-flex',
                                         alignItems: 'center',
-                                        gap: '0.5rem'
+                                        gap: '0.5rem',
+                                        width: '100%',
+                                        justifyContent: 'center'
                                     }}
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -130,7 +134,8 @@ export default function KontaktContent() {
                                 padding: '2rem', 
                                 borderRadius: '8px', 
                                 border: '1px solid var(--border-color)',
-                                marginBottom: '2rem'
+                                marginBottom: '2rem',
+                                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
                             }}>
                                 <h2 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '1rem' }}>Rückruf anfordern</h2>
                                 <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
@@ -140,7 +145,7 @@ export default function KontaktContent() {
                                     <button 
                                         onClick={() => setShowCallbackForm(true)}
                                         className="btn btn-secondary"
-                                        style={{ padding: '0.75rem 1.5rem' }}
+                                        style={{ padding: '0.75rem 1.5rem', width: '100%' }}
                                     >
                                         Rückruf anfordern
                                     </button>
@@ -164,7 +169,7 @@ export default function KontaktContent() {
                                             <button 
                                                 type="submit" 
                                                 className="btn btn-primary" 
-                                                style={{ padding: '0.75rem 1.5rem' }}
+                                                style={{ padding: '0.75rem 1.5rem', width: '100%' }}
                                             >
                                                 Rückruf anfordern
                                             </button>
@@ -172,7 +177,7 @@ export default function KontaktContent() {
                                                 type="button" 
                                                 onClick={() => setShowCallbackForm(false)}
                                                 className="btn btn-outline"
-                                                style={{ padding: '0.75rem 1.5rem' }}
+                                                style={{ padding: '0.75rem 1.5rem', width: '100%' }}
                                             >
                                                 Abbrechen
                                             </button>
@@ -258,7 +263,7 @@ export default function KontaktContent() {
                                     <button 
                                         type="submit" 
                                         className="btn btn-primary" 
-                                        style={{ marginTop: '1rem' }}
+                                        style={{ marginTop: '1rem', width: '100%' }}
                                         disabled={isSubmitting}
                                     >
                                         {isSubmitting ? 'Senden...' : 'Nachricht senden'}
