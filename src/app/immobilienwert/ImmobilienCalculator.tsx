@@ -33,13 +33,13 @@ export default function ImmobilienCalculator() {
     ];
 
     // Validation function
-    const validateEmail = (email) => {
+    const validateEmail = (email: string) => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     };
 
     // Handle form submission
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         
         if (!validateEmail(email)) {
