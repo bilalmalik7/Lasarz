@@ -15,6 +15,7 @@ import { MoreServicesSection } from '@/components/sections/MoreServicesSection';
 import { StandorteSection } from '@/components/sections/StandorteSection';
 import { FAQ } from '@/components/sections/FAQ';
 import { AppointmentBooking } from '@/components/sections/AppointmentBooking';
+import { Contact } from '@/components/sections/Contact';
 
 export default function Home() {
   return (
