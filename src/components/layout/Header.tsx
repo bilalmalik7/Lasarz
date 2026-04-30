@@ -52,6 +52,7 @@ export function Header() {
             <Link href="/ueber-uns" className="nav-link">Leistungen</Link>
             <div className="dropdown-menu">
               <Link href="/leistungen/verkehrswertgutachten" className="dropdown-item">Verkehrswertgutachten</Link>
+              <Link href="/verkehrswertgutachten-belwertv" className="dropdown-item">Verkehrswertgutachten nach BelWertV</Link>
               <Link href="/leistungen/ankaufberatung" className="dropdown-item">Ankaufberatung</Link>
               <Link href="/leistungen/erbbaurecht" className="dropdown-item">Erbbaurecht</Link>
               <Link href="/leistungen/erbauseinandersetzung" className="dropdown-item">Erbauseinandersetzung</Link>
@@ -76,6 +77,7 @@ export function Header() {
             <Link href="/blog" className="nav-link">Ratgeber</Link>
             <div className="dropdown-menu">
               <Link href="/marktdaten" className="dropdown-item">Marktdaten</Link>
+              <Link href="/marktberichte-immobilien-osnabrueck" className="dropdown-item">Marktberichte Osnabrück</Link>
               <Link href="/faq" className="dropdown-item">FAQ</Link>
               <div style={{ borderTop: '1px solid var(--border-color)', margin: '0.5rem 0' }}></div>
               <Link href="/ratgeber/notarkosten" className="dropdown-item">Notarkosten Hauskauf</Link>
@@ -125,6 +127,7 @@ export function Header() {
           <Link href="/ueber-uns" className="nav-link" style={{ fontSize: '1.5rem' }} onClick={toggleMenu}>Leistungen</Link>
           <Link href="/team" className="nav-link" style={{ fontSize: '1.5rem' }} onClick={toggleMenu}>Team</Link>
           <Link href="/blog" className="nav-link" style={{ fontSize: '1.5rem' }} onClick={toggleMenu}>Ratgeber</Link>
+          <Link href="/immobilienbewertung-scheidung" className="nav-link" style={{ fontSize: '1.5rem' }} onClick={toggleMenu}>Immobilienbewertung Scheidung</Link>
           <Link href="/kontakt" className="nav-link" style={{ fontSize: '1.5rem' }} onClick={toggleMenu}>Kontakt</Link>
           <Link href="/kontakt" className="btn btn-primary" style={{ width: '100%', maxWidth: '280px' }} onClick={toggleMenu}>
             Kostenlose Beratung

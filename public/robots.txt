@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: 
+
+# Sitemaps
+Sitemap: https://lasarz.com/sitemap.xml
+
+# Directories to allow
+Allow: /images/
+Allow: /assets/
+
+# Crawl-delay
+Crawl-delay: 10

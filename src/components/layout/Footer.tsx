@@ -27,6 +27,7 @@ export function Footer() {
           <h3 style={{ marginBottom: 'var(--space-sm)' }}>Leistungen</h3>
           <ul className="footer-links">
             <li><Link href="/leistungen/verkehrswertgutachten">Verkehrswertgutachten</Link></li>
+            <li><Link href="/verkehrswertgutachten-belwertv">Verkehrswertgutachten nach BelWertV</Link></li>
             <li><Link href="/leistungen/kurzgutachten">Kurzgutachten</Link></li>
             <li><Link href="/leistungen/ankaufberatung">Kaufberatung</Link></li>
             <li><Link href="/leistungen/beleihungswertgutachten">Beleihungswertgutachten</Link></li>
@@ -43,7 +44,8 @@ export function Footer() {
             <li><Link href="/referenzen">Referenzen</Link></li>
             <li><Link href="/faq">FAQ</Link></li>
             <li><Link href="/marktdaten">Marktdaten</Link></li>
-
+            <li><Link href="/marktberichte-immobilien-osnabrueck">Marktberichte Osnabrück</Link></li>
+            <li><Link href="/immobilienbewertung-scheidung">Immobilienbewertung Scheidung</Link></li>
           </ul>
         </div>
 
