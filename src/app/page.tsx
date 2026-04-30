@@ -14,7 +14,7 @@ import { Testimonials } from '@/components/sections/Testimonials';
 import { MoreServicesSection } from '@/components/sections/MoreServicesSection';
 import { StandorteSection } from '@/components/sections/StandorteSection';
 import { FAQ } from '@/components/sections/FAQ';
-import { Contact } from '@/components/sections/Contact';
+import { AppointmentBooking } from '@/components/sections/AppointmentBooking';
 
 export default function Home() {
   return (
@@ -66,7 +66,10 @@ export default function Home() {
       {/* 15. FAQ */}
       <FAQ />
 
-      {/* 16. Contact form */}
+      {/* 16. Appointment Booking */}
+      <AppointmentBooking />
+
+      {/* 17. Contact form */}
       <Contact />
     </main>
   );

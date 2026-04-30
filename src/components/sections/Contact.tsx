@@ -30,6 +30,20 @@ export function Contact() {
                                 <span className="text-accent" style={{ marginRight: '0.5rem' }}>📍</span> Katharinenstraße 111, 49078 Osnabrück
                             </div>
                         </div>
+                        
+                        <div style={{ marginTop: 'var(--space-md)' }}>
+                            <h3 style={{ fontSize: '1.25rem', color: 'var(--accent-secondary)', marginBottom: '0.5rem' }}>Termin vereinbaren</h3>
+                            <p style={{ color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
+                                Buchen Sie einen Termin für eine persönliche Beratung.
+                            </p>
+                            <a 
+                                href="#termin-buchen" 
+                                className="btn btn-primary"
+                                style={{ padding: '0.5rem 1rem', textDecoration: 'none' }}
+                            >
+                                Jetzt Termin vereinbaren
+                            </a>
+                        </div>
                     </div>
 
                     {/* Form */}
