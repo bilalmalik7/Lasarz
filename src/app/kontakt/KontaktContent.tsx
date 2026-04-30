@@ -166,6 +166,10 @@ export default function KontaktContent() {
                                                 required 
                                                 style={{ padding: '0.75rem', borderRadius: '4px', border: '1px solid var(--border-color)' }}
                                             />
+                                            <label style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '1rem' }}>
+                                                <input type="checkbox" required style={{ marginTop: '0.2rem' }} />
+                                                <span>Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzerklärung zu.</span>
+                                            </label>
                                             <button 
                                                 type="submit" 
                                                 className="btn btn-primary" 

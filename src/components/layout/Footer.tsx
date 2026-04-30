@@ -72,8 +72,9 @@ export function Footer() {
           <p>&copy; {new Date().getFullYear()} Lasarz Immobiliengutachter. Alle Rechte vorbehalten.</p>
           <div className="flex gap-sm">
             <Link href="/ueber-uns">Über uns</Link>
-            <Link href="#">Impressum</Link>
-            <Link href="#">Datenschutz</Link>
+            <Link href="/impressum">Impressum</Link>
+            <Link href="/datenschutz">Datenschutz</Link>
+            <Link href="/cookie-policy">Cookie-Richtlinie</Link>
           </div>
         </div>
       </div>
