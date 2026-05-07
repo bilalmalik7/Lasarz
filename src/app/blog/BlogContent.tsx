@@ -6,15 +6,17 @@ import { useEffect, useState } from 'react';
 // Define types for blog posts
 interface BlogPost {
   id: string;
+  slug: string;
   title: string;
   excerpt: string;
   date: string;
   readTime: string;
-  slug: string;
   image: string;
   altText: string;
   category: string;
+  content: string;
 }
+
 
 interface BlogContentProps {
   blogPosts: BlogPost[];

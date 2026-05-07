@@ -1,9 +1,12 @@
 export interface BlogPost {
     id: string;
+    slug: string;
     title: string;
     date: string;
+    readTime: string;
     category: string;
     image: string;
+    altText: string;
     excerpt: string;
     content: string;
 }
@@ -11,10 +14,13 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
     {
         id: '1',
+        slug: 'marktwert-vs-beleihungswert',
         title: 'Marktwert vs. Beleihungswert: Was ist der Unterschied?',
         date: '15. Februar 2024',
+        readTime: '5 min Lesezeit',
         category: 'Grundlagen',
-        image: '/images/original_clone/property_background.jpg',
+        image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800',
+        altText: 'Marktwert vs. Beleihungswert – Immobilienbewertung Osnabrück',
         excerpt: 'Viele Immobilienbesitzer verwechseln diese beiden Begriffe. Dabei spielen sie in unterschiedlichen Situationen eine entscheidende Rolle...',
         content: `
             <p>Wer sich mit dem Kauf oder Verkauf einer Immobilie beschäftigt, stolpert unweigerlich über die Begriffe <strong>Marktwert</strong> (Verkehrswert) und <strong>Beleihungswert</strong>. Doch was genau verbirgt sich dahinter, und warum gibt es oft signifikante Unterschiede zwischen diesen beiden Werten?</p>
@@ -35,10 +41,13 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '2',
+        slug: 'checkliste-dokumente-hausverkauf',
         title: 'Checkliste: Die wichtigsten Dokumente für den Hausverkauf',
         date: '02. Februar 2024',
+        readTime: '4 min Lesezeit',
         category: 'Ratgeber',
-        image: '/images/original_clone/MG_1880-1024x690.jpg',
+        image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800',
+        altText: 'Checkliste Dokumente Hausverkauf – Immobiliengutachter Osnabrück',
         excerpt: 'Ein reibungsloser Verkauf beginnt mit der richtigen Vorbereitung. Wir zeigen Ihnen, welche Unterlagen Sie unbedingt griffbereit haben sollten.',
         content: `
             <p>Ein Immobilienverkauf ist ein komplexer Prozess. Eine der häufigsten Hürden sind fehlende oder veraltete Unterlagen, die den Verkaufsprozess verzögern oder sogar zum Scheitern bringen können.</p>
@@ -65,10 +74,13 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '3',
+        slug: 'immobilienmarkt-osnabrueck-2024',
         title: 'Immobilienmarkt Osnabrück 2024: Trends und Prognosen',
         date: '20. Januar 2024',
+        readTime: '6 min Lesezeit',
         category: 'Marktanalyse',
-        image: '/images/original_clone/property_background.jpg',
+        image: 'https://images.unsplash.com/photo-1582408921715-18e7806365c1?auto=format&fit=crop&q=80&w=800',
+        altText: 'Immobilienmarkt Osnabrück 2024 – Trends und Prognosen',
         excerpt: 'Wie entwickeln sich die Preise in der Friedensstadt? Erfahren Sie mehr über die aktuelle Marktsituation und was das für Verkäufer bedeutet.',
         content: `
             <p>Der Immobilienmarkt in Osnabrück und dem Umland zeigt sich auch im Jahr 2024 als dynamisch, aber anspruchsvoller als in den Vorjahren. Die Zinswende hat die Rahmenbedingungen grundlegend verändert.</p>
@@ -89,10 +101,13 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '4',
+        slug: 'immobiliengutachter-osnabrueck-hausverkauf',
         title: 'Warum ein Immobiliengutachter in Osnabrück beim Hausverkauf essenziell ist',
         date: '28. März 2024',
+        readTime: '5 min Lesezeit',
         category: 'Verkauf',
-        image: '/images/blog/modern-home.png',
+        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
+        altText: 'Immobiliengutachter Osnabrück – Hausverkauf professionell begleiten',
         excerpt: 'Wer sein Haus verkauft, möchte weder Geld verschenken noch auf der Immobilie sitzen bleiben. Ein zertifizierter Gutachter aus Osnabrück schafft Klarheit und schützt vor teuren Fehlern.',
         content: `
             <p>Der Verkaufspreis einer Immobilie entscheidet maßgeblich über den schnellen Erfolg am Markt. In einer dynamischen Stadt wie <strong>Osnabrück</strong> kann ein schlecht gewählter Angebotspreis verheerende finanzielle Folgen haben. Hier kommt ein professioneller <strong>Immobiliengutachter</strong> ins Spiel.</p>
@@ -118,10 +133,13 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '5',
+        slug: 'erbschaftsgutachten-osnabrueck',
         title: 'Erbschaftsgutachten Osnabrück: Immobilien fair und gerichtsfest bewerten',
         date: '26. März 2024',
+        readTime: '7 min Lesezeit',
         category: 'Erbschaft',
-        image: '/images/blog/elegant-villa.png',
+        image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800',
+        altText: 'Erbschaftsgutachten Osnabrück – Immobilien fair bewerten',
         excerpt: 'Immobiliarerbschaften bergen oft Konfliktpotenzial, insbesondere gegenüber dem Finanzamt oder innerhalb von Erbengemeinschaften. Ein Verkehrswertgutachten beugt Streitigkeiten vor.',
         content: `
             <p>Wenn eine Immobilie im Raum Osnabrück vererbt wird, kommt fast immer das Finanzamt ins Spiel, um die Erbschaftsteuer zu berechnen. Nicht selten wertet das Finanzamt die Immobilie in einem pauschalen Verfahren höher ein, als sie tatsächlich wert ist. Was viele nicht wissen: Als Erbe können Sie durch ein <strong>gerichtsfestes Verkehrswertgutachten</strong> den geringeren wahren Wert (Öffnungsklausel nach § 198 BewG) nachweisen.</p>
@@ -145,10 +163,13 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '6',
+        slug: 'scheidung-immobilie-osnabrueck',
         title: 'Scheidung und Immobilie in Osnabrück: So hilft ein Verkehrswertgutachten',
         date: '22. März 2024',
+        readTime: '6 min Lesezeit',
         category: 'Scheidung',
-        image: '/images/blog/modern-interior.png',
+        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800',
+        altText: 'Scheidung und Immobilie Osnabrück – Verkehrswertgutachten',
         excerpt: 'Eine Scheidung ist emotional belastend genug. Ein unabhängiges Immobilien-Gutachten schafft eine faire Trennung des gemeinsamen Vermögenswerts ohne rechtliche Streitereien.',
         content: `
             <p>Die größte finanzielle Hürde bei einer Scheidung ist meist das gemeinsame Eigenheim. Wer übernimmt das Haus in Osnabrück? Muss es verkauft werden? Und vor allem: <strong>Wie viel ist es aktuell wert?</strong></p>
@@ -172,10 +193,13 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '7',
+        slug: 'angebotspreis-altbau-osnabrueck',
         title: 'Den richtigen Angebotspreis für Ihr Altbau-Haus in Osnabrück finden',
         date: '18. März 2024',
+        readTime: '6 min Lesezeit',
         category: 'Marktanalyse',
-        image: '/images/blog/classic-altbau.png',
+        image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&q=80&w=800',
+        altText: 'Angebotspreis Altbau Osnabrück – Richtig bewerten',
         excerpt: 'Besonders bei Altbauten spielen energetische Voraussetzungen und Denkmalschutz eine große Rolle. Worauf es bei der Wertermittlung in Osnabrück jetzt ankommt.',
         content: `
             <p>Altbauten erfreuen sich in Osnabrück traditionell großer Beliebtheit. Ob eine Gründerzeitvilla im Katharinenviertel oder ein liebevoll saniertes Fachwerkhaus im Landkreis: Die Bewertung von Altbauimmobilien ist eine echte Herausforderung, die viel fachliche Kompetenz erfordert.</p>
@@ -199,10 +223,13 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '8',
+        slug: 'hausbewertung-osnabrueck-faktoren',
         title: 'Hausbewertung Osnabrück: 5 Faktoren, die den Wert steigern',
         date: '10. März 2024',
+        readTime: '7 min Lesezeit',
         category: 'Grundlagen',
-        image: '/images/blog/valuation-documents.png',
+        image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800',
+        altText: 'Hausbewertung Osnabrück – 5 Faktoren die den Wert steigern',
         excerpt: 'Wie wird der Wert Ihrer Immobilie überhaupt berechnet? Wir zeigen die Top-5-Faktoren, auf die Immobiliengutachter in der Wertermittlung besonders achten.',
         content: `
             <p>Als Immobilieneigentümer in Osnabrück fragt man sich oft: Was ist mein Haus eigentlich wert? Ein zertifizierter <strong>Immobiliengutachter</strong> zieht keine Zahl aus der Luft, sondern berechnet den Verkehrswert anhand festgelegter Kriterien (meist im Sachwert- oder Ertragswertverfahren). Hier sind die fünf entscheidenden Hebel.</p>

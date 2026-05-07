@@ -11,7 +11,7 @@ export default function BlogDetailPage({ params }: { params: Promise<{ id: strin
     const resolvedParams = use(params);
     const id = resolvedParams.id;
 
-    const post = blogPosts.find(p => p.id === id);
+    const post = blogPosts.find(p => p.slug === id);
 
     if (!post) {
         return (
