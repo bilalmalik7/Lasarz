@@ -32,7 +32,7 @@ export default function TeamPage() {
                 <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '3rem', alignItems: 'center' }}>
                         <div style={{ background: 'white', borderRadius: 'var(--radius-md)', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }}>
-                            <img src="/images/team/marc_lasarz.jpg" alt="Marc-André Lasarz" style={{ width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'top center' }} />
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Professional businessman in suit" style={{ width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'top center', loading: 'lazy' }} />
                         </div>
                         <div style={{ color: 'white' }}>
                             <h2 style={{ color: 'white', fontSize: '2.5rem', marginBottom: '1.5rem' }}>Marc-André Lasarz</h2>
@@ -71,7 +71,7 @@ export default function TeamPage() {
 
                         {/* Immobilien Consultant Women */}
                         <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>
-                            <img src="/images/team/immobilien_women.png" alt="Anna Schmidt" style={{ width: '100%', height: '350px', objectFit: 'cover' }} />
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Professional woman in business attire" style={{ width: '100%', height: '350px', objectFit: 'cover', loading: 'lazy' }} />
                             <div style={{ padding: '2rem' }}>
                                 <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Anna Schmidt</h3>
                                 <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>Immobiliengutachterin (DIA)</p>
@@ -87,7 +87,7 @@ export default function TeamPage() {
 
                         {/* Immobilien Consultant Men */}
                         <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>
-                            <img src="/images/team/immobilien_men.png" alt="Christian Weber" style={{ width: '100%', height: '350px', objectFit: 'cover' }} />
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Professional man in business attire" style={{ width: '100%', height: '350px', objectFit: 'cover', loading: 'lazy' }} />
                             <div style={{ padding: '2rem' }}>
                                 <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Christian Weber</h3>
                                 <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>Gutachter für Gewerbeimmobilien</p>

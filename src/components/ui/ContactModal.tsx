@@ -111,7 +111,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         justifyContent: 'center'
                     }}>
                         <img
-                            src="/images/team/marc_lasarz.jpg"
+                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80"
                             alt="Marc-André Lasarz"
                             style={{
                                 width: '120px',
@@ -120,7 +120,8 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                 objectFit: 'cover',
                                 marginBottom: '1.5rem',
                                 border: '3px solid var(--accent-primary)',
-                                boxShadow: '0 10px 20px rgba(0,0,0,0.3)'
+                                boxShadow: '0 10px 20px rgba(0,0,0,0.3)',
+                                loading: 'lazy'
                             }}
                         />
                         <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'white' }}>Marc-André Lasarz</h2>

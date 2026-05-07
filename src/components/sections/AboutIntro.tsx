@@ -5,7 +5,7 @@ export function AboutIntro() {
         <section style={{
             position: 'relative',
             padding: '100px 0',
-            backgroundImage: 'url(/images/original_clone/property_background.jpg)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
@@ -42,7 +42,7 @@ export function AboutIntro() {
                         marginBottom: '2rem',
                         lineHeight: 1.3,
                     }}>
-                        Als Sachverständiger für Immobilienbewertung erstelle und prüfe ich <span style={{ color: 'rgba(150,220,240,0.9)' }}>Verkehrswertgutachten</span> im Sinne des § 194 BauGB
+                        Als <strong style={{ color: 'rgba(150,220,240,0.9)' }}>Immobiliengutachter Osnabrück</strong> erstelle und prüfe ich <span style={{ color: 'rgba(150,220,240,0.9)' }}>Verkehrswertgutachten</span> im Sinne des § 194 BauGB
                     </h2>
 
                     <p style={{

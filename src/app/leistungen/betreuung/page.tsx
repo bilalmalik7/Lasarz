@@ -15,7 +15,7 @@ export default function BetreuungPage() {
                 <div className="container">
                     <div className="grid grid-cols-2 gap-lg sm-grid-cols-1 items-center">
                         <div className="glass-card" style={{ padding: '0' }}>
-                            <img src="/images/original_clone/MG_1880-1024x690.jpg" alt="Betreuung" style={{ width: '100%', borderRadius: 'var(--radius-md)' }} />
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="Family home interior with living room in Osnabrück" style={{ width: '100%', borderRadius: 'var(--radius-md)', loading: 'lazy' }} />
                         </div>
                         <div>
                             <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Bürokratische Hürden meistern</h2>

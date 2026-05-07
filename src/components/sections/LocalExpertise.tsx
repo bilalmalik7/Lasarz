@@ -15,9 +15,9 @@ export const LocalExpertise = ({ city }: LocalExpertiseProps) => {
 
                     <div className="glass-card" style={{ padding: 0, overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }}>
                         <img
-                            src="/images/original_clone/immobiliengutachter-osnabrueck.png"
+                            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80"
                             alt={`Immobiliengutachter ${displayCity}`}
-                            style={{ width: '100%', height: 'auto', display: 'block' }}
+                            style={{ width: '100%', height: 'auto', display: 'block', loading: 'lazy' }}
                         />
                     </div>
 

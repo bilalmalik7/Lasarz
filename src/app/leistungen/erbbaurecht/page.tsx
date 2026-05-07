@@ -24,7 +24,7 @@ export default function ErbbaurechtPage() {
                             </p>
                         </div>
                         <div className="glass-card" style={{ padding: '0' }}>
-                            <img src="/images/original_clone/property_background.jpg" alt="Erbbaurecht" style={{ width: '100%', borderRadius: 'var(--radius-md)' }} />
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Modern residential property interior with living room and kitchen" style={{ width: '100%', borderRadius: 'var(--radius-md)', loading: 'lazy' }} />
                         </div>
                     </div>
 

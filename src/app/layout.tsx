@@ -3,11 +3,11 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Lasarz - Die Immobiliengutachter | Immobilienbewertung Osnabrück',
-  description: 'Ihr Partner zur Erstellung von Immobiliengutachten und Beratung beim Kauf und Verkauf von Immobilien. Zertifizierte Immobilienbewerter in Osnabrück mit Festpreisgarantie.',
-  keywords: ['Immobilienbewertung Osnabrück', 'Immobiliengutachter', 'Verkehrswertgutachten', 'Kurzgutachten', 'Kaufberatung Immobilien'],
+  description: 'Ihr Partner zur Erstellung von Immobiliengutachten und Beratung beim Kauf und Verkauf von Immobilien. Zertifizierte Immobilienbewerter in Osnabrück mit Festpreisgarantie. Immobiliengutachter Osnabrück und Umgebung.',
+  keywords: ['Immobilienbewertung Osnabrück', 'Immobiliengutachter', 'Verkehrswertgutachten', 'Kurzgutachten', 'Kaufberatung Immobilien', 'Immobilienbewertung Osnabrück Kosten', 'Hausbewertung Osnabrück', 'Verkehrswertgutachten Osnabrück Finanzamt'],
   openGraph: {
     title: 'Lasarz - Die Immobiliengutachter in Osnabrück',
-    description: 'Regionale Expertise, rechtssichere Gutachten und Festpreisgarantie für Ihre Immobilienbewertung.',
+    description: 'Regionale Expertise, rechtssichere Gutachten und Festpreisgarantie für Ihre Immobilienbewertung. Immobiliengutachter Osnabrück und Umgebung.',
     url: 'https://lasarz.com',
     siteName: 'Lasarz Immobiliengutachter',
     locale: 'de_DE',

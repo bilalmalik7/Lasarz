@@ -32,27 +32,21 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
                 overflow: 'hidden'
             }}
         >
-            {/* HTML5 Video Background */}
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
+            {/* Unsplash Background Image */}
+            <img 
+                src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=80" 
+                alt="Modern house in Osnabrück with garden and garden furniture"
                 style={{
                     position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    minWidth: '100%',
-                    minHeight: '100%',
-                    width: 'auto',
-                    height: 'auto',
-                    transform: 'translate(-50%, -50%)',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
                     objectFit: 'cover',
-                    zIndex: 0
+                    zIndex: 0,
+                    loading: 'lazy'
                 }}
-            >
-                <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-city-buildings-and-roads-34358-large.mp4" type="video/mp4" />
-            </video>
+            />
 
             {/* Dark Brand Overlay for readability */}
             <div style={{
@@ -140,11 +134,11 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
                             Zertifiziert und anerkannt durch:
                         </p>
                         <div style={{ display: 'inline-flex', gap: '1.5rem', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', background: 'rgba(255,255,255,0.95)', padding: '15px 25px', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.15)' }}>
-                            <img src="/images/original_clone/bvs_e_v_logo.jpeg" alt="BVS Zertifikat für Immobilienbewertung" style={{ height: '40px', objectFit: 'contain' }} />
-                            <img src="/images/original_clone/NEU-Logo-DIAzert_7-09-300x228.jpg" alt="DIA Zertifikat für Immobilienbewertung" style={{ height: '40px', objectFit: 'contain' }} />
-                            <img src="/images/original_clone/REV-Siegel_2018-002.jpg" alt="REV Siegel für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} />
-                            <img src="/images/original_clone/Stempel-DIAZert-2025.jpg" alt="DIA Zert Stempel für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} />
-                            <img src="/images/original_clone/SV-R-Immo-D3_042028_ger_tc_p-182x300.jpg" alt="SV-R Zertifizierung für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} />
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&q=80" alt="BVS Zertifikat für Immobilienbewertung" style={{ height: '40px', objectFit: 'contain' }} loading="lazy" />
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&q=80" alt="DIA Zertifikat für Immobilienbewertung" style={{ height: '40px', objectFit: 'contain' }} loading="lazy" />
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&q=80" alt="REV Siegel für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} loading="lazy" />
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&q=80" alt="DIA Zert Stempel für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} loading="lazy" />
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&q=80" alt="SV-R Zertifizierung für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} loading="lazy" />
                         </div>
                     </motion.div>
                 </motion.div>

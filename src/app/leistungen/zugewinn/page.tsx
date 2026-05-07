@@ -24,7 +24,7 @@ export default function ZugewinnPage() {
                             </p>
                         </div>
                         <div className="glass-card" style={{ padding: '0' }}>
-                            <img src="/images/original_clone/immobiliengutachter-osnabrueck.png" alt="Zugewinn" style={{ width: '100%', borderRadius: 'var(--radius-md)' }} />
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="Modern family home exterior in Osnabrück" style={{ width: '100%', borderRadius: 'var(--radius-md)', loading: 'lazy' }} />
                         </div>
                     </div>
 
