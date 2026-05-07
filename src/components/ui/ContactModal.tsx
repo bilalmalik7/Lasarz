@@ -120,9 +120,9 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                 objectFit: 'cover',
                                 marginBottom: '1.5rem',
                                 border: '3px solid var(--accent-primary)',
-                                boxShadow: '0 10px 20px rgba(0,0,0,0.3)',
-                                loading: 'lazy'
+                                boxShadow: '0 10px 20px rgba(0,0,0,0.3)'
                             }}
+                            loading="lazy"
                         />
                         <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'white' }}>Marc-André Lasarz</h2>
                         <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: 'rgba(255,255,255,0.9)', marginBottom: '2rem' }}>

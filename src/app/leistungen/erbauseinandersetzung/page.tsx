@@ -15,7 +15,7 @@ export default function ErbauseinandersetzungPage() {
                 <div className="container">
                     <div className="grid grid-cols-2 gap-lg sm-grid-cols-1 items-center">
                         <div className="glass-card" style={{ padding: '0' }}>
-                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="House with garden in Osnabrück showing family home" style={{ width: '100%', borderRadius: 'var(--radius-md)', loading: 'lazy' }} />
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="House with garden in Osnabrück showing family home" style={{ width: '100%', borderRadius: 'var(--radius-md)' }} loading="lazy" />
                         </div>
                         <div>
                             <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Friedliche Einigung durch objektive Zahlen</h2>

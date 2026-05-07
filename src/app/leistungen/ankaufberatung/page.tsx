@@ -28,7 +28,7 @@ export default function AnkaufberatungPage() {
                             </div>
                         </div>
                         <div className="glass-card" style={{ padding: '0' }}>
-                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="Modern house exterior with garden in Osnabrück" style={{ width: '100%', borderRadius: 'var(--radius-md)', loading: 'lazy' }} />
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="Modern house exterior with garden in Osnabrück" style={{ width: '100%', borderRadius: 'var(--radius-md)' }} loading="lazy" />
                         </div>
                     </div>
 

@@ -17,7 +17,8 @@ export const LocalExpertise = ({ city }: LocalExpertiseProps) => {
                         <img
                             src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80"
                             alt={`Immobiliengutachter ${displayCity}`}
-                            style={{ width: '100%', height: 'auto', display: 'block', loading: 'lazy' }}
+                            style={{ width: '100%', height: 'auto', display: 'block' }}
+                            loading="lazy"
                         />
                     </div>
 

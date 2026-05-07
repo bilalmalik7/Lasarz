@@ -43,9 +43,9 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
-                    zIndex: 0,
-                    loading: 'lazy'
+                    zIndex: 0
                 }}
+                loading="lazy"
             />
 
             {/* Dark Brand Overlay for readability */}
