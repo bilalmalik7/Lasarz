@@ -1,0 +1,242 @@
+# Project Codebase Map
+
+## Complete ASCII Tree Structure
+
+```
+.
+├── .claw/
+├── .git/
+├── .next/
+├── .sandbox-home/
+├── .sandbox-tmp/
+├── APPOINTMENT_BOOKING_SYSTEM_README.md
+├── README.md
+├── download_images.js
+├── eslint.config.mjs
+├── extract.js
+├── extract_advanced.js
+├── extracted_content.txt
+├── newsletters/
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public/
+├── seo-report.html
+├── seo-report.md
+├── src/
+│   ├── app/
+│   │   ├── blog/
+│   │   │   ├── [id]/
+│   │   │   │   └── page.tsx                 * Blog detail page (dynamic route)
+│   │   │   ├── posts/
+│   │   │   │   ├── erbschaft-immobilienbewertung-osnabrueck.page.tsx
+│   │   │   │   ├── grundstuecksbewertung-georgsmarienhuette-bramsche-melle.page.tsx
+│   │   │   │   ├── hausbewertung-scheidung-osnabrueck.page.tsx
+│   │   │   │   ├── immobiliengutachter-osnabrueck-kosten.page.tsx
+│   │   │   │   └── immobilienwert-ermitteln-osnabrueck.page.tsx
+│   │   │   ├── BlogContent.tsx               * Blog listing component
+│   │   │   └── page.tsx                      * Blog listing page
+│   │   ├── leistungen/
+│   │   │   ├── beleihungswertgutachten/
+│   │   │   │   └── page.tsx
+│   │   │   ├── erbauseinandersetzung/
+│   │   │   │   └── page.tsx
+│   │   │   ├── ankaufberatung/
+│   │   │   │   └── page.tsx
+│   │   │   ├── kurzgutachten/
+│   │   │   │   └── page.tsx
+│   │   │   ├── energieausweis/
+│   │   │   │   └── page.tsx
+│   │   │   ├── verkehrswertgutachten/
+│   │   │   │   └── page.tsx
+│   │   │   ├── betreuung/
+│   │   │   │   └── page.tsx
+│   │   │   ├── steuerliche-bewertung/
+│   │   │   │   └── page.tsx
+│   │   │   ├── beweissicherung/
+│   │   │   │   └── page.tsx
+│   │   │   ├── schadensgutachten/
+│   │   │   │   └── page.tsx
+│   │   │   ├── zugewinn/
+│   │   │   │   └── page.tsx
+│   │   │   ├── erbbaurecht/
+│   │   │   │   └── page.tsx
+│   │   │   ├── investmentberatung/
+│   │   │   │   └── page.tsx
+│   │   │   ├── gewerbeimmobilien/
+│   │   │   │   └── page.tsx
+│   │   │   ├── verkaeuferbereratung/
+│   │   │   │   └── page.tsx
+│   │   │   ├── erbschaftsgutachten/
+│   │   │   │   └── page.tsx
+│   │   │   └── schimmelgutachten/
+│   │   │       └── page.tsx
+│   │   ├── immobilienwert/
+│   │   │   ├── guide/
+│   │   │   │   ├── content/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── marktberichte-immobilien-osnabrueck/
+│   │   │   └── page.tsx
+│   │   ├── immobilien-abschreibung/
+│   │   │   └── page.tsx
+│   │   ├── immobilienbewertung/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-bad-oeynhausen/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-bielefeld/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-borgholzhausen/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-bramsche/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-emsdetten/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-flensburg/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-georgsmarienhuette/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-guetersloh/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-halle-westf/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-ibbenbueren/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-lingen/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-loehne/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-melle/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-muenster/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-osnabrueck/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-rheine/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-steinfurt/
+│   │   │   └── page.tsx
+│   │   ├── immobiliengutachter-warendorf/
+│   │   │   └── page.tsx
+│   │   ├── cookie-policy/
+│   │   │   └── page.tsx
+│   │   ├── datenschutz/
+│   │   │   └── page.tsx
+│   │   ├── faq/
+│   │   │   └── page.tsx
+│   │   ├── honorar/
+│   │   │   └── page.tsx
+│   │   ├── immobilienbewertung-scheidung/
+│   │   │   └── page.tsx
+│   │   ├── kontakt/
+│   │   │   ├── KontaktContent.tsx
+│   │   │   └── page.tsx
+│   │   ├── lasar/
+│   │   │   └── page.tsx
+│   │   ├── prozess/
+│   │   │   └── page.tsx
+│   │   ├── ratgeber/
+│   │   │   ├── notarkosten/
+│   │   │   │   └── page.tsx
+│   │   │   ├── grund-und-boden/
+│   │   │   │   └── page.tsx
+│   │   │   └── nachbarrecht/
+│   │   │       └── page.tsx
+│   │   ├── referenzen/
+│   │   │   └── page.tsx
+│   │   ├── standorte/
+│   │   │   └── page.tsx
+│   │   ├── team/
+│   │   │   └── page.tsx
+│   │   ├── ueber-uns/
+│   │   │   └── page.tsx
+│   │   ├── verkehrswertgutachten-belwertv/
+│   │   │   └── page.tsx
+│   │   ├── layout.tsx                        * Main layout component
+│   │   ├── page.module.css
+│   │   └── page.tsx                          * Main homepage
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Footer.tsx                    * Site footer component
+│   │   │   └── Header.tsx                    * Navigation header component
+│   │   └── ui/
+│   ├── hooks/
+│   ├── lib/
+│   │   └── blogData.ts                       * Blog posts data structure
+│   └── public/
+│       └── favicon.ico
+├── tailwind.config.js
+├── tsconfig.json
+└── tsconfig.tsbuildinfo
+```
+
+## File Descriptions
+
+### Core Configuration Files
+- **package.json**: Project dependencies and scripts
+- **next.config.js**: Next.js configuration settings
+- **tailwind.config.js**: Tailwind CSS configuration
+- **tsconfig.json**: TypeScript configuration
+- **eslint.config.mjs**: ESLint configuration
+
+### Main Application Files
+- **src/app/page.tsx**: Main homepage component
+- **src/app/layout.tsx**: Main layout component with header/footer
+- **src/lib/blogData.ts**: Centralized blog posts data structure
+
+### Blog System Files
+- **src/app/blog/page.tsx**: Blog listing page
+- **src/app/blog/BlogContent.tsx**: Blog listing component
+- **src/app/blog/[id]/page.tsx**: Individual blog post page
+- **src/app/blog/posts/**: Individual blog post files (currently 5 exist)
+
+### Layout Components
+- **src/components/layout/Header.tsx**: Navigation header with dropdown menus
+- **src/components/layout/Footer.tsx**: Site footer with contact info
+
+### Service Pages
+- **src/app/leistungen/**: Multiple service pages for different valuation services
+- **src/app/immobiliengutachter-***: City-specific landing pages
+
+### Contact and Information Pages
+- **src/app/kontakt/**: Contact page with information
+- **src/app/ueber-uns/**: About us page
+- **src/app/faq/**: Frequently asked questions
+- **src/app/team/**: Team member profiles
+
+### Special Pages
+- **src/app/immobilienwert/**: Immobilienwert calculator
+- **src/app/marktberichte-immobilien-osnabrueck/**: Market reports
+- **src/app/immobilien-abschreibung/**: Asset depreciation information
+
+## Entry Points (★ = Important)
+
+- **src/app/page.tsx** ★ Main homepage
+- **src/app/blog/page.tsx** ★ Blog listing page  
+- **src/app/blog/[id]/page.tsx** ★ Individual blog post
+- **src/app/kontakt/page.tsx** ★ Contact page
+- **src/app/ueber-uns/page.tsx** ★ About us page
+- **src/app/faq/page.tsx** ★ FAQ page
+- **src/app/team/page.tsx** ★ Team page
+
+## Most Important Files (★ = Critical)
+
+- **src/lib/blogData.ts** ★ Centralized blog data structure
+- **src/app/blog/BlogContent.tsx** ★ Blog listing component
+- **src/app/blog/[id]/page.tsx** ★ Individual blog post view
+- **src/components/layout/Header.tsx** ★ Navigation component
+- **src/components/layout/Footer.tsx** ★ Footer component
+- **src/app/layout.tsx** ★ Main layout template
+- **src/app/kontakt/KontaktContent.tsx** ★ Contact page content
+
+## Missing Files (Required for Task)
+
+Based on the task requirements, these blog posts are missing:
+1. **src/app/blog/posts/immobiliengutachter-osnabrueck-kosten.page.tsx**
+2. **src/app/blog/posts/immobilienwert-osnabrueck.page.tsx**
+3. **src/app/blog/posts/hausbewertung-scheidung-osnabrueck.page.tsx**
+4. **src/app/blog/posts/erbschaft-immobilienbewertung-osnabrueck.page.tsx**
+5. **src/app/blog/posts/grundstuecksbewertung-georgsmarienuette.page.tsx**

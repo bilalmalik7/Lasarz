@@ -1,395 +1,210 @@
-'use client';
+import { blogPosts } from '@/lib/blogData';
 
-import { useEffect } from 'react';
-import Head from 'next/head';
+// Add the missing blog post to the blogData.ts file
+const newBlogPost = {
+  id: '12',
+  slug: 'erbschaft-immobilienbewertung-osnabrueck',
+  title: 'Erbschaftsimmobilienbewertung in Osnabrück: Wie wird ein Haus bei Erbschaft bewertet?',
+  date: '15. April 2024',
+  readTime: '11 min Lesezeit',
+  category: 'Erbschaft',
+  image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200',
+  altText: 'Erbschaftsimmobilienbewertung Osnabrück – Wie wird ein Haus bewertet',
+  excerpt: 'Erfahren Sie, wie Immobilien bei Erbschaften in Osnabrück bewertet werden. Wir erklären die wichtigsten Aspekte und Kosten.',
+  content: `<p>Bei einer Erbschaft ist die Bewertung von Immobilien ein entscheidender Schritt für die Steuerberechnung, die Vermögensaufteilung und die rechtliche Abwicklung. In Osnabrück und Umgebung sind besondere Aspekte bei der Erbschaftsimmobilienbewertung zu beachten, da die Werte und rechtlichen Rahmenbedingungen regionale Besonderheiten aufweisen. Dieser Artikel erklärt Ihnen, wie eine Immobilienbewertung bei Erbschaft in Osnabrück funktioniert.</p>
 
-export const metadata = {
-    title: 'Erbschaft und Immobilienbewertung in Osnabrück - Der komplette Leitfaden',
-    description: 'Kompletter Leitfaden für Erbschaft und Immobilienbewertung in Osnabrück. Was Sie über Erbschaftsgutachten wissen müssen und wie Sie die richtige Bewertung wählen.',
-    openGraph: {
-        title: 'Erbschaft und Immobilienbewertung in Osnabrück - Der komplette Leitfaden',
-        description: 'Kompletter Leitfaden für Erbschaft und Immobilienbewertung in Osnabrück. Was Sie über Erbschaftsgutachten wissen müssen und wie Sie die richtige Bewertung wählen.',
-        url: 'https://lasarz.com/blog/erbschaft-immobilienbewertung-osnabrueck',
-        siteName: 'Lasarz Immobiliengutachter',
-        locale: 'de_DE',
-        type: 'article',
-        images: [
-            {
-                url: 'https://lasarz.com/images/blog/erbschaft-immobilienbewertung.jpg',
-                width: 1200,
-                height: 630,
-                alt: 'Erbschaft und Immobilienbewertung in Osnabrück'
-            }
-        ]
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'Erbschaft und Immobilienbewertung in Osnabrück - Der komplette Leitfaden',
-        description: 'Kompletter Leitfaden für Erbschaft und Immobilienbewertung in Osnabrück. Was Sie über Erbschaftsgutachten wissen müssen und wie Sie die richtige Bewertung wählen.',
-        images: ['https://lasarz.com/images/blog/erbschaft-immobilienbewertung.jpg']
-    },
-    alternates: {
-        canonical: 'https://lasarz.com/blog/erbschaft-immobilienbewertung-osnabrueck'
-    },
-    robots: {
-        index: true,
-        follow: true,
-    },
-    article: {
-        publishedTime: '2026-04-29T00:00:00Z',
-        modifiedTime: '2026-04-29T00:00:00Z',
-        author: [{
-            '@type': 'Person',
-            name: 'Marc-André Lasarz'
-        }],
-        section: 'Immobilienbewertung',
-        tag: ['Erbschaft', 'Immobilienbewertung', 'Osnabrück', 'Gutachten']
+<h3>Warum ist eine Erbschaftsimmobilienbewertung wichtig?</h3>
+<p>Bei einer Erbschaft ist die Bewertung der Immobilien von entscheidender Bedeutung:</p>
+<ul>
+  <li><strong>Erbschaftsteuer:</strong> Der Wert bestimmt die Steuerpflicht</li>
+  <li><strong>Vermögensaufteilung:</strong> Fairer Umgang mit dem Erbe</li>
+  <li><strong>Rechtliche Sicherheit:</strong> Gerichtsfeste Gutachten</li>
+  <li><strong>Steuerliche Vorteile:</strong> Mögliche Sonderregelungen</li>
+  <li><strong>Verwaltung:</strong> Klare Werte für die Verwaltung</li>
+</ul>
+
+<p>Eine professionelle Bewertung schützt die Erben und verhindert späteren Streit.</p>
+
+<h3>Die rechtlichen Grundlagen in Osnabrück</h3>
+<p>Die Bewertung von Erbschaftsimmobilien in Deutschland basiert auf:</p>
+<ul>
+  <li><strong>§ 198 BewG:</strong> Öffnungsklausel für niedrigere Werte</li>
+  <li><strong>§ 194 BauGB:</strong> Definition des Verkehrswerts</li>
+  <li><strong>Erbschaftsteuergesetz:</strong> Steuerliche Bewertung</li>
+  <li><strong>Landesrecht Osnabrück:</strong> Regionale Besonderheiten</li>
+</ul>
+
+<p>In Osnabrück sind die lokalen Bodenrichtwerte und Markttrends besonders relevant.</p>
+
+<h3>Die Bewertungsmethoden bei Erbschaften</h3>
+
+<h4>1. Vergleichswertverfahren</h4>
+<p>Das Vergleichswertverfahren ist die gängigste Methode bei Erbschaften:</p>
+<ul>
+  <li>Verwendung von vergleichbaren Immobilien</li>
+  <li>Beachtung der Mikrolage in Osnabrück</li>
+  <li>Berücksichtigung aktueller Marktbedingungen</li>
+  <li>Anpassung für besondere Umstände</li>
+</ul>
+
+<h4>2. Sachwertverfahren</h4>
+<p>Bei besonderen Immobilien oder bei fehlenden Vergleichswerten:</p>
+<ul>
+  <li>Bodenrichtwert Osnabrück</li>
+  <li>Herstellungskosten minus Abschreibung</li>
+  <li>Ausstattung und Modernisierungen</li>
+  <li>Spezielle Bauformen</li>
+</ul>
+
+<h4>3. Ertragswertverfahren</h4>
+<p>Für vermietete Erbschaftsimmobilien:</p>
+<ul>
+  <li>Mieteinnahmen</li>
+  <li>Betriebskosten</li>
+  <li>Marktzinsen</li>
+  <li>Wertentwicklung</li>
+</ul>
+
+<h3>Spezielle Aspekte bei Erbschaftsbewertungen in Osnabrück</h3>
+<p>Osnabrück hat besondere Merkmale, die bei Erbschaftsbewertungen berücksichtigt werden müssen:</p>
+<ul>
+  <li><strong>Universitätsstadt:</strong> Besonderer Nachfrage nach Wohnraum</li>
+  <li><strong>Marktverhalten:</strong> Hohe Preisschwankungen</li>
+  <li><strong>Stadtentwicklung:</strong> Neue Baubereiche</li>
+  <li><strong>Infrastruktur:</strong> Gute Anbindung</li>
+  <li><strong>Wohnungsmarkt:</strong> Hohe Nachfrage</li>
+</ul>
+
+<h3>Die Bewertungsschritte bei Erbschaften</h3>
+<ol>
+  <li><strong>Unterlagenanalyse:</strong> Erbschein, Grundbuch, Baupläne</li>
+  <li><strong>Ortsbesichtigung:</strong> Direkte Prüfung der Immobilie</li>
+  <li><strong>Marktanalyse:</strong> Vergleich mit Osnabrücker Immobilien</li>
+  <li><strong>Bewertung:</strong> Anwendung der geeigneten Methoden</li>
+  <li><strong>Gutachten:</strong> Ausarbeitung des Ergebnisses</li>
+</ol>
+
+<h3>Die Rolle des Verkehrswertgutachtens</h3>
+<p>Bei Erbschaften wird meist ein <strong>Verkehrswertgutachten</strong> benötigt:</p>
+<ul>
+  <li><strong>Steuerliche Bewertung:</strong> Wert für Erbschaftsteuer</li>
+  <li><strong>Rechtliche Grundlage:</strong> § 198 BewG</li>
+  <li><strong>Gerichtsfestigkeit:</strong> Für rechtliche Zwecke</li>
+  <li><strong>Öffnungsklausel:</strong> Möglichkeit niedrigerer Werte</li>
+</ul>
+
+<h3>Wann braucht man eine Erbschaftsbewertung?</h3>
+<p>Ein Erbschaftsgutachten ist erforderlich, wenn:</p>
+<ul>
+  <li>Ein Erbe das Haus übernehmen möchte</li>
+  <li>Ein Erbe das Haus verkaufen möchte</li>
+  <li>Ein Erbe die Erbschaft abtreten möchte</li>
+  <li>Die Erbschaftsteuer berechnet werden muss</li>
+  <li>Ein Gerichtsverfahren stattfindet</li>
+  <li>Die Erben sich nicht einigen können</li>
+</ul>
+
+<h3>Die Vorteile eines unabhängigen Gutachtens</h3>
+<p>Ein unabhängiges Gutachten bietet:</p>
+<ul>
+  <li><strong>Unparteilichkeit:</strong> Objektive Bewertung</li>
+  <li><strong>Rechtssicherheit:</strong> Gerichtsfestigkeit</li>
+  <li><strong>Steuerliche Vorteile:</strong> Mögliche Senkung</li>
+  <li><strong>Verwaltung:</strong> Klare Werte für die Verwaltung</li>
+  <li><strong>Streitvermeidung:</strong> Klarheit für alle Erben</li>
+</ul>
+
+<h3>Die Kosten für eine Erbschaftsbewertung in Osnabrück</h3>
+<p>Die Kosten für eine Erbschaftsimmobilienbewertung:</p>
+<ul>
+  <li><strong>Erbschaftsgutachten:</strong> 1.800 € – 3.500 €</li>
+  <li><strong>Verkehrswertgutachten:</strong> 1.200 € – 2.500 €</li>
+  <li><strong>Kurzgutachten:</strong> 750 € – 1.200 €</li>
+</ul>
+
+<p>Die Kosten hängen von:</p>
+<ul>
+  <li>Art der Immobilie</li>
+  <li>Größe und Lage</li>
+  <li>Ausführlichkeit des Gutachtens</li>
+  <li>Zeitaufwand für die Bewertung</li>
+</ul>
+
+<h3>Öffnungsklausel nach § 198 BewG</h3>
+<p>Die Öffnungsklausel ist besonders wichtig bei Erbschaften:</p>
+<ul>
+  <li><strong>Alternative Bewertung:</strong> Mögliche niedrigere Werte</li>
+  <li><strong>Steuerliche Vorteile:</strong> Senkung der Erbschaftsteuer</li>
+  <li><strong>Rechtliche Grundlage:</strong> § 198 BewG</li>
+  <li><strong>Praktische Anwendung:</strong> Nachweis durch Gutachten</li>
+</ul>
+
+<p>Ein unabhängiges Gutachten kann den Wert nach unten anpassen, wenn dies gerechtfertigt ist.</p>
+
+<h3>Was unterscheidet eine Erbschaftsbewertung von anderen Gutachten?</h3>
+<p>Erbschaftsbewertungen unterscheiden sich durch:</p>
+<ul>
+  <li><strong>Steuerliche Aspekte:</strong> Wert für Erbschaftsteuer</li>
+  <li><strong>Rechtliche Grundlage:</strong> § 198 BewG</li>
+  <li><strong>Zeitpunkt:</strong> Bewertung zum Erblasserstod</li>
+  <li><strong>Verfahren:</strong> Besondere Anforderungen</li>
+  <li><strong>Verantwortung:</strong> Für alle Erben</li>
+</ul>
+
+<h3>Wichtige Tipps für Erbschaftsfälle in Osnabrück</h3>
+<p>Bei einer Erbschaft in Osnabrück sollten Sie beachten:</p>
+<ul>
+  <li><strong>Frühe Bewertung:</strong> Vor Erbschaftsteuererklärung</li>
+  <li><strong>Qualifizierter Gutachter:</strong> Zertifiziert und erfahren</li>
+  <li><strong>Dokumentation:</strong> Alle Unterlagen aufbewahren</li>
+  <li><strong>Steuerliche Beratung:</strong> Mit Steuerberater zusammenarbeiten</li>
+  <li><strong>Rechtliche Beratung:</strong> Bei Streitigkeiten</li>
+</ul>
+
+<h3>Warum Lasarz Immobiliengutachter?</h3>
+<p>Unser Team in Osnabrück versteht die besonderen Herausforderungen:</p>
+<ul>
+  <li><strong>Regionale Expertise:</strong> Osnabrück und Umgebung</li>
+  <li><strong>Rechtliche Sicherheit:</strong> Gerichtsfeste Gutachten</li>
+  <li><strong>Transparente Kosten:</strong> Klare Preise</li>
+  <li><strong>Umfassende Beratung:</strong> Alle Aspekte abgedeckt</li>
+  <li><strong>Individuelle Lösungen:</strong> Für Ihre Bedürfnisse</li>
+</ul>
+
+<h3>Fazit: Professionelle Bewertung für faire Erbschaften</h3>
+<p>Eine professionelle Erbschaftsimmobilienbewertung ist ein entscheidender Schritt für faire und rechtsicher Erbschaften. In Osnabrück und Umgebung sind die regionalen Besonderheiten besonders wichtig.</p>
+
+<p>Kontaktieren Sie uns für ein unverbindliches Erstgespräch, um eine individuelle Bewertung Ihrer Erbschaftsimmobilie in Osnabrück zu erhalten. Wir bieten Ihnen professionelle Beratung und transparente Preise für alle Arten von Erbschaftsbewertungen in Osnabrück und Umgebung.</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lasarz.com/blog/erbschaft-immobilienbewertung-osnabrueck"
+  },
+  "headline": "Erbschaftsimmobilienbewertung in Osnabrück: Wie wird ein Haus bei Erbschaft bewertet?",
+  "description": "Erfahren Sie, wie Immobilien bei Erbschaften in Osnabrück bewertet werden. Wir erklären die wichtigsten Aspekte und Kosten.",
+  "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200",
+  "author": {
+    "@type": "Person",
+    "name": "Marc-André Lasarz"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lasarz Immobiliengutachter",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lasarz.com/images/logo.png"
     }
+  },
+  "datePublished": "2024-04-15",
+  "dateModified": "2024-04-15"
+}
+</script>`
 };
 
-export default function ErbschaftImmobilienbewertungPage() {
-    // Add structured data for BlogPosting
-    const structuredData = {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://lasarz.com/blog/erbschaft-immobilienbewertung-osnabrueck"
-        },
-        "headline": "Erbschaft und Immobilienbewertung in Osnabrück - Der komplette Leitfaden",
-        "description": "Kompletter Leitfaden für Erbschaft und Immobilienbewertung in Osnabrück. Was Sie über Erbschaftsgutachten wissen müssen und wie Sie die richtige Bewertung wählen.",
-        "author": {
-            "@type": "Person",
-            "name": "Marc-André Lasarz"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Lasarz Immobiliengutachter",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://lasarz.com/images/logo.png"
-            }
-        },
-        "image": "https://lasarz.com/images/blog/erbschaft-immobilienbewertung.jpg",
-        "datePublished": "2026-04-29T00:00:00Z",
-        "dateModified": "2026-04-29T00:00:00Z"
-    };
-
-    useEffect(() => {
-        // Add structured data to head
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.textContent = JSON.stringify(structuredData);
-        document.head.appendChild(script);
-
-        return () => {
-            document.head.removeChild(script);
-        };
-    }, []);
-
-    return (
-        <main style={{ backgroundColor: 'var(--bg-primary)', overflow: 'hidden' }}>
-            <Head>
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-                />
-            </Head>
-            
-            {/* Hero Section */}
-            <section style={{ 
-                position: 'relative', 
-                height: '50vh', 
-                minHeight: '400px', 
-                display: 'flex', 
-                alignItems: 'center', 
-                paddingTop: '80px',
-                color: 'white'
-            }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }}>
-                    <img 
-                        src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
-                        alt="Erbschaft und Immobilienbewertung" 
-                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-                        loading="lazy"
-                        width={1200}
-                        height={630}
-                    />
-                    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3))' }}></div>
-                </div>
-
-                <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-                    <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '1rem 0', color: 'white' }}>
-                        Erbschaft und Immobilienbewertung
-                    </h1>
-                    <p style={{ fontSize: '1.2rem', maxWidth: '600px', opacity: 0.9 }}>
-                        Der komplette Leitfaden für Osnabrück und Umgebung
-                    </p>
-                </div>
-            </section>
-
-            {/* Content Section */}
-            <section className="section">
-                <div className="container">
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Erbschaften mit Immobilien sind komplexe rechtliche und finanzielle Angelegenheiten, 
-                                die sorgfältige Planung und professionelle Begleitung erfordern. In Osnabrück und 
-                                Umgebung ist eine korrekte Immobilienbewertung bei Erbschaften von entscheidender 
-                                Bedeutung, um die steuerliche und rechtliche Situation optimal zu managen. 
-                                In diesem Leitfaden erfahren Sie alles über Erbschaft und Immobilienbewertung in 
-                                Osnabrück.
-                            </p>
-
-                            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem', flexWrap: 'wrap' }}>
-                                <img 
-                                    src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                                    alt="Erbschaft und Immobilien" 
-                                    style={{ width: '300px', height: '200px', objectFit: 'cover', borderRadius: '8px' }} 
-                                    loading="lazy"
-                                    width={600}
-                                    height={400}
-                                />
-                                <img 
-                                    src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                                    alt="Immobilienbewertung Osnabrück" 
-                                    style={{ width: '300px', height: '200px', objectFit: 'cover', borderRadius: '8px' }} 
-                                    loading="lazy"
-                                    width={600}
-                                    height={400}
-                                />
-                                <img 
-                                    src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                                    alt="Erbschaftsgutachten" 
-                                    style={{ width: '300px', height: '200px', objectFit: 'cover', borderRadius: '8px' }} 
-                                    loading="lazy"
-                                    width={600}
-                                    height={400}
-                                />
-                            </div>
-
-                            <h2 style={{ fontSize: '2rem', color: 'var(--accent-secondary)' }}>Warum eine Immobilienbewertung bei Erbschaften?</h2>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Bei Erbschaften mit Immobilien ist eine professionelle Bewertung unerlässlich, 
-                                um:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li>Den korrekten Steuerwert festzustellen</li>
-                                <li>Die Erbschaftssteuer korrekt zu berechnen</li>
-                                <li>Rechtliche Konflikte zu vermeiden</li>
-                                <li>Die richtige Aufteilung der Vermögenswerte zu gewährleisten</li>
-                                <li>Die Interessen aller Erben zu schützen</li>
-                            </ul>
-
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                In Osnabrück und Umgebung sind Immobilien oft ein bedeutender Teil des 
-                                Erbes, weshalb eine präzise Bewertung entscheidend ist. Die Bewertung 
-                                muss nach den geltenden Rechtsvorgaben erfolgen, insbesondere nach § 194 
-                                BauGB.
-                            </p>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>Rechtliche Grundlagen</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Die rechtlichen Grundlagen für die Bewertung von Immobilien bei Erbschaften 
-                                sind in folgenden Gesetzen geregelt:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li><strong>§ 194 BauGB:</strong> Verkehrswertbestimmung</li>
-                                <li><strong>§ 198 BewG:</strong> Nachweisbarkeit des niedrigeren gemeinen Werts</li>
-                                <li><strong>ErbStG:</strong> Erbschaftssteuer</li>
-                                <li><strong>BGB:</strong> Erbrechte und Erbverträge</li>
-                            </ul>
-
-                            <h2 style={{ fontSize: '2rem', color: 'var(--accent-secondary)' }}>Die Rolle des Erbschaftsgutachters</h2>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Ein zertifizierter Erbschaftsgutachter in Osnabrück fungiert als neutraler 
-                                Experte und erstellt objektive Bewertungen, die für das Finanzamt und 
-                                andere Behörden anerkannt sind. Bei Erbschaften ist es besonders wichtig, 
-                                dass der Gutachter:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li>Unabhängig und sachkundig ist</li>
-                                <li>Die geltenden Rechtsvorgaben kennt</li>
-                                <li>Die lokalen Gegebenheiten berücksichtigt</li>
-                                <li>Ein detailliertes Gutachten erstellt</li>
-                                <li>Die Erben berät</li>
-                            </ul>
-
-                            <h2 style={{ fontSize: '2rem', color: 'var(--accent-secondary)' }}>Arten von Erbschaftsgutachten</h2>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                In Osnabrück werden verschiedene Arten von Erbschaftsgutachten erstellt, 
-                                je nach Art der Immobilie und der Erbschaft:
-                            </p>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>1. Verkehrswertgutachten</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Das Verkehrswertgutachten ist das üblichste Gutachten bei Erbschaften. 
-                                Es bestimmt den aktuellen Marktwert der Immobilie gemäß § 194 BauGB. 
-                                Dieses Gutachten ist für das Finanzamt und andere Behörden anerkannt.
-                            </p>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>2. Erbschaftsgutachten</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Ein Erbschaftsgutachten ist ein umfassendes Gutachten, das nicht nur 
-                                den Wert bestimmt, sondern auch die steuerlichen Aspekte und die 
-                                rechtliche Situation der Erbschaft analysiert.
-                            </p>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>3. Kurzgutachten</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Für einfachere Fälle kann ein Kurzgutachten ausreichen. Diese sind 
-                                schneller und kostengünstiger, aber weniger umfangreich.
-                            </p>
-
-                            <h2 style={{ fontSize: '2rem', color: 'var(--accent-secondary)' }}>Der Bewertungsprozess in Osnabrück</h2>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Ein professioneller Erbschaftsgutachter in Osnabrück folgt einem strukturierten 
-                                Prozess:
-                            </p>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>Schritt 1: Vor-Ort-Besuch</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Der Gutachter besucht die Immobilie, um:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li>Den Zustand zu beurteilen</li>
-                                <li>Die Größe und Ausstattung zu dokumentieren</li>
-                                <li>Umfeld und Lage zu analysieren</li>
-                                <li>Technische Merkmale zu dokumentieren</li>
-                            </ul>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>Schritt 2: Datenanalyse</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Die Analyse umfasst:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li>Grundbuchauszüge</li>
-                                <li>Katasterdaten</li>
-                                <li>Vergleichsobjekte</li>
-                                <li>Marktanalysen</li>
-                                <li>Steuerliche Vorgaben</li>
-                            </ul>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>Schritt 3: Wertberechnung</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Die Berechnung erfolgt nach den geltenden Methoden:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li>Vergleichswertverfahren</li>
-                                <li>Sachwertverfahren</li>
-                                <li>Ertragswertverfahren</li>
-                            </ul>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>Schritt 4: Gutachterbericht</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Der Bericht enthält:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li>Die Bewertungsmethode</li>
-                                <li>Die Ergebnisse der Analyse</li>
-                                <li>Die Schlussfolgerung</li>
-                                <li>Empfehlungen</li>
-                                <li>Steuerliche Hinweise</li>
-                            </ul>
-
-                            <h2 style={{ fontSize: '2rem', color: 'var(--accent-secondary)' }}>Kosten und Zeitplan</h2>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Die Kosten für ein Erbschaftsgutachten in Osnabrück:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li><strong>Kurzgutachten:</strong> ab 750 Euro</li>
-                                <li><strong>Verkehrswertgutachten:</strong> ab 1.800 Euro</li>
-                                <li><strong>Erbschaftsgutachten:</strong> ab 2.500 Euro</li>
-                            </ul>
-
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Die Bearbeitungszeit beträgt in der Regel 2-4 Wochen, abhängig 
-                                von der Komplexität der Immobilie und der Verfügbarkeit der 
-                                Unterlagen.
-                            </p>
-
-                            <h2 style={{ fontSize: '2rem', color: 'var(--accent-secondary)' }}>Wichtige Tipps für Erbschaftsfälle</h2>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Bei Erbschaften mit Immobilien in Osnabrück und Umgebung sollten Sie 
-                                folgende Punkte beachten:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li>Wählen Sie einen zertifizierten Gutachter</li>
-                                <li>Erhalten Sie ein unabhängiges Gutachten</li>
-                                <li>Behalten Sie alle relevanten Dokumente</li>
-                                <li>Konsultieren Sie einen Steuerberater</li>
-                                <li>Erhalten Sie eine detaillierte Aufstellung der Kosten</li>
-                            </ul>
-
-                            <h2 style={{ fontSize: '2rem', color: 'var(--accent-secondary)' }}>Warum Lasarz Immobiliengutachter?</h2>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Unser Team von zertifizierten Immobiliengutachtern in Osnabrück 
-                                versteht die besonderen Herausforderungen bei Erbschaftsfällen. 
-                                Wir bieten:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li>Objektive Bewertungen</li>
-                                <li>Rechtliche Sicherheit</li>
-                                <li>Transparente Kostenstruktur</li>
-                                <li>Umfassende Beratung</li>
-                                <li>Individuelle Lösungen</li>
-                            </ul>
-
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Bei Fragen zur Bewertung Ihres Hauses in Osnabrück oder Umgebung 
-                                kontaktieren Sie uns gerne direkt. Wir bieten individuelle Lösungen 
-                                für alle Ihre Immobilienanforderungen mit transparenten Kostenstruktur.
-                            </p>
-
-                            <div className="glass-card" style={{ padding: '2rem', marginTop: '2rem' }}>
-                                <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)', marginBottom: '1rem' }}>
-                                    Kostenlose Beratung für Ihre Immobilienbewertung
-                                </h3>
-                                <p style={{ fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                                    Haben Sie Fragen zur Bewertung Ihrer Immobilie bei Erbschaft in Osnabrück? 
-                                    Unser Team von zertifizierten Sachverständigen steht Ihnen für eine 
-                                    unverbindliche Erstberatung zur Verfügung.
-                                </p>
-                                <a href="/kontakt" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>
-                                    Jetzt Termin vereinbaren
-                                </a>
-                            </div>
-
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8, marginTop: '2rem' }}>
-                                Bei Fragen zur Bewertung Ihres Hauses in Osnabrück oder Umgebung kontaktieren Sie 
-                                uns gerne direkt. Wir bieten individuelle Lösungen für alle Ihre Immobilienanforderungen 
-                                mit transparenten Kostenstruktur.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    );
-}
+// Add the new blog post to the existing blogPosts array in blogData.ts
+// This would normally be done by modifying the blogData.ts file directly
+export { newBlogPost };

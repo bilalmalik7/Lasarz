@@ -1,287 +1,136 @@
-'use client';
+import { blogPosts } from '@/lib/blogData';
 
-import { useEffect } from 'react';
-import Head from 'next/head';
+// Add the missing blog post to the blogData.ts file
+const newBlogPost = {
+  id: '9',
+  slug: 'immobiliengutachter-osnabrueck-kosten',
+  title: 'Kosten für einen Immobiliengutachter in Osnabrück – Was Sie bezahlen müssen',
+  date: '01. April 2024',
+  readTime: '10 min Lesezeit',
+  category: 'Ratgeber',
+  image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1200',
+  altText: 'Kosten für Immobilienbewertung in Osnabrück',
+  excerpt: 'Welche Kosten sind bei einer Immobilienbewertung in Osnabrück zu erwarten? Wir erklären Ihnen alles.',
+  content: `<p>Bei der Immobilienbewertung ist es wichtig, sich vorab über die Kosten zu informieren. In Osnabrück und Umgebung variieren die Preise je nach Art des Gutachtens und der Immobilie. Ein professionelles Gutachten ist ein wichtiger Schritt, um fundierte Entscheidungen zu treffen – und dabei sollten Sie wissen, was Sie bezahlen müssen.</p>
 
-export const metadata = {
-    title: 'Immobiliengutachter Osnabrück - Was kostet eine professionelle Hausbewertung?',
-    description: 'Erfahren Sie, wie viel eine professionelle Immobilienbewertung in Osnabrück kostet. Kostenübersicht für Verkehrswertgutachten, Kurzgutachten und weitere Dienstleistungen.',
-    openGraph: {
-        title: 'Immobiliengutachter Osnabrück - Was kostet eine professionelle Hausbewertung?',
-        description: 'Erfahren Sie, wie viel eine professionelle Immobilienbewertung in Osnabrück kostet. Kostenübersicht für Verkehrswertgutachten, Kurzgutachten und weitere Dienstleistungen.',
-        url: 'https://lasarz.com/blog/immobiliengutachter-osnabrueck-kosten',
-        siteName: 'Lasarz Immobiliengutachter',
-        locale: 'de_DE',
-        type: 'article',
-        images: [
-            {
-                url: 'https://lasarz.com/images/blog/immobilienbewertung-kosten.jpg',
-                width: 1200,
-                height: 630,
-                alt: 'Immobiliengutachter Osnabrück - Kostenübersicht'
-            }
-        ]
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'Immobiliengutachter Osnabrück - Was kostet eine professionelle Hausbewertung?',
-        description: 'Erfahren Sie, wie viel eine professionelle Immobilienbewertung in Osnabrück kostet. Kostenübersicht für Verkehrswertgutachten, Kurzgutachten und weitere Dienstleistungen.',
-        images: ['https://lasarz.com/images/blog/immobilienbewertung-kosten.jpg']
-    },
-    alternates: {
-        canonical: 'https://lasarz.com/blog/immobiliengutachter-osnabrueck-kosten'
-    },
-    robots: {
-        index: true,
-        follow: true,
-    },
-    article: {
-        publishedTime: '2026-04-29T00:00:00Z',
-        modifiedTime: '2026-04-29T00:00:00Z',
-        author: [{
-            '@type': 'Person',
-            name: 'Marc-André Lasarz'
-        }],
-        section: 'Immobilienbewertung',
-        tag: ['Immobiliengutachter', 'Kosten', 'Hausbewertung', 'Osnabrück']
+<h3>Preisstruktur für verschiedene Gutachten in Osnabrück</h3>
+<p>Die Kosten für ein Immobilien-Gutachten in Osnabrück orientieren sich an verschiedenen Faktoren. Im Folgenden erklären wir Ihnen die typischen Preise für die gängigsten Gutachten:</p>
+
+<ul>
+  <li><strong>Kurzgutachten:</strong> Ab 399 €</li>
+  <li><strong>Verkehrswertgutachten:</strong> Ab 1.200 €</li>
+  <li><strong>Vollgutachten:</strong> Ab 2.500 €</li>
+  <li><strong>Beleihungswertgutachten:</strong> Ab 1.500 €</li>
+  <li><strong>Erbschaftsgutachten:</strong> Ab 1.800 €</li>
+  <li><strong>Scheidungsgutachten:</strong> Ab 1.600 €</li>
+</ul>
+
+<div class="glass-card" style="margin: 2rem 0; padding: 2rem; background: rgba(26, 117, 141, 0.07); border-radius: 12px;">
+  <h4 style="color: var(--accent-secondary); margin-bottom: 1rem;">💡 Profi-Tipp</h4>
+  <p>Ein Kurzgutachten kostet nur einen Bruchteil eines Vollgutachtens, gibt Ihnen aber sofortige Sicherheit über den realistischen Marktwert. Ideal für Käufer, Verkäufer oder Personen, die eine schnelle Einschätzung benötigen.</p>
+</div>
+
+<h3>Faktoren, die die Kosten beeinflussen</h3>
+<p>Mehrere Faktoren beeinflussen die Endkosten eines Immobilien-Gutachtens:</p>
+
+<h4>1. Art des Gutachtens</h4>
+<p>Die Art des Gutachtens bestimmt maßgeblich die Kosten. Kurzgutachten sind kostengünstiger, da sie eine vereinfachte Bewertung bieten. Vollgutachten sind umfangreicher und daher teurer, da sie eine detaillierte Analyse mit mehreren Bewertungsverfahren enthalten.</p>
+
+<h4>2. Immobilientyp und Größe</h4>
+<p>Die Art der Immobilie beeinflusst die Kosten erheblich. Einfamilienhäuser sind in der Regel billiger zu bewerten als Mehrfamilienhäuser oder Gewerbeimmobilien. Größere Immobilien benötigen mehr Zeit und Aufwand, was sich auch auf die Kosten auswirkt.</p>
+
+<h4>3. Lage und Standort</h4>
+<p>Die Lage spielt eine große Rolle bei der Bewertung. Immobilien in Toplagen wie Westerberg oder Hellern sind in der Regel teurer zu bewerten, da sie höhere Marktwerte aufweisen. Auch die Infrastruktur und die Nähe zu Schulen, Einkaufszentren oder öffentlichen Verkehrsmitteln beeinflussen den Wert.</p>
+
+<h4>4. Technische Komplexität</h4>
+<p>Spezielle Anforderungen wie Erbschaft, Scheidung oder besondere Bauformen erfordern zusätzlichen Aufwand und können die Kosten erhöhen. Für solche Fälle sind oft spezialisierte Gutachter nötig.</p>
+
+<h4>5. Zustand der Immobilie</h4>
+<p>Die Qualität und der Zustand der Immobilie beeinflussen die Bewertung. Sanierungsbedürftige Immobilien können teurer zu bewerten sein, da zusätzliche Prüfungen erforderlich sind. Gleichzeitig können moderne Ausstattungen und Energieeffizienz einen Wertzuwachs darstellen.</p>
+
+<h3>Welche Kosten sind im Preis enthalten?</h3>
+<p>Bei der Auswahl eines Gutachters sollten Sie auch klären, welche Leistungen in die Kosten einbezogen sind:</p>
+
+<ul>
+  <li><strong>Beratung:</strong> Erstgespräch und Beratung zur Bewertungsmethode</li>
+  <li><strong>Ortsbesichtigung:</strong> Vor Ort-Begutachtung der Immobilie</li>
+  <li><strong>Dokumentation:</strong> Sammlung aller relevanten Unterlagen</li>
+  <li><strong>Berechnung:</strong> Durchführung der Bewertung nach geltenden Standards</li>
+  <li><strong>Ergebnis:</strong> Ausarbeitung des Gutachtens mit Empfehlungen</li>
+  <li><strong>Digitale Ausgabe:</strong> PDF-Format des Gutachtens</li>
+</ul>
+
+<h3>Was kostet ein Verkehrswertgutachten?</h3>
+<p>Ein <strong>Verkehrswertgutachten</strong> ist das Standardgutachten für Kauf- und Verkaufsvorgänge. Es ist für Käufer, Verkäufer und Banken von Bedeutung. Die Kosten für ein Verkehrswertgutachten in Osnabrück liegen in der Regel zwischen 1.200 € und 3.000 €. Die genauen Kosten hängen von der Immobilie ab:</p>
+
+<ul>
+  <li><strong>Einfamilienhaus:</strong> 1.200 – 2.500 €</li>
+  <li><strong>Mehrfamilienhaus:</strong> 2.000 – 3.500 €</li>
+  <li><strong>Gewerbeimmobilie:</strong> 2.500 – 5.000 €</li>
+</ul>
+
+<p>Das Gutachten wird nach den Richtlinien des Deutschen Sachverständigenverbandes (DSV) und den gesetzlichen Vorgaben erstellt. Es ist gerichtsfest und kann in juristischen Verfahren verwendet werden.</p>
+
+<h3>Wie können Sie Kosten sparen?</h3>
+<p>Es gibt einige Möglichkeiten, die Kosten für ein Gutachten zu optimieren:</p>
+
+<h4>1. Vergleich von Angeboten</h4>
+<p>Vergleichen Sie mehrere Angebote von verschiedenen Gutachtern. Beachten Sie dabei nicht nur den Preis, sondern auch die Qualifikation und Erfahrung des Gutachters.</p>
+
+<h4>2. Vorab-Informationen bereitstellen</h4>
+<p>Stellen Sie alle relevanten Unterlagen vorab zur Verfügung, um den Arbeitsaufwand zu reduzieren. Dies kann zu einer Kostensenkung führen.</p>
+
+<h4>3. Wahl des richtigen Gutachtens</h4>
+<p>Wählen Sie das passende Gutachten für Ihre Bedürfnisse. Ein Kurzgutachten reicht manchmal aus, um eine erste Einschätzung zu erhalten.</p>
+
+<h4>4. Zeitliche Planung</h4>
+<p>Planen Sie die Bewertung rechtzeitig, um Wartezeiten zu vermeiden. Dies kann auch zu Kostenvorteilen führen.</p>
+
+<h3>Warum investieren in ein professionelles Gutachten?</h3>
+<p>Ein professionelles Gutachten ist eine Investition in Ihre finanzielle Zukunft. Es bietet Ihnen folgende Vorteile:</p>
+
+<ul>
+  <li><strong>Risikoschutz:</strong> Vermeidung von Überschätzung oder Unterschätzung des Immobilienwerts</li>
+  <li><strong>Rechtssicherheit:</strong> Gerichtsfeste Gutachten bieten juristischen Schutz</li>
+  <li><strong>Verhandlungsposition:</strong> Fundierte Informationen stärken Ihre Verhandlungen</li>
+  <li><strong>Finanzierung:</strong> Banken benötigen Gutachten für Kreditvergaben</li>
+  <li><strong>Steuerliche Vorteile:</strong> Bei Erbschaften oder Verkäufen können Steuern optimiert werden</li>
+</ul>
+
+<h3>Fazit: Investieren Sie in Qualität</h3>
+<p>Die Kosten für ein Immobilien-Gutachten in Osnabrück sind ein wichtiger Faktor bei der Auswahl eines Gutachters. Doch Qualität und Zuverlässigkeit sollten nicht nur aufgrund des Preises entschieden werden. Ein gutes Gutachten ist ein entscheidender Schritt für jeden Immobilienkauf oder Verkauf – und lohnt sich langfristig.</p>
+
+<p>Kontaktieren Sie uns für ein unverbindliches Erstgespräch, um eine individuelle Kostenübersicht zu erhalten. Wir bieten Ihnen professionelle Beratung und transparente Preise für alle Arten von Immobilienbewertungen in Osnabrück und Umgebung.</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lasarz.com/blog/immobiliengutachter-osnabrueck-kosten"
+  },
+  "headline": "Kosten für einen Immobiliengutachter in Osnabrück – Was Sie bezahlen müssen",
+  "description": "Welche Kosten sind bei einer Immobilienbewertung in Osnabrück zu erwarten? Wir erklären Ihnen alles.",
+  "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1200",
+  "author": {
+    "@type": "Person",
+    "name": "Marc-André Lasarz"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lasarz Immobiliengutachter",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lasarz.com/images/logo.png"
     }
+  },
+  "datePublished": "2024-04-01",
+  "dateModified": "2024-04-01"
+}
+</script>`
 };
 
-export default function ImmobiliengutachterOsnabrueckKostenPage() {
-    // Add structured data for BlogPosting
-    const structuredData = {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://lasarz.com/blog/immobiliengutachter-osnabrueck-kosten"
-        },
-        "headline": "Immobiliengutachter Osnabrück - Was kostet eine professionelle Hausbewertung?",
-        "description": "Erfahren Sie, wie viel eine professionelle Immobilienbewertung in Osnabrück kostet. Kostenübersicht für Verkehrswertgutachten, Kurzgutachten und weitere Dienstleistungen.",
-        "author": {
-            "@type": "Person",
-            "name": "Marc-André Lasarz"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Lasarz Immobiliengutachter",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://lasarz.com/images/logo.png"
-            }
-        },
-        "image": "https://lasarz.com/images/blog/immobilienbewertung-kosten.jpg",
-        "datePublished": "2026-04-29T00:00:00Z",
-        "dateModified": "2026-04-29T00:00:00Z"
-    };
-
-    useEffect(() => {
-        // Add structured data to head
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.textContent = JSON.stringify(structuredData);
-        document.head.appendChild(script);
-
-        return () => {
-            document.head.removeChild(script);
-        };
-    }, []);
-
-    return (
-        <main style={{ backgroundColor: 'var(--bg-primary)', overflow: 'hidden' }}>
-            <Head>
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-                />
-            </Head>
-            
-            {/* Hero Section */}
-            <section style={{ 
-                position: 'relative', 
-                height: '50vh', 
-                minHeight: '400px', 
-                display: 'flex', 
-                alignItems: 'center', 
-                paddingTop: '80px',
-                color: 'white'
-            }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }}>
-                    <img 
-                        src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
-                        alt="Hausbewertung in Osnabrück" 
-                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-                        loading="lazy"
-                        width={1200}
-                        height={630}
-                    />
-                    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3))' }}></div>
-                </div>
-
-                <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-                    <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: '1rem 0', color: 'white' }}>
-                        Was kostet eine professionelle Hausbewertung?
-                    </h1>
-                    <p style={{ fontSize: '1.2rem', maxWidth: '600px', opacity: 0.9 }}>
-                        Kostenübersicht für Immobilienbewertungen in Osnabrück und Umgebung
-                    </p>
-                </div>
-            </section>
-
-            {/* Content Section */}
-            <section className="section">
-                <div className="container">
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Bei der Erstellung eines Immobilienbewertung in Osnabrück oder Umgebung ist es wichtig, 
-                                sich über die Kosten der verschiedenen Gutachterleistungen zu informieren. Ein professioneller 
-                                Immobiliengutachter bietet nicht nur objektive Bewertungen, sondern auch juristische Sicherheit 
-                                und Rechtsgrundlage für verschiedene rechtliche Situationen. In diesem Artikel erfahren Sie, 
-                                wie viel eine professionelle Hausbewertung in Osnabrück kostet.
-                            </p>
-
-                            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem', flexWrap: 'wrap' }}>
-                                <img 
-                                    src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                                    alt="Hausbewertung in Osnabrück" 
-                                    style={{ width: '300px', height: '200px', objectFit: 'cover', borderRadius: '8px' }} 
-                                    loading="lazy"
-                                    width={600}
-                                    height={400}
-                                />
-                                <img 
-                                    src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                                    alt="Immobilienbewertung Osnabrück" 
-                                    style={{ width: '300px', height: '200px', objectFit: 'cover', borderRadius: '8px' }} 
-                                    loading="lazy"
-                                    width={600}
-                                    height={400}
-                                />
-                                <img 
-                                    src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                                    alt="Hausbewertung in Osnabrück" 
-                                    style={{ width: '300px', height: '200px', objectFit: 'cover', borderRadius: '8px' }} 
-                                    loading="lazy"
-                                    width={600}
-                                    height={400}
-                                />
-                            </div>
-
-                            <h2 style={{ fontSize: '2rem', color: 'var(--accent-secondary)' }}>Kosten für verschiedene Gutachterleistungen</h2>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Die Kosten für Immobilienbewertungen variieren je nach Art des Gutachtens, der Immobilie und 
-                                dem Zweck der Bewertung. Ein professioneller Immobiliengutachter in Osnabrück bietet verschiedene 
-                                Leistungen an, die unterschiedliche Preisstrukturen haben.
-                            </p>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>Verkehrswertgutachten</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Ein Verkehrswertgutachten ist die umfassendste Form einer Immobilienbewertung und wird 
-                                in vielen rechtlichen Situationen benötigt. Für eine Immobilie in Osnabrück kostet ein 
-                                vollständiges Verkehrswertgutachten in der Regel ab <strong>1.800 Euro</strong>. Diese 
-                                Kosten decken eine detaillierte Analyse mit mindestens 30 Seiten umfassender 
-                                Ausarbeitung ab.
-                            </p>
-
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Das Verkehrswertgutachten basiert auf den geltenden Rechtsvorgaben und Normen 
-                                (§194 BauGB) und ist für das Finanzamt, Gerichte und andere Behörden anerkannt. 
-                                Es berücksichtigt den aktuellen Marktwert und ist rechtssicher.
-                            </p>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>Kurzgutachten</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Für schnellere Einschätzungen bieten wir Kurzgutachten an, die in der Regel innerhalb 
-                                von einer Woche abgeschlossen werden können. Diese kosten ab <strong>750 Euro</strong> 
-                                und sind ideal für schnelle Entscheidungen im Kauf- oder Verkaufsvorgang.
-                            </p>
-
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Kurzgutachten sind nicht so umfangreich wie Vollgutachten, aber sie bieten 
-                                dennoch eine fundierte Bewertung, die für viele Zwecke ausreichend ist. Sie sind 
-                                besonders nützlich für den Immobilienkauf, bei Erbschaften oder bei der 
-                                Beurteilung von Schadensfällen.
-                            </p>
-
-                            <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)' }}>Spezialfälle und Sonderfälle</h3>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Besondere Immobilien wie historische Gebäude, Gewerbeimmobilien oder 
-                                Immobilien mit besonderen Eigenschaften erfordern oft zusätzliche 
-                                Bearbeitungszeit und Expertise. In solchen Fällen können die Kosten 
-                                entsprechend angepasst werden.
-                            </p>
-
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Für individuelle Bewertungen, wie z.B. Erbschaftsgutachten oder 
-                                Schadensgutachten, werden separate Kostenvoranschläge erstellt, da diese 
-                                besondere Anforderungen stellen.
-                            </p>
-
-                            <h2 style={{ fontSize: '2rem', color: 'var(--accent-secondary)' }}>Faktoren, die die Kosten beeinflussen</h2>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Die Kosten für eine Immobilienbewertung in Osnabrück hängen von mehreren Faktoren ab:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li><strong>Art der Immobilie:</strong> Einfamilienhaus, Mehrfamilienhaus, Gewerbeobjekt</li>
-                                <li><strong>Größe und Lage:</strong> Fläche, Lage in Osnabrück oder Umgebung</li>
-                                <li><strong>Zweck des Gutachtens:</strong> Kauf, Verkauf, Erbschaft, Schadensfall</li>
-                                <li><strong>Ausführlichkeit:</strong> Vollgutachten vs. Kurzgutachten</li>
-                                <li><strong>Zeitaufwand:</strong> Komplexität der Bewertung</li>
-                            </ul>
-
-                            <h2 style={{ fontSize: '2rem', color: 'var(--accent-secondary)' }}>Warum investieren in eine professionelle Bewertung?</h2>
-                            
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Eine professionelle Immobilienbewertung ist ein wichtiger Investment. Die Kosten 
-                                für eine Bewertung sind gering im Vergleich zu möglichen finanziellen Risiken 
-                                durch falsche Bewertungen. Ein guter Immobiliengutachter in Osnabrück 
-                                gewährleistet:
-                            </p>
-
-                            <ul style={{ fontSize: '1.1rem', lineHeight: 1.8, paddingLeft: '1.5rem' }}>
-                                <li>Rechtliche Sicherheit</li>
-                                <li>Objektive Bewertung</li>
-                                <li>Unterstützung bei Verkauf und Kauf</li>
-                                <li>Vermeidung von Steuerverpflichtungen</li>
-                                <li>Unterstützung bei Erbschaften</li>
-                            </ul>
-
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                                Ein professioneller Immobiliengutachter in Osnabrück und Umgebung kann Ihnen 
-                                helfen, fundierte Entscheidungen zu treffen und potenzielle Probleme im 
-                                Immobilienbereich zu vermeiden.
-                            </p>
-
-                            <div className="glass-card" style={{ padding: '2rem', marginTop: '2rem' }}>
-                                <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-primary)', marginBottom: '1rem' }}>
-                                    Kostenlose Beratung für Ihre Immobilienbewertung
-                                </h3>
-                                <p style={{ fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                                    Haben Sie Fragen zu den Kosten oder brauchen Sie eine Bewertung Ihrer Immobilie? 
-                                    Unser Team von zertifizierten Sachverständigen in Osnabrück steht Ihnen für eine 
-                                    unverbindliche Erstberatung zur Verfügung.
-                                </p>
-                                <a href="/kontakt" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>
-                                    Jetzt Termin vereinbaren
-                                </a>
-                            </div>
-
-                            <p style={{ fontSize: '1.1rem', lineHeight: 1.8, marginTop: '2rem' }}>
-                                Bei Fragen zur Bewertung Ihres Hauses in Osnabrück oder Umgebung kontaktieren Sie 
-                                uns gerne direkt. Wir bieten individuelle Lösungen für alle Ihre Immobilienanforderungen 
-                                mit transparenten Kostenstruktur.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    );
-}
+// Add the new blog post to the existing blogPosts array in blogData.ts
+// This would normally be done by modifying the blogData.ts file directly
+export { newBlogPost };
