@@ -32,10 +32,10 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
                 overflow: 'hidden'
             }}
         >
-            {/* Unsplash Background Image */}
+            {/* Boss Background Image */}
             <img 
-                src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=80" 
-                alt="Modern house in Osnabrück with garden and garden furniture"
+                src="/images/team/marc_lasarz.jpg" 
+                alt="Marc-André Lasarz - Immobiliengutachter Osnabrück"
                 style={{
                     position: 'absolute',
                     top: 0,
@@ -43,6 +43,7 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
+                    objectPosition: 'center 20%',
                     zIndex: 0
                 }}
                 loading="lazy"
@@ -52,7 +53,7 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
             <div style={{
                 position: 'absolute',
                 top: 0, left: 0, right: 0, bottom: 0,
-                backgroundColor: theme?.overlay || 'rgba(18, 43, 64, 0.65)', /* Lasarz Dark Blue Overlay */
+                backgroundColor: theme?.overlay || 'rgba(12, 33, 50, 0.7)', /* Slightly darker overlay for portrait bg */
                 zIndex: 1
             }} />
 
@@ -134,11 +135,11 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
                             Zertifiziert und anerkannt durch:
                         </p>
                         <div style={{ display: 'inline-flex', gap: '1.5rem', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', background: 'rgba(255,255,255,0.95)', padding: '15px 25px', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.15)' }}>
-                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&q=80" alt="BVS Zertifikat für Immobilienbewertung" style={{ height: '40px', objectFit: 'contain' }} loading="lazy" />
-                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&q=80" alt="DIA Zertifikat für Immobilienbewertung" style={{ height: '40px', objectFit: 'contain' }} loading="lazy" />
-                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&q=80" alt="REV Siegel für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} loading="lazy" />
-                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&q=80" alt="DIA Zert Stempel für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} loading="lazy" />
-                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&q=80" alt="SV-R Zertifizierung für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} loading="lazy" />
+                            <img src="/images/original_clone/bvs_e_v_logo.jpeg" alt="BVS Zertifikat für Immobilienbewertung" style={{ height: '40px', objectFit: 'contain' }} loading="lazy" />
+                            <img src="/images/original_clone/NEU-Logo-DIAzert_7-09-300x228.jpg" alt="DIA Zertifikat für Immobilienbewertung" style={{ height: '40px', objectFit: 'contain' }} loading="lazy" />
+                            <img src="/images/original_clone/REV-Siegel_2018-002.jpg" alt="REV Siegel für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} loading="lazy" />
+                            <img src="/images/original_clone/Stempel-DIAZert-2025.jpg" alt="DIA Zert Stempel für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} loading="lazy" />
+                            <img src="/images/original_clone/SV-R-Immo-D3_042028_ger_tc_p-182x300.jpg" alt="SV-R Zertifizierung für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} loading="lazy" />
                         </div>
                     </motion.div>
                 </motion.div>
