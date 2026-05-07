@@ -4,9 +4,9 @@ import { blogPosts } from '@/lib/blogData';
 const newBlogPost = {
   id: '10',
   slug: 'immobilienwert-osnabrueck',
-  title: 'Immobilienwert Osnabrück: Wie wird der Wert Ihrer Immobilie berechnet?',
-  date: '05. April 2024',
-  readTime: '12 min Lesezeit',
+  title: 'Immobilienwert ermitteln in Osnabrück - So geht es richtig',
+  date: '10. April 2024',
+  readTime: '15 min Lesezeit',
   category: 'Grundlagen',
   image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200',
   altText: 'Immobilienwert Osnabrück – Wie wird der Wert berechnet',
@@ -24,6 +24,8 @@ const newBlogPost = {
 </ul>
 
 <p>Ein professionelles Gutachten liefert nicht nur den aktuellen Wert, sondern auch eine fundierte Analyse, die für alle Beteiligten von Vorteil ist.</p>
+
+<img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200" alt="Immobilienwert Osnabrück – Wie wird der Wert berechnet" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:450px;" />
 
 <h3>Die wichtigsten Bewertungsverfahren in Osnabrück</h3>
 
@@ -179,7 +181,7 @@ const newBlogPost = {
     "@type": "WebPage",
     "@id": "https://lasarz.com/blog/immobilienwert-osnabrueck"
   },
-  "headline": "Immobilienwert Osnabrück: Wie wird der Wert Ihrer Immobilie berechnet?",
+  "headline": "Immobilienwert ermitteln in Osnabrück - So geht es richtig",
   "description": "Erfahren Sie, wie Immobilien in Osnabrück bewertet werden. Wir erklären die wichtigsten Bewertungsverfahren und Faktoren.",
   "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200",
   "author": {
@@ -194,8 +196,8 @@ const newBlogPost = {
       "url": "https://lasarz.com/images/logo.png"
     }
   },
-  "datePublished": "2024-04-05",
-  "dateModified": "2024-04-05"
+  "datePublished": "2024-04-10",
+  "dateModified": "2024-04-10"
 }
 </script>`
 };

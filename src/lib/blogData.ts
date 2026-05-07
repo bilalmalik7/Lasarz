@@ -17,7 +17,6 @@ export const blogPosts: BlogPost[] = [
         slug: 'marktwert-vs-beleihungswert',
         title: 'Marktwert vs. Beleihungswert: Was ist der Unterschied?',
         date: '15. Februar 2024',
-        readTime: '5 min Lesezeit',
         category: 'Grundlagen',
         image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800',
         altText: 'Marktwert vs. Beleihungswert – Immobilienbewertung Osnabrück',
@@ -148,7 +147,6 @@ export const blogPosts: BlogPost[] = [
         slug: 'checkliste-dokumente-hausverkauf',
         title: 'Checkliste: Die wichtigsten Dokumente für den Hausverkauf',
         date: '02. Februar 2024',
-        readTime: '4 min Lesezeit',
         category: 'Ratgeber',
         image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800',
         altText: 'Checkliste Dokumente Hausverkauf – Immobiliengutachter Osnabrück',
@@ -260,7 +258,6 @@ export const blogPosts: BlogPost[] = [
         slug: 'immobilienmarkt-osnabrueck-2024',
         title: 'Immobilienmarkt Osnabrück 2024: Trends und Prognosen',
         date: '20. Januar 2024',
-        readTime: '6 min Lesezeit',
         category: 'Marktanalyse',
         image: 'https://images.unsplash.com/photo-1582408921715-18e7806365c1?auto=format&fit=crop&q=80&w=800',
         altText: 'Immobilienmarkt Osnabrück 2024 – Trends und Prognosen',
@@ -348,31 +345,62 @@ export const blogPosts: BlogPost[] = [
         slug: 'immobiliengutachter-osnabrueck-hausverkauf',
         title: 'Warum ein Immobiliengutachter in Osnabrück beim Hausverkauf essenziell ist',
         date: '28. März 2024',
-        readTime: '5 min Lesezeit',
         category: 'Verkauf',
         image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
         altText: 'Immobiliengutachter Osnabrück – Hausverkauf professionell begleiten',
         excerpt: 'Wer sein Haus verkauft, möchte weder Geld verschenken noch auf der Immobilie sitzen bleiben. Ein zertifizierter Gutachter aus Osnabrück schafft Klarheit und schützt vor teuren Fehlern.',
+        readTime: '10 min Lesezeit',
         content: `
-            <p>Der Verkaufspreis einer Immobilie entscheidet maßgeblich über den schnellen Erfolg am Markt. In einer dynamischen Stadt wie <strong>Osnabrück</strong> kann ein schlecht gewählter Angebotspreis verheerende finanzielle Folgen haben. Hier kommt ein professioneller <strong>Immobiliengutachter</strong> ins Spiel.</p>
+            <p>Der Verkauf der eigenen Immobilie ist für die meisten Menschen in Osnabrück eine der bedeutendsten finanziellen Entscheidungen ihres Lebens. Doch während bei technischen Geräten oder Autos Preise oft klar definiert sind, ist der Immobilienmarkt wesentlich komplexer. Wer sein Haus in Osnabrück oder Umgebung verkaufen möchte, steht vor einer entscheidenden Frage: Wie viel ist mein Objekt tatsächlich wert? Ein professioneller <strong>Immobiliengutachter</strong> ist hier nicht nur ein Dienstleister, sondern der Schlüssel zu einem erfolgreichen, stressfreien und finanziell optimalen Verkauf.</p>
 
-            <h3>Die Gefahr des "emotionalen" Angebotspreises</h3>
-            <p>Viele Eigentümer hängen emotional an ihrem Haus und überschätzen den Wert. Setzen Sie den Preis zu hoch an, wird Ihre Immobilie zum Ladenhüter. Wird er jedoch zu niedrig kalkuliert, verlieren Sie bares Geld. Ein objektives <strong>Verkehrswertgutachten</strong> schützt Sie vor beiden Extremen und bietet fundierte Argumente bei der Preisverhandlung mit potenziellen Käufern in Osnabrück und Umgebung.</p>
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200" alt="Professionelle Immobilienberatung Osnabrück" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:450px;" />
 
-            <h3>Lokale Marktkenntnis als Schlüssel</h3>
-            <p>Ein Gutachter, der den Osnabrücker Markt in- und auswendig kennt, berücksichtigt spezielle lokale Gegebenheiten:</p>
+            <h3>Die Gefahr des emotionalen Angebotspreises</h3>
+            <p>Viele Eigentümer in Osnabrück hängen emotional an ihrem Zuhause. Jede Renovierung, jeder im Garten gepflanzte Baum und die Erinnerungen an Jahrzehnte fließen oft unbewusst in die Preisvorstellung ein. Dies führt häufig zu zwei extremen Szenarien:</p>
+            <ol>
+                <li><strong>Der Preis ist zu hoch:</strong> Die Immobilie wird zum „Ladenhüter“. Kaufinteressenten in Osnabrück sind heute besser informiert denn je. Ein überhöhter Preis schreckt ernsthafte Käufer ab. Je länger ein Haus am Markt ist, desto skeptischer werden potenzielle Käufer („Da muss doch ein Haken sein“), was letztendlich oft zu einem Verkauf unter dem tatsächlichen Marktwert führt.</li>
+                <li><strong>Der Preis ist zu niedrig:</strong> In begehrten Lagen wie dem Westerberg oder der Wüste in Osnabrück werden Immobilien oft innerhalb weniger Tage verkauft. Ein zu niedrig angesetzter Preis führt zwar zu einem schnellen Abschluss, bedeutet für Sie aber den unwiederbringlichen Verlust von oft fünfstelligen Summen.</li>
+            </ol>
+            <p>Ein unabhängiger Gutachter wie Marc-André Lasarz betrachtet Ihr Objekt mit neutralen Augen und schützt Sie vor beiden Fehlern durch ein fundiertes <strong>Verkehrswertgutachten</strong>.</p>
+
+            <h3>Lokale Marktkenntnis: Warum ein regionaler Experte für Osnabrück unverzichtbar ist</h3>
+            <p>Der Immobilienmarkt in Osnabrück ist kein homogener Block. Er besteht aus unzähligen Mikrolagen, die sich in ihrer Wertentwicklung massiv unterscheiden können. Ein Algorithmus einer Online-Bewertung kann nicht erfassen, ob eine Straße in Hellern besonders ruhig ist oder ob ein Objekt in der Nähe der Universität in Osnabrück ein spezielles Entwicklungspotenzial hat.</p>
+            <p>Ein lokaler Immobiliengutachter berücksichtigt:</p>
             <ul>
-                <li><strong>Mikrolage:</strong> Wie entwickeln sich die Preise auf dem Westerberg im Vergleich zum Schinkel?</li>
-                <li><strong>Infrastruktur:</strong> Die Nähe zur Universität, zu Schulen oder zum Hauptbahnhof.</li>
-                <li><strong>Markttrends:</strong> Aktuelle Bodenrichtwerte des Gutachterausschusses Osnabrück.</li>
+                <li><strong>Aktuelle Bodenrichtwerte:</strong> Die Daten des Gutachterausschusses Osnabrück werden präzise auf Ihr spezifisches Grundstück angewendet.</li>
+                <li><strong>Infrastrukturelle Entwicklungen:</strong> Geplante Baumaßnahmen, neue Verkehrsanbindungen oder Änderungen im Bebauungsplan in Osnabrück beeinflussen den Wert Ihrer Immobilie heute und in Zukunft.</li>
+                <li><strong>Zielgruppenanalyse:</strong> Wer sucht in Ihrem Stadtteil? Familien, Investoren oder junge Paare? Ein Gutachter weiß, welche Merkmale für welche Käufergruppe in Osnabrück wertsteigernd wirken.</li>
             </ul>
 
-            <div class="glass-card" style="margin: 2rem 0; border-left: 4px solid var(--accent-primary);">
-                <h3>Mehr Sicherheit durch Zertifizierung</h3>
-                <p>Als DIN EN ISO/IEC 17024 zertifizierter Sachverständiger garantiert <strong>Marc-André Lasarz</strong> ein Höchstmaß an Qualität und Transparenz. Ein solches Gutachten stärkt das Vertrauen der Käufer enorm und beschleunigt den Verkaufsprozess maßgeblich.</p>
+            <div class="glass-card" style="margin: 2rem 0; padding: 2rem; background: rgba(26, 117, 141, 0.07); border-radius: 12px;">
+                <h4 style="color: var(--accent-secondary); margin-bottom: 1rem;">🔍 Wussten Sie schon?</h4>
+                <p>Eine professionelle Wertermittlung vor dem Verkaufsstart kann den Verkaufspreis in Osnabrück im Durchschnitt um <strong>5 % bis 8 %</strong> steigern, da Sie mit fundierten Argumenten in die Preisverhandlung gehen und überhöhte Preisnachlässe vermeiden.</p>
             </div>
 
-            <p>Ersparen Sie sich lange Verhandlungen und riskieren Sie keinen Wertverlust: Lassen Sie Ihre Immobilie vom Experten in Osnabrück bewerten, bevor Sie mit dem Verkauf starten.</p>
+            <h3>Sicherheit bei der Kaufpreisverhandlung</h3>
+            <p>Wenn ein potenzieller Käufer in Osnabrück versucht, den Preis zu drücken, haben Sie mit einem Gutachten ein unschlagbares Argument. Statt vager Schätzungen präsentieren Sie harte Fakten eines zertifizierten Sachverständigen. Das schafft nicht nur Klarheit, sondern signalisiert dem Käufer auch Professionalität und Seriosität. In vielen Fällen akzeptieren auch die finanzierenden Banken der Käufer ein solches Gutachten schneller, was den gesamten Prozess beschleunigt.</p>
+
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200" alt="Erfolgreicher Hausverkauf Osnabrück" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:400px;" />
+
+            <h3>Qualität durch Zertifizierung: DIN EN ISO/IEC 17024</h3>
+            <p>Immobilienbewertung ist Vertrauenssache. In Deutschland ist der Begriff „Gutachter“ rechtlich nicht geschützt. Deshalb sollten Sie auf Zertifizierungen achten. Marc-André Lasarz ist als Sachverständiger für Immobilienbewertung nach <strong>DIN EN ISO/IEC 17024</strong> zertifiziert. Diese weltweit anerkannte Zertifizierung garantiert:</p>
+            <ul>
+                <li><strong>Höchste fachliche Kompetenz:</strong> Regelmäßige Prüfungen und Weiterbildungen sind Pflicht.</li>
+                <li><strong>Unabhängigkeit und Objektivität:</strong> Das Gutachten wird nach strengen, neutralen Kriterien erstellt.</li>
+                <li><strong>Rechtssicherheit:</strong> Ein solches Gutachten wird von Banken, Finanzämtern und Gerichten in Osnabrück und bundesweit anerkannt.</li>
+            </ul>
+
+            <h3>Vermeidung von Haftungsrisiken</h3>
+            <p>Ein oft unterschätzter Punkt beim Hausverkauf in Osnabrück ist die Haftung für Sachmängel. Ein professioneller Gutachter dokumentiert den Zustand der Immobilie akribisch. Wenn Sie dem Käufer das Gutachten zur Verfügung stellen, dokumentieren Sie transparent den Zustand zum Verkaufszeitpunkt. Dies kann Sie vor späteren Regressansprüchen schützen, da Sie Ihrer Informationspflicht umfassend nachgekommen sind.</p>
+
+            <div class="glass-card" style="margin: 2rem 0; border-left: 4px solid #e8a838; padding: 1.5rem 2rem;">
+                <h4 style="color: var(--accent-secondary);">⚠️ Achtung bei Online-Bewertungen</h4>
+                <p>Kostenlose Online-Tools nutzen oft nur grobe Durchschnittswerte. Sie können Bauschäden, energetische Sanierungen oder die spezielle Lagequalität in Osnabrück nicht vor Ort bewerten. Für eine erste Orientierung okay, für einen echten Verkauf jedoch gefährlich ungenau.</p>
+            </div>
+
+            <h3>Fazit: Ein Investment, das sich mehrfach auszahlt</h3>
+            <p>Die Kosten für einen Immobiliengutachter in Osnabrück sind im Vergleich zur Verkaufssumme minimal. Doch der Mehrwert ist enorm: Sie erhalten Sicherheit, erzielen den bestmöglichen Preis und minimieren rechtliche Risiken. Überlassen Sie den Erfolg Ihres Hausverkaufs nicht dem Zufall.</p>
+            <p>Vertrauen Sie auf die Expertise von Marc-André Lasarz. Wir begleiten Sie professionell bei Ihrem Hausverkauf in Osnabrück und sorgen dafür, dass Sie mit einem guten Gefühl und dem optimalen Erlös in Ihren neuen Lebensabschnitt starten. Kontaktieren Sie uns für ein unverbindliches Erstgespräch.</p>
         `
     },
     {
@@ -380,29 +408,67 @@ export const blogPosts: BlogPost[] = [
         slug: 'erbschaftsgutachten-osnabrueck',
         title: 'Erbschaftsgutachten Osnabrück: Immobilien fair und gerichtsfest bewerten',
         date: '26. März 2024',
-        readTime: '7 min Lesezeit',
         category: 'Erbschaft',
         image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800',
         altText: 'Erbschaftsgutachten Osnabrück – Immobilien fair bewerten',
         excerpt: 'Immobiliarerbschaften bergen oft Konfliktpotenzial, insbesondere gegenüber dem Finanzamt oder innerhalb von Erbengemeinschaften. Ein Verkehrswertgutachten beugt Streitigkeiten vor.',
+        readTime: '12 min Lesezeit',
         content: `
-            <p>Wenn eine Immobilie im Raum Osnabrück vererbt wird, kommt fast immer das Finanzamt ins Spiel, um die Erbschaftsteuer zu berechnen. Nicht selten wertet das Finanzamt die Immobilie in einem pauschalen Verfahren höher ein, als sie tatsächlich wert ist. Was viele nicht wissen: Als Erbe können Sie durch ein <strong>gerichtsfestes Verkehrswertgutachten</strong> den geringeren wahren Wert (Öffnungsklausel nach § 198 BewG) nachweisen.</p>
+            <p>Der Tod eines Angehörigen ist eine emotionale Extremsituation. Wenn dann noch eine Immobilie zum Erbe gehört, kommen schnell komplexe rechtliche und finanzielle Fragen auf. Besonders das Finanzamt zeigt in solchen Momenten großes Interesse an der Wertermittlung. In diesem Ratgeber erfahren Sie, warum ein professionelles <strong>Erbschaftsgutachten in Osnabrück</strong> nicht nur Stress mindert, sondern Ihnen oft auch viele Tausend Euro an Erbschaftsteuer ersparen kann.</p>
 
-            <h3>Schutz vor zu hoher Erbschaftsstelle</h3>
-            <p>Das pauschale Massenbewertungsverfahren des Gesetzgebers berücksichtigt oft keine spezifischen Besonderheiten einer Immobilie in Osnabrück:</p>
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200" alt="Erbschaftsgutachten Immobilien Osnabrück" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:450px;" />
+
+            <h3>Das Problem: Die pauschale Bewertung durch das Finanzamt</h3>
+            <p>Wenn eine Immobilie in Osnabrück vererbt wird, setzt das Finanzamt automatisch einen Wert fest, um die Erbschaftsteuer zu berechnen. Das Problem dabei: Das Finanzamt besichtigt die Immobilie nicht vor Ort. Es nutzt stattdessen ein standardisiertes Massenbewertungsverfahren, das auf Durchschnittswerten basiert.</p>
+            <p>Diese pauschale Bewertung führt in Osnabrück häufig zu Werten, die deutlich über dem tatsächlichen Marktwert liegen, weil individuelle wertmindernde Faktoren ignoriert werden:</p>
             <ul>
-                <li><strong>Bauschäden:</strong> Versteckte Risse, Feuchteschäden oder ein alterndes Dach.</li>
-                <li><strong>Sanierungsstau:</strong> Unzureichende Dämmung oder alte Heizungsanlagen (GEG-Vorgaben).</li>
-                <li><strong>Grundstücksspezifische Themen:</strong> Dienstbarkeiten, Wohnrechte oder Wegerechte, die den Wert mindern.</li>
+                <li><strong>Sanierungsstau:</strong> Eine alte Heizung, ein undichtes Dach oder feuchte Kellerwände werden nicht berücksichtigt.</li>
+                <li><strong>Bauschäden:</strong> Risse im Mauerwerk oder Schimmelbefall mindern den Wert massiv, sind dem Finanzamt aber unbekannt.</li>
+                <li><strong>Rechtliche Lasten:</strong> Eingetragene Wohnrechte oder Nießbrauchrechte mindern den Verkehrswert einer Immobilie oft um sechsstellige Beträge.</li>
             </ul>
-            <p>Ein Sachverständigengutachten weist diese Aspekte präzise aus und kann die Erbschafsteuer drastisch senken oder sogar komplett verhindern.</p>
 
-            <div class="glass-card" style="margin: 2rem 0; padding: 2rem; background: rgba(26, 117, 141, 0.05);">
-                <h4>Fairness in der Erbengemeinschaft</h4>
-                <p>Wenn die geerbte Immobilie an einen Miterben übertragen oder verkauft werden soll, ist die faire Aufteilung des Erlöses entscheidend. Ein unabhängiges Gutachten durch Marco-André Lasarz lässt keinen Raum für emotionale Diskussionen und sichert den Familienfrieden.</p>
+            <h3>Die Lösung: Die „Öffnungsklausel“ nach § 198 BewG</h3>
+            <p>Der Gesetzgeber lässt Ihnen ein Hintertürchen offen. Durch die sogenannte Öffnungsklausel im Bewertungsgesetz (§ 198 BewG) haben Erben das Recht, einen niedrigeren gemeinen Wert (Verkehrswert) nachzuweisen. Dieser Nachweis muss zwingend durch ein <strong>Gutachten eines zertifizierten Sachverständigen</strong> erbracht werden.</p>
+            <p>Ein von Marc-André Lasarz erstelltes Gutachten ist gerichtsfest und wird vom Finanzamt Osnabrück als Nachweis anerkannt. In vielen Fällen sinkt die Steuerlast dadurch so erheblich, dass sich die Kosten für das Gutachten bereits um ein Vielfaches amortisiert haben.</p>
+
+            <div class="glass-card" style="margin: 2rem 0; padding: 2rem; background: rgba(26, 117, 141, 0.07); border-radius: 12px;">
+                <h4 style="color: var(--accent-secondary); margin-bottom: 1rem;">📊 Beispielrechnung Erbschaftsteuer</h4>
+                <p>Finanzamt-Schätzung für ein Haus in Osnabrück: <strong>650.000 €</strong></p>
+                <p>Tatsächlicher Wert laut Sachverständigengutachten (aufgrund von Sanierungsstau): <strong>520.000 €</strong></p>
+                <p>Ersparnis beim steuerpflichtigen Erwerb: <strong>130.000 €</strong></p>
+                <p>Je nach Steuerklasse und Freibetrag kann dies eine Steuerersparnis von <strong>15.000 € bis 40.000 €</strong> bedeuten.</p>
             </div>
 
-            <p>Verlassen Sie sich im Erbfall nicht auf Schätzungen, sondern beauftragen Sie einen zertifizierten <strong>Immobiliengutachter für Osnabrück</strong>.</p>
+            <h3>Gerechtigkeit innerhalb der Erbengemeinschaft</h3>
+            <p>Oft gibt es nicht nur einen Erben, sondern eine Erbengemeinschaft. Wenn ein Miterbe das Haus in Osnabrück übernehmen und die anderen auszahlen möchte, ist Streit vorprogrammiert. Was ist ein fairer Preis? Der eine möchte möglichst wenig zahlen, der andere möglichst viel erhalten.</p>
+            <p>Ein unabhängiges Verkehrswertgutachten wirkt hier als „Friedensstifter“. Da es von einem unparteiischen Sachverständigen nach objektiven Kriterien erstellt wurde, bietet es eine neutrale Diskussionsgrundlage. Das verhindert, dass emotionale Konflikte die Familie spalten und führt zu einer für alle Seiten fairen Lösung.</p>
+
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200" alt="Beratung Erbengemeinschaft Osnabrück" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:400px;" />
+
+            <h3>Besonderheit: Die Bewertung von Rechten und Lasten</h3>
+            <p>Gerade bei geerbten Immobilien in Osnabrück finden sich im Grundbuch oft Eintragungen wie Wohnrechte für den überlebenden Ehepartner. Solche Rechte mindern den Wert einer Immobilie für den Markt drastisch. Das Finanzamt berücksichtigt diese oft nur unzureichend. Ein zertifizierter Gutachter berechnet den Barwert dieser Belastungen präzise und zieht sie vom Marktwert ab – ein entscheidender Faktor für die steuerliche Bewertung.</p>
+
+            <h3>Wann sollten Sie das Gutachten in Auftrag geben?</h3>
+            <p>Idealerweise sollten Sie nicht warten, bis der Steuerbescheid des Finanzamtes im Briefkasten liegt. Sobald klar ist, dass eine Immobilie in Osnabrück Teil der Erbmasse ist, empfiehlt sich die Kontaktaufnahme mit einem Sachverständigen. So gewinnen Sie frühzeitig Klarheit für die Verhandlungen innerhalb der Familie und sind bestens auf die Kommunikation mit dem Fiskus vorbereitet.</p>
+
+            <div class="glass-card" style="margin: 2rem 0; border-left: 4px solid #e8a838; padding: 1.5rem 2rem;">
+                <h4 style="color: var(--accent-secondary);">💡 Wichtiger Hinweis</h4>
+                <p>Achten Sie darauf, dass der Gutachter für die Immobilienbewertung zertifiziert ist (z.B. nach DIN EN ISO/IEC 17024). Nur solche Gutachten haben vor dem Finanzamt und im Zweifelsfall vor Gericht Bestand.</p>
+            </div>
+
+            <h3>Ablauf der Erbschaftsbewertung in Osnabrück</h3>
+            <p>Die Erstellung eines Erbschaftsgutachtens durch Lasarz Immobilienbewertung folgt einem strukturierten Prozess:</p>
+            <ol>
+                <li><strong>Erstgespräch:</strong> Klärung des Zwecks (Steuerersparnis, Auszahlung, Verkauf).</li>
+                <li><strong>Ortsbesichtigung:</strong> Gründliche Untersuchung der Immobilie in Osnabrück inklusive Dokumentation aller Schäden.</li>
+                <li><strong>Recherche:</strong> Einholung von Bodenrichtwerten, Auskünften aus dem Baulastenverzeichnis und Marktdaten.</li>
+                <li><strong>Gutachtenerstellung:</strong> Detaillierte schriftliche Ausarbeitung nach den gesetzlichen Wertermittlungsverordnungen.</li>
+                <li><strong>Besprechung:</strong> Erläuterung des Ergebnisses und Beratung zum weiteren Vorgehen gegenüber dem Finanzamt.</li>
+            </ol>
+
+            <h3>Fazit: Sicherheit und Fairness im Erbfall</h3>
+            <p>Ein Erbschaftsgutachten ist eine Investition in Gerechtigkeit und finanzielle Sicherheit. Es schützt Sie vor überhöhten Forderungen des Staates und hilft, den Familienfrieden zu bewahren. In Osnabrück und Umgebung ist Marc-André Lasarz Ihr kompetenter Partner für diese sensible Aufgabe.</p>
+            <p>Lassen Sie sich in dieser schwierigen Zeit professionell unterstützen. Wir sorgen dafür, dass die Bewertung Ihrer Erbschaftsimmobilie absolut fair, transparent und rechtssicher erfolgt. Kontaktieren Sie uns für eine diskrete Beratung.</p>
         `
     },
     {
@@ -410,29 +476,57 @@ export const blogPosts: BlogPost[] = [
         slug: 'scheidung-immobilie-osnabrueck',
         title: 'Scheidung und Immobilie in Osnabrück: So hilft ein Verkehrswertgutachten',
         date: '22. März 2024',
-        readTime: '6 min Lesezeit',
         category: 'Scheidung',
         image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800',
         altText: 'Scheidung und Immobilie Osnabrück – Verkehrswertgutachten',
         excerpt: 'Eine Scheidung ist emotional belastend genug. Ein unabhängiges Immobilien-Gutachten schafft eine faire Trennung des gemeinsamen Vermögenswerts ohne rechtliche Streitereien.',
+        readTime: '11 min Lesezeit',
         content: `
-            <p>Die größte finanzielle Hürde bei einer Scheidung ist meist das gemeinsame Eigenheim. Wer übernimmt das Haus in Osnabrück? Muss es verkauft werden? Und vor allem: <strong>Wie viel ist es aktuell wert?</strong></p>
+            <p>Eine Scheidung gehört zu den belastendsten Ereignissen im Leben. Wenn zum emotionalen Stress noch die Auseinandersetzung um das gemeinsame Haus in Osnabrück kommt, eskalieren Konflikte oft schnell. Dabei ist die Immobilie meist der wertvollste gemeinsame Vermögenswert. In diesem Ratgeber erfahren Sie, warum ein neutrales <strong>Verkehrswertgutachten in Osnabrück</strong> der Schlüssel zu einer fairen Trennung ist und wie Sie teure gerichtliche Auseinandersetzungen vermeiden.</p>
 
-            <h3>Die Basis für den Zugewinnausgleich</h3>
-            <p>Für den Zugewinnausgleich muss exakt bestimmt werden, welchen Wert das Haus am Tag der Eheschließung hatte (Anfangsvermögen) und welchen es am Tag der Zustellung des Scheidungsantrags aufweist (Endvermögen). Ohne ein professionelles, unparteiisches <strong>Verkehrswertgutachten</strong> ist eine gerechte Auszahlung (z.B. wenn ein Partner das Haus behält) kaum möglich.</p>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1200" alt="Immobilie bei Scheidung Osnabrück" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:450px;" />
 
-            <h3>Vermeidung kostspieliger Gerichtsstreitigkeiten</h3>
-            <p>Einigen sich die Parteien nicht, kann das Familiengericht selbst ein Gutachten in Auftrag geben. Das kostet oft wertvolle Zeit und führt zu wesentlich höheren Kosten. Beauftragen Sie jedoch im Vorfeld einvollumfängliches <strong>Schiedsgutachten</strong> durch einen DIN EN ISO zertifizierten Immobiliengutachter in Osnabrück, entfällt dieser Aufwand und das Gutachten hat vor Gericht Bestand.</p>
+            <h3>Die zentrale Frage: Wer bekommt was?</h3>
+            <p>Bei einer Scheidung in Osnabrück stehen Paare in Bezug auf ihre Immobilie meist vor drei Optionen:</p>
+            <ol>
+                <li><strong>Ein Partner übernimmt das Haus:</strong> Er zahlt den anderen Partner aus. Hier ist ein präziser Marktwert lebenswichtig, damit weder der eine zu viel zahlt noch der andere zu wenig erhält.</li>
+                <li><strong>Gemeinsamer Verkauf:</strong> Der Erlös wird nach Abzug der Restschulden geteilt. Auch hier hilft ein Gutachten, um einen realistischen Verkaufspreis am Osnabrücker Markt festzulegen.</li>
+                <li><strong>Realteilung:</strong> Bei Mehrfamilienhäusern in Osnabrück kann das Objekt manchmal in Wohneigentum aufgeteilt werden, sodass jeder Partner eine Einheit behält.</li>
+            </ol>
 
-            <div class="glass-card" style="margin: 2rem 0;">
-                <h3>Transparenz und Diskretion</h3>
-                <ul>
-                    <li><strong>Unabhängigkeit:</strong> Als zertifizierter Sachverständiger handele ich völlig unparteiisch – zum Schutz beider Seiten.</li>
-                    <li><strong>Diskretion:</strong> Die Bewertung erfolgt diskret, schnell und ohne unnötige Reibungspunkte in einer ohnehin schwierigen Lebenslage.</li>
-                </ul>
+            <h3>Der Zugewinnausgleich: Warum Stichtage entscheidend sind</h3>
+            <p>Im gesetzlichen Güterstand der Zugewinngemeinschaft muss der während der Ehe erzielte Vermögenszuwachs geteilt werden. Für die Immobilie in Osnabrück bedeutet das: Man muss wissen, was das Haus am Tag der Eheschließung wert war (Anfangsvermögen) und was es am Tag der Zustellung des Scheidungsantrags wert ist (Endvermögen).</p>
+            <p>Da Immobilienpreise in Osnabrück über Jahrzehnte massiv gestiegen sind, ist dieser Wertzuwachs oft beträchtlich. Ein zertifizierter Gutachter kann auch rückwirkende Bewertungen für diese Stichtage erstellen, was für die juristische Berechnung des Zugewinns unerlässlich ist.</p>
+
+            <div class="glass-card" style="margin: 2rem 0; padding: 2rem; background: rgba(26, 117, 141, 0.07); border-radius: 12px;">
+                <h4 style="color: var(--accent-secondary); margin-bottom: 1rem;">⚖️ Der Vorteil eines Schiedsgutachtens</h4>
+                <p>Statt dass jeder Partner einen eigenen Gutachter beauftragt (was oft zu widersprüchlichen Ergebnissen und Streit führt), können sich beide Seiten auf Marc-André Lasarz als gemeinsamen Sachverständigen einigen. Dieses sogenannte <strong>Schiedsgutachten</strong> ist für beide Seiten bindend und spart enorme Kosten und Zeit gegenüber einem gerichtlichen Verfahren.</p>
             </div>
 
-            <p>Setzen Sie bei einer Trennung auf klare Fakten. Eine präzise Wertermittlung rettet nicht nur finanzielles Kapital, sondern mindert auch erheblich den Stress.</p>
+            <h3>Vermeidung der Teilungsversteigerung</h3>
+            <p>Können sich die Ehepartner in Osnabrück nicht auf eine Lösung einigen, droht am Ende die Teilungsversteigerung beim Amtsgericht Osnabrück. Dies ist fast immer die schlechteste Lösung: Die Immobilie wird oft weit unter Marktwert versteigert, und hohe Gerichtskosten fallen an. Ein rechtzeitiges, neutrales Gutachten schafft die Faktenbasis, die eine außergerichtliche Einigung oft erst möglich macht.</p>
+
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&q=80&w=1200" alt="Beratung Scheidungsimmobilie Osnabrück" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:400px;" />
+
+            <h3>Was ein Gutachter bei einer Scheidung prüft</h3>
+            <p>Bei einer Scheidungsimmobilie in Osnabrück geht es nicht nur um die Lage. Der Gutachter dokumentiert auch:</p>
+            <ul>
+                <li><strong>Instandhaltungsstau:</strong> Wurden während der Ehe notwendige Reparaturen unterlassen? Das mindert das Endvermögen.</li>
+                <li><strong>Wertsteigernde Umbauten:</strong> Wurde das Dachgeschoss ausgebaut oder eine hochwertige Küche installiert? Das erhöht den Zugewinn.</li>
+                <li><strong>Rechtliche Besonderheiten:</strong> Bestehen Grundschulden, die den auszuzahlenden Wert mindern?</li>
+            </ul>
+
+            <h3>Neutralität ist oberstes Gebot</h3>
+            <p>Als zertifizierter Sachverständiger ist Marc-André Lasarz zur absoluten Unparteilichkeit verpflichtet. Er ist weder „Anwalt“ des einen noch des anderen Partners. Diese Neutralität ist der Grund, warum Gutachten von zertifizierten Sachverständigen auch vor Familiengerichten in Osnabrück hohe Anerkennung genießen.</p>
+
+            <div class="glass-card" style="margin: 2rem 0; border-left: 4px solid #e8a838; padding: 1.5rem 2rem;">
+                <h4 style="color: var(--accent-secondary);">💡 Tipp für die Praxis</h4>
+                <p>Lassen Sie das Gutachten so früh wie möglich erstellen. Sobald klare Zahlen auf dem Tisch liegen, kehrt oft Sachlichkeit in die Verhandlungen ein. Dies schont nicht nur Ihre Nerven, sondern auch das Verhältnis – besonders wichtig, wenn gemeinsame Kinder involviert sind.</p>
+            </div>
+
+            <h3>Fazit: Klare Fakten für einen Neuanfang</h3>
+            <p>Eine Immobilie sollte bei einer Scheidung nicht zum Zankapfel werden. Ein professionelles Verkehrswertgutachten in Osnabrück bietet die notwendige Transparenz für eine faire Vermögensaufteilung. Es schützt Sie vor finanziellen Nachteilen und ebnet den Weg für einen friedlichen Neuanfang.</p>
+            <p>Wir von Lasarz Immobilienbewertung unterstützen Sie in dieser schwierigen Phase mit Diskretion, Schnelligkeit und höchster fachlicher Präzision. Kontaktieren Sie uns für ein vertrauliches Beratungsgespräch in Osnabrück.</p>
         `
     },
     {
@@ -440,29 +534,60 @@ export const blogPosts: BlogPost[] = [
         slug: 'angebotspreis-altbau-osnabrueck',
         title: 'Den richtigen Angebotspreis für Ihr Altbau-Haus in Osnabrück finden',
         date: '18. März 2024',
-        readTime: '6 min Lesezeit',
         category: 'Marktanalyse',
         image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&q=80&w=800',
         altText: 'Angebotspreis Altbau Osnabrück – Richtig bewerten',
         excerpt: 'Besonders bei Altbauten spielen energetische Voraussetzungen und Denkmalschutz eine große Rolle. Worauf es bei der Wertermittlung in Osnabrück jetzt ankommt.',
+        readTime: '10 min Lesezeit',
         content: `
-            <p>Altbauten erfreuen sich in Osnabrück traditionell großer Beliebtheit. Ob eine Gründerzeitvilla im Katharinenviertel oder ein liebevoll saniertes Fachwerkhaus im Landkreis: Die Bewertung von Altbauimmobilien ist eine echte Herausforderung, die viel fachliche Kompetenz erfordert.</p>
+            <p>Altbauten in Osnabrück haben eine ganz eigene Seele. Ob eine herrschaftliche Gründerzeitvilla am Westerberg, ein klassisches Klinkerhaus in der Wüste oder ein charmantes Fachwerkhaus im Landkreis Osnabrück: Diese Immobilien sind begehrt, aber ihre Bewertung ist eine der größten Herausforderungen für Eigentümer. In diesem Ratgeber erfahren Sie, wie Sie den „Sweet Spot“ zwischen historischem Charme und modernen Anforderungen finden, um Ihre Immobilie erfolgreich und zum Bestpreis zu verkaufen.</p>
 
-            <h3>Charme vs. energetischer Zustand</h3>
-            <p>Käufer in Osnabrück sind bereit, für Altbau-Charme – wie hohe Decken, Stuck und Dielenböden – einen Liebhaberpreis zu zahlen. Auf der anderen Seite rückt das Thema Energieeffizienz immer stärker in den Fokus.</p>
-            <p>Ein professioneller Immobiliengutachter bewertet penibel die Bausubstanz:</p>
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200" alt="Altbau Immobilie Osnabrück Bewertung" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:450px;" />
+
+            <h3>Die Faszination Altbau in Osnabrück</h3>
+            <p>Was macht einen Altbau in Osnabrück so attraktiv? Es sind die hohen Decken, der echte Stuck, die massiven Holzdielen und die großzügigen Grundrisse, die in modernen Neubauten oft fehlen. Diese „weichen Faktoren“ lösen bei Kaufinteressenten Emotionen aus. Und Emotionen sind ein starker Preistreiber. Doch Vorsicht: Wer sich nur auf den Charme verlässt, riskiert, dass der Verkauf an den harten Fakten scheitert.</p>
+
+            <h3>Der Konflikt: Ästhetik vs. Energieeffizienz</h3>
+            <p>Im Jahr 2024 ist das Thema Energieeffizienz (GEG) der Endgegner bei der Bewertung von Altbauten in Osnabrück. Ein Käufer sieht heute nicht nur die schöne Fassade, sondern rechnet im Kopf sofort die Sanierungskosten durch. Ein falscher Angebotspreis kann hier fatale Folgen haben:</p>
             <ul>
-                <li><strong>Wärmedämmung:</strong> Sind Dach, Fassade und Kellergeschoss gedämmt?</li>
-                <li><strong>Heizsysteme:</strong> Entspricht die Heizung dem aktuellen GEG oder drohen dem Käufer hohe Austauschkosten?</li>
-                <li><strong>Schallschutz:</strong> Ist der Trittschall und die Außenabdichtung modernisiert?</li>
+                <li><strong>Unterschätzte Sanierung:</strong> Wenn Sie den Preis zu hoch ansetzen und die notwendigen Investitionen (neue Heizung, Dämmung, Fenster) ignorieren, wird Ihr Haus zum Besichtigungstourismus-Magneten ohne echte Kaufabschlüsse.</li>
+                <li><strong>Übervorsichtige Käufer:</strong> Viele Interessenten in Osnabrück haben Angst vor unkalkulierbaren Kosten bei alten Häusern. Ein professionelles Gutachten nimmt diese Angst, indem es die Kosten transparent macht.</li>
             </ul>
 
-            <div class="glass-card" style="margin: 2rem 0; border-left: 4px solid var(--accent-primary);">
-                <h3>Sonderfall Denkmalschutz</h3>
-                <p>Wenn Ihre Immobilie in Osnabrück unter Denkmalschutz steht, bedeutet das gleichzeitig steuerliche Vorteile (Abschreibung) für den Käufer, aber auch strikte behördliche Auflagen bei Sanierungen. Ein qualifizierter Gutachter kann diesen Spagat exakt im Wert abbilden.</p>
+            <div class="glass-card" style="margin: 2rem 0; padding: 2rem; background: rgba(26, 117, 141, 0.07); border-radius: 12px;">
+                <h4 style="color: var(--accent-secondary); margin-bottom: 1rem;">🔍 Der Altbau-Check: Worauf es ankommt</h4>
+                <p>Ein Immobiliengutachter in Osnabrück prüft bei einem Altbau besonders kritisch:</p>
+                <ol>
+                    <li><strong>Die Bausubstanz:</strong> Ist der Keller trocken? Gibt es Anzeichen für Hausschwamm oder Holzwurm?</li>
+                    <li><strong>Die Haustechnik:</strong> Wie alt sind die Elektroleitungen und Wasserrohre? (Oft ein K.o.-Kriterium für Banken).</li>
+                    <li><strong>Energetische Highlights:</strong> Gibt es bereits eine Innendämmung oder isolierverglaste Holzfenster, die den Charakter bewahren?</li>
+                </ol>
             </div>
 
-            <p>Lassen Sie den Immobilienwert Ihres Altbaus fachmännisch durch einen <strong>Immobiliengutachter für Osnabrück</strong> bestimmen, um den Sweet Spot zwischen Marktwert und energetischen Abzügen für einen reibungslosen Verkauf zu finden.</p>
+            <h3>Sonderfall: Denkmalschutz in Osnabrück</h3>
+            <p>Steht Ihre Immobilie in der Osnabrücker Altstadt oder einem denkmalgeschützten Ensemble? Das ist Fluch und Segen zugleich. Einerseits schränkt es die Gestaltung massiv ein, andererseits bietet es enorme steuerliche Vorteile für den Käufer (Denkmal-AfA). Ein Gutachter wie Marc-André Lasarz kennt die speziellen Marktmechanismen für Denkmalimmobilien in Osnabrück und weiß, wie man diese steuerlichen Vorteile in den Verkaufspreis einpreist.</p>
+
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200" alt="Sanierter Altbau Osnabrück" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:400px;" />
+
+            <h3>Wie man den richtigen Preis findet</h3>
+            <p>Bei einem Altbau in Osnabrück reicht ein einfacher Vergleich mit Nachbarhäusern oft nicht aus. Jedes Objekt ist ein Unikat. Wir nutzen eine Kombination aus:</p>
+            <ul>
+                <li><strong>Sachwertverfahren:</strong> Was würde es kosten, dieses Haus heute in dieser Qualität neu zu bauen (abzüglich der Altersabnutzung)?</li>
+                <li><strong>Vergleichswertverfahren:</strong> Welche Preise wurden für ähnliche sanierte oder unsanierte Altbauten in Osnabrück tatsächlich gezahlt?</li>
+                <li><strong>Modernisierungsrisiko-Analyse:</strong> Wir kalkulieren die notwendigen Investitionen ein, um den „bereinigten“ Marktwert zu finden.</li>
+            </ul>
+
+            <div class="glass-card" style="margin: 2rem 0; border-left: 4px solid #e8a838; padding: 1.5rem 2rem;">
+                <h4 style="color: var(--accent-secondary);">💡 Profi-Tipp für Verkäufer</h4>
+                <p>Lassen Sie vor dem Verkauf ein <strong>energetisches Modernisierungsgutachten</strong> oder einen Sanierungsfahrplan erstellen. Wenn Sie dem Käufer schwarz auf weiß zeigen können, dass die Sanierung z.B. 80.000 € kostet und durch Förderungen (BAFA/KfW) unterstützt wird, nehmen Sie ihm die Unsicherheit und stabilisieren Ihren Verkaufspreis.</p>
+            </div>
+
+            <h3>Die Zielgruppe für Altbauten in Osnabrück</h3>
+            <p>Altbaukäufer sind oft bereit, mehr zu zahlen als Neubaukäufer – wenn das Gesamtpaket stimmt. Sie suchen Individualität und Geschichte. Ein professionelles Exposé, das die Historie des Hauses in Osnabrück würdigt, aber gleichzeitig die moderne Nutzbarkeit betont, ist hier entscheidend. Das Gutachten liefert dafür die verlässlichen Daten.</p>
+
+            <h3>Fazit: Wertermittlung mit Fingerspitzengefühl</h3>
+            <p>Den richtigen Angebotspreis für einen Altbau in Osnabrück zu finden, ist eine Mischung aus harter Mathematik und Marktpsychologie. Verlassen Sie sich nicht auf Online-Rechner, die den Wert Ihrer Stuckdecken oder die Dicke Ihrer Sandsteinwände nicht kennen. Ein zertifizierter Gutachter schützt Sie davor, Ihre Immobilie unter Wert zu verkaufen oder durch einen utopischen Preis die Vermarktung zu blockieren.</p>
+            <p>Planen Sie den Verkauf Ihres Altbaus in Osnabrück? Wir unterstützen Sie mit Leidenschaft für historische Bausubstanz und höchster fachlicher Präzision. Kontaktieren Sie uns für eine fundierte Wertermittlung Ihres Schmuckstücks.</p>
         `
     },
     {
@@ -470,32 +595,71 @@ export const blogPosts: BlogPost[] = [
         slug: 'hausbewertung-osnabrueck-faktoren',
         title: 'Hausbewertung Osnabrück: 5 Faktoren, die den Wert steigern',
         date: '10. März 2024',
-        readTime: '7 min Lesezeit',
         category: 'Grundlagen',
         image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800',
         altText: 'Hausbewertung Osnabrück – 5 Faktoren die den Wert steigern',
         excerpt: 'Wie wird der Wert Ihrer Immobilie überhaupt berechnet? Wir zeigen die Top-5-Faktoren, auf die Immobiliengutachter in der Wertermittlung besonders achten.',
+        readTime: '10 min Lesezeit',
         content: `
-            <p>Als Immobilieneigentümer in Osnabrück fragt man sich oft: Was ist mein Haus eigentlich wert? Ein zertifizierter <strong>Immobiliengutachter</strong> zieht keine Zahl aus der Luft, sondern berechnet den Verkehrswert anhand festgelegter Kriterien (meist im Sachwert- oder Ertragswertverfahren). Hier sind die fünf entscheidenden Hebel.</p>
+            <p>Was ist meine Immobilie in Osnabrück eigentlich wert? Ob für einen geplanten Verkauf, eine Erbschaft oder einfach aus Interesse am eigenen Vermögensaufbau – die Frage nach dem Immobilienwert beschäftigt fast jeden Eigentümer. Doch ein professioneller <strong>Immobiliengutachter in Osnabrück</strong> würfelt keine Zahlen. Die Wertermittlung folgt strengen gesetzlichen Vorgaben und basiert auf einer Vielzahl von Faktoren. In diesem ausführlichen Guide zeigen wir Ihnen die fünf wichtigsten Hebel, die den Wert Ihres Hauses in Osnabrück maßgeblich beeinflussen.</p>
 
-            <h3>1. Die Mikrolage in Osnabrück</h3>
-            <p>Die Makrolage (Stadt Osnabrück) ist hervorragend, aber die Mikrolage entscheidet über den finalen Marktwert. Ein Haus in ruhiger Seitenstraße im Westerberg ist z.B. deutlich mehr wert als ein fast identisches Haus an einer lauten Hauptstraße. Ebenso wichtig: Schulen, Ärzte, Nahverkehr, sowie zukünftige Bebauungspläne.</p>
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200" alt="Hausbewertung Faktoren Osnabrück" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:450px;" />
 
-            <h3>2. Grundstücksgröße und Schnitt</h3>
-            <p>Je größer, desto besser? Nicht immer. Ein Grundstück mit einem ungünstigen, schmalen Zuschnitt oder schwer zugänglicher Hanglage ist weniger wertvoll als ein ebenmäßiges rechteckiges Baugrundstück. Bodenrichtwerte des Gutachterausschusses dienen hier als Grundlage.</p>
+            <h3>1. Die Mikrolage: Warum „Osnabrück“ allein nicht reicht</h3>
+            <p>In der Immobilienbranche gilt das alte Mantra: Lage, Lage, Lage. Doch während die Makrolage (die Stadt Osnabrück als attraktiver Wirtschafts- und Unistandort) die generelle Nachfrage bestimmt, entscheidet die Mikrolage über den konkreten Euro-Betrag pro Quadratmeter. Zwei identische Häuser können in Osnabrück preislich weit auseinanderliegen, wenn:</p>
+            <ul>
+                <li><strong>Westerberg vs. Schinkel:</strong> Die Preiskategorien zwischen den Stadtteilen variieren stark. Während der Westerberg als absolute Top-Lage gilt, bieten andere Stadtteile ein anderes Preisgefüge.</li>
+                <li><strong>Straßenzug und Umfeld:</strong> Eine ruhige Sackgasse in Hellern ist wertvoller als eine Lage an einer Pendlerstraße. Die Nähe zu Parks, guten Schulen oder dem Naherholungsgebiet am Rubbenbruchsee sind direkte Werttreiber.</li>
+                <li><strong>Zukünftige Entwicklung:</strong> Ein Gutachter prüft auch den Flächennutzungsplan der Stadt Osnabrück. Ist in der Nachbarschaft ein neues Gewerbegebiet oder eine Grünanlage geplant? Das beeinflusst den Wert von morgen.</li>
+            </ul>
 
-            <h3>3. Baujahr, Bausubstanz und Restnutzungsdauer</h3>
-            <p>Wie gut wurde das Haus in den letzten Jahrzehnten gepflegt? Modernisierungen ( neues Dach in 2015, neue Fenster in 2020) verlängern die Restnutzungsdauer massiv. Sanierungsstaus wirken sich drastisch wertmindernd aus.</p>
+            <h3>2. Das Grundstück: Größe ist nicht alles</h3>
+            <p>Natürlich ist ein großes Grundstück in Osnabrück erst einmal viel wert. Aber ein Immobiliengutachter schaut tiefer. Entscheidend für den Wert sind:</p>
+            <ul>
+                <li><strong>Die Bebaubarkeit:</strong> Darf auf dem Grundstück laut Bebauungsplan noch angebaut werden? Ein großes Grundstück, das nicht weiter bebaut werden darf, ist pro Quadratmeter oft weniger wert als ein kleineres, das voll ausgenutzt werden kann.</li>
+                <li><strong>Der Zuschnitt:</strong> Ein rechteckiges, ebenes Grundstück ist für Käufer attraktiver und wertvoller als ein schmaler „Handtuchgarten“ oder ein Grundstück in extremer Hanglage, das hohe Baukosten verursacht.</li>
+                <li><strong>Die Ausrichtung:</strong> Ein nach Süden ausgerichteter Garten ist in Osnabrück der Klassiker und ein klarer Pluspunkt in der Bewertung.</li>
+            </ul>
 
-            <div class="glass-card" style="margin: 2rem 0; padding: 2rem; background: rgba(26, 117, 141, 0.05);">
-                <h4>4. Energetischer Zustand (Energieeffizienzklasse)</h4>
-                <p>Spätestens seit dem Ukraine-Krieg und neuen GEG-Gesetzen ist die Energieeffizienzklasse ein Hauptpreistreiber. Wärmepumpen, PV-Anlagen und top Dämmung generieren oft einen deutlichen "Green Premium"-Wertaufschlag auf dem Markt in Osnabrück.</p>
+            <div class="glass-card" style="margin: 2rem 0; padding: 2rem; background: rgba(26, 117, 141, 0.07); border-radius: 12px;">
+                <h4 style="color: var(--accent-secondary); margin-bottom: 1rem;">📊 Marktwert-Check Osnabrück</h4>
+                <p>Wussten Sie, dass der Gutachterausschuss für Grundstückswerte in Osnabrück jährlich die Bodenrichtwerte aktualisiert? Ein zertifizierter Gutachter nutzt diese Daten als Basis, passt sie aber individuell auf die Besonderheiten Ihres Grundstücks an.</p>
             </div>
 
-            <h3>5. Rechtliche Gegebenheiten</h3>
-            <p>Sind Baulasten eingetragen? Gibt es Wegerechte für Nachbarn oder sogar noch Erbpacht? Solche grundbuchlichen Belastungen mindern den Verkehrswert und müssen durch einen Gutachter in barwerten Beträgen abgezogen werden.</p>
+            <h3>3. Bausubstanz und energetischer Zustand: Der neue Hauptfaktor</h3>
+            <p>Früher reichte es, wenn das Dach dicht und die Heizung warm war. Heute ist der energetische Zustand das Zünglein an der Waage. Seit dem neuen Gebäudeenergiegesetz (GEG) blicken Käufer in Osnabrück extrem kritisch auf:</p>
+            <ul>
+                <li><strong>Energieeffizienzklasse:</strong> Ein Haus der Klasse A oder B erzielt einen „Green Premium“ – einen deutlichen Aufschlag gegenüber dem Marktdurchschnitt.</li>
+                <li><strong>Sanierungsstand:</strong> Wann wurden Fenster, Dach und Fassade zuletzt gedämmt? Ein Gutachter berechnet die Restnutzungsdauer der Bauteile. Ein Haus mit 30 Jahre altem Dach hat einen kalkulatorischen Abzug, da eine Erneuerung absehbar ist.</li>
+                <li><strong>Heiztechnik:</strong> Eine moderne Wärmepumpe oder der Anschluss an das Osnabrücker Fernwärmenetz steigern den Wert massiv gegenüber einer alten Ölheizung.</li>
+            </ul>
 
-            <p>Sie möchten wissen, wie diese Faktoren bei Ihrem Haus ins Gewicht fallen? Kontaktieren Sie Lasarz Immobilienbewertung in Osnabrück für ein professionelles Gutachten.</p>
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200" alt="Moderne Haustechnik Wertsteigerung" style="width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:400px;" />
+
+            <h3>4. Ausstattung und Modernisierungsgrad</h3>
+            <p>Käufer in Osnabrück suchen heute oft „bezugsfertige“ Immobilien. Jede Modernisierung der letzten 10–15 Jahre zahlt auf den Wert ein:</p>
+            <ul>
+                <li><strong>Bäder und Küche:</strong> Hochwertige, zeitgemäße Sanitärausstattungen sind starke Verkaufsargumente.</li>
+                <li><strong>Bodenbeläge:</strong> Echtholzparkett oder hochwertige Fliesen werden deutlich besser bewertet als alter Laminat oder Teppichboden.</li>
+                <li><strong>Smarte Features:</strong> Einbau von Smart-Home-Systemen, elektrische Rollläden oder eine PV-Anlage auf dem Dach sind moderne Wertsteigerer.</li>
+            </ul>
+
+            <h3>5. Rechtliche Rahmenbedingungen und Lasten</h3>
+            <p>Dieser Punkt wird von Laien oft übersehen, kann den Wert aber um fünfstellige Beträge nach unten ziehen. Ein Immobiliengutachter prüft akribisch das Grundbuch und das Baulastenverzeichnis der Stadt Osnabrück:</p>
+            <ul>
+                <li><strong>Wohn- und Nießbrauchrechte:</strong> Wenn eine Person ein lebenslanges Wohnrecht hat, ist die Immobilie für den freien Markt fast unverkäuflich und im Wert massiv gemindert.</li>
+                <li><strong>Wegerechte:</strong> Darf der Nachbar über Ihr Grundstück fahren? Das mindert die Privatsphäre und damit den Wert.</li>
+                <li><strong>Erbpacht:</strong> Häuser auf Erbpachtgrundstücken (oft in kirchlichem Besitz in Osnabrück) werden deutlich anders bewertet als solche auf Eigengrund.</li>
+            </ul>
+
+            <div class="glass-card" style="margin: 2rem 0; border-left: 4px solid #e8a838; padding: 1.5rem 2rem;">
+                <h4 style="color: var(--accent-secondary);">💡 Profi-Tipp für Eigentümer</h4>
+                <p>Dokumentieren Sie alle Modernisierungen der letzten 20 Jahre lückenlos. Jede Rechnung ist bares Geld wert, da der Gutachter so die fiktive Verlängerung der Restnutzungsdauer Ihrer Immobilie in Osnabrück präziser berechnen kann.</p>
+            </div>
+
+            <h3>Fazit: Wertermittlung ist Detailarbeit</h3>
+            <p>Die Hausbewertung in Osnabrück ist ein komplexes Zusammenspiel aus Lage, Technik, Recht und Marktpsychologie. Eine einfache Online-Schätzung kann diese Tiefe niemals erreichen und führt oft zu falschen Erwartungen beim Verkauf.</p>
+            <p>Möchten Sie den exakten Marktwert Ihrer Immobilie erfahren? Marc-André Lasarz erstellt für Sie ein professionelles, zertifiziertes Gutachten, das alle diese Faktoren berücksichtigt. Schaffen Sie Klarheit für Ihre Zukunft und kontaktieren Sie uns für eine fundierte Hausbewertung in Osnabrück und Umgebung.</p>
         `
     }
 ];
