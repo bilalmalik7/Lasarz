@@ -18,89 +18,41 @@ export default function TeamPage() {
                 </div>
             </section>
 
-            {/* Marc Parallax Section */}
-            <section style={{
-                position: 'relative',
-                padding: '100px 0px',
-                backgroundImage: 'url("/images/original_clone/property_background.jpg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center center',
-                backgroundAttachment: 'fixed',
-                marginTop: '2rem'
-            }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(18, 43, 64, 0.7)' }}></div>
-                <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '3rem', alignItems: 'center' }}>
-                        <div style={{ background: 'white', borderRadius: 'var(--radius-md)', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }}>
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Professional businessman in suit" style={{ width: '100%', height: '400px', objectFit: 'cover', objectPosition: 'top center' }} loading="lazy" />
-                        </div>
-                        <div style={{ color: 'white' }}>
-                            <h2 style={{ color: 'white', fontSize: '2.5rem', marginBottom: '1.5rem' }}>Marc-André Lasarz</h2>
-                            <p style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.9)', marginBottom: '2rem', lineHeight: 1.6 }}>
-                                Der Kopf hinter Lasarz Immobilienbewertung. Mit über 25 Jahren Expertise in der Bewertung von anspruchsvollen Immobilien ist Marc Ihr kompetenter und unabhängiger Ansprechpartner.
-                            </p>
-                            <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-                                <a href="mailto:info@lasarz.com" className="btn btn-primary" style={{ background: 'var(--accent-primary)', border: 'none' }}>✉️ Nachricht senden</a>
-                                <a href="tel:+4954160099220" className="btn btn-secondary" style={{ color: 'white', borderColor: 'white' }}>📞 0541 / 600 99 220</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Team Grid */}
-            <section className="section">
+            {/* Marc-André Lasarz Section */}
+            <section className="section" style={{ backgroundColor: 'var(--bg-primary)' }}>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '3rem' }}>
-
-                        {/* Bilal (IT) */}
-                        <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>
-                            <img src="/images/team/bilal_new.jpg" alt="Bilal" style={{ width: '100%', height: '350px', objectFit: 'cover' }} />
-                            <div style={{ padding: '2rem' }}>
-                                <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Bilal</h3>
-                                <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>IT-Leiter & Digitalisierung</p>
-                                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
-                                    Bilal verantwortet unsere technische Infrastruktur und sorgt für die effiziente, digitale Abwicklung Ihrer Immobilienbewertungen.
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: '5rem', alignItems: 'center' }}>
+                        <div style={{ background: 'white', borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }}>
+                            <img src="/images/team/marc_lasarz.jpg" alt="Marc-André Lasarz - Immobiliengutachter Osnabrück" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+                        </div>
+                        <div>
+                            <span style={{ color: 'var(--accent-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.9rem' }}>Inhaber & Sachverständiger</span>
+                            <h2 style={{ fontSize: '3rem', color: 'var(--accent-secondary)', marginTop: '1rem', marginBottom: '1.5rem', lineHeight: 1.1 }}>
+                                Marc-André Lasarz
+                            </h2>
+                            <div style={{ color: 'var(--text-secondary)', fontSize: '1.15rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                                <p>
+                                    Mit über 25 Jahren Erfahrung in der Immobilienwirtschaft und einer tiefen Verwurzelung in der Region Osnabrück stehe ich für fachliche Exzellenz und absolute Unabhängigkeit.
                                 </p>
-                                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
-                                    <a href="mailto:it@lasarz.com" style={{ display: 'block', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>✉️ it@lasarz.com</a>
-                                    <a href="tel:+4954160099220" style={{ display: 'block', color: 'var(--text-primary)' }}>📞 +49 (0) 541 - 600 99 220</a>
+                                <p>
+                                    Als <strong>zertifizierter Immobiliengutachter</strong> habe ich mich darauf spezialisiert, komplexe Wertermittlungen transparent, rechtssicher und für alle Beteiligten nachvollziehbar zu gestalten. Ob für private Verkaufsentscheidungen, gerichtliche Auseinandersetzungen oder steuerliche Zwecke – ich biete Ihnen die notwendige Klarheit für Ihre Immobilienentscheidungen.
+                                </p>
+                                <div style={{ marginTop: '1rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                                    <div className="glass-card" style={{ padding: '1.5rem' }}>
+                                        <h4 style={{ color: 'var(--accent-secondary)', marginBottom: '0.5rem' }}>Zertifizierung</h4>
+                                        <p style={{ fontSize: '0.95rem' }}>Zertifiziert nach DIN EN ISO/IEC 17024 (DIAZert)</p>
+                                    </div>
+                                    <div className="glass-card" style={{ padding: '1.5rem' }}>
+                                        <h4 style={{ color: 'var(--accent-secondary)', marginBottom: '0.5rem' }}>Expertise</h4>
+                                        <p style={{ fontSize: '0.95rem' }}>Spezialist für komplexe Verkehrs- und Beleihungswertermittlungen</p>
+                                    </div>
+                                </div>
+                                <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', marginTop: '2rem' }}>
+                                    <a href="mailto:info@lasarz.com" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>✉️ Kontakt aufnehmen</a>
+                                    <a href="tel:+4954160099220" className="btn btn-secondary" style={{ padding: '1rem 2.5rem' }}>📞 0541 / 600 99 220</a>
                                 </div>
                             </div>
                         </div>
-
-                        {/* Immobilien Consultant Women */}
-                        <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Professional woman in business attire" style={{ width: '100%', height: '350px', objectFit: 'cover' }} loading="lazy" />
-                            <div style={{ padding: '2rem' }}>
-                                <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Anna Schmidt</h3>
-                                <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>Immobiliengutachterin (DIA)</p>
-                                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
-                                    Spezialistin für Marktwertermittlungen im Privatkundenbereich mit Fokus auf Osnabrück und Umgebung.
-                                </p>
-                                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
-                                    <a href="mailto:info@lasarz.com" style={{ display: 'block', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>✉️ schmidt@lasarz.com</a>
-                                    <a href="tel:+4954160099220" style={{ display: 'block', color: 'var(--text-primary)' }}>📞 +49 (0) 541 - 600 99 220</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Immobilien Consultant Men */}
-                        <div className="glass-card" style={{ padding: 0, overflow: 'hidden' }}>
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Professional man in business attire" style={{ width: '100%', height: '350px', objectFit: 'cover' }} loading="lazy" />
-                            <div style={{ padding: '2rem' }}>
-                                <h3 style={{ fontSize: '1.75rem', color: 'var(--accent-secondary)', marginBottom: '0.2rem' }}>Christian Weber</h3>
-                                <p style={{ color: 'var(--accent-primary)', fontSize: '1rem', fontWeight: 600, marginBottom: '1.5rem' }}>Gutachter für Gewerbeimmobilien</p>
-                                <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
-                                    Experte für Industrie- und Gewerbebewertungen mit langjähriger Erfahrung in der Bewertung komplexer Portfolios.
-                                </p>
-                                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
-                                    <a href="mailto:info@lasarz.com" style={{ display: 'block', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>✉️ weber@lasarz.com</a>
-                                    <a href="tel:+4954160099220" style={{ display: 'block', color: 'var(--text-primary)' }}>📞 +49 (0) 541 - 600 99 220</a>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </section>
