@@ -68,6 +68,40 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#1A758D" />
         <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
+        
+        {/* Organization Schema Markup */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Lasarz Immobiliengutachter",
+              "url": "https://lasarz.com",
+              "logo": "https://lasarz.com/logo.svg",
+              "telephone": "+49 (0) 541 - 600 99 220",
+              "email": "info@lasarz.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Osnabrück",
+                "addressRegion": "Niedersachsen",
+                "addressCountry": "DE"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.2799,
+                "longitude": 8.0472
+              },
+              "openingHours": "Mo-Fr 09:00-18:00",
+              "sameAs": [
+                "https://www.linkedin.com/company/lasarz",
+                "https://www.instagram.com/lasarz",
+                "https://www.facebook.com/lasarz"
+              ],
+              "areaServed": ["Osnabrück", "Bielefeld", "Flensburg", "Melle", "Münster", "Rheine"]
+            })
+          }}
+        />
       </head>
       <body suppressHydrationWarning>
         <Header />

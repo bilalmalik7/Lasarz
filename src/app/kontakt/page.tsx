@@ -92,6 +92,9 @@ export default function KontaktPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
             />
+            <h1 style={{ fontSize: '3rem', color: 'var(--accent-secondary)', textAlign: 'center', marginTop: '2rem', marginBottom: '3rem' }}>
+                Kontakt Immobiliengutachter Osnabrück
+            </h1>
             <KontaktContent />
         </>
     );

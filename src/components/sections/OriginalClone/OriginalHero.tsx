@@ -140,11 +140,11 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
                             Zertifiziert und anerkannt durch:
                         </p>
                         <div style={{ display: 'inline-flex', gap: '1.5rem', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', background: 'rgba(255,255,255,0.95)', padding: '15px 25px', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.15)' }}>
-                            <img src="/images/original_clone/bvs_e_v_logo.jpeg" alt="BVS" style={{ height: '40px', objectFit: 'contain' }} />
-                            <img src="/images/original_clone/NEU-Logo-DIAzert_7-09-300x228.jpg" alt="DIA Zert" style={{ height: '40px', objectFit: 'contain' }} />
-                            <img src="/images/original_clone/REV-Siegel_2018-002.jpg" alt="REV Siegel" style={{ height: '50px', objectFit: 'contain' }} />
-                            <img src="/images/original_clone/Stempel-DIAZert-2025.jpg" alt="DIA Zert Stempel" style={{ height: '50px', objectFit: 'contain' }} />
-                            <img src="/images/original_clone/SV-R-Immo-D3_042028_ger_tc_p-182x300.jpg" alt="SV-R Zertifizierung" style={{ height: '50px', objectFit: 'contain' }} />
+                            <img src="/images/original_clone/bvs_e_v_logo.jpeg" alt="BVS Zertifikat für Immobilienbewertung" style={{ height: '40px', objectFit: 'contain' }} />
+                            <img src="/images/original_clone/NEU-Logo-DIAzert_7-09-300x228.jpg" alt="DIA Zertifikat für Immobilienbewertung" style={{ height: '40px', objectFit: 'contain' }} />
+                            <img src="/images/original_clone/REV-Siegel_2018-002.jpg" alt="REV Siegel für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} />
+                            <img src="/images/original_clone/Stempel-DIAZert-2025.jpg" alt="DIA Zert Stempel für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} />
+                            <img src="/images/original_clone/SV-R-Immo-D3_042028_ger_tc_p-182x300.jpg" alt="SV-R Zertifizierung für Immobilienbewertung" style={{ height: '50px', objectFit: 'contain' }} />
                         </div>
                     </motion.div>
                 </motion.div>

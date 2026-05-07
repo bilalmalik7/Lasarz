@@ -4,6 +4,7 @@ import React, { use } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { blogPosts } from '@/lib/blogData';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 // Wrap the entire component content with framer motion animations
 export default function BlogDetailPage({ params }: { params: Promise<{ id: string }> }) {
@@ -27,6 +28,9 @@ export default function BlogDetailPage({ params }: { params: Promise<{ id: strin
 
     return (
         <main style={{ paddingTop: '100px', backgroundColor: 'var(--bg-primary)', minHeight: '100vh' }}>
+            {/* Breadcrumb */}
+            <Breadcrumb />
+            
             {/* Header / Cover */}
             <section style={{ backgroundColor: 'var(--bg-secondary)', padding: '60px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <div className="container">
@@ -42,6 +46,8 @@ export default function BlogDetailPage({ params }: { params: Promise<{ id: strin
                             <span>{post.date}</span>
                             <span>•</span>
                             <span style={{ color: 'var(--accent-primary)', fontWeight: 600 }}>{post.category}</span>
+                            <span>•</span>
+                            <span>{post.readTime}</span>
                         </div>
                         <h1 style={{ fontSize: '3.5rem', color: 'var(--accent-secondary)', lineHeight: 1.2, maxWidth: '900px' }}>{post.title}</h1>
                     </motion.div>
@@ -56,7 +62,7 @@ export default function BlogDetailPage({ params }: { params: Promise<{ id: strin
                         transition={{ duration: 0.8 }}
                         style={{ borderRadius: '12px', overflow: 'hidden', marginBottom: '3rem', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
                     >
-                        <img src={post.image} alt={post.title} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                        <img src={post.image} alt={post.altText} style={{ width: '100%', height: 'auto', display: 'block' }} />
                     </motion.div>
 
                     <motion.div

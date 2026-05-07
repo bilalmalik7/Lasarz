@@ -35,5 +35,12 @@ export const metadata = {
 };
 
 export default function FAQPage() {
-    return <FaqContent />;
+    return (
+        <>
+            <h1 style={{ fontSize: '3rem', color: 'var(--accent-secondary)', textAlign: 'center', marginTop: '2rem', marginBottom: '3rem' }}>
+                Häufige Fragen zur Immobilienbewertung
+            </h1>
+            <FaqContent />
+        </>
+    );
 }

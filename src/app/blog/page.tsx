@@ -62,6 +62,9 @@ export default function BlogPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <h1 style={{ fontSize: '3rem', color: 'var(--accent-secondary)', textAlign: 'center', marginTop: '2rem', marginBottom: '3rem' }}>
+        Immobilien Blog und Ratgeber
+      </h1>
       <BlogContent blogPosts={blogPosts} />
     </>
   );

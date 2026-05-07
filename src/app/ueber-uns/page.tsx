@@ -11,7 +11,7 @@ export default function UeberUnsPage() {
             {/* Banner Section */}
             <section style={{ backgroundColor: 'var(--bg-secondary)', padding: '60px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <div className="container">
-                    <h1 style={{ fontSize: '3rem', color: 'var(--accent-secondary)', marginBottom: '1rem' }}>Über uns</h1>
+                    <h1 style={{ fontSize: '3rem', color: 'var(--accent-secondary)', marginBottom: '1rem' }}>Über Lasarz Immobiliengutachter</h1>
                     <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', maxWidth: '800px' }}>
                         Ich bin Ihr regional verwurzeltes und zertifiziertes Sachverständigenbüro für Immobilienbewertungen.
                         Hier erfahren Sie mehr über meine Expertise und Werte.
