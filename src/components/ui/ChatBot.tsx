@@ -127,7 +127,7 @@ export function ChatBot() {
                 style={{
                     position: 'fixed',
                     bottom: '30px',
-                    right: '30px',
+                    left: '30px',
                     width: '60px',
                     height: '60px',
                     borderRadius: '50%',
@@ -160,7 +160,7 @@ export function ChatBot() {
                     style={{
                         position: 'fixed',
                         bottom: '105px',
-                        right: '30px',
+                        left: '30px',
                         width: '380px',
                         height: '560px',
                         maxHeight: 'calc(100vh - 150px)',
