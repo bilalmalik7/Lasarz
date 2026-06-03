@@ -101,14 +101,14 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     {/* Left Side: Team Info */}
                     <div style={{
                         flex: '1',
-                        background: 'linear-gradient(rgba(18, 43, 64, 0.8), rgba(18, 43, 64, 0.8)), url("/images/original_clone/property_background.jpg")',
+                        background: 'linear-gradient(to bottom, rgba(18, 43, 64, 0.2) 0%, rgba(18, 43, 64, 0.85) 60%), url("/images/original_clone/property_background.jpg")',
                         backgroundSize: 'cover',
-                        backgroundPosition: 'center',
+                        backgroundPosition: 'center 15%',
                         padding: '3rem 2rem',
                         color: 'white',
                         display: 'flex',
                         flexDirection: 'column',
-                        justifyContent: 'center'
+                        justifyContent: 'flex-end'
                     }}>
                         <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'white' }}>Marc-André Lasarz</h2>
                         <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: 'rgba(255,255,255,0.9)', marginBottom: '2rem' }}>
