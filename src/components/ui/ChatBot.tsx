@@ -337,7 +337,7 @@ export function ChatBot() {
                     </div>
 
                     {/* Quick Replies chips */}
-                    {!showLeadForm && messages.length <= 4 && (
+                    {!showLeadForm && messages.length <= 6 && (
                         <div 
                             style={{ 
                                 padding: '0.5rem 1rem', 
@@ -353,7 +353,9 @@ export function ChatBot() {
                             {[
                                 'Was kostet ein Gutachten?',
                                 'Erbschaftsteuer sparen',
-                                'Scheidung & Hausverkauf',
+                                'Scheidung & Zugewinn',
+                                'Kaufberatung vor Kauf',
+                                'Haus verkaufen',
                                 'Ablauf & Dauer'
                             ].map((text, idx) => (
                                 <button
@@ -369,7 +371,8 @@ export function ChatBot() {
                                         color: 'var(--accent-primary)',
                                         fontWeight: 500,
                                         boxShadow: '0 1px 3px rgba(0,0,0,0.02)',
-                                        transition: 'all 0.2s'
+                                        transition: 'all 0.2s',
+                                        flexShrink: 0
                                     }}
                                     onMouseEnter={(e) => {
                                         e.currentTarget.style.borderColor = 'var(--accent-primary)';
