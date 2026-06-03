@@ -521,7 +521,7 @@ export function Contact() {
 
                         {/* Navigation controls */}
                         {step <= 5 && (
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '2.5rem', pt: '1.5rem', borderTop: '1px solid #eee' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '2.5rem', paddingTop: '1.5rem', borderTop: '1px solid #eee' }}>
                                 <div>
                                     {step > 1 && (
                                         <button 
