@@ -94,13 +94,35 @@ export function ChatBot() {
         handleSendMessage(text);
     };
 
-    const handleLeadSubmit = (e: React.FormEvent) => {
+    const handleLeadSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!leadData.name || !leadData.phone || !leadData.email) return;
 
-        // In a real application, this would post to a lead intake API
         setLeadSubmitted(true);
-        setTimeout(() => {
+
+        try {
+            const lastUserMessage = [...messages].reverse().find(m => m.sender === 'user')?.text || '';
+            
+            const response = await fetch('/api/lead', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    type: 'chatbot',
+                    data: {
+                        name: leadData.name,
+                        phone: leadData.phone,
+                        email: leadData.email,
+                        message: `Letzte Chat-Nachricht des Nutzers: "${lastUserMessage}"`
+                    }
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error('Fehler beim Senden des Chatbot-Leads');
+            }
+
             setShowLeadForm(false);
             setMessages(prev => [
                 ...prev,
@@ -110,7 +132,19 @@ export function ChatBot() {
                     text: `Vielen Dank, Herr/Frau ${leadData.name}. Ich habe Ihre Anfrage weitergeleitet. Herr Lasarz wird Sie unter ${leadData.phone} zurückrufen.`
                 }
             ]);
-        }, 1000);
+        } catch (error) {
+            console.error('Chatbot lead submit error:', error);
+            // Fallback success so user experience is not broken, but log the error
+            setShowLeadForm(false);
+            setMessages(prev => [
+                ...prev,
+                {
+                    id: 'bot-lead-success-' + Date.now(),
+                    sender: 'bot',
+                    text: `Vielen Dank für Ihre Daten. Obwohl ein Fehler beim Senden aufgetreten ist, versuchen wir Sie zeitnah zu kontaktieren.`
+                }
+            ]);
+        }
     };
 
     const handleLeadInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {

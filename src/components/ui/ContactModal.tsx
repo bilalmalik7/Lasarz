@@ -9,10 +9,28 @@ interface ContactModalProps {
 
 export function ContactModal({ isOpen, onClose }: ContactModalProps) {
     const [isClosing, setIsClosing] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [formData, setFormData] = useState({
+        vorname: '',
+        nachname: '',
+        email: '',
+        telefon: '',
+        reason: '',
+        nachricht: ''
+    });
 
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
+            // Reset form when opened
+            setFormData({
+                vorname: '',
+                nachname: '',
+                email: '',
+                telefon: '',
+                reason: '',
+                nachricht: ''
+            });
         } else {
             document.body.style.overflow = 'unset';
         }
@@ -29,13 +47,42 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
         }, 300);
     };
 
-    if (!isOpen && !isClosing) return null;
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        alert('Vielen Dank für Ihre Anfrage. Wir werden uns in Kürze mit Ihnen in Verbindung setzen.');
-        handleClose();
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
     };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        try {
+            const response = await fetch('/api/lead', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    type: 'contact_modal',
+                    data: formData
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error('Senden fehlgeschlagen');
+            }
+
+            alert('Vielen Dank für Ihre Anfrage. Wir werden uns in Kürze mit Ihnen in Verbindung setzen.');
+            handleClose();
+        } catch (error) {
+            console.error('Modal submit error:', error);
+            alert('Es gab ein Problem beim Senden Ihrer Anfrage. Bitte versuchen Sie es erneut.');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+    if (!isOpen && !isClosing) return null;
 
     return (
         <div
@@ -137,22 +184,81 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
                         <form onSubmit={handleSubmit} className="flex-col gap-md">
                             <div className="flex gap-sm" style={{ flexWrap: 'wrap' }}>
-                                <input type="text" placeholder="Vorname" required className="form-input" style={{ flex: 1, minWidth: '150px' }} />
-                                <input type="text" placeholder="Nachname" required className="form-input" style={{ flex: 1, minWidth: '150px' }} />
+                                <input
+                                    type="text"
+                                    name="vorname"
+                                    value={formData.vorname}
+                                    onChange={handleInputChange}
+                                    placeholder="Vorname"
+                                    required
+                                    disabled={isSubmitting}
+                                    className="form-input"
+                                    style={{ flex: 1, minWidth: '150px' }}
+                                />
+                                <input
+                                    type="text"
+                                    name="nachname"
+                                    value={formData.nachname}
+                                    onChange={handleInputChange}
+                                    placeholder="Nachname"
+                                    required
+                                    disabled={isSubmitting}
+                                    className="form-input"
+                                    style={{ flex: 1, minWidth: '150px' }}
+                                />
                             </div>
-                            <input type="email" placeholder="E-Mail Adresse" required className="form-input" />
-                            <input type="tel" placeholder="Telefonnummer" className="form-input" />
-                            <select className="form-input" required>
+                            <input
+                                type="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                placeholder="E-Mail Adresse"
+                                required
+                                disabled={isSubmitting}
+                                className="form-input"
+                            />
+                            <input
+                                type="tel"
+                                name="telefon"
+                                value={formData.telefon}
+                                onChange={handleInputChange}
+                                placeholder="Telefonnummer"
+                                disabled={isSubmitting}
+                                className="form-input"
+                            />
+                            <select
+                                name="reason"
+                                value={formData.reason}
+                                onChange={handleInputChange}
+                                className="form-input"
+                                required
+                                disabled={isSubmitting}
+                            >
                                 <option value="">Grund der Anfrage</option>
                                 <option value="verkehrswertgutachten">Verkehrswertgutachten</option>
                                 <option value="kurzgutachten">Kurzgutachten</option>
                                 <option value="kaufberatung">Kaufberatung</option>
                                 <option value="sonstiges">Sonstiges</option>
                             </select>
-                            <textarea placeholder="Ihre Nachricht" required rows={4} className="form-input" style={{ resize: 'none' }}></textarea>
+                            <textarea
+                                name="nachricht"
+                                value={formData.nachricht}
+                                onChange={handleInputChange}
+                                placeholder="Ihre Nachricht"
+                                required
+                                rows={4}
+                                disabled={isSubmitting}
+                                className="form-input"
+                                style={{ resize: 'none' }}
+                            ></textarea>
 
-                            <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: '1rem', padding: '1rem' }}>
-                                Jetzt absenden
+                            <button
+                                type="submit"
+                                disabled={isSubmitting}
+                                className="btn btn-primary"
+                                style={{ width: '100%', marginTop: '1rem', padding: '1rem' }}
+                            >
+                                {isSubmitting ? 'Wird gesendet...' : 'Jetzt absenden'}
                             </button>
                         </form>
                     </div>

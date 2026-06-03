@@ -7,6 +7,9 @@ export function AppointmentBooking() {
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedTime, setSelectedTime] = useState('');
   const [propertyAddress, setPropertyAddress] = useState('');
+  const [clientName, setClientName] = useState('');
+  const [clientEmail, setClientEmail] = useState('');
+  const [clientPhone, setClientPhone] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
@@ -36,9 +39,32 @@ export function AppointmentBooking() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // In a real implementation, this would send the data to a backend
-    // For now, we'll simulate a successful submission
-    setTimeout(() => {
+    try {
+      const selectedServiceName = serviceOptions.find(s => s.id === selectedService)?.name || selectedService;
+      
+      const response = await fetch('/api/lead', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          type: 'appointment',
+          data: {
+            name: clientName,
+            email: clientEmail,
+            phone: clientPhone,
+            service: selectedServiceName,
+            date: selectedDate,
+            time: selectedTime,
+            address: propertyAddress
+          }
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Senden fehlgeschlagen');
+      }
+
       setIsSubmitting(false);
       setSubmitSuccess(true);
       
@@ -47,10 +73,17 @@ export function AppointmentBooking() {
       setSelectedDate('');
       setSelectedTime('');
       setPropertyAddress('');
+      setClientName('');
+      setClientEmail('');
+      setClientPhone('');
       
       // Reset success message after 5 seconds
       setTimeout(() => setSubmitSuccess(false), 5000);
-    }, 1500);
+    } catch (error) {
+      console.error('Appointment submit error:', error);
+      alert('Es gab ein Problem bei Ihrer Buchungsanfrage. Bitte versuchen Sie es erneut.');
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -155,6 +188,56 @@ export function AppointmentBooking() {
                 onChange={(e) => setPropertyAddress(e.target.value)}
                 required
                 placeholder="Straße, Hausnummer, PLZ, Ort"
+                className="form-input"
+                style={{ width: '100%' }}
+              />
+            </div>
+
+            {/* Contact Details */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div>
+                <label htmlFor="clientName" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>
+                  Name *
+                </label>
+                <input
+                  type="text"
+                  id="clientName"
+                  value={clientName}
+                  onChange={(e) => setClientName(e.target.value)}
+                  required
+                  placeholder="Vor- und Nachname"
+                  className="form-input"
+                  style={{ width: '100%' }}
+                />
+              </div>
+              <div>
+                <label htmlFor="clientPhone" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>
+                  Telefon *
+                </label>
+                <input
+                  type="tel"
+                  id="clientPhone"
+                  value={clientPhone}
+                  onChange={(e) => setClientPhone(e.target.value)}
+                  required
+                  placeholder="+49 123 456789"
+                  className="form-input"
+                  style={{ width: '100%' }}
+                />
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="clientEmail" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>
+                E-Mail *
+              </label>
+              <input
+                type="email"
+                id="clientEmail"
+                value={clientEmail}
+                onChange={(e) => setClientEmail(e.target.value)}
+                required
+                placeholder="ihre@email.de"
                 className="form-input"
                 style={{ width: '100%' }}
               />

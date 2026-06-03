@@ -47,12 +47,30 @@ export function Contact() {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate form submission
-        setTimeout(() => {
-            setIsSubmitting(false);
+        try {
+            const response = await fetch('/api/lead', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    type: 'contact_funnel',
+                    data: formData
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error('Fehler beim Senden der Anfrage.');
+            }
+
             setIsSubmitted(true);
             setStep(6);
-        }, 1500);
+        } catch (error) {
+            console.error('Submission error:', error);
+            alert('Es gab ein Problem beim Senden Ihrer Anfrage. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const isNextDisabled = () => {
