@@ -28,7 +28,9 @@ export default function GuideContent() {
     const styleSheet = document.createElement('style');
     styleSheet.innerText = printStyles;
     document.head.appendChild(styleSheet);
-    return () => document.head.removeChild(styleSheet);
+    return () => {
+      document.head.removeChild(styleSheet);
+    };
   }, []);
 
   const chapters = [
