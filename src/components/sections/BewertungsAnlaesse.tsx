@@ -1,18 +1,19 @@
 'use client';
+import { Landmark, Users, Tag, Receipt, Briefcase, Scale, ClipboardList, Handshake, BarChart, Gem, HeartCrack } from 'lucide-react';
 
 const occasions = [
-    { icon: '🏛️', text: 'Erbbauzinsanpassung' },
-    { icon: '👨‍👩‍👧', text: 'Vormundschaften zur Wirtschaftlichkeit' },
-    { icon: '🏷️', text: 'Kauf und Verkauf – Fehlentscheidungen vermeiden' },
-    { icon: '🧾', text: 'Steuerliche Anlässe (z. B. Bedarfsbewertungen)' },
-    { icon: '💼', text: 'Vorbereitung von Kapitalanlage-Entscheidungen' },
-    { icon: '⚖️', text: 'Zwangs-/Teilungsversteigerung' },
-    { icon: '📋', text: 'Enteignungs-/Entschädigungsverfahren' },
-    { icon: '👨‍👩‍👦', text: 'Regulierung einer Erbauseinandersetzung' },
-    { icon: '🤝', text: 'Kauf oder Verkauf Ihres Grundstücks' },
-    { icon: '📊', text: 'Jahresabschluss – stille Reserven ermitteln' },
-    { icon: '💎', text: 'Vermögensaufstellung und Entscheidungsvorbereitung' },
-    { icon: '💔', text: 'Ermittlung des Zugewinnausgleichs (Ehescheidung)' },
+    { icon: <Landmark size={24} />, text: 'Erbbauzinsanpassung' },
+    { icon: <Users size={24} />, text: 'Vormundschaften zur Wirtschaftlichkeit' },
+    { icon: <Tag size={24} />, text: 'Kauf und Verkauf – Fehlentscheidungen vermeiden' },
+    { icon: <Receipt size={24} />, text: 'Steuerliche Anlässe (z. B. Bedarfsbewertungen)' },
+    { icon: <Briefcase size={24} />, text: 'Vorbereitung von Kapitalanlage-Entscheidungen' },
+    { icon: <Scale size={24} />, text: 'Zwangs-/Teilungsversteigerung' },
+    { icon: <ClipboardList size={24} />, text: 'Enteignungs-/Entschädigungsverfahren' },
+    { icon: <Users size={24} />, text: 'Regulierung einer Erbauseinandersetzung' },
+    { icon: <Handshake size={24} />, text: 'Kauf oder Verkauf Ihres Grundstücks' },
+    { icon: <BarChart size={24} />, text: 'Jahresabschluss – stille Reserven ermitteln' },
+    { icon: <Gem size={24} />, text: 'Vermögensaufstellung und Entscheidungsvorbereitung' },
+    { icon: <HeartCrack size={24} />, text: 'Ermittlung des Zugewinnausgleichs (Ehescheidung)' },
 ];
 
 export function BewertungsAnlaesse() {

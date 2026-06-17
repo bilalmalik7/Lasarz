@@ -50,7 +50,7 @@ export function HeroBewertung() {
                     </p>
 
                     <div className="animate-reveal delay-200" style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-                        <Link href="/kontakt" className="btn btn-primary" style={{
+                        <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{
                             padding: '1.2rem 2.5rem',
                             fontSize: '1.1rem',
                             borderRadius: 'var(--radius-full)',

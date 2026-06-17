@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { MapPin, Phone } from 'lucide-react';
 
 const locations = [
     {
@@ -195,7 +196,7 @@ export function StandorteSection() {
                                 fontSize: '1.6rem',
                                 marginBottom: '1.5rem',
                             }}>
-                                📍
+                                <MapPin size={22} strokeWidth={1.8} />
                             </div>
 
                             <Link href={loc.customUrl ? loc.customUrl : (loc.slug ? `/standorte/${loc.slug}` : '#')} style={{ textDecoration: 'none' }}>
@@ -229,7 +230,7 @@ export function StandorteSection() {
                                     fontWeight: 600,
                                     fontSize: '0.9rem',
                                 }}>
-                                    📞 {loc.phone}
+                                    <Phone size={16} strokeWidth={1.8} style={{ flexShrink: 0 }} /> {loc.phone}
                                 </a>
                                 <a href={`mailto:${loc.email}`} style={{
                                     display: 'flex',

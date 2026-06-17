@@ -88,7 +88,7 @@ export default function BlogDetailPage({ params }: { params: Promise<{ id: strin
                         <h3 style={{ fontSize: '1.8rem', color: 'var(--accent-secondary)', marginBottom: '1rem' }}>Fragen zu diesem Thema?</h3>
                         <p style={{ marginBottom: '2rem', color: 'var(--text-secondary)' }}>Kontaktieren Sie Marc-André Lasarz für eine persönliche Beratung in Osnabrück und Umgebung.</p>
                         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                            <Link href="/kontakt" className="btn btn-primary">Jetzt anfragen</Link>
+                            <Link href="/kontakt#kontaktformular" className="btn btn-primary">Jetzt anfragen</Link>
                             <a href="tel:08006648714" className="btn btn-secondary">📞 0800 / 66 48 714</a>
                         </div>
                     </motion.div>

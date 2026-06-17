@@ -115,7 +115,7 @@ export default function ReferenzenPage() {
                      <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 2.5rem' }}>
                          Vertrauen Sie auf zertifizierte Expertise für Ihr persönliches Verkehrswertgutachten.
                      </p>
-                     <Link href="/kontakt" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>Zum Kontaktformular</Link>
+                     <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>Zum Kontaktformular</Link>
                 </div>
             </section>
         </main>

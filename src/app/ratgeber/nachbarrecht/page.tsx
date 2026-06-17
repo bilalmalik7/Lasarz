@@ -53,7 +53,7 @@ export default function NachbarrechtPage() {
                     </div>
 
                     <div style={{ marginTop: '5rem', textAlign: 'center' }}>
-                        <Link href="/kontakt" className="btn btn-secondary">Kontakt für Wertermittlung</Link>
+                        <Link href="/kontakt#kontaktformular" className="btn btn-secondary">Kontakt für Wertermittlung</Link>
                     </div>
                 </div>
             </section>

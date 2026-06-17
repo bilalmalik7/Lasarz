@@ -58,7 +58,7 @@ export default function BetreuungPage() {
                     <div style={{ marginTop: '5rem', padding: '3rem', backgroundColor: 'var(--bg-secondary)', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
                         <h3>Haben Sie Fragen zum Ablauf beim Betreuungsgericht?</h3>
                         <p style={{ margin: '1.5rem 0 2rem' }}>Wir verfügen über langjährige Erfahrung in der Zusammenarbeit mit Gerichten und Betreuern.</p>
-                        <Link href="/kontakt" className="btn btn-primary">Jetzt beraten lassen</Link>
+                        <Link href="/kontakt#kontaktformular" className="btn btn-primary">Jetzt beraten lassen</Link>
                     </div>
                 </div>
             </section>

@@ -59,7 +59,7 @@ export default function ErbbaurechtPage() {
                 <div style={{ marginTop: '5rem', padding: '3rem', backgroundColor: 'var(--bg-secondary)', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
                     <h3>Komplexe Fragen zum Erbbaurecht?</h3>
                     <p style={{ margin: '1.5rem 0 2rem' }}>Seit 19 Jahren bewerten wir Erbbaurechte in der Region Osnabrück und norddeutschlandweit.</p>
-                    <Link href="/kontakt" className="btn btn-primary">Experten kontaktieren</Link>
+                    <Link href="/kontakt#kontaktformular" className="btn btn-primary">Experten kontaktieren</Link>
                 </div>
             </section>
         </main>

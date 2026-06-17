@@ -989,7 +989,7 @@ export default function GuideContent() {
                     📞 +49 541 202 4880
                   </a>
                   <a
-                    href="/kontakt"
+                    href="/kontakt#kontaktformular"
                     className="bg-blue-600 border border-white/30 text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-500 transition-colors no-underline text-sm"
                   >
                     ✉️ Online anfragen

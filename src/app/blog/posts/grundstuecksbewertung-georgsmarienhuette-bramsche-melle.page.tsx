@@ -327,7 +327,7 @@ export default function GrundstuecksbewertungPage() {
                                     Bramsche oder Melle? Unser Team von zertifizierten Sachverständigen 
                                     steht Ihnen für eine unverbindliche Erstberatung zur Verfügung.
                                 </p>
-                                <a href="/kontakt" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>
+                                <a href="/kontakt#kontaktformular" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>
                                     Jetzt Termin vereinbaren
                                 </a>
                             </div>

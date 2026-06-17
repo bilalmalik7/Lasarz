@@ -197,7 +197,7 @@ export default function VerkehrswertgutachtenBelWertVPage() {
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
                   Haben Sie Fragen zu unserem BelWertV-Gutachten?
                 </p>
-                <a href="/kontakt" className="btn btn-primary" style={{ display: 'block', textAlign: 'center', padding: '0.75rem 1.5rem' }}>
+                <a href="/kontakt#kontaktformular" className="btn btn-primary" style={{ display: 'block', textAlign: 'center', padding: '0.75rem 1.5rem' }}>
                   Jetzt Termin vereinbaren
                 </a>
               </div>
@@ -215,7 +215,7 @@ export default function VerkehrswertgutachtenBelWertVPage() {
               Unsere Experten stehen Ihnen für eine unverbindliche Erstberatung gerne zur Verfügung.
             </p>
             <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="/kontakt" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>Jetzt Kontaktieren</a>
+              <a href="/kontakt#kontaktformular" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>Jetzt Kontaktieren</a>
               <a href="/#bewertung" className="btn btn-secondary" style={{ padding: '1rem 2.5rem' }}>Kostenlose Wertermittlung</a>
             </div>
           </div>

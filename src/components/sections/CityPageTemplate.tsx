@@ -155,7 +155,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.7, delay: 0.3 }}
                                 style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
-                                <Link href="/kontakt" className="btn btn-primary" style={{
+                                <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{
                                     padding: '1rem 2.2rem', borderRadius: 'var(--radius-full)', fontSize: '1rem',
                                     boxShadow: '0 12px 35px rgba(26,117,141,0.45)', fontWeight: 700 }}>
                                     Kostenlose Erstberatung →
@@ -214,7 +214,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                     ))}
                                 </div>
 
-                                <Link href="/kontakt" className="btn btn-primary" style={{
+                                <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{
                                     width: '100%', textAlign: 'center', justifyContent: 'center',
                                     borderRadius: '12px', padding: '0.9rem' }}>
                                     Immobilie bewerten lassen
@@ -323,7 +323,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                 <p style={{ color: 'var(--text-secondary)', lineHeight: 1.75, fontSize: '0.97rem', marginBottom: '1.5rem' }}>
                                     {data.tabs[activeTab].desc}
                                 </p>
-                                <Link href="/kontakt" className="btn btn-primary" style={{ borderRadius: 'var(--radius-full)', padding: '0.85rem 2rem' }}>
+                                <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{ borderRadius: 'var(--radius-full)', padding: '0.85rem 2rem' }}>
                                     Gutachten anfragen
                                 </Link>
                             </div>
@@ -502,7 +502,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                         </p>
                         <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
-                                <Link href="/kontakt" className="btn" style={{
+                                <Link href="/kontakt#kontaktformular" className="btn" style={{
                                     background: 'var(--accent-primary)', color: '#fff', padding: '1.1rem 2.5rem',
                                     borderRadius: 'var(--radius-full)', fontWeight: 700, fontSize: '1.05rem',
                                     boxShadow: '0 10px 30px rgba(26,117,141,0.5)', display: 'inline-block' }}>

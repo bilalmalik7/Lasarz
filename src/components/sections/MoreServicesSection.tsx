@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { Briefcase, Factory, Home, FlaskConical, Coins, Search, ClipboardList, Zap, Scale, Key, Camera, TrendingDown } from 'lucide-react';
 
 const furtherTopics = [
     'Immobilienschätzung', 'Gutachter Immobilien', 'Verkehrswert ermitteln',
@@ -14,18 +15,18 @@ const furtherTopics = [
 ];
 
 const services = [
-    { icon: '💼', title: 'Investmentberatung', href: '/leistungen/investmentberatung' },
-    { icon: '🏭', title: 'Bewertung von Gewerbe- und Industrieimmobilien', href: '/leistungen/gewerbeimmobilien' },
-    { icon: '🏠', title: 'Verkäuferberatung', href: '/leistungen/verkaeuferbereratung' },
-    { icon: '🧫', title: 'Schimmelgutachten Hannover', href: '/leistungen/schimmelgutachten' },
-    { icon: '💰', title: 'Steuerliche Immobilienbewertung', href: '/leistungen/steuerliche-bewertung' },
-    { icon: '🔎', title: 'Schadensgutachten', href: '/leistungen/schadensgutachten' },
-    { icon: '📋', title: 'Beleihungswertgutachten', href: '/leistungen/beleihungswertgutachten' },
-    { icon: '⚡', title: 'Energieausweis', href: '/leistungen/energieausweis' },
-    { icon: '⚖️', title: 'Verkehrswertgutachten nach §194 BauGB', href: '/leistungen/verkehrswertgutachten' },
-    { icon: '🔑', title: 'Immobilienkaufberatung', href: '/leistungen/ankaufberatung' },
-    { icon: '📸', title: 'Beweissicherung', href: '/leistungen/beweissicherung' },
-    { icon: '📉', title: 'Immobilien-Abschreibung (AfA)', href: '/immobilien-abschreibung' },
+    { icon: <Briefcase size={20} strokeWidth={1.8} />, title: 'Investmentberatung', href: '/leistungen/investmentberatung' },
+    { icon: <Factory size={20} strokeWidth={1.8} />, title: 'Bewertung von Gewerbe- und Industrieimmobilien', href: '/leistungen/gewerbeimmobilien' },
+    { icon: <Home size={20} strokeWidth={1.8} />, title: 'Verkäuferberatung', href: '/leistungen/verkaeuferbereratung' },
+    { icon: <FlaskConical size={20} strokeWidth={1.8} />, title: 'Schimmelgutachten Hannover', href: '/leistungen/schimmelgutachten' },
+    { icon: <Coins size={20} strokeWidth={1.8} />, title: 'Steuerliche Immobilienbewertung', href: '/leistungen/steuerliche-bewertung' },
+    { icon: <Search size={20} strokeWidth={1.8} />, title: 'Schadensgutachten', href: '/leistungen/schadensgutachten' },
+    { icon: <ClipboardList size={20} strokeWidth={1.8} />, title: 'Beleihungswertgutachten', href: '/leistungen/beleihungswertgutachten' },
+    { icon: <Zap size={20} strokeWidth={1.8} />, title: 'Energieausweis', href: '/leistungen/energieausweis' },
+    { icon: <Scale size={20} strokeWidth={1.8} />, title: 'Verkehrswertgutachten nach §194 BauGB', href: '/leistungen/verkehrswertgutachten' },
+    { icon: <Key size={20} strokeWidth={1.8} />, title: 'Immobilienkaufberatung', href: '/leistungen/ankaufberatung' },
+    { icon: <Camera size={20} strokeWidth={1.8} />, title: 'Beweissicherung', href: '/leistungen/beweissicherung' },
+    { icon: <TrendingDown size={20} strokeWidth={1.8} />, title: 'Immobilien-Abschreibung (AfA)', href: '/immobilien-abschreibung' },
 ];
 
 export function MoreServicesSection() {
@@ -118,7 +119,7 @@ export function MoreServicesSection() {
                             gap: '0.6rem',
                         }}>
                             {furtherTopics.map((topic) => (
-                                <Link key={topic} href="/kontakt" style={{
+                                <Link key={topic} href="/kontakt#kontaktformular" style={{
                                     display: 'inline-block',
                                     padding: '0.5rem 1rem',
                                     backgroundColor: 'var(--bg-secondary)',
@@ -160,7 +161,7 @@ export function MoreServicesSection() {
                             <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
                                 Als Sachverständige im Bereich der Immobilienbewertung erstellen wir Marktwertgutachten für Grundstücke, Wohn-, Gewerbe- und Sonderimmobilien. Wir prüfen auch vorhandene Gutachten auf ihre Plausibilität.
                             </p>
-                            <Link href="/kontakt" className="btn" style={{
+                            <Link href="/kontakt#kontaktformular" className="btn" style={{
                                 backgroundColor: 'var(--accent-primary)',
                                 color: '#fff',
                                 border: 'none',

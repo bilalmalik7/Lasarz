@@ -28,7 +28,7 @@ export function Hero() {
                     </p>
                     <div className="flex gap-sm animate-fade-in delay-300" style={{ marginBottom: 'var(--space-xl)' }}>
                         <a href="/#leistungen" className="btn btn-primary">Wertermittlung anfragen</a>
-                        <a href="/kontakt" className="btn btn-secondary">Kostenlose Erstberatung</a>
+                        <a href="/kontakt#kontaktformular" className="btn btn-secondary">Kostenlose Erstberatung</a>
                     </div>
 
                     <div className="animate-fade-in delay-300">

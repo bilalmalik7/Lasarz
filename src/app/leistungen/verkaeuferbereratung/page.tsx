@@ -42,7 +42,7 @@ export default function VerkaeuferbereratungPage() {
                             <h3 style={{ fontSize: '1.4rem', marginBottom: '1.5rem' }}>Beratung anfragen</h3>
                             <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: 1.7 }}>Erfahren Sie den aktuellen Marktwert Ihrer Immobilie – kostenlos und unverbindlich.</p>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                                <Link href="/kontakt" className="btn btn-primary" style={{ textAlign: 'center', justifyContent: 'center' }}>Kostenlose Erstberatung</Link>
+                                <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{ textAlign: 'center', justifyContent: 'center' }}>Kostenlose Erstberatung</Link>
                                 <a href="tel:+4954160099220" className="btn btn-secondary" style={{ textAlign: 'center', justifyContent: 'center' }}>📞 +49 (0) 541 - 600 99 220</a>
                             </div>
                             <div style={{ marginTop: '2rem', padding: '1.5rem', backgroundColor: '#fff', borderRadius: '8px' }}>
@@ -57,7 +57,7 @@ export default function VerkaeuferbereratungPage() {
                 <div className="container">
                     <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Immobilie verkaufen in Osnabrück?</h2>
                     <p style={{ opacity: 0.85, marginBottom: '2rem', fontSize: '1.1rem' }}>Wir ermitteln Ihren Marktwert – fair, transparent und zertifiziert.</p>
-                    <Link href="/kontakt" className="btn" style={{ backgroundColor: 'var(--accent-primary)', color: '#fff', padding: '1rem 2.5rem' }}>Jetzt Kontakt aufnehmen</Link>
+                    <Link href="/kontakt#kontaktformular" className="btn" style={{ backgroundColor: 'var(--accent-primary)', color: '#fff', padding: '1rem 2.5rem' }}>Jetzt Kontakt aufnehmen</Link>
                 </div>
             </section>
         </main>

@@ -18,9 +18,9 @@ export function Header() {
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="container flex justify-between items-center" style={{ height: '80px' }}>
+      <div className="container flex justify-between items-center" style={{ height: '110px' }}>
         <Link href="/" className="logo" style={{ display: 'flex', alignItems: 'center', zIndex: 1001 }}>
-          <img src="/logo.svg" alt="Lasarz Logo" style={{ height: '40px', width: 'auto' }} />
+          <img src="/logo.svg" alt="Lasarz Logo" style={{ height: '80px', width: 'auto', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))' }} />
         </Link>
 
         {/* Hamburger Menu Icon */}

@@ -135,7 +135,7 @@ export default function VerkehrswertgutachtenPage() {
                         <h2 style={{ color: '#ffffff', marginBottom: '1.5rem' }}>Benötigen Sie ein Verkehrswertgutachten in Osnabrück?</h2>
                         <p style={{ fontSize: '1.2rem', marginBottom: '2.5rem', opacity: 0.9 }}>Wir beraten Sie gerne unverbindlich zu Ihrem individuellen Anliegen in Osnabrück.</p>
                         <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
-                            <Link href="/kontakt" className="btn btn-primary" style={{ backgroundColor: '#ffffff', color: 'var(--accent-secondary)' }}>Jetzt Kontakt aufnehmen</Link>
+                            <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{ backgroundColor: '#ffffff', color: 'var(--accent-secondary)' }}>Jetzt Kontakt aufnehmen</Link>
                             <a href="tel:08006648714" className="btn btn-secondary" style={{ borderColor: '#ffffff', color: '#ffffff' }}>0800 / 66 48 714</a>
                         </div>
                     </div>

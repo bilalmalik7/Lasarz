@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { MapPin, Scale, FileCheck, Zap } from 'lucide-react';
 
 interface LocalExpertiseProps {
     city?: string;
@@ -38,19 +39,19 @@ export const LocalExpertise = ({ city }: LocalExpertiseProps) => {
 
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-                                    <span style={{ color: 'var(--accent-primary)', fontSize: '1.5rem' }}>📍</span>
+                                    <span style={{ color: 'var(--accent-primary)' }}><MapPin size={22} strokeWidth={1.8} /></span>
                                     <span>Lokal vernetzt</span>
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-                                    <span style={{ color: 'var(--accent-primary)', fontSize: '1.5rem' }}>⚖️</span>
+                                    <span style={{ color: 'var(--accent-primary)' }}><Scale size={22} strokeWidth={1.8} /></span>
                                     <span>Gerichtsfest</span>
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-                                    <span style={{ color: 'var(--accent-primary)', fontSize: '1.5rem' }}>📄</span>
+                                    <span style={{ color: 'var(--accent-primary)' }}><FileCheck size={22} strokeWidth={1.8} /></span>
                                     <span>DIA zertifiziert</span>
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-                                    <span style={{ color: 'var(--accent-primary)', fontSize: '1.5rem' }}>🚀</span>
+                                    <span style={{ color: 'var(--accent-primary)' }}><Zap size={22} strokeWidth={1.8} /></span>
                                     <span>Schnelle Abwicklung</span>
                                 </div>
                             </div>

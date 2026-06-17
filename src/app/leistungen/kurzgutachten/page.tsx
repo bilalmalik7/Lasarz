@@ -71,7 +71,7 @@ export default function KurzgutachtenPage() {
                         Gerne klären wir in einem kostenlosen Erstgespräch, ob ein Kurzgutachten für Ihr Anliegen ausreichend ist oder ein Vollgutachten benötigt wird.
                     </p>
                     <div className="flex justify-center gap-md">
-                        <Link href="/kontakt" className="btn btn-primary">Jetzt anfragen</Link>
+                        <Link href="/kontakt#kontaktformular" className="btn btn-primary">Jetzt anfragen</Link>
                         <Link href="tel:+4954160099220" className="btn btn-secondary">📞 0541 / 600 99 220</Link>
                     </div>
                 </div>

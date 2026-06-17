@@ -339,7 +339,7 @@ export default function SchimmelgutachtenPage() {
                         transition={{ duration: 0.7, delay: 0.3 }}
                         style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
                     >
-                        <Link href="/kontakt" className="btn btn-primary" style={{
+                        <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{
                             padding: '1rem 2.5rem', fontSize: '1.05rem',
                             borderRadius: 'var(--radius-full)',
                             boxShadow: '0 10px 30px rgba(26,117,141,0.4)',
@@ -653,7 +653,7 @@ export default function SchimmelgutachtenPage() {
                         </p>
                         <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
-                                <Link href="/kontakt" className="btn" style={{
+                                <Link href="/kontakt#kontaktformular" className="btn" style={{
                                     backgroundColor: 'var(--accent-primary)',
                                     color: '#fff',
                                     padding: '1.1rem 2.5rem',

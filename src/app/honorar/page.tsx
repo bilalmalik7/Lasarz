@@ -76,7 +76,7 @@ export default function HonorarPage() {
                                     </li>
                                 ))}
                             </ul>
-                            <Link href="/kontakt" className="btn btn-secondary" style={{ width: '100%', textAlign: 'center' }}>Jetzt anfragen</Link>
+                            <Link href="/kontakt#kontaktformular" className="btn btn-secondary" style={{ width: '100%', textAlign: 'center' }}>Jetzt anfragen</Link>
                         </motion.div>
 
                         {/* Verkehrswertgutachten */}
@@ -106,7 +106,7 @@ export default function HonorarPage() {
                                     </li>
                                 ))}
                             </ul>
-                            <Link href="/kontakt" className="btn btn-primary" style={{ width: '100%', textAlign: 'center' }}>Gespräch vereinbaren</Link>
+                            <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{ width: '100%', textAlign: 'center' }}>Gespräch vereinbaren</Link>
                         </motion.div>
                     </div>
                 </div>

@@ -74,7 +74,7 @@ export default function AnkaufberatungPage() {
                     <div style={{ marginTop: '5rem', padding: '3rem', backgroundColor: 'var(--bg-secondary)', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
                         <h3>Planen Sie einen Immobilienkauf oder -verkauf?</h3>
                         <p style={{ margin: '1.5rem 0 2rem' }}>Eine professionelle Zweitmeinung schützt Ihr Kapital.</p>
-                        <Link href="/kontakt" className="btn btn-primary">Beratungstermin vereinbaren</Link>
+                        <Link href="/kontakt#kontaktformular" className="btn btn-primary">Beratungstermin vereinbaren</Link>
                     </div>
                 </div>
             </section>

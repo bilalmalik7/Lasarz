@@ -53,7 +53,7 @@ export default function ErbauseinandersetzungPage() {
                     <div style={{ marginTop: '5rem', padding: '3rem', backgroundColor: 'var(--accent-secondary)', borderRadius: 'var(--radius-lg)', color: '#ffffff', textAlign: 'center' }}>
                         <h2 style={{ color: '#ffffff' }}>Gerechtigkeit durch Transparenz</h2>
                         <p style={{ margin: '1.5rem 0 2rem', opacity: 0.9 }}>Wir helfen Erbengemeinschaften, Konflikte durch unparteiische Wertermittlung zu vermeiden.</p>
-                        <Link href="/kontakt" className="btn btn-primary" style={{ backgroundColor: '#ffffff', color: 'var(--accent-secondary)' }}>Unverbindlich anfragen</Link>
+                        <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{ backgroundColor: '#ffffff', color: 'var(--accent-secondary)' }}>Unverbindlich anfragen</Link>
                     </div>
                 </div>
             </section>

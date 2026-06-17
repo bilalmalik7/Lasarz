@@ -1,131 +1,203 @@
 'use client';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
+import { PhoneCall, Home, BarChart3, ClipboardCheck } from 'lucide-react';
+
+const methods = [
+    {
+        step: '01',
+        title: 'Kostenlose Erstberatung',
+        desc: 'In einem unverbindlichen Gespräch klären wir Ihr Anliegen und prüfen, welches Gutachten (z.B. Verkehrswert- oder Kurzgutachten) für Sie optimal ist. Sie erhalten ein transparentes Festpreisangebot.',
+        icon: <PhoneCall size={28} />,
+        gradient: 'linear-gradient(135deg, #1A758D 0%, #2995b0 100%)',
+        shadow: 'rgba(26, 117, 141, 0.4)',
+    },
+    {
+        step: '02',
+        title: 'Ortstermin & Besichtigung',
+        desc: 'Unser zertifizierter Sachverständiger besichtigt Ihre Immobilie vor Ort. Dabei wird der bauliche Zustand, die Ausstattung sowie wertbeeinflussende Faktoren (wie Schäden oder Modernisierungen) detailliert aufgenommen.',
+        icon: <Home size={28} />,
+        gradient: 'linear-gradient(135deg, #c5a36c 0%, #f0d080 100%)',
+        shadow: 'rgba(197, 163, 108, 0.4)',
+    },
+    {
+        step: '03',
+        title: 'Recherche & Wertermittlung',
+        desc: 'Wir analysieren den regionalen Immobilienmarkt (z.B. Gutachterausschuss Osnabrück), prüfen behördliche Unterlagen wie Grundbuchauszüge oder Baulasten und berechnen den Wert nach gesetzlich normierten Verfahren.',
+        icon: <BarChart3 size={28} />,
+        gradient: 'linear-gradient(135deg, #0A192F 0%, #1a3a5c 100%)',
+        shadow: 'rgba(10, 25, 47, 0.4)',
+    },
+    {
+        step: '04',
+        title: 'Auslieferung des Gutachtens',
+        desc: 'Sie erhalten Ihr rechtssicheres, anerkanntes Gutachten in schriftlicher sowie digitaler Form. Abschließend besprechen wir die Ergebnisse gemeinsam und stehen für Rückfragen zur Verfügung.',
+        icon: <ClipboardCheck size={28} color="#0A192F" />,
+        gradient: 'linear-gradient(135deg, #43e97b 0%, #1e7a4a 100%)',
+        shadow: 'rgba(67, 233, 123, 0.4)',
+    },
+];
 
 export function HowWeWork() {
-    const methods = [
-        {
-            step: '01',
-            title: 'Sachwertverfahren',
-            desc: 'Die Immobilie wird auf Basis des Sachwerts bewertet – ideal für eigengenutzte Wohnimmobilien.',
-            icon: '🏗️',
-        },
-        {
-            step: '02',
-            title: 'Ertragswertverfahren',
-            desc: 'Bei Renditeimmobilien wird der nachhaltige Ertrag zur Wertermittlung herangezogen.',
-            icon: '📈',
-        },
-        {
-            step: '03',
-            title: 'Vergleichswertverfahren',
-            desc: 'Vergleichspreise aus aktuellen Marktdaten des Gutachterausschusses Osnabrück fließen ein.',
-            icon: '⚖️',
-        },
-        {
-            step: '04',
-            title: 'Residualwertverfahren',
-            desc: 'Für Grundstücke mit Entwicklungspotenzial wird eine baurechtliche Prüfung und Residualwertermittlung durchgeführt.',
-            icon: '📐',
-        },
-    ];
+    const containerRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start center", "end center"]
+    });
+
+    const scaleY = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
     return (
         <section style={{
-            padding: '100px 0',
-            backgroundColor: 'var(--bg-secondary)',
+            padding: '120px 0',
+            background: 'var(--section-dark-bg)',
             position: 'relative',
             overflow: 'hidden',
         }}>
-            {/* Decorative background circles */}
+            {/* Background decoration */}
             <div style={{
-                position: 'absolute',
-                top: '-100px',
-                right: '-100px',
-                width: '500px',
-                height: '500px',
-                borderRadius: '50%',
-                border: '80px solid rgba(26,117,141,0.05)',
-                pointerEvents: 'none',
+                position: 'absolute', inset: 0, pointerEvents: 'none',
+                backgroundImage: `
+                    radial-gradient(circle at 80% 20%, rgba(197,163,108,0.08) 0%, transparent 45%),
+                    radial-gradient(circle at 10% 80%, rgba(26,117,141,0.08) 0%, transparent 45%)
+                `
             }} />
 
-            <style>{`
-        .method-card:hover {
-          transform: translateY(-6px);
-          box-shadow: 0 16px 40px rgba(18,43,64,0.14) !important;
-        }
-      `}</style>
-            <div className="container">
-                <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                    <span style={{
-                        color: 'var(--accent-primary)',
-                        fontWeight: 600,
-                        textTransform: 'uppercase',
-                        letterSpacing: '2px',
-                        fontSize: '0.85rem',
-                    }}>
-                        Bewertungsverfahren
-                    </span>
-                    <h2 style={{
-                        fontSize: 'clamp(1.8rem, 3vw, 2.8rem)',
-                        color: 'var(--accent-secondary)',
-                        marginTop: '0.75rem',
-                        marginBottom: '1rem',
-                    }}>
-                        Wie ermittelt ein zertifizierter Immobiliengutachter den Verkehrswert?
-                    </h2>
-                    <p style={{ maxWidth: '700px', margin: '0 auto', color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: 1.8 }}>
-                        Bei der Erstellung von Immobiliengutachten finden die gesetzlich vorgeschriebenen Bewertungsverfahren Anwendung. Die aktuellen Marktdaten des Gutachterausschusses Osnabrück fließen über Vergleichspreise in die Gebäudewertermittlung sowie den Bodenrichtwert mit ein.
-                    </p>
-                </div>
+            <div className="container" style={{ position: 'relative', zIndex: 1 }}>
 
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))',
-                    gap: '2rem',
-                }}>
-                    {methods.map((m) => (
-                        <div key={m.step} style={{
-                            backgroundColor: '#fff',
-                            borderRadius: '12px',
-                            padding: '2.5rem 2rem',
-                            boxShadow: '0 4px 24px rgba(18,43,64,0.07)',
-                            borderTop: '4px solid var(--accent-primary)',
-                            transition: 'transform 0.3s, box-shadow 0.3s',
-                            cursor: 'default',
-                        }}
-                            onMouseEnter={(e) => {
-                                (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-6px)';
-                                (e.currentTarget as HTMLDivElement).style.boxShadow = '0 16px 40px rgba(18,43,64,0.14)';
-                            }}
-                            onMouseLeave={(e) => {
-                                (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
-                                (e.currentTarget as HTMLDivElement).style.boxShadow = '0 4px 24px rgba(18,43,64,0.07)';
-                            }}
-                        >
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.2rem' }}>
-                                <span style={{
-                                    fontSize: '2rem',
-                                    lineHeight: 1,
-                                }}>{m.icon}</span>
-                                <span style={{
-                                    fontSize: '0.85rem',
-                                    fontWeight: 700,
-                                    color: 'var(--accent-primary)',
-                                    backgroundColor: 'rgba(26,117,141,0.1)',
-                                    padding: '4px 12px',
-                                    borderRadius: '50px',
-                                    letterSpacing: '1px',
+                {/* Section header */}
+                <motion.div
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    style={{ textAlign: 'center', marginBottom: '6rem' }}
+                >
+                    <div className="section-label" style={{ justifyContent: 'center', color: 'var(--accent-primary)', borderColor: 'var(--accent-primary)' }}>
+                        Der Ablauf
+                    </div>
+                    <h2 style={{
+                        fontSize: 'clamp(2rem, 4vw, 3rem)',
+                        color: 'var(--section-dark-text)',
+                        fontWeight: 800, lineHeight: 1.15, marginBottom: '1.25rem'
+                    }}>
+                        In 4 Schritten zu Ihrem rechtssicheren Gutachten
+                    </h2>
+                    <p style={{
+                        maxWidth: '640px', margin: '0 auto',
+                        color: 'var(--section-dark-muted)', fontSize: '1.05rem', lineHeight: 1.85
+                    }}>
+                        Wir legen größten Wert auf Transparenz und Zuverlässigkeit. Erfahren Sie, wie unkompliziert der Weg zu Ihrer professionellen Immobilienbewertung ist.
+                    </p>
+                </motion.div>
+
+                {/* Vertical Timeline */}
+                <div ref={containerRef} style={{ position: 'relative', maxWidth: '1000px', margin: '0 auto' }}>
+                    {/* The Background Line */}
+                    <div style={{
+                        position: 'absolute',
+                        left: '50%',
+                        top: 0,
+                        bottom: 0,
+                        width: '4px',
+                        background: 'rgba(255,255,255,0.05)',
+                        transform: 'translateX(-50%)',
+                        borderRadius: '4px'
+                    }} className="hidden-mobile" />
+
+                    {/* The Animated Fill Line */}
+                    <motion.div style={{
+                        position: 'absolute',
+                        left: '50%',
+                        top: 0,
+                        bottom: 0,
+                        width: '4px',
+                        background: 'linear-gradient(to bottom, var(--accent-primary), var(--accent-teal))',
+                        transform: 'translateX(-50%)',
+                        transformOrigin: 'top',
+                        scaleY: scaleY,
+                        borderRadius: '4px',
+                        zIndex: 1
+                    }} className="hidden-mobile" />
+
+                    {methods.map((m, index) => {
+                        const isEven = index % 2 === 0;
+                        return (
+                            <motion.div
+                                key={m.step}
+                                initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true, margin: '-100px' }}
+                                transition={{ duration: 0.7, delay: 0.1 }}
+                                style={{
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    alignItems: 'center',
+                                    flexDirection: isEven ? 'row' : 'row-reverse',
+                                    marginBottom: '4rem',
+                                    position: 'relative'
+                                }}
+                                className="md-flex-row flex-col gap-lg"
+                            >
+                                {/* Content Card */}
+                                <div style={{
+                                    flex: 1,
+                                    width: '100%',
+                                    background: 'var(--section-dark-surface)',
+                                    borderRadius: '24px',
+                                    padding: '2.5rem',
+                                    boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
+                                    border: '1px solid var(--section-dark-border)',
+                                    position: 'relative',
+                                    zIndex: 2,
+                                    textAlign: isEven ? 'right' : 'left'
                                 }}>
-                                    Schritt {m.step}
-                                </span>
-                            </div>
-                            <h3 style={{ fontSize: '1.2rem', color: 'var(--accent-secondary)', marginBottom: '0.75rem' }}>
-                                {m.title}
-                            </h3>
-                            <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, fontSize: '0.95rem' }}>
-                                {m.desc}
-                            </p>
-                        </div>
-                    ))}
+                                    <div style={{
+                                        color: 'var(--accent-primary)',
+                                        fontWeight: 800,
+                                        fontSize: '0.9rem',
+                                        letterSpacing: '2px',
+                                        marginBottom: '1rem',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: isEven ? 'flex-end' : 'flex-start',
+                                        gap: '0.5rem'
+                                    }}>
+                                        SCHRITT {m.step}
+                                    </div>
+                                    <h3 style={{
+                                        fontSize: '1.4rem', color: 'var(--section-dark-text)',
+                                        marginBottom: '1rem', fontWeight: 700
+                                    }}>
+                                        {m.title}
+                                    </h3>
+                                    <p style={{ color: 'var(--section-dark-muted)', lineHeight: 1.8, fontSize: '1rem' }}>
+                                        {m.desc}
+                                    </p>
+                                </div>
+
+                                {/* Center Node */}
+                                <div className="hidden-mobile" style={{
+                                    width: '60px',
+                                    height: '60px',
+                                    borderRadius: '50%',
+                                    background: m.gradient,
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    fontSize: '1.5rem',
+                                    boxShadow: `0 0 20px ${m.shadow}`,
+                                    zIndex: 3,
+                                    flexShrink: 0
+                                }}>
+                                    {m.icon}
+                                </div>
+
+                                {/* Empty space for the other side */}
+                                <div style={{ flex: 1 }} className="hidden-mobile" />
+                            </motion.div>
+                        );
+                    })}
                 </div>
             </div>
         </section>

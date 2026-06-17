@@ -130,7 +130,7 @@ export default function BlogContent({ blogPosts }: BlogContentProps) {
               Unsere Experten stehen Ihnen für eine unverbindliche Erstberatung gerne zur Verfügung.
             </p>
             <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/kontakt" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>Jetzt Kontaktieren</Link>
+              <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>Jetzt Kontaktieren</Link>
               <Link href="/#bewertung" className="btn btn-secondary" style={{ padding: '1rem 2.5rem' }}>Kostenlose Wertermittlung</Link>
             </div>
           </div>

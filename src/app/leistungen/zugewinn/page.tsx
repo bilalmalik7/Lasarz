@@ -51,7 +51,7 @@ export default function ZugewinnPage() {
                     <div style={{ marginTop: '5rem', padding: '3rem', backgroundColor: 'var(--bg-secondary)', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
                         <h3>Benötigen Sie eine Wertermittlung für eine Eheauseinandersetzung?</h3>
                         <p style={{ margin: '1.5rem 0 2rem' }}>Wir beraten Sie diskret und professionell zu den notwendigen Stichtagsbewertungen.</p>
-                        <Link href="/kontakt" className="btn btn-primary">Kontakt zu Herrn Lasarz</Link>
+                        <Link href="/kontakt#kontaktformular" className="btn btn-primary">Kontakt zu Herrn Lasarz</Link>
                     </div>
                 </div>
             </section>

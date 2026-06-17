@@ -119,7 +119,7 @@ export default function ProcessPage() {
                 <div className="container">
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--accent-secondary)' }}>Bereit für den ersten Schritt?</h2>
                     <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '2.5rem' }}>Starten Sie ganz einfach mit einer unverbindlichen Anfrage.</p>
-                    <Link href="/kontakt" className="btn btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.1rem' }}>Rückruf anfordern</Link>
+                    <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.1rem' }}>Rückruf anfordern</Link>
                 </div>
             </section>
 

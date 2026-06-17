@@ -62,7 +62,7 @@ export default function GrundBodenPage() {
                     </div>
 
                     <div style={{ marginTop: '5rem', textAlign: 'center' }}>
-                        <Link href="/kontakt" className="btn btn-primary">Gutachten für das Finanzamt anfragen</Link>
+                        <Link href="/kontakt#kontaktformular" className="btn btn-primary">Gutachten für das Finanzamt anfragen</Link>
                     </div>
                 </div>
             </section>

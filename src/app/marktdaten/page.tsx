@@ -47,7 +47,7 @@ export default function MarketDataPage() {
                             Dashboards zeigen Durchschnittswerte (§ 194 BauGB), doch Ihre Immobilie ist einzigartig. Um den wahren Verkehrswert abzubilden, bedarf es einer Einzelfallprüfung durch einen zertifizierten Gutachter.
                         </p>
                         <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                            <Link href="/kontakt" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>Individuelles Gutachten anfragen</Link>
+                            <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>Individuelles Gutachten anfragen</Link>
                             <Link href="/honorar" className="btn btn-secondary" style={{ padding: '1rem 2.5rem' }}>Preise ansehen</Link>
                         </div>
                     </div>
