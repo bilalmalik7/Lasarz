@@ -3,6 +3,38 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { MapPin, Phone } from 'lucide-react';
+import RegionMap from './RegionMap';
+
+const otherRegions = [
+  { label: 'Münster', url: '/immobiliengutachter-muenster' },
+  { label: 'Bünde', url: '/immobiliengutachter-buende' },
+  { label: 'Ibbenbüren', url: '/immobiliengutachter-ibbenbueren' },
+  { label: 'Lingen', url: '/immobiliengutachter-lingen' },
+  { label: 'Emsdetten', url: '/immobiliengutachter-emsdetten' },
+  { label: 'Steinfurt', url: '/immobiliengutachter-steinfurt' },
+  { label: 'Gütersloh', url: '/immobiliengutachter-guetersloh' },
+  { label: 'Borgholzhausen', url: '/immobiliengutachter-borgholzhausen' },
+  { label: 'Löhne', url: '/immobiliengutachter-loehne' },
+  { label: 'Halle (Westf.)', url: '/immobiliengutachter-halle-westf' },
+  { label: 'Warendorf', url: '/immobiliengutachter-warendorf' },
+  { label: 'Bad Oeynhausen', url: '/immobiliengutachter-bad-oeynhausen' },
+  { label: 'Bad Bentheim', url: '/immobiliengutachter-bad-bentheim' },
+  { label: 'Kirchlengern', url: '/immobiliengutachter-kirchlengern' },
+  { label: 'Versmold', url: '/immobilienbewertung-versmold' },
+  { label: 'Westerkappeln', url: '/immobilienbewertung-westerkappeln' },
+  { label: 'Hörstel', url: '/immobilienbewertung-hoerstel' },
+  { label: 'Sassenberg', url: '/immobilienbewertung-sassenberg' },
+  { label: 'Spelle', url: '/immobilienbewertung-spelle' },
+  { label: 'Nordhorn', url: '/immobilienbewertung-nordhorn' },
+  { label: 'Lotte', url: '/immobilienbewertung-lotte' },
+  { label: 'Oelde', url: '/immobilienbewertung-oelde' },
+  { label: 'Detmold', url: '/immobilienbewertung-detmold' },
+  { label: 'Lengerich', url: '/immobilienbewertung-lengerich' },
+  { label: 'Minden', url: '/immobilienbewertung-minden' },
+  { label: 'Oldenburg', url: '/immobilienbewertung-oldenburg' },
+  { label: 'Flensburg', url: '/immobiliengutachter-flensburg' }
+];
+
 
 const locations = [
     {
@@ -282,91 +314,87 @@ export function StandorteSection() {
                     padding: '3rem',
                     boxShadow: '0 4px 24px rgba(18,43,64,0.07)',
                     border: '1px solid var(--border-color)',
+                    marginTop: '4rem'
                 }}>
-                    <h3 style={{ color: 'var(--accent-secondary)', fontSize: '1.5rem', marginBottom: '0.5rem', textAlign: 'center' }}>
-                        Unsere regionale Abdeckung
-                    </h3>
-                    <p style={{ color: 'var(--text-secondary)', textAlign: 'center', marginBottom: '3rem', fontSize: '0.95rem' }}>
-                        Wir sind in der gesamten Region für Sie tätig
-                    </p>
+                    <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                        <span style={{
+                            color: 'var(--accent-primary)',
+                            fontWeight: 600,
+                            textTransform: 'uppercase',
+                            letterSpacing: '2px',
+                            fontSize: '0.85rem',
+                        }}>
+                            Unser Einsatzgebiet
+                        </span>
+                        <h3 style={{ 
+                            fontFamily: "'Playfair Display', serif",
+                            color: 'var(--accent-secondary)', 
+                            fontSize: '2rem', 
+                            fontWeight: 700,
+                            marginTop: '0.5rem',
+                            marginBottom: '0.75rem' 
+                        }}>
+                            Zuhause in der gesamten Region
+                        </h3>
+                        <p style={{ color: 'var(--text-secondary)', maxWidth: '650px', margin: '0 auto', fontSize: '0.98rem', lineHeight: 1.7 }}>
+                            Von Stadt und Landkreis Osnabrück über das Münsterland bis nach Ostwestfalen und Norddeutschland — wir kennen jede Gemeinde und ihren Immobilienmarkt. Fahren Sie über die Karte oder klicken Sie auf die Standorte, um mehr zu erfahren.
+                        </p>
+                    </div>
 
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
-                        gap: '3rem',
-                    }}>
-                        <div>
-                            <h4 style={{ color: 'var(--accent-primary)', marginBottom: '1rem', fontWeight: 600, fontSize: '1rem', borderBottom: '2px solid var(--accent-primary)', paddingBottom: '0.5rem' }}>
-                                Immobiliengutachter
-                            </h4>
-                            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                                {gutachterList.map((item, i) => (
-                                    <li key={i} style={{ fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                        <span style={{ color: 'var(--accent-primary)', fontSize: '0.7rem' }}>●</span>
-                                        <Link href={item.url} style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}
-                                            onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-primary)')}
-                                            onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
-                                        >{item.label}</Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                    {/* Interactive Map Component */}
+                    <RegionMap />
 
-                        <div>
-                            <h4 style={{ color: 'var(--accent-primary)', marginBottom: '1rem', fontWeight: 600, fontSize: '1rem', borderBottom: '2px solid var(--accent-primary)', paddingBottom: '0.5rem' }}>
-                                Immobilienbewertung
-                            </h4>
-                            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                                {bewertungList.map((item, i) => (
-                                    <li key={i} style={{ fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                        <span style={{ color: 'var(--accent-primary)', fontSize: '0.7rem' }}>●</span>
-                                        <Link href={item.url} style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}
-                                            onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-primary)')}
-                                            onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
-                                        >{item.label}</Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h4 style={{ color: 'var(--accent-secondary)', marginBottom: '1rem', fontWeight: 700, fontSize: '1rem', borderBottom: '2px solid var(--accent-secondary)', paddingBottom: '0.5rem' }}>
-                                Über Uns
-                            </h4>
-                            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                                Das Unternehmen arbeitet zur Zeit an 4 Standorten. Alle Sachverständigen haben jahrelange Erfahrungen im Immobilienbereich und verfügen über mindestens ein Studium an der Deutschen Immobilienakademie (DIA) an der Universität Freiburg.
-                            </p>
-
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                                {[
-                                    'Bachelor of Arts Real Estate',
-                                    'Zertifizierter Immobiliengutachter',
-                                    'Recognised European Valuer',
-                                    'Bauschadenbewerter (DIA)',
-                                    'Certified Real Estate Asset Manager (DIA)',
-                                    'Beleihungswertermittler (DIA)',
-                                    'Immobilienwirt (DIA) und Geprüfter Immobilien-Fachwirt (IHK)',
-                                    'Immobilienbewerter (DIA) und Dipl.-Sachverständiger (DIA)',
-                                ].map((cert, i) => (
-                                    <div key={i} style={{
-                                        display: 'flex',
+                    {/* Other Regions (SEO & Backlinks) */}
+                    <div style={{ marginTop: '3.5rem', borderTop: '1px solid var(--border-color)', paddingTop: '2.5rem' }}>
+                        <h4 style={{ 
+                            color: 'var(--accent-secondary)', 
+                            fontSize: '1.15rem', 
+                            fontWeight: 700, 
+                            marginBottom: '1.25rem',
+                            fontFamily: "'Playfair Display', serif",
+                            letterSpacing: '0.3px'
+                        }}>
+                            Weitere aktive Gutachter- & Bewertungsregionen
+                        </h4>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem 0.8rem' }}>
+                            {otherRegions.map((region, i) => (
+                                <Link 
+                                    key={i} 
+                                    href={region.url}
+                                    style={{
+                                        display: 'inline-flex',
                                         alignItems: 'center',
-                                        gap: '0.6rem',
+                                        backgroundColor: 'var(--bg-secondary)',
+                                        border: '1px solid var(--border-color)',
                                         color: 'var(--text-secondary)',
-                                        fontSize: '0.85rem',
-                                    }}>
-                                        <span style={{ color: 'var(--accent-primary)', fontWeight: 700 }}>✓</span>
-                                        {cert}
-                                    </div>
-                                ))}
-                            </div>
-
-                            <Link href="/ueber-uns" className="btn btn-primary" style={{ marginTop: '1.5rem', width: '100%', justifyContent: 'center' }}>
-                                Mehr erfahren
-                            </Link>
+                                        padding: '6px 14px',
+                                        borderRadius: '50px',
+                                        fontSize: '0.82rem',
+                                        fontWeight: 500,
+                                        textDecoration: 'none',
+                                        transition: 'all 0.25s ease'
+                                    }}
+                                    onMouseEnter={e => {
+                                        e.currentTarget.style.borderColor = '#c4704b';
+                                        e.currentTarget.style.color = '#c4704b';
+                                        e.currentTarget.style.backgroundColor = '#faf9f7';
+                                        e.currentTarget.style.transform = 'translateY(-1px)';
+                                    }}
+                                    onMouseLeave={e => {
+                                        e.currentTarget.style.borderColor = 'var(--border-color)';
+                                        e.currentTarget.style.color = 'var(--text-secondary)';
+                                        e.currentTarget.style.backgroundColor = 'var(--bg-secondary)';
+                                        e.currentTarget.style.transform = 'none';
+                                    }}
+                                >
+                                    <span style={{ color: '#c4704b', marginRight: '6px', fontSize: '0.75rem' }}>●</span>
+                                    {region.label}
+                                </Link>
+                            ))}
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     );
