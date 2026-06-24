@@ -89,7 +89,7 @@ export default function BlogDetailPage({ params }: { params: Promise<{ id: strin
                         <p style={{ marginBottom: '2rem', color: 'var(--text-secondary)' }}>Kontaktieren Sie Marc-André Lasarz für eine persönliche Beratung in Osnabrück und Umgebung.</p>
                         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                             <Link href="/kontakt#kontaktformular" className="btn btn-primary">Jetzt anfragen</Link>
-                            <a href="tel:08006648714" className="btn btn-secondary">📞 0800 / 66 48 714</a>
+                            <a href="tel:+4954160099220" className="btn btn-secondary">📞 +49 (0) 541 600 99 220</a>
                         </div>
                     </motion.div>
                 </div>

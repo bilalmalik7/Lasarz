@@ -124,7 +124,7 @@ export function WhyChooseUs() {
                         Gebäudebewertung durch echte Experten
                     </h2>
                     <p style={{ color: 'rgba(255,255,255,0.72)', maxWidth: '610px', margin: '0 auto', fontSize: '1.05rem', lineHeight: 1.85 }}>
-                        Das Sachverständigenbüro Lasarz – <strong style={{ color: 'rgba(255,255,255,0.9)' }}>B.A. Real Estate</strong> – ist mit Büros in Osnabrück, Bünde und Hannover für die gesamte Region tätig. Über 3.500 erstellte Gutachten und 19+ Jahre Marktkenntnis.
+                        Das Sachverständigenbüro Lasarz – <strong style={{ color: 'rgba(255,255,255,0.9)' }}>B.A. Real Estate</strong> – ist mit Büros in Osnabrück, Bünde und Hannover für die gesamte Region tätig. Über 3.500 erstellte Gutachten und 20+ Jahre Marktkenntnis.
                     </p>
                 </motion.div>
 

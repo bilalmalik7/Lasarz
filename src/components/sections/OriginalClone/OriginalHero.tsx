@@ -24,7 +24,7 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
     const cardStats = [
         { icon: <Award size={18} strokeWidth={1.8} />, label: 'DIAzert · REV' },
         { icon: <ShieldCheck size={18} strokeWidth={1.8} />, label: 'Gerichtsfest' },
-        { icon: <Clock size={18} strokeWidth={1.8} />, label: '19+ Jahre' },
+        { icon: <Clock size={18} strokeWidth={1.8} />, label: '20+ Jahre' },
     ];
 
     return (

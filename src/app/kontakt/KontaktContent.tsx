@@ -132,14 +132,14 @@ export default function KontaktContent() {
                         gap: '1.5rem'
                     }}>
                         {/* Phone Card */}
-                        <motion.a href="tel:08006648714" whileHover={{ y: -8, scale: 1.02 }} style={{ textDecoration: 'none' }}>
+                        <motion.a href="tel:+4954160099220" whileHover={{ y: -8, scale: 1.02 }} style={{ textDecoration: 'none' }}>
                             <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '2rem 1.5rem' }}>
                                 <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'linear-gradient(135deg, var(--accent-glow-strong), transparent)', border: '1px solid var(--accent-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-primary)', marginBottom: '1.25rem' }}>
                                     <Phone size={26} />
                                 </div>
                                 <h3 style={{ fontSize: '1.2rem', color: 'var(--accent-secondary)', marginBottom: '0.5rem' }}>Telefon</h3>
-                                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>Gebührenfrei aus dem dt. Netz</p>
-                                <span style={{ color: 'var(--accent-primary)', fontWeight: 700, fontSize: '1.1rem' }}>0800 / 66 48 714</span>
+                                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>Direkt anrufen</p>
+                                <span style={{ color: 'var(--accent-primary)', fontWeight: 700, fontSize: '1.1rem' }}>+49 (0) 541 600 99 220</span>
                             </div>
                         </motion.a>
 

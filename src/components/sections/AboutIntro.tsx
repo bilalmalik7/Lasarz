@@ -7,7 +7,7 @@ export function AboutIntro() {
     const stats = [
         { value: '3.500+', label: 'Gutachten erstellt', icon: <FileText size={22} strokeWidth={1.8} /> },
         { value: '98%', label: 'Kundenzufriedenheit', icon: <Star size={22} strokeWidth={1.8} /> },
-        { value: '19+', label: 'Jahre Erfahrung', icon: <Trophy size={22} strokeWidth={1.8} /> },
+        { value: '20+', label: 'Jahre Erfahrung', icon: <Trophy size={22} strokeWidth={1.8} /> },
         { value: '3', label: 'Bürostandorte', icon: <MapPin size={22} strokeWidth={1.8} /> },
     ];
 

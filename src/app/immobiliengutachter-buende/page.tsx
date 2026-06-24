@@ -92,7 +92,7 @@ const buendeData: PremiumCityData = {
     lng: '8.5770',
     stats: [
         { value: '3.500+', label: 'Gutachten erstellt' },
-        { value: '19+', label: 'Jahre Erfahrung' },
+        { value: '20+', label: 'Jahre Erfahrung' },
         { value: '98%', label: 'Weiterempfehlungsrate' },
         { value: '10', label: 'Tage Ø Lieferzeit' },
     ],

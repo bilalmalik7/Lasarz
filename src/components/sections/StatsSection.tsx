@@ -11,7 +11,7 @@ export const StatsSection = () => {
           textAlign: 'center'
         }}>
           <div style={{ padding: '2rem', borderRadius: 'var(--radius-lg)', backgroundColor: 'var(--bg-primary)', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
-            <h3 style={{ fontSize: '3rem', color: 'var(--accent-primary)', marginBottom: '0.5rem' }}>19+</h3>
+            <h3 style={{ fontSize: '3rem', color: 'var(--accent-primary)', marginBottom: '0.5rem' }}>20+</h3>
             <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)' }}>Jahre Erfahrung</p>
           </div>
           

@@ -350,7 +350,7 @@ export function CityPagePremium({ data }: { data: PremiumCityData }) {
                                         {[
                                             { icon: <Award size={16} strokeWidth={1.8} />, label: 'DIAzert · REV' },
                                             { icon: <ShieldCheck size={16} strokeWidth={1.8} />, label: 'Gerichtsfest' },
-                                            { icon: <Clock size={16} strokeWidth={1.8} />, label: '19+ Jahre' },
+                                            { icon: <Clock size={16} strokeWidth={1.8} />, label: '20+ Jahre' },
                                         ].map((stat, i) => (
                                             <div key={i} style={{
                                                 display: 'flex', flexDirection: 'column',

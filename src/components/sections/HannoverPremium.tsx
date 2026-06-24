@@ -595,7 +595,7 @@ export function HannoverPremium({ data }: { data: PremiumCityData }) {
                                         {[
                                             { icon: <Award size={15} strokeWidth={1.8} />, label: 'DIAzert' },
                                             { icon: <ShieldCheck size={15} strokeWidth={1.8} />, label: 'Gerichtsfest' },
-                                            { icon: <Clock size={15} strokeWidth={1.8} />, label: '19+ Jahre' },
+                                            { icon: <Clock size={15} strokeWidth={1.8} />, label: '20+ Jahre' },
                                         ].map((s, i) => (
                                             <div key={i} style={{
                                                 display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.35rem',
