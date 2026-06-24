@@ -1,5 +1,6 @@
 'use client';
 import { useReveal } from '@/hooks/useReveal';
+import { Star } from 'lucide-react';
 
 export function ImmoHero() {
   const revealRef = useReveal();
@@ -68,7 +69,7 @@ export function ImmoHero() {
         <div className="flex flex-col items-start text-left max-w-4xl">
           <div className="inline-block px-4 py-1.5 mb-8 rounded-full bg-white shadow-lg border border-gray-100 reveal-on-scroll">
             <span className="text-[#1A758D] font-bold text-sm tracking-wide">
-              ⭐ 4.8/5 Sterne - BVS & DIA zertifiziert
+              <Star size={14} strokeWidth={1.8} fill="currentColor" style={{ display: 'inline', verticalAlign: 'middle', marginRight: '4px' }} /> 4.8/5 Sterne – BVS & DIA zertifiziert
             </span>
           </div>
 

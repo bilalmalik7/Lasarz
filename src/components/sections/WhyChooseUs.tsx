@@ -6,8 +6,8 @@ import Link from 'next/link';
 const uspList = [
     {
         icon: <GraduationCap size={28} />,
-        title: 'Ausschließlich zertifizierte Gutachter',
-        desc: 'Unsere Sachverständigen verfügen über renommierte Zertifizierungen, die höchste Qualität bei jeder Wertermittlung gewährleisten.',
+        title: 'Ausschließlich zertifizierte Sachverständige',
+        desc: 'Unsere Gutachter sind nach DIN EN ISO/IEC 17024 zertifiziert (DIAzert), als TEGoVA Recognised European Valuer (REV) anerkannt und Mitglieder im BVS e.V.',
     },
     {
         icon: <Scale size={28} />,
@@ -41,8 +41,8 @@ const uspList = [
     },
     {
         icon: <Landmark size={28} />,
-        title: 'Mitglied in Fachverbänden',
-        desc: 'Wir sind Mitglied beim Deutschen Gutachter & Sachverständigenverband sowie Fördermitglied beim VDI.',
+        title: 'Mitglied in renommierten Fachverbänden',
+        desc: 'Wir sind Mitglied im BVS e.V., zertifiziert durch die Deutsche Immobilienakademie (DIA) und als TEGoVA Recognised European Valuer (REV) europaweit anerkannt.',
     },
 ];
 
@@ -124,7 +124,7 @@ export function WhyChooseUs() {
                         Gebäudebewertung durch echte Experten
                     </h2>
                     <p style={{ color: 'rgba(255,255,255,0.72)', maxWidth: '610px', margin: '0 auto', fontSize: '1.05rem', lineHeight: 1.85 }}>
-                        Das Sachverständigenbüro Lasarz ist für Osnabrück und die gesamte Region tätig. Unsere Gutachter kennen die Immobilienpreise vor Ort in- und auswendig.
+                        Das Sachverständigenbüro Lasarz – <strong style={{ color: 'rgba(255,255,255,0.9)' }}>B.A. Real Estate</strong> – ist mit Büros in Osnabrück, Bünde und Hannover für die gesamte Region tätig. Über 3.500 erstellte Gutachten und 19+ Jahre Marktkenntnis.
                     </p>
                 </motion.div>
 

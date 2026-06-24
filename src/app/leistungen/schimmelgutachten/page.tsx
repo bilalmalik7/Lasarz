@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
+import { Phone, MapPin, Mail, CheckCircle, Search, ClipboardList, FlaskConical, Scale, Construction, AlertTriangle, Home } from 'lucide-react';
 
 // ── Animated counter ──────────────────────────────────────────────────────────
 function Counter({ end, suffix = '', duration = 2 }: { end: number; suffix?: string; duration?: number }) {
@@ -123,7 +124,7 @@ function ContactForm() {
             animate={{ scale: 1, opacity: 1 }}
             style={{ textAlign: 'center', padding: '3rem 2rem' }}
         >
-            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>✅</div>
+            <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'linear-gradient(135deg, #1A758D, #0A192F)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', margin: '0 auto 1rem' }}><CheckCircle size={28} style={{ color: '#c5a36c' }} /></div>
             <h3 style={{ fontSize: '1.5rem', color: 'var(--accent-secondary)', marginBottom: '0.5rem' }}>Anfrage erhalten!</h3>
             <p style={{ color: 'var(--text-secondary)' }}>Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
         </motion.div>
@@ -182,7 +183,7 @@ function ContactForm() {
                 Kostenlos anfragen →
             </motion.button>
             <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textAlign: 'center' }}>
-                🔒 Ihre Daten werden vertraulich behandelt.
+                Ihre Daten werden vertraulich behandelt.
             </p>
         </form>
     );
@@ -206,13 +207,24 @@ export default function SchimmelgutachtenPage() {
         { step: '04', title: 'Gutachten & Empfehlung', desc: 'Sie erhalten ein gerichtsverwertbares Gutachten mit konkreten Sanierungsempfehlungen und Kostenschätzung.' },
     ];
 
+    const schimmelIconMap: Record<string, JSX.Element> = {
+        'search': <Search size={20} strokeWidth={1.8} />,
+        'clipboard': <ClipboardList size={20} strokeWidth={1.8} />,
+        'flask': <FlaskConical size={20} strokeWidth={1.8} />,
+        'scale': <Scale size={20} strokeWidth={1.8} />,
+        'construction': <Construction size={20} strokeWidth={1.8} />,
+        'phone': <Phone size={20} strokeWidth={1.8} />,
+        'alert': <AlertTriangle size={20} strokeWidth={1.8} />,
+        'home': <Home size={20} strokeWidth={1.8} />,
+    };
+
     const services = [
-        { icon: '🔍', title: 'Ursachenanalyse', desc: 'Klärung ob Baumangel, Nutzerverhalten oder bauphysikalische Mängel die Ursache sind.' },
-        { icon: '📋', title: 'Schadensdokumentation', desc: 'Fotodokumentation und exakte Vermessung der befallenen Flächen.' },
-        { icon: '🧪', title: 'Laboranalyse', desc: 'Bestimmung der Schimmelart und Bewertung des Gesundheitsrisikos.' },
-        { icon: '⚖️', title: 'Gerichtverwertbares Gutachten', desc: 'Vollständige rechtssichere Dokumentation für Mieter-Vermieter-Streitigkeiten.' },
-        { icon: '🏗️', title: 'Sanierungsempfehlung', desc: 'Detaillierter Maßnahmenplan mit Prioritäten und Kostenschätzungen.' },
-        { icon: '📞', title: 'Nachbetreuung', desc: 'Wir stehen nach der Sanierung für Rückfragen und Kontrollen zur Verfügung.' },
+        { iconKey: 'search', title: 'Ursachenanalyse', desc: 'Klärung ob Baumangel, Nutzerverhalten oder bauphysikalische Mängel die Ursache sind.' },
+        { iconKey: 'clipboard', title: 'Schadensdokumentation', desc: 'Fotodokumentation und exakte Vermessung der befallenen Flächen.' },
+        { iconKey: 'flask', title: 'Laboranalyse', desc: 'Bestimmung der Schimmelart und Bewertung des Gesundheitsrisikos.' },
+        { iconKey: 'scale', title: 'Gerichtverwertbares Gutachten', desc: 'Vollständige rechtssichere Dokumentation für Mieter-Vermieter-Streitigkeiten.' },
+        { iconKey: 'construction', title: 'Sanierungsempfehlung', desc: 'Detaillierter Maßnahmenplan mit Prioritäten und Kostenschätzungen.' },
+        { iconKey: 'phone', title: 'Nachbetreuung', desc: 'Wir stehen nach der Sanierung für Rückfragen und Kontrollen zur Verfügung.' },
     ];
 
     const faqs = [
@@ -239,9 +251,9 @@ export default function SchimmelgutachtenPage() {
     ];
 
     const risks = [
-        { icon: '🫁', title: 'Gesundheitsrisiken', desc: 'Schimmelsporen können Atemwegserkrankungen, Allergien und bei toxischen Arten sogar Vergiftungen auslösen.' },
-        { icon: '🏠', title: 'Wertverlust', desc: 'Unbehandelter Schimmel kann den Immobilienwert um bis zu 20 % mindern und spätere Sanierungen immens verteuern.' },
-        { icon: '⚖️', title: 'Rechtliche Risiken', desc: 'Vermieter riskieren Mietminderungen und Schadensersatzklagen, wenn bekannte Schäden nicht behoben werden.' },
+        { iconKey: 'alert', title: 'Gesundheitsrisiken', desc: 'Schimmelsporen können Atemwegserkrankungen, Allergien und bei toxischen Arten sogar Vergiftungen auslösen.' },
+        { iconKey: 'home', title: 'Wertverlust', desc: 'Unbehandelter Schimmel kann den Immobilienwert um bis zu 20 % mindern und spätere Sanierungen immens verteuern.' },
+        { iconKey: 'scale', title: 'Rechtliche Risiken', desc: 'Vermieter riskieren Mietminderungen und Schadensersatzklagen, wenn bekannte Schäden nicht behoben werden.' },
     ];
 
     return (
@@ -313,7 +325,7 @@ export default function SchimmelgutachtenPage() {
                             maxWidth: '800px',
                         }}
                     >
-                        🧫 Schimmelgutachten –<br />
+                        Schimmelgutachten –<br />
                         <span style={{ color: 'var(--accent-primary)' }}>Sicherheit durch Expertenwissen</span>
                     </motion.h1>
 
@@ -353,8 +365,9 @@ export default function SchimmelgutachtenPage() {
                             border: '1.5px solid rgba(255,255,255,0.3)',
                             color: '#fff',
                             backdropFilter: 'blur(8px)',
+                            display: 'flex', alignItems: 'center', gap: '0.5rem',
                         }}>
-                            📞 Jetzt anrufen
+                            <Phone size={16} strokeWidth={1.8} /> Jetzt anrufen
                         </a>
                     </motion.div>
                 </div>
@@ -418,7 +431,7 @@ export default function SchimmelgutachtenPage() {
                                         transition: 'box-shadow 0.3s',
                                     }}
                                 >
-                                    <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{r.icon}</div>
+                                    <div style={{ width: 44, height: 44, borderRadius: 10, background: 'linear-gradient(135deg, #0A192F, #1a3a5c)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#e8cc90', marginBottom: '1rem' }}>{schimmelIconMap[r.iconKey]}</div>
                                     <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.75rem', color: 'var(--accent-secondary)' }}>{r.title}</h3>
                                     <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, fontSize: '0.97rem' }}>{r.desc}</p>
                                 </motion.div>
@@ -501,11 +514,11 @@ export default function SchimmelgutachtenPage() {
                                 </p>
                                 <ContactForm />
                                 <div style={{ marginTop: '1.5rem', padding: '1.25rem', backgroundColor: 'var(--bg-primary)', borderRadius: '10px' }}>
-                                    <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: 1.7 }}>
-                                        📍 Katharinenstraße 111, 49078 Osnabrück<br />
-                                        ✉️ osnabrueck@lasarz.com<br />
-                                        📞 +49 (0) 541 - 600 99 220
-                                    </p>
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}><MapPin size={14} strokeWidth={1.8} style={{ flexShrink: 0, color: 'var(--accent-primary)' }} /> Katharinenstraße 111, 49078 Osnabrück</div>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}><Mail size={14} strokeWidth={1.8} style={{ flexShrink: 0, color: 'var(--accent-primary)' }} /> osnabrueck@lasarz.com</div>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}><Phone size={14} strokeWidth={1.8} style={{ flexShrink: 0, color: 'var(--accent-primary)' }} /> +49 (0) 541 - 600 99 220</div>
+                                    </div>
                                 </div>
                             </div>
                         </Reveal>
@@ -541,7 +554,7 @@ export default function SchimmelgutachtenPage() {
                                         transition: 'border-color 0.25s',
                                     }}
                                 >
-                                    <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>{s.icon}</div>
+                                    <div style={{ width: 44, height: 44, borderRadius: 10, background: 'linear-gradient(135deg, #0A192F, #1a3a5c)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#e8cc90', marginBottom: '1rem' }}>{schimmelIconMap[s.iconKey]}</div>
                                     <h3 style={{ fontWeight: 700, marginBottom: '0.6rem', fontSize: '1.05rem', color: 'var(--accent-secondary)' }}>{s.title}</h3>
                                     <p style={{ color: 'var(--text-secondary)', fontSize: '0.93rem', lineHeight: 1.6 }}>{s.desc}</p>
                                 </motion.div>
@@ -674,9 +687,9 @@ export default function SchimmelgutachtenPage() {
                                     padding: '1.1rem 2.5rem',
                                     borderRadius: 'var(--radius-full)',
                                     fontSize: '1.05rem',
-                                    display: 'inline-block',
+                                    display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
                                 }}>
-                                    📞 +49 (0) 541 - 600 99 220
+                                    <Phone size={16} strokeWidth={1.8} /> +49 (0) 541 - 600 99 220
                                 </a>
                             </motion.div>
                         </div>

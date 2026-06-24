@@ -5,10 +5,10 @@ import { FileText, Star, Trophy, MapPin } from 'lucide-react';
 
 export function AboutIntro() {
     const stats = [
-        { value: '2.500+', label: 'Gutachten erstellt', icon: <FileText size={22} strokeWidth={1.8} /> },
+        { value: '3.500+', label: 'Gutachten erstellt', icon: <FileText size={22} strokeWidth={1.8} /> },
         { value: '98%', label: 'Kundenzufriedenheit', icon: <Star size={22} strokeWidth={1.8} /> },
-        { value: '15+', label: 'Jahre Erfahrung', icon: <Trophy size={22} strokeWidth={1.8} /> },
-        { value: '6', label: 'Standorte', icon: <MapPin size={22} strokeWidth={1.8} /> },
+        { value: '19+', label: 'Jahre Erfahrung', icon: <Trophy size={22} strokeWidth={1.8} /> },
+        { value: '3', label: 'Bürostandorte', icon: <MapPin size={22} strokeWidth={1.8} /> },
     ];
 
     return (
@@ -103,7 +103,7 @@ export function AboutIntro() {
                             maxWidth: '800px', margin: '0 auto 1.5rem'
                         }}
                     >
-                        Ich ermittle unabhängig und fair den Marktwert Ihrer Immobilie. Als Gutachter von Lasarz Immobilienbewertung verfasse ich professionelle Immobiliengutachten, die bei Gerichten anerkannt sind und vom Finanzamt akzeptiert werden – stets auf Basis des BauGB und der ImmoWertV.
+                        Als <strong style={{ color: 'white' }}>Dipl.-Sachverständiger (DIA)</strong>, zertifiziert nach <strong style={{ color: 'white' }}>DIN EN ISO/IEC 17024</strong> und anerkannt als <strong style={{ color: 'white' }}>TEGoVA Recognised European Valuer (REV)</strong>, ermittle ich unabhängig und fair den Marktwert Ihrer Immobilie. Meine Gutachten sind bei Gerichten anerkannt, werden vom Finanzamt akzeptiert und erfüllen alle Anforderungen des BauGB und der ImmoWertV.
                     </motion.p>
 
                     <motion.p

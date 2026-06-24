@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
+import { Phone, MapPin, Mail, CheckCircle, FolderOpen, Home, BarChart3, ClipboardList, Landmark, Scale, Coins, RefreshCw, FileText } from 'lucide-react';
 
 // ── Animated counter ─────────────────────────────────────────────────────────
 function Counter({ end, suffix = '', prefix = '', duration = 2.2 }: { end: number; suffix?: string; prefix?: string; duration?: number }) {
@@ -79,7 +80,7 @@ function ContactForm() {
     if (sent) return (
         <motion.div initial={{ scale: 0.85, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
             style={{ textAlign: 'center', padding: '2.5rem 1rem' }}>
-            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>✅</div>
+            <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'linear-gradient(135deg, #1A758D, #0A192F)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', margin: '0 auto 1rem' }}><CheckCircle size={28} style={{ color: '#c5a36c' }} /></div>
             <h3 style={{ fontSize: '1.4rem', color: 'var(--accent-secondary)', marginBottom: '0.5rem' }}>Anfrage erhalten!</h3>
             <p style={{ color: 'var(--text-secondary)' }}>Wir melden uns innerhalb von 24 Stunden.</p>
         </motion.div>
@@ -99,7 +100,7 @@ function ContactForm() {
                 className="btn btn-primary" style={{ padding: '1rem', fontSize: '1rem', borderRadius: '8px', justifyContent: 'center' }}>
                 Kostenlos anfragen →
             </motion.button>
-            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textAlign: 'center' }}>🔒 Vertraulich & unverbindlich</p>
+            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textAlign: 'center' }}>Vertraulich & unverbindlich</p>
         </form>
     );
 }
@@ -126,21 +127,38 @@ function ProgressBar({ label, value }: { label: string; value: number }) {
 // ─────────────────────────────────────────────────────────────────────────────
 export default function ErbschaftsgutachtenPage() {
 
+    const stepIconMap: Record<string, JSX.Element> = {
+        'phone': <Phone size={20} strokeWidth={1.8} />,
+        'folder': <FolderOpen size={20} strokeWidth={1.8} />,
+        'home': <Home size={20} strokeWidth={1.8} />,
+        'chart': <BarChart3 size={20} strokeWidth={1.8} />,
+        'clipboard': <ClipboardList size={20} strokeWidth={1.8} />,
+    };
+
     const steps = [
-        { step: '01', icon: '📞', title: 'Kostenlose Erstberatung', desc: 'Schildern Sie uns telefonisch oder per Formular Ihren Fall. Wir erklären, welches Gutachten Sie brauchen und klären offene Fragen.' },
-        { step: '02', icon: '📁', title: 'Unterlagenprüfung', desc: 'Wir sichten vorhandene Unterlagen – Grundbuchauszug, Baupläne, Mietverträge – und fordern fehlende Dokumente beim Amtsgericht an.' },
-        { step: '03', icon: '🏠', title: 'Ortsbegehung', desc: 'Der Sachverständige begutachtet die Immobilie vor Ort. Zustand, Lage, Ausstattung und Besonderheiten werden erfasst und dokumentiert.' },
-        { step: '04', icon: '📊', title: 'Wertermittlung', desc: 'Mit Hilfe geprüfter Markt- und Vergleichsdaten wird der Verkehrswert nach §194 BauGB ermittelt – nach Sachwert-, Ertragswert- oder Vergleichswertverfahren.' },
-        { step: '05', icon: '📋', title: 'Fertiges Gutachten', desc: 'Sie erhalten ein gebundenes, gerichtsverwertbares Gutachten mit ca. 40–80 Seiten Dokumentation – geeignet für Finanzamt, Nachlassgericht und Erbauseinandersetzung.' },
+        { step: '01', iconKey: 'phone', title: 'Kostenlose Erstberatung', desc: 'Schildern Sie uns telefonisch oder per Formular Ihren Fall. Wir erklären, welches Gutachten Sie brauchen und klären offene Fragen.' },
+        { step: '02', iconKey: 'folder', title: 'Unterlagenprüfung', desc: 'Wir sichten vorhandene Unterlagen – Grundbuchauszug, Baupläne, Mietverträge – und fordern fehlende Dokumente beim Amtsgericht an.' },
+        { step: '03', iconKey: 'home', title: 'Ortsbegehung', desc: 'Der Sachverständige begutachtet die Immobilie vor Ort. Zustand, Lage, Ausstattung und Besonderheiten werden erfasst und dokumentiert.' },
+        { step: '04', iconKey: 'chart', title: 'Wertermittlung', desc: 'Mit Hilfe geprüfter Markt- und Vergleichsdaten wird der Verkehrswert nach §194 BauGB ermittelt – nach Sachwert-, Ertragswert- oder Vergleichswertverfahren.' },
+        { step: '05', iconKey: 'clipboard', title: 'Fertiges Gutachten', desc: 'Sie erhalten ein gebundenes, gerichtsverwertbares Gutachten mit ca. 40–80 Seiten Dokumentation – geeignet für Finanzamt, Nachlassgericht und Erbauseinandersetzung.' },
     ];
 
+    const useCaseIconMap: Record<string, JSX.Element> = {
+        'landmark': <Landmark size={20} strokeWidth={1.8} />,
+        'scale': <Scale size={20} strokeWidth={1.8} />,
+        'coins': <Coins size={20} strokeWidth={1.8} />,
+        'refresh': <RefreshCw size={20} strokeWidth={1.8} />,
+        'home': <Home size={20} strokeWidth={1.8} />,
+        'filetext': <FileText size={20} strokeWidth={1.8} />,
+    };
+
     const useCases = [
-        { icon: '🏛️', title: 'Erbschaftssteuer', desc: 'Das Finanzamt setzt den Wert häufig zu hoch an. Ein unabhängiges Gutachten kann die Steuerlast signifikant senken – oft um 20–40 %.' },
-        { icon: '⚖️', title: 'Erbauseinandersetzung', desc: 'Wenn mehrere Erben beteiligt sind, schafft ein neutrales Gutachten die gemeinsame Grundlage für eine faire Aufteilung ohne Streit.' },
-        { icon: '💸', title: 'Pflichtteilsberechnung', desc: 'Pflichtteilsansprüche basieren auf dem Nachlasswert. Unser Gutachten stellt sicher, dass der Wertansatz fair und rechtssicher ist.' },
-        { icon: '🔄', title: 'Verkauf aus dem Nachlass', desc: 'Bevor die geerbte Immobilie verkauft wird: ein Gutachten schützt vor Unterpreisverkäufen und ermöglicht selbstbewusstes Verhandeln.' },
-        { icon: '🏠', title: 'Selbst bewohnen', desc: 'Wenn ein Erbe die Immobilie übernimmt, muss der Wert als Ausgleichszahlung gegenüber den Miterben festgestellt werden.' },
-        { icon: '📑', title: 'Schenkung & Vorwegerbfolge', desc: 'Auch bei Schenkungen zu Lebzeiten wird ein Wertgutachten benötigt, um steuerliche Freibeträge optimal zu nutzen.' },
+        { iconKey: 'landmark', title: 'Erbschaftssteuer', desc: 'Das Finanzamt setzt den Wert häufig zu hoch an. Ein unabhängiges Gutachten kann die Steuerlast signifikant senken – oft um 20–40 %.' },
+        { iconKey: 'scale', title: 'Erbauseinandersetzung', desc: 'Wenn mehrere Erben beteiligt sind, schafft ein neutrales Gutachten die gemeinsame Grundlage für eine faire Aufteilung ohne Streit.' },
+        { iconKey: 'coins', title: 'Pflichtteilsberechnung', desc: 'Pflichtteilsansprüche basieren auf dem Nachlasswert. Unser Gutachten stellt sicher, dass der Wertansatz fair und rechtssicher ist.' },
+        { iconKey: 'refresh', title: 'Verkauf aus dem Nachlass', desc: 'Bevor die geerbte Immobilie verkauft wird: ein Gutachten schützt vor Unterpreisverkäufen und ermöglicht selbstbewusstes Verhandeln.' },
+        { iconKey: 'home', title: 'Selbst bewohnen', desc: 'Wenn ein Erbe die Immobilie übernimmt, muss der Wert als Ausgleichszahlung gegenüber den Miterben festgestellt werden.' },
+        { iconKey: 'filetext', title: 'Schenkung & Vorwegerbfolge', desc: 'Auch bei Schenkungen zu Lebzeiten wird ein Wertgutachten benötigt, um steuerliche Freibeträge optimal zu nutzen.' },
     ];
 
     const faqs = [
@@ -209,7 +227,7 @@ export default function ErbschaftsgutachtenPage() {
                             <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }}
                                 style={{ fontSize: 'clamp(2rem, 5.5vw, 3.8rem)', color: '#fff', fontWeight: 800,
                                     lineHeight: 1.12, marginBottom: '1.5rem', letterSpacing: '-0.5px' }}>
-                                🏛️ Erbschaftsgutachten –<br />
+                                Erbschaftsgutachten –<br />
                                 <span style={{ color: 'var(--accent-primary)' }}>Weniger Steuern,</span><br />
                                 mehr Sicherheit.
                             </motion.h1>
@@ -231,8 +249,8 @@ export default function ErbschaftsgutachtenPage() {
                                 </Link>
                                 <a href="tel:+4954160099220" className="btn" style={{
                                     padding: '1rem 2.2rem', borderRadius: 'var(--radius-full)', fontSize: '1rem',
-                                    background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(255,255,255,0.25)', color: '#fff' }}>
-                                    📞 +49 541 600 99 220
+                                    background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(255,255,255,0.25)', color: '#fff', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                    <Phone size={16} strokeWidth={1.8} /> +49 541 600 99 220
                                 </a>
                             </motion.div>
 
@@ -269,7 +287,7 @@ export default function ErbschaftsgutachtenPage() {
                                         </div>
                                         <div style={{ marginTop: '0.6rem', background: 'rgba(34,197,94,0.15)', borderRadius: '8px',
                                             padding: '0.45rem 0.75rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
-                                            <span style={{ color: '#22c55e', fontWeight: 700, fontSize: '0.88rem' }}>💰 Ersparnis: {s.ersparnis}</span>
+                                            <span style={{ color: '#22c55e', fontWeight: 700, fontSize: '0.88rem' }}>Ersparnis: {s.ersparnis}</span>
                                         </div>
                                     </div>
                                 ))}
@@ -319,7 +337,7 @@ export default function ErbschaftsgutachtenPage() {
                                     style={{ background: 'var(--bg-primary)', border: '1.5px solid var(--border-color)',
                                         borderRadius: '16px', padding: '1.75rem', height: '100%', cursor: 'default',
                                         transition: 'box-shadow 0.3s' }}>
-                                    <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>{u.icon}</div>
+                                    <div style={{ width: 44, height: 44, borderRadius: 10, background: 'linear-gradient(135deg, #0A192F, #1a3a5c)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#e8cc90', marginBottom: '1rem' }}>{useCaseIconMap[u.iconKey]}</div>
                                     <h3 style={{ fontWeight: 700, marginBottom: '0.6rem', color: 'var(--accent-secondary)', fontSize: '1.05rem' }}>{u.title}</h3>
                                     <p style={{ color: 'var(--text-secondary)', fontSize: '0.93rem', lineHeight: 1.65 }}>{u.desc}</p>
                                 </motion.div>
@@ -393,7 +411,7 @@ export default function ErbschaftsgutachtenPage() {
                                     </div>
                                     <div>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                                            <span style={{ fontSize: '1.2rem' }}>{s.icon}</span>
+                                            <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(26,117,141,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-primary)', flexShrink: 0 }}>{stepIconMap[s.iconKey]}</div>
                                             <h3 style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--accent-secondary)' }}>{s.title}</h3>
                                         </div>
                                         <p style={{ color: 'var(--text-secondary)', fontSize: '0.93rem', lineHeight: 1.7 }}>{s.desc}</p>
@@ -473,11 +491,11 @@ export default function ErbschaftsgutachtenPage() {
                                 </p>
                                 <ContactForm />
                                 <div style={{ marginTop: '1.5rem', padding: '1.25rem', background: 'var(--bg-primary)', borderRadius: '10px' }}>
-                                    <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                                        📍 Katharinenstraße 111, 49078 Osnabrück<br />
-                                        ✉️ osnabrueck@lasarz.com<br />
-                                        📞 +49 (0) 541 - 600 99 220
-                                    </p>
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}><MapPin size={14} strokeWidth={1.8} style={{ flexShrink: 0, color: 'var(--accent-primary)' }} /> Katharinenstraße 111, 49078 Osnabrück</div>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}><Mail size={14} strokeWidth={1.8} style={{ flexShrink: 0, color: 'var(--accent-primary)' }} /> osnabrueck@lasarz.com</div>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', fontSize: '0.88rem' }}><Phone size={14} strokeWidth={1.8} style={{ flexShrink: 0, color: 'var(--accent-primary)' }} /> +49 (0) 541 - 600 99 220</div>
+                                    </div>
                                 </div>
                             </div>
                         </R>
@@ -569,13 +587,13 @@ export default function ErbschaftsgutachtenPage() {
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
                                 <a href="tel:+4954160099220" className="btn" style={{
                                     background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1.5px solid rgba(255,255,255,0.3)',
-                                    padding: '1.1rem 2.5rem', borderRadius: 'var(--radius-full)', fontSize: '1.05rem', display: 'inline-block' }}>
-                                    📞 +49 (0) 541 - 600 99 220
+                                    padding: '1.1rem 2.5rem', borderRadius: 'var(--radius-full)', fontSize: '1.05rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                                    <Phone size={16} strokeWidth={1.8} /> +49 (0) 541 - 600 99 220
                                 </a>
                             </motion.div>
                         </div>
                         <p style={{ color: 'rgba(255,255,255,0.45)', marginTop: '2rem', fontSize: '0.88rem' }}>
-                            📍 Katharinenstraße 111, 49078 Osnabrück · ✉️ osnabrueck@lasarz.com
+                            Katharinenstraße 111, 49078 Osnabrück · osnabrueck@lasarz.com
                         </p>
                     </R>
                 </div>

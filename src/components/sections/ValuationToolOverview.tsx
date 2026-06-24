@@ -1,3 +1,5 @@
+import { ClipboardList } from 'lucide-react';
+
 export function ValuationToolOverview() {
     return (
         <section className="section">
@@ -25,7 +27,7 @@ export function ValuationToolOverview() {
                             justifyContent: 'center',
                             minHeight: '400px'
                         }}>
-                            <span className="text-accent" style={{ fontSize: '3rem', marginBottom: 'var(--space-sm)' }}>📋</span>
+                            <span className="text-accent" style={{ marginBottom: 'var(--space-sm)' }}><ClipboardList size={48} strokeWidth={1.5} /></span>
                             <h3 style={{ marginBottom: 'var(--space-xs)' }}>Bewertungstool</h3>
                             <p style={{ color: 'var(--text-muted)', maxWidth: '400px', margin: '0 auto' }}>
                                 (Hier wird in Kürze das Bewertungs-Widget eingebunden. Bitte teilen Sie uns das entsprechende Snippet oder den Link zum Tool mit, damit wir es hier integrieren können.)

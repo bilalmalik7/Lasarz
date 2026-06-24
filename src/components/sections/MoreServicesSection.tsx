@@ -159,7 +159,7 @@ export function MoreServicesSection() {
                                 Immobilien-Marktwertgutachten Osnabrück
                             </h3>
                             <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
-                                Als Sachverständige im Bereich der Immobilienbewertung erstellen wir Marktwertgutachten für Grundstücke, Wohn-, Gewerbe- und Sonderimmobilien. Wir prüfen auch vorhandene Gutachten auf ihre Plausibilität.
+                                Als <strong>Dipl.-Sachverständige (DIA)</strong> im Bereich der Immobilienbewertung erstellen wir Verkehrswertgutachten nach § 194 BauGB für Grundstücke, Wohn-, Gewerbe- und Sonderimmobilien. Wir prüfen auch vorliegende Gutachten auf Plausibilität und Vollständigkeit.
                             </p>
                             <Link href="/kontakt#kontaktformular" className="btn" style={{
                                 backgroundColor: 'var(--accent-primary)',

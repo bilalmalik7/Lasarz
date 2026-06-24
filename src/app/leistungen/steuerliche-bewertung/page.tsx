@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Phone, MapPin, Mail } from 'lucide-react';
 
 export default function SteuerlicheBewertungPage() {
     return (
@@ -6,7 +7,7 @@ export default function SteuerlicheBewertungPage() {
             <section style={{ backgroundColor: 'var(--bg-secondary)', padding: '60px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <div className="container">
                     <span style={{ color: 'var(--accent-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.9rem' }}>Leistungen</span>
-                    <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', color: 'var(--accent-secondary)', lineHeight: 1.2, marginTop: '1rem' }}>💰 Steuerliche Immobilienbewertung</h1>
+                    <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', color: 'var(--accent-secondary)', lineHeight: 1.2, marginTop: '1rem' }}>Steuerliche Immobilienbewertung</h1>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginTop: '1rem', maxWidth: '700px' }}>Bewertung von Immobilien für steuerliche Zwecke – anerkannt vom Finanzamt Osnabrück und deutschlandweit.</p>
                 </div>
             </section>
@@ -39,10 +40,13 @@ export default function SteuerlicheBewertungPage() {
                             <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: 1.7 }}>Kostenlose Erstberatung zur steuerlichen Bewertung Ihrer Immobilie.</p>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                                 <Link href="/kontakt#kontaktformular" className="btn btn-primary" style={{ textAlign: 'center', justifyContent: 'center' }}>Kostenlose Erstberatung</Link>
-                                <a href="tel:+4954160099220" className="btn btn-secondary" style={{ textAlign: 'center', justifyContent: 'center' }}>📞 +49 (0) 541 - 600 99 220</a>
+                                <a href="tel:+4954160099220" className="btn btn-secondary" style={{ textAlign: 'center', justifyContent: 'center', display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Phone size={16} strokeWidth={1.8} /> +49 (0) 541 - 600 99 220</a>
                             </div>
                             <div style={{ marginTop: '2rem', padding: '1.5rem', backgroundColor: '#fff', borderRadius: '8px' }}>
-                                <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>📍 Katharinenstraße 111, 49078 Osnabrück<br />✉️ osnabrueck@lasarz.com</p>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}><MapPin size={14} strokeWidth={1.8} style={{ flexShrink: 0, color: 'var(--accent-primary)' }} /> Katharinenstraße 111, 49078 Osnabrück</div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}><Mail size={14} strokeWidth={1.8} style={{ flexShrink: 0, color: 'var(--accent-primary)' }} /> osnabrueck@lasarz.com</div>
+                                </div>
                             </div>
                         </div>
                     </div>

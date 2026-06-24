@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { MapPin, Phone } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import RegionMap from './RegionMap';
 
 const otherRegions = [
@@ -46,60 +46,20 @@ const locations = [
         customUrl: '/immobiliengutachter-osnabrueck',
     },
     {
-        city: 'Münster',
-        address: 'c/o Lasarz Sachverständigenbüro\nMünster',
-        phone: '+49 (0) 541 - 600 99 220',
-        email: 'muenster@lasarz.com',
-        isMain: false,
-        customUrl: '/immobiliengutachter-muenster',
-    },
-    {
-        city: 'Flensburg',
-        address: 'Norderstraße 52-56\n24939 Flensburg',
-        phone: '+49 (0) 461 - 167 23 002',
-        email: 'flensburg@lasarz.com',
-        isMain: false,
-        customUrl: '/immobiliengutachter-flensburg',
-    },
-    {
-        city: 'Bielefeld',
-        address: 'c/o Lasarz Sachverständigenbüro\nBielefeld',
-        phone: '+49 (0) 541 - 600 99 220',
-        email: 'bielefeld@lasarz.com',
-        isMain: false,
-        customUrl: '/immobiliengutachter-bielefeld',
-    },
-    {
-        city: 'Melle',
-        address: 'c/o Lasarz Sachverständigenbüro\nMelle',
-        phone: '+49 (0) 541 - 600 99 220',
-        email: 'melle@lasarz.com',
-        isMain: false,
-        customUrl: '/immobiliengutachter-melle',
-    },
-    {
-        city: 'Rheine',
-        address: 'c/o Lasarz Sachverständigenbüro\nRheine',
-        phone: '+49 (0) 541 - 600 99 220',
-        email: 'rheine@lasarz.com',
-        isMain: false,
-        customUrl: '/immobiliengutachter-rheine',
-    },
-    {
         city: 'Bünde',
-        slug: 'buende',
         address: 'Holzhauser Straße 79\n32257 Bünde',
-        phone: '+49 (0) 5223 7941350',
+        phone: '+49 (0) 5223 794 13 50',
         email: 'buende@lasarz.com',
         isMain: false,
+        customUrl: '/immobiliengutachter-buende',
     },
     {
-        city: 'Kirchlengern',
-        slug: 'kirchlengern',
-        address: 'Holzhauser Straße 79\n32257 Bünde',
-        phone: '+49 (0) 5223 7941350',
-        email: 'buende@lasarz.com',
+        city: 'Hannover',
+        address: 'Hannover',
+        phone: '+49 (0) 541 - 600 99 220',
+        email: 'hannover@lasarz.com',
         isMain: false,
+        customUrl: '/immobiliengutachter-hannover',
     },
 ];
 
@@ -176,7 +136,7 @@ export function StandorteSection() {
                         Immobiliengutachter in Ihrer Nähe
                     </h2>
                     <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto', fontSize: '1.05rem', lineHeight: 1.8 }}>
-                        Das Unternehmen arbeitet zur Zeit an <strong>vielen Standorten</strong>. Kompetente Experten vor Ort erzielen höhere Verkaufspreise.
+                        Drei Bürostandorte in Niedersachsen und Nordrhein-Westfalen – mit regionaler Präsenz und persönlichem Ansprechpartner vor Ort.
                     </p>
                 </div>
 
@@ -271,40 +231,12 @@ export function StandorteSection() {
                                     color: loc.isMain ? 'rgba(255,255,255,0.7)' : 'var(--text-secondary)',
                                     fontSize: '0.9rem',
                                 }}>
-                                    ✉️ {loc.email}
+                                    <Mail size={16} strokeWidth={1.8} style={{ flexShrink: 0 }} /> {loc.email}
                                 </a>
                             </div>
                         </div>
                     ))}
 
-                    {/* Partner card */}
-                    <div style={{
-                        backgroundColor: '#fff',
-                        borderRadius: '16px',
-                        padding: '2.5rem',
-                        boxShadow: '0 4px 24px rgba(18,43,64,0.07)',
-                        border: '2px dashed var(--accent-primary)',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        textAlign: 'center',
-                        gap: '1rem',
-                    }}>
-                        <span style={{ fontSize: '3rem' }}>🌍</span>
-                        <h3 style={{ color: 'var(--accent-secondary)', fontSize: '1.2rem' }}>Jetzt Standort-Partner werden</h3>
-                        <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                            Erweitern Sie unser Netzwerk und werden Sie Teil des Lasarz-Teams.
-                        </p>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <a href="tel:+4954160099220" style={{ color: 'var(--accent-primary)', fontWeight: 600 }}>
-                                +49 (0) 541 - 600 99 220
-                            </a>
-                            <a href="mailto:info@lasarz.com" style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-                                info@lasarz.com
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
                 {/* Regional coverage */}

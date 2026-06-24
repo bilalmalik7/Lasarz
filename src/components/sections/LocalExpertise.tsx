@@ -8,7 +8,7 @@ interface LocalExpertiseProps {
 
 export const LocalExpertise = ({ city }: LocalExpertiseProps) => {
     const displayCity = city || 'Osnabrück';
-    
+
     return (
         <section className="section" style={{ backgroundColor: 'var(--bg-primary)' }}>
             <div className="container">
@@ -16,7 +16,7 @@ export const LocalExpertise = ({ city }: LocalExpertiseProps) => {
 
                     <div className="glass-card" style={{ padding: 0, overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }}>
                         <img
-                            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80"
+                            src="/images/portrait.jpg"
                             alt={`Immobiliengutachter ${displayCity}`}
                             style={{ width: '100%', height: 'auto', display: 'block' }}
                             loading="lazy"
@@ -34,7 +34,7 @@ export const LocalExpertise = ({ city }: LocalExpertiseProps) => {
                                 Seit über 19 Jahren sind wir fest in der Region <strong>{displayCity}</strong> verwurzelt. Wir kennen nicht nur die statistischen Marktzahlen, sondern verstehen die mikro-lokalen Besonderheiten der verschiedenen Stadtteile und Quartiere.
                             </p>
                             <p>
-                                Unsere Expertise erstreckt sich über das gesamte Umland. Als <strong>zerifizierte Immobiliengutachter</strong> bieten wir Ihnen die notwendige Sicherheit bei komplexen Entscheidungen.
+                                Unsere Expertise erstreckt sich über das gesamte Umland. Als <strong>zertifizierte Immobiliengutachter</strong> – mit den Anerkennungen <strong>DIAzert (DIN EN ISO/IEC 17024)</strong>, <strong>TEGoVA REV</strong> und <strong>BVS e.V.</strong> – bieten wir Ihnen die notwendige Rechtssicherheit bei komplexen Entscheidungen.
                             </p>
 
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
@@ -48,7 +48,7 @@ export const LocalExpertise = ({ city }: LocalExpertiseProps) => {
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
                                     <span style={{ color: 'var(--accent-primary)' }}><FileCheck size={22} strokeWidth={1.8} /></span>
-                                    <span>DIA zertifiziert</span>
+                                    <span>DIAzert · BVS · REV</span>
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
                                     <span style={{ color: 'var(--accent-primary)' }}><Zap size={22} strokeWidth={1.8} /></span>

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Award, ShieldCheck, Clock, Star, CheckCircle } from 'lucide-react';
+import { Award, ShieldCheck, Clock } from 'lucide-react';
 
 interface OriginalHeroProps {
     city?: string;
@@ -18,13 +18,13 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
         : 'Präzise Immobilienbewertung mit Sicherheit und Weitblick';
 
     const subtitle = city
-        ? `Verkehrswertgutachten und Wertindikationen von Ihrem regionalen Experten in ${city}`
-        : 'Verkehrswertgutachten, Ankaufberatung und neutrale Marktwerte von regionalen Experten. Schützen Sie Ihr Vermögen mit einem fundierten, rechtssicheren Gutachten.';
+        ? `Verkehrswertgutachten § 194 BauGB und Wertindikationen von Ihrem zertifizierten Dipl.-Sachverständigen (DIA) in ${city}`
+        : 'Verkehrswertgutachten nach § 194 BauGB, Ankaufberatung und neutrale Marktwertermittlung nach ImmoWertV – gerichtsfest und vom Finanzamt anerkannt.';
 
     const cardStats = [
-        { icon: <Award size={18} strokeWidth={1.8} />, label: 'DIA-zertifiziert' },
+        { icon: <Award size={18} strokeWidth={1.8} />, label: 'DIAzert · REV' },
         { icon: <ShieldCheck size={18} strokeWidth={1.8} />, label: 'Gerichtsfest' },
-        { icon: <Clock size={18} strokeWidth={1.8} />, label: '15+ Jahre' },
+        { icon: <Clock size={18} strokeWidth={1.8} />, label: '19+ Jahre' },
     ];
 
     return (
@@ -218,7 +218,7 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
                                 color: 'rgba(255,255,255,0.55)', fontWeight: 700,
                                 letterSpacing: '2.5px', textTransform: 'uppercase'
                             }}>
-                                Rechtssicherheit garantiert durch:
+                                Zertifizierungen &amp; Mitgliedschaften:
                             </p>
                             <div style={{
                                 display: 'inline-flex', gap: '1.5rem', alignItems: 'center',
@@ -304,16 +304,16 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
                                     marginBottom: '0.3rem',
                                     letterSpacing: '0.3px',
                                 }}>
-                                    Marc Lasarz
+                                    Marc-André Lasarz
                                 </h3>
                                 <p style={{
-                                    fontSize: '0.82rem',
+                                    fontSize: '0.79rem',
                                     color: '#e8cc90',
                                     fontWeight: 600,
-                                    letterSpacing: '1px',
+                                    letterSpacing: '0.8px',
                                     textTransform: 'uppercase',
                                 }}>
-                                    Sachverständiger für Immobilienbewertung
+                                    Dipl.-Sachverständiger (DIA) · B.A. Real Estate
                                 </p>
                             </div>
 
@@ -374,34 +374,6 @@ export function OriginalHero({ city, theme }: OriginalHeroProps) {
                                 ))}
                             </div>
 
-                            {/* Trust badge at bottom */}
-                            <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ duration: 0.6, delay: 1.4 }}
-                                style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    gap: '0.5rem',
-                                    marginTop: '1.25rem',
-                                    padding: '0.6rem',
-                                    borderRadius: '10px',
-                                    background: 'linear-gradient(135deg, rgba(197,163,108,0.15), rgba(197,163,108,0.05))',
-                                    border: '1px solid rgba(197,163,108,0.25)',
-                                }}
-                            >
-                                <Star size={14} style={{ color: '#e8cc90' }} fill="#e8cc90" />
-                                <span style={{
-                                    fontSize: '0.73rem',
-                                    color: 'rgba(255,255,255,0.75)',
-                                    fontWeight: 600,
-                                    letterSpacing: '0.5px',
-                                }}>
-                                    Öffentlich bestellt & vereidigt
-                                </span>
-                                <CheckCircle size={14} style={{ color: '#e8cc90' }} />
-                            </motion.div>
                         </div>
                     </motion.div>
                 </div>

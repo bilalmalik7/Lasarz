@@ -94,7 +94,7 @@ export function GutachtenPackages() {
                         Für jeden Anlass das richtige Gutachten
                     </h2>
                     <p style={{ color: 'var(--text-secondary)', maxWidth: '560px', margin: '0 auto', fontSize: '1.05rem', lineHeight: 1.8 }}>
-                        Durch unsere <strong>Festpreisgarantie</strong> haben Sie volle Kostentransparenz – fair, transparent & ohne versteckte Kosten.
+                        Erstellt von <strong>Dipl.-Sachverständigen (DIA)</strong> nach ImmoWertV und § 194 BauGB. Unsere <strong>Festpreisgarantie</strong> sichert volle Kostentransparenz – ohne versteckte Kosten.
                     </p>
                 </motion.div>
 

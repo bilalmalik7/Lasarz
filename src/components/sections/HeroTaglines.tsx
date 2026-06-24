@@ -1,15 +1,18 @@
 'use client';
 
 const taglines = [
-    { text: 'Zertifizierte Immobiliengutachter' },
+    { text: 'Dipl.-Sachverständige (DIA) für Immobilienbewertung' },
+    { text: 'DIAzert zertifiziert · DIN EN ISO/IEC 17024' },
+    { text: 'TEGoVA Recognised European Valuer (REV)' },
+    { text: 'Mitglied im BVS e.V.' },
+    { text: 'Verkehrswertgutachten § 194 BauGB' },
     { text: 'Unabhängige & neutrale Marktwertermittlung' },
-    { text: 'Öffentlich bestellte Sachverständige' },
     { text: 'Verkehrswert bei Erbschaft und Scheidung' },
     { text: 'Festpreisgarantie | transparent & fair' },
-    { text: 'Kostenlose & unverbindliche Beratung' },
-    { text: 'Wertermittlung für das Finanzamt' },
-    { text: 'Kurzfristige Besichtigungstermine' },
-    { text: 'Verkehrswertgutachten § 194 BauGB' },
+    { text: 'Kostenlose & unverbindliche Erstberatung' },
+    { text: 'Wertermittlung nach ImmoWertV für das Finanzamt' },
+    { text: 'Restnutzungsdauergutachten | Steuerersparnis für Vermieter' },
+    { text: 'Gerichtsfeste Gutachten | 3.500+ Gutachten erstellt' },
 ];
 
 export function HeroTaglines() {

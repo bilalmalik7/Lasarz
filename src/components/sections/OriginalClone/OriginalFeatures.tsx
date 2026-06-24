@@ -6,36 +6,36 @@ import { MapPin, Scale, Shield, Trophy, Euro } from 'lucide-react';
 const features = [
     {
         icon: <MapPin size={28} strokeWidth={1.8} />,
-        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        shadow: 'rgba(102, 126, 234, 0.4)',
+        gradient: 'linear-gradient(135deg, #1A758D 0%, #0f5a70 100%)',
+        shadow: 'rgba(26, 117, 141, 0.35)',
         title: 'Regionale Expertise',
         desc: 'Jahrelange Erfahrung in Osnabrück garantiert Ihnen eine absolut präzise und verlässliche Wertermittlung vor Ort.'
     },
     {
         icon: <Scale size={28} strokeWidth={1.8} />,
-        gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-        shadow: 'rgba(240, 147, 251, 0.4)',
+        gradient: 'linear-gradient(135deg, #0A192F 0%, #0f2d50 100%)',
+        shadow: 'rgba(10, 25, 47, 0.35)',
         title: 'Gesetzeskonform',
         desc: 'Als zertifizierter Sachverständiger halte ich alle aktuellen rechtlichen und normativen Standards strikt ein.'
     },
     {
         icon: <Shield size={28} strokeWidth={1.8} />,
-        gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-        shadow: 'rgba(79, 172, 254, 0.4)',
+        gradient: 'linear-gradient(135deg, #1A758D 0%, #1a3a5c 100%)',
+        shadow: 'rgba(26, 117, 141, 0.35)',
         title: 'Unabhängige Gutachten',
         desc: 'Ich arbeite weisungsfrei, neutral und halte mich kompromisslos an den Ehrencodex der Sachverständigenverbände.'
     },
     {
         icon: <Trophy size={28} strokeWidth={1.8} />,
-        gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-        shadow: 'rgba(67, 233, 123, 0.4)',
+        gradient: 'linear-gradient(135deg, #0A192F 0%, #1a3a5c 100%)',
+        shadow: 'rgba(10, 25, 47, 0.35)',
         title: 'Höchste Zertifizierung',
         desc: 'Anerkannt durch renommierte Institutionen (DIA, BVS, REV) für maximale gerichtliche Belastbarkeit.'
     },
     {
         icon: <Euro size={28} strokeWidth={1.8} />,
-        gradient: 'linear-gradient(135deg, #c5a36c 0%, #f0d080 100%)',
-        shadow: 'rgba(197, 163, 108, 0.4)',
+        gradient: 'linear-gradient(135deg, #c5a36c 0%, #a8875a 100%)',
+        shadow: 'rgba(197, 163, 108, 0.35)',
         title: 'Festpreisgarantie',
         desc: 'Absolute Kostentransparenz ohne versteckte Gebühren. Sie wissen im Vorfeld exakt, was Ihr Gutachten kostet.'
     }
@@ -88,7 +88,7 @@ export function OriginalFeatures() {
                         Warum Lasarz die richtige Wahl ist
                     </h2>
                     <p style={{ color: 'var(--text-secondary)', maxWidth: '560px', margin: '0 auto', fontSize: '1.05rem', lineHeight: 1.8 }}>
-                        Als zertifizierter Sachverständiger verbinde ich regionale Expertise mit höchsten Qualitätsstandards.
+                        Als <strong>Dipl.-Sachverständiger (DIA)</strong>, <strong>TEGoVA REV</strong> und <strong>BVS e.V.</strong>-Mitglied verbinde ich regionale Marktkenntnis mit höchsten Qualitätsstandards.
                     </p>
                 </motion.div>
 
@@ -196,10 +196,10 @@ export function OriginalFeatures() {
                             </h2>
                         </div>
                         <p style={{ marginBottom: '1rem', fontSize: '1.05rem', lineHeight: 1.85, color: 'rgba(255,255,255,0.82)' }}>
-                            Als zertifizierter und anerkannter Immobiliengutachter biete ich Ihnen gerichtsfeste Verkehrswertgutachten und präzise Immobilienbewertungen im Raum Osnabrück sowie deutschlandweit. Egal ob Erbschaft, Scheidung, steuerliche Themen oder Immobilienkauf – ich liefere Ihnen das nötige rechtssichere Fundament.
+                            Als <strong style={{ color: '#e8cc90' }}>Dipl.-Sachverständiger (DIA)</strong>, zertifiziert nach <strong style={{ color: '#e8cc90' }}>DIN EN ISO/IEC 17024</strong> und als <strong style={{ color: '#e8cc90' }}>TEGoVA Recognised European Valuer (REV)</strong> anerkannt, erstelle ich Ihnen gerichtsfeste Verkehrswertgutachten gemäß § 194 BauGB – für Erbschaft, Scheidung, steuerliche Bewertungen oder Immobilienkauf.
                         </p>
                         <p style={{ marginBottom: '2.5rem', fontSize: '1.05rem', lineHeight: 1.85, color: 'rgba(255,255,255,0.82)' }}>
-                            Darüber hinaus unterstütze ich Sie mit detaillierter Ankaufberatung dabei, teure Fehlkäufe zu vermeiden. Vertrauen Sie auf jahrelange regionale Expertise und höchste zertifizierte Qualitätsstandards.
+                            Mitglied im <strong style={{ color: '#e8cc90' }}>BVS – Bundesverband öffentlich bestellter und vereidigter sowie qualifizierter Sachverständiger e.V.</strong> Über 19 Jahre regionale Marktkenntnis und mehr als 3.500 erstellte Gutachten sprechen für sich.
                         </p>
                         <Link href="/kontakt#kontaktformular" className="shimmer-btn" style={{
                             display: 'inline-flex', alignItems: 'center', gap: '0.6rem',

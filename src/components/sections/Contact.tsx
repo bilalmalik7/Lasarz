@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Phone, Mail, MapPin, Calendar, ClipboardList, Home } from 'lucide-react';
 
 export function Contact() {
     const [step, setStep] = useState(1);
@@ -227,9 +228,9 @@ export function Contact() {
                             </p>
 
                             {[
-                                { icon: '📞', text: '+49 (0) 541 - 600 99 220' },
-                                { icon: '✉️', text: 'info@lasarz.com' },
-                                { icon: '📍', text: 'Katharinenstraße 111, 49078 Osnabrück' },
+                                { icon: <Phone size={17} strokeWidth={1.8} />, text: '+49 (0) 541 - 600 99 220' },
+                                { icon: <Mail size={17} strokeWidth={1.8} />, text: 'info@lasarz.com' },
+                                { icon: <MapPin size={17} strokeWidth={1.8} />, text: 'Katharinenstraße 111, 49078 Osnabrück' },
                             ].map((item, i) => (
                                 <motion.div
                                     key={i}
@@ -239,7 +240,7 @@ export function Contact() {
                                     transition={{ delay: 0.1 + i * 0.1, duration: 0.45 }}
                                     style={{ display: 'flex', alignItems: 'flex-start', gap: '0.9rem', marginBottom: '1.1rem' }}
                                 >
-                                    <span style={{ fontSize: '1.2rem', color: '#c9a45a', flexShrink: 0, marginTop: '2px' }}>{item.icon}</span>
+                                    <span style={{ color: '#c9a45a', flexShrink: 0, marginTop: '2px' }}>{item.icon}</span>
                                     <span style={{ color: 'rgba(255,255,255,0.88)', fontSize: '0.97rem', lineHeight: 1.55 }}>{item.text}</span>
                                 </motion.div>
                             ))}
@@ -265,7 +266,7 @@ export function Contact() {
                                         transition: 'all 0.25s ease',
                                     }}
                                 >
-                                    📅 Zum Terminplaner
+                                    <Calendar size={15} strokeWidth={1.8} /> Zum Terminplaner
                                 </motion.a>
                             </div>
 
@@ -447,8 +448,8 @@ export function Contact() {
                                         </motion.p>
                                         <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }} style={{ background: 'var(--bg-secondary)', padding: '1.25rem 1.5rem', borderRadius: '14px', textAlign: 'left', width: '100%', maxWidth: '420px', fontSize: '0.88rem', color: 'var(--text-secondary)', border: '1px solid var(--border-color)', lineHeight: 1.65 }}>
                                             <strong style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--accent-secondary)' }}>Ihre Angaben im Überblick:</strong>
-                                            <div>📋 Anlass: <strong>{formData.anlass === 'erbschaft' ? 'Erbschaft/Schenkung' : formData.anlass === 'scheidung' ? 'Scheidung/Zugewinn' : formData.anlass === 'kauf_verkauf' ? 'Kauf/Verkauf' : formData.anlass === 'steuer' ? 'Steuern/AfA' : 'Sonstiges'}</strong></div>
-                                            <div style={{ marginTop: '0.3rem' }}>🏠 Objekt: <strong>{formData.typ} ({formData.flaeche} m² in {formData.plz} {formData.ort})</strong></div>
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><ClipboardList size={14} strokeWidth={1.8} /> Anlass: <strong>{formData.anlass === 'erbschaft' ? 'Erbschaft/Schenkung' : formData.anlass === 'scheidung' ? 'Scheidung/Zugewinn' : formData.anlass === 'kauf_verkauf' ? 'Kauf/Verkauf' : formData.anlass === 'steuer' ? 'Steuern/AfA' : 'Sonstiges'}</strong></div>
+                                            <div style={{ marginTop: '0.3rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Home size={14} strokeWidth={1.8} /> Objekt: <strong>{formData.typ} ({formData.flaeche} m² in {formData.plz} {formData.ort})</strong></div>
                                         </motion.div>
                                     </motion.div>
                                 )}

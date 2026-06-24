@@ -4,6 +4,65 @@ import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import type { CityPageData } from '@/lib/cityPages';
+import {
+    Phone, MapPin, Mail, Home, Star,
+    GraduationCap, Zap, Scale, Handshake, Building, Building2,
+    Landmark, Coins, BarChart3, Hammer, Globe, Waves,
+    Leaf, Trees, FlaskConical, Construction, Train, Anchor,
+    Key, FileText, Clock, Tractor, Mountain, Castle, School,
+    Factory, Flag,
+} from 'lucide-react';
+
+// Map emoji → Lucide icon element
+const ICON_MAP: Record<string, React.ReactNode> = {
+    '🎓': <GraduationCap size={22} strokeWidth={1.8} />,
+    '📍': <MapPin size={22} strokeWidth={1.8} />,
+    '⚡': <Zap size={22} strokeWidth={1.8} />,
+    '⚖️': <Scale size={22} strokeWidth={1.8} />,
+    '🤝': <Handshake size={22} strokeWidth={1.8} />,
+    '📞': <Phone size={22} strokeWidth={1.8} />,
+    '💰': <Coins size={22} strokeWidth={1.8} />,
+    '🏛️': <Landmark size={22} strokeWidth={1.8} />,
+    '🏦': <Building size={22} strokeWidth={1.8} />,
+    '🔨': <Hammer size={22} strokeWidth={1.8} />,
+    '📊': <BarChart3 size={22} strokeWidth={1.8} />,
+    '🏠': <Home size={22} strokeWidth={1.8} />,
+    '🏡': <Home size={22} strokeWidth={1.8} />,
+    '🏢': <Building2 size={22} strokeWidth={1.8} />,
+    '🏭': <Factory size={22} strokeWidth={1.8} />,
+    '🌍': <Globe size={22} strokeWidth={1.8} />,
+    '⚓': <Anchor size={22} strokeWidth={1.8} />,
+    '🏖️': <Waves size={22} strokeWidth={1.8} />,
+    '🌊': <Waves size={22} strokeWidth={1.8} />,
+    '🌿': <Leaf size={22} strokeWidth={1.8} />,
+    '🌲': <Trees size={22} strokeWidth={1.8} />,
+    '🌾': <Tractor size={22} strokeWidth={1.8} />,
+    '🏔️': <Mountain size={22} strokeWidth={1.8} />,
+    '🏗️': <Construction size={22} strokeWidth={1.8} />,
+    '🏰': <Castle size={22} strokeWidth={1.8} />,
+    '🏫': <School size={22} strokeWidth={1.8} />,
+    '🚆': <Train size={22} strokeWidth={1.8} />,
+    '🇳🇱': <Flag size={22} strokeWidth={1.8} />,
+    '🐴': <Tractor size={22} strokeWidth={1.8} />,
+    '💧': <Waves size={22} strokeWidth={1.8} />,
+};
+
+function CityIcon({ emoji, size = 'md' }: { emoji: string; size?: 'sm' | 'md' | 'lg' }) {
+    const icon = ICON_MAP[emoji] ?? <Building2 size={22} strokeWidth={1.8} />;
+    const boxSize = size === 'lg' ? 56 : size === 'sm' ? 36 : 44;
+    const iconRadius = size === 'lg' ? 14 : 10;
+    return (
+        <div style={{
+            width: boxSize, height: boxSize, borderRadius: iconRadius,
+            background: 'linear-gradient(135deg, #0A192F 0%, #1a3a5c 100%)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            color: '#e8cc90', flexShrink: 0,
+            boxShadow: '0 4px 14px rgba(10,25,47,0.18)',
+        }}>
+            {icon}
+        </div>
+    );
+}
 
 // ── Reusable animated counter ───────────────────────────────────────────────
 function Counter({ end, suffix = '', duration = 2.2 }: { end: number; suffix?: string; duration?: number }) {
@@ -164,7 +223,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                     padding: '1rem 2.2rem', borderRadius: 'var(--radius-full)', fontSize: '1rem',
                                     background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(255,255,255,0.25)',
                                     color: '#fff', backdropFilter: 'blur(8px)' }}>
-                                    📞 Jetzt anrufen
+                                    <Phone size={16} strokeWidth={1.8} /> Jetzt anrufen
                                 </a>
                             </motion.div>
 
@@ -191,7 +250,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
                                     <div style={{ width: '52px', height: '52px', borderRadius: '50%',
                                         background: 'var(--accent-primary)', display: 'flex', alignItems: 'center',
-                                        justifyContent: 'center', fontSize: '1.5rem' }}>🏠</div>
+                                        justifyContent: 'center' }}><Home size={22} strokeWidth={1.8} color="#fff" /></div>
                                     <div>
                                         <div style={{ color: '#fff', fontWeight: 700, fontSize: '1rem' }}>Marc-André Lasarz</div>
                                         <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>Dipl.-Sachverständiger (DIA)</div>
@@ -203,7 +262,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                         { label: 'Standort', value: data.name },
                                         { label: 'Zertifikate', value: 'DIAZert · BVS' },
                                         { label: 'Erfahrung', value: '15+ Jahre · 3.500+ Gutachten' },
-                                        { label: 'Bewertung', value: '⭐⭐⭐⭐⭐ (4.9/5)' },
+                                        { label: 'Bewertung', value: '4.9/5 (Google)' },
                                     ].map((row) => (
                                         <div key={row.label} style={{
                                             display: 'flex', justifyContent: 'space-between',
@@ -264,7 +323,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                     style={{ background: 'var(--bg-secondary)', border: '1.5px solid var(--border-color)',
                                         borderRadius: '16px', padding: '1.75rem', height: '100%', cursor: 'default',
                                         transition: 'box-shadow 0.3s' }}>
-                                    <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>{o.icon}</div>
+                                    <div style={{ marginBottom: '1rem' }}><CityIcon emoji={o.icon} /></div>
                                     <h3 style={{ fontWeight: 700, marginBottom: '0.6rem', color: 'var(--accent-secondary)', fontSize: '1.05rem' }}>{o.title}</h3>
                                     <p style={{ color: 'var(--text-secondary)', fontSize: '0.93rem', lineHeight: 1.6 }}>{o.desc}</p>
                                 </motion.div>
@@ -291,6 +350,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                 <motion.button key={i} onClick={() => setActiveTab(i)}
                                     whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
                                     style={{
+                                        display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
                                         padding: '0.65rem 1.5rem',
                                         borderRadius: '100px',
                                         border: 'none',
@@ -302,7 +362,8 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                         color: activeTab === i ? '#fff' : 'var(--text-secondary)',
                                         boxShadow: activeTab === i ? '0 4px 15px rgba(26,117,141,0.3)' : 'none',
                                     }}>
-                                    {tab.icon} {tab.label}
+                                    <span style={{ opacity: 0.85, display: 'flex' }}>{ICON_MAP[tab.icon] ?? null}</span>
+                                    {tab.label}
                                 </motion.button>
                             ))}
                         </div>
@@ -316,7 +377,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                 background: 'var(--bg-primary)', borderRadius: '20px', padding: '2.5rem',
                                 border: '1.5px solid var(--border-color)' }}>
                             <div>
-                                <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{data.tabs[activeTab].icon}</div>
+                                <div style={{ marginBottom: '1.25rem' }}><CityIcon emoji={data.tabs[activeTab].icon} size="lg" /></div>
                                 <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--accent-secondary)' }}>
                                     {data.tabs[activeTab].label}
                                 </h3>
@@ -357,7 +418,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                     style={{ background: 'var(--bg-secondary)', border: '1.5px solid var(--border-color)',
                                         borderRadius: '16px', padding: '2rem', height: '100%',
                                         cursor: 'default', transition: 'border-color 0.25s' }}>
-                                    <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{w.icon}</div>
+                                    <div style={{ marginBottom: '1.1rem' }}><CityIcon emoji={w.icon} /></div>
                                     <h3 style={{ fontWeight: 700, marginBottom: '0.7rem', fontSize: '1.05rem', color: 'var(--accent-secondary)' }}>{w.title}</h3>
                                     <p style={{ color: 'var(--text-secondary)', fontSize: '0.93rem', lineHeight: 1.7 }}>{w.desc}</p>
                                 </motion.div>
@@ -401,7 +462,7 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                         cursor: 'default',
                                         transition: 'background 0.25s, color 0.25s',
                                     }}>
-                                    📍 {area}
+                                    <MapPin size={13} strokeWidth={1.8} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '4px' }} />{area}
                                 </motion.span>
                             ))}
                         </div>
@@ -514,12 +575,12 @@ export function CityPageTemplate({ data }: { data: CityPageData }) {
                                     background: 'rgba(255,255,255,0.12)', color: '#fff',
                                     border: '1.5px solid rgba(255,255,255,0.3)', padding: '1.1rem 2.5rem',
                                     borderRadius: 'var(--radius-full)', fontSize: '1.05rem', display: 'inline-block' }}>
-                                    📞 {data.phone}
+                                    <Phone size={16} strokeWidth={1.8} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '4px' }} />{data.phone}
                                 </a>
                             </motion.div>
                         </div>
                         <p style={{ color: 'rgba(255,255,255,0.5)', marginTop: '2rem', fontSize: '0.9rem' }}>
-                            📍 {data.address} · ✉️ {data.email}
+                            <MapPin size={14} strokeWidth={1.8} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '4px' }} />{data.address} · <Mail size={14} strokeWidth={1.8} style={{ display: 'inline', verticalAlign: 'middle', margin: '0 4px' }} />{data.email}
                         </p>
                     </R>
                 </div>

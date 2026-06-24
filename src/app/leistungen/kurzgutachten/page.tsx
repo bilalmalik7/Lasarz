@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { Phone } from 'lucide-react';
 
 export const metadata = {
     title: 'Kurzgutachten | Immobilienbewertung Lasarz',
@@ -72,7 +73,7 @@ export default function KurzgutachtenPage() {
                     </p>
                     <div className="flex justify-center gap-md">
                         <Link href="/kontakt#kontaktformular" className="btn btn-primary">Jetzt anfragen</Link>
-                        <Link href="tel:+4954160099220" className="btn btn-secondary">📞 0541 / 600 99 220</Link>
+                        <Link href="tel:+4954160099220" className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Phone size={16} strokeWidth={1.8} /> 0541 / 600 99 220</Link>
                     </div>
                 </div>
             </section>

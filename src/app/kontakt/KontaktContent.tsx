@@ -27,20 +27,12 @@ const locations = [
         mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.918520892796!2d8.03730797686774!3d52.26305005860269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9e59d5fb706db%3A0xe13ee79b9aef3426!2sKatharinenstra%C3%9Fe%20111%2C%2049078%20Osnabr%C3%BCck!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde'
     },
     {
-        city: 'Münster',
-        desc: 'Sachverständigenbüro',
-        address: 'c/o Lasarz Sachverständigenbüro\nMünster',
+        city: 'Hannover',
+        desc: 'Standort Hannover',
+        address: 'c/o Lasarz Sachverständigenbüro\nHannover',
         phone: '+49 (0) 541 - 600 99 220',
-        email: 'muenster@lasarz.com',
-        mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156545.69460593438!2d7.47125345718764!3d51.95013149814424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9bac1aa5e4f45%3A0x425f187a4128f70!2sM%C3%BCnster!5e0!3m2!1sde!2sde!4v1700000000001!5m2!1sde!2sde'
-    },
-    {
-        city: 'Flensburg',
-        desc: 'Standort Nord',
-        address: 'Norderstraße 52-56\n24939 Flensburg',
-        phone: '+49 (0) 461 - 167 23 002',
-        email: 'flensburg@lasarz.com',
-        mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d146950.55139044236!2d9.336111075677936!3d54.786529329158315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b342a3e51d953d%3A0x4248963c6580cb0!2sFlensburg!5e0!3m2!1sde!2sde!4v1700000000002!5m2!1sde!2sde'
+        email: 'hannover@lasarz.com',
+        mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d154668.8196946635!2d9.617585099999999!3d52.3744779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b00b514d494f85%3A0x425ac6d94ac4720!2sHannover!5e0!3m2!1sde!2sde!4v1700000000003!5m2!1sde!2sde'
     },
 
     {
