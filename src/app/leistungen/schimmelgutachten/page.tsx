@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { Phone, MapPin, Mail, CheckCircle, Search, ClipboardList, FlaskConical, Scale, Construction, AlertTriangle, Home } from 'lucide-react';
 
@@ -207,7 +207,7 @@ export default function SchimmelgutachtenPage() {
         { step: '04', title: 'Gutachten & Empfehlung', desc: 'Sie erhalten ein gerichtsverwertbares Gutachten mit konkreten Sanierungsempfehlungen und Kostenschätzung.' },
     ];
 
-    const schimmelIconMap: Record<string, JSX.Element> = {
+    const schimmelIconMap: Record<string, React.ReactNode> = {
         'search': <Search size={20} strokeWidth={1.8} />,
         'clipboard': <ClipboardList size={20} strokeWidth={1.8} />,
         'flask': <FlaskConical size={20} strokeWidth={1.8} />,

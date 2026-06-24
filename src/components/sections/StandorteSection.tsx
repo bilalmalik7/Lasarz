@@ -191,7 +191,7 @@ export function StandorteSection() {
                                 <MapPin size={22} strokeWidth={1.8} />
                             </div>
 
-                            <Link href={loc.customUrl ? loc.customUrl : (loc.slug ? `/standorte/${loc.slug}` : '#')} style={{ textDecoration: 'none' }}>
+                            <Link href={loc.customUrl ? loc.customUrl : (('slug' in loc && loc.slug) ? `/standorte/${loc.slug}` : '#')} style={{ textDecoration: 'none' }}>
                                 <h3 style={{ 
                                     color: loc.isMain ? '#fff' : 'var(--accent-secondary)', 
                                     fontSize: '1.4rem', 

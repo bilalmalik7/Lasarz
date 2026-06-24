@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
+import { ScrollRestoration } from '@/components/ScrollRestoration';
 
 export const metadata: Metadata = {
   title: 'Lasarz - Die Immobiliengutachter | Immobilienbewertung Osnabrück',
@@ -107,6 +108,7 @@ export default function RootLayout({
         />
       </head>
       <body suppressHydrationWarning>
+        <ScrollRestoration />
         <Header />
         {children}
         <Footer />

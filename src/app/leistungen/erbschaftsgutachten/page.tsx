@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { Phone, MapPin, Mail, CheckCircle, FolderOpen, Home, BarChart3, ClipboardList, Landmark, Scale, Coins, RefreshCw, FileText } from 'lucide-react';
 
@@ -127,7 +127,7 @@ function ProgressBar({ label, value }: { label: string; value: number }) {
 // ─────────────────────────────────────────────────────────────────────────────
 export default function ErbschaftsgutachtenPage() {
 
-    const stepIconMap: Record<string, JSX.Element> = {
+    const stepIconMap: Record<string, React.ReactNode> = {
         'phone': <Phone size={20} strokeWidth={1.8} />,
         'folder': <FolderOpen size={20} strokeWidth={1.8} />,
         'home': <Home size={20} strokeWidth={1.8} />,
@@ -143,7 +143,7 @@ export default function ErbschaftsgutachtenPage() {
         { step: '05', iconKey: 'clipboard', title: 'Fertiges Gutachten', desc: 'Sie erhalten ein gebundenes, gerichtsverwertbares Gutachten mit ca. 40–80 Seiten Dokumentation – geeignet für Finanzamt, Nachlassgericht und Erbauseinandersetzung.' },
     ];
 
-    const useCaseIconMap: Record<string, JSX.Element> = {
+    const useCaseIconMap: Record<string, React.ReactNode> = {
         'landmark': <Landmark size={20} strokeWidth={1.8} />,
         'scale': <Scale size={20} strokeWidth={1.8} />,
         'coins': <Coins size={20} strokeWidth={1.8} />,

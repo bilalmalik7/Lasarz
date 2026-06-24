@@ -4,7 +4,10 @@ import React, { useEffect, useMemo } from 'react';
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { LocationItem } from './RegionMap';
+export interface LocationItem {
+  name: string;
+  type: string;
+}
 
 // Geo-coordinates mapping for our locations
 const geoCoordinates: Record<string, [number, number]> = {
