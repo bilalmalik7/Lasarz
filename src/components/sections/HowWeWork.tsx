@@ -31,7 +31,7 @@ const methods = [
     {
         step: '04',
         title: 'Auslieferung des Gutachtens',
-        desc: 'Sie erhalten Ihr rechtssicheres Verkehrswertgutachten gemäß § 194 BauGB in schriftlicher und digitaler Form – gerichtsfest, vom Finanzamt anerkannt und nach ImmoWertV erstellt. Abschließend besprechen wir die Ergebnisse gemeinsam.',
+        desc: 'Sie erhalten Ihr Verkehrswertgutachten gemäß § 194 BauGB in schriftlicher und digitaler Form – gerichtsfest, vom Finanzamt anerkannt und nach ImmoWertV erstellt. Abschließend besprechen wir die Ergebnisse gemeinsam.',
         icon: <ClipboardCheck size={28} />,
         gradient: 'linear-gradient(135deg, #1A758D 0%, #0A192F 100%)',
         shadow: 'rgba(26, 117, 141, 0.35)',
@@ -81,7 +81,7 @@ export function HowWeWork() {
                         color: 'var(--section-dark-text)',
                         fontWeight: 800, lineHeight: 1.15, marginBottom: '1.25rem'
                     }}>
-                        In 4 Schritten zu Ihrem rechtssicheren Gutachten
+                        In 4 Schritten zu Ihrem n Gutachten
                     </h2>
                     <p style={{
                         maxWidth: '640px', margin: '0 auto',

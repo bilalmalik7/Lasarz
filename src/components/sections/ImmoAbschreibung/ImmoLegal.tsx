@@ -25,7 +25,7 @@ export function ImmoLegal() {
                   Anerkannt
                 </div>
                 <span className="block text-6xl font-black mb-4 text-[#1C2431]">BFH</span>
-                <span className="block text-xs font-bold uppercase tracking-[0.2em] text-gray-400 leading-relaxed">Höchste<br />Rechtssicherheit</span>
+                <span className="block text-xs font-bold uppercase tracking-[0.2em] text-gray-400 leading-relaxed">Höchste<br />heit</span>
               </div>
             </div>
           </div>

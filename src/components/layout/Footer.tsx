@@ -14,7 +14,7 @@ export function Footer() {
         <div>
           <img src="/logo.svg" alt="Lasarz Logo" style={{ height: '40px', marginBottom: 'var(--space-sm)' }} />
           <p style={{ color: 'var(--text-muted)' }}>
-            Die Immobiliengutachter. Ihr verlässlicher Partner für rechtssichere Immobilienbewertung in Osnabrück und Umgebung.
+            Die Immobiliengutachter. Ihr verlässlicher Partner für Immobilienbewertung in Osnabrück und Umgebung.
           </p>
           <div className="flex gap-sm" style={{ marginTop: '1.5rem' }}>
             <a href="#" className="social-icon" style={{ fontSize: '1.2rem', color: 'var(--accent-primary)' }}>LinkedIn</a>

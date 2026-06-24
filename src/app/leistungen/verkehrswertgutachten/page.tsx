@@ -105,9 +105,9 @@ export default function VerkehrswertgutachtenPage() {
                         <h3 style={{ fontSize: '2rem', marginBottom: '2.5rem', textAlign: 'center' }}>Vorteile Ihres Verkehrswertgutachtens in Osnabrück</h3>
                         <div className="grid grid-cols-2 gap-lg sm-grid-cols-1">
                             <div className="glass-card" style={{ padding: '2rem' }}>
-                                <h4 style={{ color: 'var(--accent-primary)', marginBottom: '1rem' }}>Rechtssicherheit</h4>
+                                <h4 style={{ color: 'var(--accent-primary)', marginBottom: '1rem' }}>heit</h4>
                                 <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
-                                    Gerichtsfeste Gutachten, die jederzeit von Gerichten und Behörden anerkannt werden. Als <strong>Verkehrswertgutachter Osnabrück</strong> garantieren wir höchste Rechtssicherheit.
+                                    Gerichtsfeste Gutachten, die jederzeit von Gerichten und Behörden anerkannt werden. Als <strong>Verkehrswertgutachter Osnabrück</strong> garantieren wir höchste heit.
                                 </p>
                             </div>
                             <div className="glass-card" style={{ padding: '2rem' }}>

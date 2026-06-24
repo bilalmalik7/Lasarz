@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords: ['Immobilienbewertung Osnabrück', 'Immobiliengutachter', 'Verkehrswertgutachten', 'Kurzgutachten', 'Kaufberatung Immobilien', 'Immobilienbewertung Osnabrück Kosten', 'Hausbewertung Osnabrück', 'Verkehrswertgutachten Osnabrück Finanzamt'],
   openGraph: {
     title: 'Lasarz - Die Immobiliengutachter in Osnabrück',
-    description: 'Regionale Expertise, rechtssichere Gutachten und Festpreisgarantie für Ihre Immobilienbewertung. Immobiliengutachter Osnabrück und Umgebung.',
+    description: 'Regionale Expertise, Gutachten und Festpreisgarantie für Ihre Immobilienbewertung. Immobiliengutachter Osnabrück und Umgebung.',
     url: 'https://lasarz.com',
     siteName: 'Lasarz Immobiliengutachter',
     locale: 'de_DE',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Lasarz - Die Immobiliengutachter in Osnabrück',
-    description: 'Regionale Expertise, rechtssichere Gutachten und Festpreisgarantie für Ihre Immobilienbewertung.',
+    description: 'Regionale Expertise, Gutachten und Festpreisgarantie für Ihre Immobilienbewertung.',
     images: ['https://lasarz.com/images/og-image.jpg']
   },
   alternates: {

@@ -331,7 +331,7 @@ const knowledgeBase: KnowledgeRule[] = [
     // ──────────────────────────────────────────────────
     {
         keywords: ['online bewertung', 'online-bewertung', 'immoscout', 'homeday', 'mcmakler', 'automatisch', 'kostenlose bewertung', 'sofortbewertung', 'online rechner', 'wertrechner'],
-        response: 'Kostenlose Online-Bewertungen (z. B. von ImmoScout, Homeday oder McMakler) liefern nur **grobe Schätzungen** mit hoher Fehlerquote. ⚠️\n\n❌ Sie berücksichtigen **nicht** den tatsächlichen Zustand der Immobilie\n❌ Individuelle Merkmale (Lage, Ausstattung, Mängel) werden ignoriert\n❌ Sie werden von **keinem Finanzamt, Gericht oder Bank** akzeptiert\n❌ Oft dienen sie als **Makler-Köder** zur Leadgenerierung\n\n✅ Ein professionelles Gutachten von einem Sachverständigen ist **rechtssicher** und berücksichtigt alle individuellen Faktoren.\n\nMöchten Sie den echten Wert Ihrer Immobilie erfahren?',
+        response: 'Kostenlose Online-Bewertungen (z. B. von ImmoScout, Homeday oder McMakler) liefern nur **grobe Schätzungen** mit hoher Fehlerquote. ⚠️\n\n❌ Sie berücksichtigen **nicht** den tatsächlichen Zustand der Immobilie\n❌ Individuelle Merkmale (Lage, Ausstattung, Mängel) werden ignoriert\n❌ Sie werden von **keinem Finanzamt, Gericht oder Bank** akzeptiert\n❌ Oft dienen sie als **Makler-Köder** zur Leadgenerierung\n\n✅ Ein professionelles Gutachten von einem Sachverständigen ist **** und berücksichtigt alle individuellen Faktoren.\n\nMöchten Sie den echten Wert Ihrer Immobilie erfahren?',
         showLeadForm: true,
         priority: 4
     },

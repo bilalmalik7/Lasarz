@@ -9,8 +9,8 @@ const cases = [
         title: 'Erbschaftsgutachten Einfamilienhaus',
         location: 'Osnabrück (Westerberg)',
         category: 'Erbschaft',
-        desc: 'Das Finanzamt hatte den Wert der Immobilie im standardisierten Verfahren massiv zu hoch angesetzt. Durch unser 45-seitiges Verkehrswertgutachten konnten wertbeeinflussende Risse in der Bausubstanz sowie der sanierungsbedürftige energetische Zustand rechtssicher nachgewiesen werden. Die Erbschaftssteuer für unsere Mandanten sank dadurch um über 35.000 €.',
-        image: '/images/original_clone/property_background.jpg'
+        desc: 'Das Finanzamt hatte den Wert der Immobilie im standardisierten Verfahren massiv zu hoch angesetzt. Durch unser 45-seitiges Verkehrswertgutachten konnten wertbeeinflussende Risse in der Bausubstanz sowie der sanierungsbedürftige energetische Zustand nachgewiesen werden. Die Erbschaftssteuer für unsere Mandanten sank dadurch um über 35.000 €.',
+        image: '/images/portrait.jpg'
     },
     {
         title: 'Schiedsgutachten bei Scheidung',
@@ -31,7 +31,7 @@ const cases = [
         location: 'Rheine',
         category: 'Finanzierung',
         desc: 'Für die Umfinanzierung einer Gewerbehalle forderte die Bank ein fundiertes Wertgutachten. Unter strenger Berücksichtigung der Beleihungswertverordnung (BelWertV) erstellten wir innerhalb von 14 Tagen ein transparentes Gutachten. Die Finanzierung konnte ohne Verzögerungen durch die Bank freigegeben werden.',
-        image: '/images/original_clone/MG_1880-1024x690.jpg'
+        image: '/images/portrait.jpg'
     }
 ];
 
@@ -91,7 +91,7 @@ export default function ReferenzenPage() {
                                         src={scenario.image} 
                                         alt={scenario.title} 
                                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                        onError={(e: any) => { e.target.src = '/images/original_clone/property_background.jpg' }} // Fallback if image path is not found yet
+                                        onError={(e: any) => { e.target.src = '/images/portrait.jpg' }} // Fallback if image path is not found yet
                                     />
                                     <div style={{ position: 'absolute', top: '1rem', right: '1rem', backgroundColor: 'var(--accent-primary)', color: 'white', padding: '0.4rem 1rem', borderRadius: '50px', fontSize: '0.8rem', fontWeight: 'bold' }}>
                                         {scenario.category}

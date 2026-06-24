@@ -148,7 +148,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     {/* Left Side: Team Info */}
                     <div style={{
                         flex: '1',
-                        background: 'linear-gradient(to bottom, rgba(18, 43, 64, 0.2) 0%, rgba(18, 43, 64, 0.85) 60%), url("/images/original_clone/property_background.jpg")',
+                        background: 'linear-gradient(to bottom, rgba(18, 43, 64, 0.2) 0%, rgba(18, 43, 64, 0.85) 60%), url("/images/portrait.jpg")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center 15%',
                         padding: '3rem 2rem',

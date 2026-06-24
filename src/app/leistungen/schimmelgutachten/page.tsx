@@ -222,7 +222,7 @@ export default function SchimmelgutachtenPage() {
         { iconKey: 'search', title: 'Ursachenanalyse', desc: 'Klärung ob Baumangel, Nutzerverhalten oder bauphysikalische Mängel die Ursache sind.' },
         { iconKey: 'clipboard', title: 'Schadensdokumentation', desc: 'Fotodokumentation und exakte Vermessung der befallenen Flächen.' },
         { iconKey: 'flask', title: 'Laboranalyse', desc: 'Bestimmung der Schimmelart und Bewertung des Gesundheitsrisikos.' },
-        { iconKey: 'scale', title: 'Gerichtverwertbares Gutachten', desc: 'Vollständige rechtssichere Dokumentation für Mieter-Vermieter-Streitigkeiten.' },
+        { iconKey: 'scale', title: 'Gerichtverwertbares Gutachten', desc: 'Vollständige Dokumentation für Mieter-Vermieter-Streitigkeiten.' },
         { iconKey: 'construction', title: 'Sanierungsempfehlung', desc: 'Detaillierter Maßnahmenplan mit Prioritäten und Kostenschätzungen.' },
         { iconKey: 'phone', title: 'Nachbetreuung', desc: 'Wir stehen nach der Sanierung für Rückfragen und Kontrollen zur Verfügung.' },
     ];

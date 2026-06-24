@@ -576,7 +576,7 @@ export function CityPagePremium({ data }: { data: PremiumCityData }) {
                             Unsere Zertifizierungen &amp; Qualifikationen
                         </h2>
                         <p style={{ color: 'rgba(255,255,255,0.65)', maxWidth: '560px', margin: '0 auto', fontSize: '1rem', lineHeight: 1.8 }}>
-                            Höchste Qualifikationsstandards für Ihre Rechtssicherheit
+                            Höchste Qualifikationsstandards für Ihre heit
                         </p>
                     </motion.div>
 
@@ -932,7 +932,7 @@ export function CityPagePremium({ data }: { data: PremiumCityData }) {
                             Jetzt kostenfrei beraten lassen
                         </h2>
                         <p style={{ color: 'rgba(255,255,255,0.72)', maxWidth: '560px', margin: '0 auto 3rem', fontSize: '1.05rem', lineHeight: 1.8 }}>
-                            Erhalten Sie Ihr professionelles Immobiliengutachten in {data.name} von Dipl.-Sachverständigen (DIA). Transparent, rechtssicher und zu Festpreisen.
+                            Erhalten Sie Ihr professionelles Immobiliengutachten in {data.name} von Dipl.-Sachverständigen (DIA). Transparent, und zu Festpreisen.
                         </p>
 
                         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3rem' }}>

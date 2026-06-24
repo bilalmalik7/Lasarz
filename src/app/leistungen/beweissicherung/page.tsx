@@ -8,7 +8,7 @@ export default function BeweissicherungPage() {
                 <div className="container">
                     <span style={{ color: 'var(--accent-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.9rem' }}>Leistungen</span>
                     <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', color: 'var(--accent-secondary)', lineHeight: 1.2, marginTop: '1rem' }}>Beweissicherung</h1>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginTop: '1rem', maxWidth: '700px' }}>Professionelle Dokumentation und Beweissicherung für Immobilien – rechtssicher und gerichtsverwertbar.</p>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginTop: '1rem', maxWidth: '700px' }}>Professionelle Dokumentation und Beweissicherung für Immobilien – und gerichtsverwertbar.</p>
                 </div>
             </section>
 
@@ -18,7 +18,7 @@ export default function BeweissicherungPage() {
                         <div>
                             <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Zustandsdokumentation und Beweissicherung</h2>
                             <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                                Die Beweissicherung ist eine vorsorgliche Maßnahme, die den Ist-Zustand einer Immobilie zu einem bestimmten Zeitpunkt rechtssicher dokumentiert. Dies ist besonders wichtig bei bevorstehenden Bau- oder Sanierungsarbeiten in der Nachbarschaft oder bei Streitigkeiten über den Zustand eines Objektes.
+                                Die Beweissicherung ist eine vorsorgliche Maßnahme, die den Ist-Zustand einer Immobilie zu einem bestimmten Zeitpunkt dokumentiert. Dies ist besonders wichtig bei bevorstehenden Bau- oder Sanierungsarbeiten in der Nachbarschaft oder bei Streitigkeiten über den Zustand eines Objektes.
                             </p>
                             <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2rem' }}>
                                 Unsere Sachverständigen erstellen detaillierte Zustandsfeststellungsberichte mit Fotoprotokoll, die vor Gericht Bestand haben.
@@ -53,7 +53,7 @@ export default function BeweissicherungPage() {
             <section style={{ padding: '60px 0', backgroundColor: 'var(--accent-secondary)', color: '#fff', textAlign: 'center' }}>
                 <div className="container">
                     <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Zustand Ihrer Immobilie dokumentieren lassen?</h2>
-                    <p style={{ opacity: 0.85, marginBottom: '2rem', fontSize: '1.1rem' }}>Rechtssicher und gerichtsverwertbar.</p>
+                    <p style={{ opacity: 0.85, marginBottom: '2rem', fontSize: '1.1rem' }}>und gerichtsverwertbar.</p>
                     <Link href="/kontakt#kontaktformular" className="btn" style={{ backgroundColor: 'var(--accent-primary)', color: '#fff', padding: '1rem 2.5rem' }}>Jetzt Kontakt aufnehmen</Link>
                 </div>
             </section>

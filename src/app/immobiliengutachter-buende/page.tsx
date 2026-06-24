@@ -105,7 +105,7 @@ const buendeData: PremiumCityData = {
         {
             name: 'Stefan K.',
             location: 'Bünde',
-            text: 'Herr Lasarz hat unser Haus in Bünde vor dem Verkauf professionell bewertet. Das Gutachten war innerhalb von 10 Tagen fertig, absolut rechtssicher und hat uns bei der Preisverhandlung sehr geholfen.',
+            text: 'Herr Lasarz hat unser Haus in Bünde vor dem Verkauf professionell bewertet. Das Gutachten war innerhalb von 10 Tagen fertig, absolut und hat uns bei der Preisverhandlung sehr geholfen.',
         },
         {
             name: 'Andrea M.',
@@ -132,7 +132,7 @@ const buendeData: PremiumCityData = {
         {
             icon: <FileText size={22} strokeWidth={1.8} />,
             title: 'Kurzgutachten & Wertindikation',
-            desc: 'Schnelle Immobilienbewertung für private Zwecke, außergerichtliche Einigungen und erste Preiseinschätzungen – kompakt und rechtssicher.',
+            desc: 'Schnelle Immobilienbewertung für private Zwecke, außergerichtliche Einigungen und erste Preiseinschätzungen – kompakt und .',
         },
         {
             icon: <Building size={22} strokeWidth={1.8} />,

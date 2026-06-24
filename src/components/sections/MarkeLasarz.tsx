@@ -14,7 +14,7 @@ export function MarkeLasarz() {
                             Marc-André Lasarz – Ihr Experte für Immobilienbewertung.
                         </h2>
                         <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: 'var(--space-md)' }}>
-                            Als Geschäftsführer und zertifizierter Gutachter mit über 19 Jahren Fach- und Führungserfahrung in der Immobilienbranche verfüge ich über ausgeprägte Kompetenzen für die rechtssichere Planung und Umsetzung von Bewertungsprojekten.
+                            Als Geschäftsführer und zertifizierter Gutachter mit über 20+ Jahr Fach- und Führungserfahrung in der Immobilienbranche verfüge ich über ausgeprägte Kompetenzen für die Planung und Umsetzung von Bewertungsprojekten.
                         </p>
 
                         <div className="flex gap-sm" style={{ marginTop: 'var(--space-lg)' }}>

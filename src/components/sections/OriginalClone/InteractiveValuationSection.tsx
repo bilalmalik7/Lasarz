@@ -4,8 +4,8 @@ import { OriginalValuationTool } from './OriginalValuationTool';
 
 const sliderImages = [
     { src: '/images/portrait.jpg', alt: 'Marc-André Lasarz Portrait' },
-    { src: '/images/original_clone/MG_1880-1024x690.jpg', alt: 'Office Interior' },
-    { src: '/images/original_clone/property_background.jpg', alt: 'Property Exterior' }
+    { src: '/images/portrait.jpg', alt: 'Office Interior' },
+    { src: '/images/portrait.jpg', alt: 'Property Exterior' }
 ];
 
 export function InteractiveValuationSection() {

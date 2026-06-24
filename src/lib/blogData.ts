@@ -138,7 +138,7 @@ export const blogPosts: BlogPost[] = [
 
             <h3>Fazit: Marktwert und Beleihungswert klug nutzen</h3>
             <p>Marktwert und Beleihungswert sind zwei Seiten derselben Medaille — aber mit grundlegend unterschiedlichen Funktionen. Den Marktwert brauchen Sie als faire Orientierung beim Kauf, Verkauf, in Erbschafts- und Scheidungsangelegenheiten sowie gegenüber dem Finanzamt. Den Beleihungswert setzt Ihre Bank an — er bestimmt, wie viel Kredit Sie tatsächlich bekommen.</p>
-            <p>In beiden Fällen gilt: Ein <strong>professionelles, unabhängiges Verkehrswertgutachten</strong> von einem zertifizierten Sachverständigen wie Marc-André Lasarz schafft die notwendige Transparenz und Rechtssicherheit. Vertrauen Sie nicht auf Online-Schnellrechner oder Maklereinschätzungen — denn bei Immobilientransaktionen im Wert von 300.000 € bis 800.000 € können selbst kleine prozentuale Abweichungen fünfstellige Summen bedeuten.</p>
+            <p>In beiden Fällen gilt: Ein <strong>professionelles, unabhängiges Verkehrswertgutachten</strong> von einem zertifizierten Sachverständigen wie Marc-André Lasarz schafft die notwendige Transparenz und heit. Vertrauen Sie nicht auf Online-Schnellrechner oder Maklereinschätzungen — denn bei Immobilientransaktionen im Wert von 300.000 € bis 800.000 € können selbst kleine prozentuale Abweichungen fünfstellige Summen bedeuten.</p>
             <p>Kontaktieren Sie uns noch heute für ein unverbindliches Erstgespräch — wir beraten Sie persönlich in Osnabrück und im gesamten Umland von Bielefeld bis Münster.</p>
         `
     },
@@ -387,7 +387,7 @@ export const blogPosts: BlogPost[] = [
             <ul>
                 <li><strong>Höchste fachliche Kompetenz:</strong> Regelmäßige Prüfungen und Weiterbildungen sind Pflicht.</li>
                 <li><strong>Unabhängigkeit und Objektivität:</strong> Das Gutachten wird nach strengen, neutralen Kriterien erstellt.</li>
-                <li><strong>Rechtssicherheit:</strong> Ein solches Gutachten wird von Banken, Finanzämtern und Gerichten in Osnabrück und bundesweit anerkannt.</li>
+                <li><strong>heit:</strong> Ein solches Gutachten wird von Banken, Finanzämtern und Gerichten in Osnabrück und bundesweit anerkannt.</li>
             </ul>
 
             <h3>Vermeidung von Haftungsrisiken</h3>
@@ -468,7 +468,7 @@ export const blogPosts: BlogPost[] = [
 
             <h3>Fazit: Sicherheit und Fairness im Erbfall</h3>
             <p>Ein Erbschaftsgutachten ist eine Investition in Gerechtigkeit und finanzielle Sicherheit. Es schützt Sie vor überhöhten Forderungen des Staates und hilft, den Familienfrieden zu bewahren. In Osnabrück und Umgebung ist Marc-André Lasarz Ihr kompetenter Partner für diese sensible Aufgabe.</p>
-            <p>Lassen Sie sich in dieser schwierigen Zeit professionell unterstützen. Wir sorgen dafür, dass die Bewertung Ihrer Erbschaftsimmobilie absolut fair, transparent und rechtssicher erfolgt. Kontaktieren Sie uns für eine diskrete Beratung.</p>
+            <p>Lassen Sie sich in dieser schwierigen Zeit professionell unterstützen. Wir sorgen dafür, dass die Bewertung Ihrer Erbschaftsimmobilie absolut fair, transparent und erfolgt. Kontaktieren Sie uns für eine diskrete Beratung.</p>
         `
     },
     {

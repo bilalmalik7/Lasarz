@@ -838,7 +838,7 @@ export function HannoverPremium({ data }: { data: PremiumCityData }) {
                             Zertifizierungen &amp; Qualifikationen
                         </h2>
                         <p style={{ color: 'rgba(255,255,255,0.6)', maxWidth: '520px', margin: '0 auto', fontSize: '1rem', lineHeight: 1.8 }}>
-                            Höchste Qualifikationsstandards für Ihre Rechtssicherheit in Hannover
+                            Höchste Qualifikationsstandards für Ihre heit in Hannover
                         </p>
                     </motion.div>
 
@@ -1018,7 +1018,7 @@ export function HannoverPremium({ data }: { data: PremiumCityData }) {
                             Jetzt kostenfrei beraten lassen
                         </h2>
                         <p style={{ color: 'rgba(255,255,255,0.72)', maxWidth: '540px', margin: '0 auto 3rem', fontSize: '1.05rem', lineHeight: 1.8 }}>
-                            Ihr professionelles Immobiliengutachten in Hannover – von Dipl.-Sachverständigen (DIA), transparent, rechtssicher und zu Festpreisen.
+                            Ihr professionelles Immobiliengutachten in Hannover – von Dipl.-Sachverständigen (DIA), transparent, und zu Festpreisen.
                         </p>
                         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3rem' }}>
                             <Link href="/kontakt#kontaktformular" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'linear-gradient(135deg, #c5a36c, #d4b57d)', color: '#0A192F', padding: '1.1rem 2.8rem', fontWeight: 800, fontSize: '1.05rem', borderRadius: '50px', textDecoration: 'none', boxShadow: '0 14px 40px rgba(197,163,108,0.45)' }}>

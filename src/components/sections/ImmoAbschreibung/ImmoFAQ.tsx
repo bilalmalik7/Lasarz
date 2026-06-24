@@ -8,7 +8,7 @@ const faqs = [
     answer: "Ein Restnutzungsdauergutachten weist nach, dass die tatsächliche wirtschaftliche Lasarz einer Immobilie kürzer ist als die vom Gesetzgeber pauschal angenommenen 33, 40 oder 50 Jahre. Dadurch kannst du den jährlichen Abschreibungssatz (AfA) deutlich erhöhen."
   },
   {
-    question: "Ist das Gutachten rechtssicher?",
+    question: "Ist das Gutachten ?",
     answer: "Ja, unsere Gutachten werden von nach DIN EN ISO/IEC 17024 zertifizierten Sachverständigen erstellt. Diese Zertifizierung wird von der Finanzverwaltung als Nachweis fachlicher Kompetenz anerkannt, wie auch im BMF-Schreiben vom 22.02.2023 bestätigt."
   },
   {

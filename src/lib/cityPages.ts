@@ -102,7 +102,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Inga S.', location: 'Flensburg-Mürwik', text: 'Endlich ein Sachverständiger, der die Besonderheiten des Flensburger Immobilienmarkts wirklich versteht. Klare Empfehlung!' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Zertifizierte Sachverständige mit anerkannten Qualifikationen – Ihre Garantie für rechtssichere Gutachten.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Zertifizierte Sachverständige mit anerkannten Qualifikationen – Ihre Garantie für Gutachten.' },
             { icon: '⚓', title: 'Hafenstadt-Expertise', desc: 'Besondere Erfahrung mit Förde-Lagen, historischen Kaufmannshäusern und maritimen Sonderimmobilien in Flensburg.' },
             { icon: '⚡', title: 'Schnelle Bearbeitung', desc: 'Gutachten in der Regel innerhalb von 12 Werktagen – Expressservice für dringende Fälle verfügbar.' },
             { icon: '🏛️', title: 'Denkmalschutz-Kompetenz', desc: 'Flensburgs historische Altstadt erfordert Spezialwissen bei der Bewertung denkmalgeschützter Gebäude.' },
@@ -159,7 +159,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Claudia R.', location: 'Münster-Gievenbeck', text: 'Schnelle Lieferung des Kurzgutachtens für unseren Immobilienverkauf. Der Preis war fair und die Qualität erstklassig.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Qualifikation für rechtssichere Immobilienbewertung in Münster und dem Münsterland.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Qualifikation für Immobilienbewertung in Münster und dem Münsterland.' },
             { icon: '🏰', title: 'Altstadtkenner', desc: 'Spezialwissen für die begehrten Immobilienlagen im Kreuzviertel, am Aasee und in der historischen Altstadt.' },
             { icon: '⚡', title: 'Express möglich', desc: 'Standard-Gutachten in 8 Werktagen, Express-Gutachten auf Anfrage auch in 3-5 Tagen lieferbar.' },
             { icon: '🏫', title: 'Universitätsstadt-Expertise', desc: 'Erfahrung mit Anlageimmobilien, Studentenwohnungen und Kapitalanlagen im Münsteraner Markt.' },
@@ -387,7 +387,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Ingrid P.', location: 'Laxten', text: 'Sehr professionelle Kaufberatung. Das Kurzgutachten hat uns vor einer teuren Fehlkauf bewahrt. Danke!' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten im ganzen Emsland.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten im ganzen Emsland.' },
             { icon: '🌾', title: 'Emsland-Expertise', desc: 'Langjährige Erfahrung mit ländlichen Immobilien, Hofstellen und Agrarflächen im Emsland.' },
             { icon: '⚡', title: 'Schnelle Gutachten', desc: 'Verkehrswertgutachten in der Regel innerhalb von 10 Werktagen fertig.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – anerkannt vor Gericht und beim Finanzamt.' },
@@ -444,7 +444,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Monika L.', location: 'Neuenkirchen', text: 'Kompetente Bewertung unserer Gewerbeimmobilie. Herr Lasarz kennt die Region sehr gut.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Anerkannte Qualifikation für rechtssichere Immobiliengutachten in Emsdetten und Umgebung.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Anerkannte Qualifikation für Immobiliengutachten in Emsdetten und Umgebung.' },
             { icon: '🏭', title: 'Textilstandort-Expertise', desc: 'Erfahrung mit der gewerblichen Immobiliensituation im früheren Textilindustriezentrum Emsdetten.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Standard-Gutachten in 10 Werktagen – Expressservice auf Anfrage.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Gutachten nach §194 BauGB – anerkannt vor Gericht, Finanzamt und Bank.' },
@@ -501,7 +501,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Sabine M.', location: 'Ochtrup', text: 'Kompetente Kaufberatung vor dem Immobilienerwerb. Das Gutachten war sehr aufschlussreich.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Steinfurt und dem Kreis Steinfurt.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Steinfurt und dem Kreis Steinfurt.' },
             { icon: '🏰', title: 'Burgstadt-Kenner', desc: 'Besondere Erfahrung mit Altbauimmobilien und historischen Objekten in der Burgstadt Steinfurt.' },
             { icon: '⚡', title: 'Schnelle Ergebnisse', desc: 'Standardgutachten in 10 Werktagen – Expressservice verfügbar.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Gutachten nach §194 BauGB – von Gerichten und Behörden anerkannt.' },
@@ -558,7 +558,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Christina M.', location: 'Verl', text: 'Sehr kompetente Kaufberatung. Das Gutachten hat sich bezahlt gemacht bei den Verhandlungen.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Rechtssichere Gutachten für Gütersloh und den gesamten Kreis Gütersloh.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Gutachten für Gütersloh und den gesamten Kreis Gütersloh.' },
             { icon: '🏭', title: 'Wirtschaftsstandort-Expertise', desc: 'Erfahrung mit Unternehmensimmobilien in einer der wirtschaftsstärksten Regionen NRWs.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Verkehrswertgutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – anerkannt von Gerichten und Behörden in NRW.' },
@@ -615,7 +615,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Renate S.', location: 'Steinfurt', text: 'Das Kurzgutachten für unseren Hausverkauf war sehr hilfreich. Der ermittelte Preis war realistisch und wir konnten entsprechend verhandeln.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Rheine und dem Kreis Steinfurt.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Rheine und dem Kreis Steinfurt.' },
             { icon: '🌊', title: 'Ems-Region Experte', desc: 'Detaillierte Marktkenntnis für Rheine, Emsdetten, Steinfurt und das gesamte nördliche Münsterland.' },
             { icon: '⚡', title: 'Zügige Lieferung', desc: 'Verkehrswertgutachten in der Regel innerhalb von 10 Werktagen – Expressservice bei Bedarf.' },
             { icon: '🏭', title: 'Gewerbekompetenz', desc: 'Rheine als Wirtschaftsstandort – Erfahrung mit Betriebsimmobilien, Logistik und Textilgewerbe.' },
@@ -672,7 +672,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Ursula M.', location: 'Hesepe', text: 'Beleihungswertgutachten war kein Problem – die Bank war sofort zufrieden. Danke!' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Zertifizierte Sachverständige für rechtssichere Gutachten in Bramsche und dem Landkreis Osnabrück.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Zertifizierte Sachverständige für Gutachten in Bramsche und dem Landkreis Osnabrück.' },
             { icon: '🏡', title: 'Ländliche Expertise', desc: 'Erfahrung mit Hofstellen, Resthöfen und ländlichen Wohnimmobilien in der Haseregion.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen – Expressservice verfügbar.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – anerkannt vor Gericht, Finanzamt und Bank.' },
@@ -728,7 +728,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Marianne S.', location: 'Versmold', text: 'Beleihungswertgutachten für die Finanzierung erstklassig abgewickelt. Danke!' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Borgholzhausen und Umgebung.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Borgholzhausen und Umgebung.' },
             { icon: '🌲', title: 'Teutoburger Wald Expertise', desc: 'Erfahrung mit den besonderen Wohnlagen am Teutoburger Wald und den Marktgegebenheiten in der Region.' },
             { icon: '⚡', title: 'Schnelle Ergebnisse', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – anerkannt von Gerichten und Behörden.' },
@@ -787,7 +787,7 @@ export const cityPages: CityPageData[] = [
             { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige – Gutachten werden von Gerichten, Finanzämtern und Banken anerkannt.' },
             { icon: '🏔️', title: 'Teutoburger Wald Kenner', desc: 'Besondere Expertise für Wohnlagen am Dörenberg und im Teutoburger Wald.' },
             { icon: '⚡', title: 'Schnelle Gutachten', desc: 'Verkehrswertgutachten in der Regel innerhalb von 10 Werktagen.' },
-            { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – rechtssicher und anerkannt.' },
+            { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – und anerkannt.' },
             { icon: '🤝', title: 'Unabhängig', desc: 'Keine Vermittlungsabsichten – rein sachverständige Wertermittlung.' },
             { icon: '📞', title: 'Direkter Service', desc: 'Persönliche Erreichbarkeit ohne Warteschleifen.' },
         ],
@@ -840,7 +840,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Ingeborg M.', location: 'Mennighüffen', text: 'Kaufberatung vor dem Hauskauf sehr hilfreich. Das Gutachten hat uns wichtige Details gezeigt.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Rechtssichere Gutachten für Löhne und den gesamten Kreis Herford.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Gutachten für Löhne und den gesamten Kreis Herford.' },
             { icon: '🚆', title: 'Infrastruktur-Kenntnisse', desc: 'Löhne als Eisenbahnknotenpunkt – wir kennen die Lagequalitäten und Markttrends.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Verkehrswertgutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB.' },
@@ -896,10 +896,10 @@ export const cityPages: CityPageData[] = [
             { name: 'Hildegard W.', location: 'Bokel', text: 'Kaufberatung vor dem Immobilienerwerb sehr hilfreich. Danke für die professionelle Arbeit!' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Halle (Westf.) und Umgebung.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Halle (Westf.) und Umgebung.' },
             { icon: '🌲', title: 'Teutoburger Wald Expertise', desc: 'Besondere Erfahrung mit Wohnlagen am Teutoburger Wald und der Ravensberger Mulde.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
-            { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – rechtssicher anerkannt.' },
+            { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – anerkannt.' },
             { icon: '🤝', title: 'Neutral', desc: 'Unabhängige Wertermittlung ohne Interessenkonflikt.' },
             { icon: '📞', title: 'Direkter Kontakt', desc: 'Persönliche Beratung direkt beim Gutachter.' },
         ],
@@ -951,7 +951,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Christel W.', location: 'Telgte', text: 'Kaufberatung vor dem Immobilienkauf. Hat mir wichtige Sicherheit gegeben. Danke!' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Warendorf und dem Münsterland.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Warendorf und dem Münsterland.' },
             { icon: '🐴', title: 'Münsterland-Expertise', desc: 'Tiefe Kenntnis des Warendorfer Immobilienmarkts – von der Altstadt bis zu ländlichen Hofstellen.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – anerkannt vor Gericht, Finanzamt und Bank.' },
@@ -1007,7 +1007,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Inge B.', location: 'Vlotho', text: 'Kaufberatung sehr kompetent und hilfreich. Das Gutachten hat uns wichtige Details aufgezeigt.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Rechtssichere Gutachten für Bad Oeynhausen und den Kreis Minden-Lübbecke.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Gutachten für Bad Oeynhausen und den Kreis Minden-Lübbecke.' },
             { icon: '💧', title: 'Kurstadt-Expertise', desc: 'Erfahrung mit den besonderen Immobilienlagen in der Heilbad- und Kurstadt.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB.' },
@@ -1063,7 +1063,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Marianne K.', location: 'Hilter', text: 'Kaufberatung vor dem Hauskauf sehr hilfreich. Das Gutachten hat uns wichtige Hintergrundinfos gegeben.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Bad Iburg und Umgebung.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Bad Iburg und Umgebung.' },
             { icon: '🏰', title: 'Schloss-Region Expertise', desc: 'Erfahrung mit den besonderen Immobilienlagen rund um Schloss Iburg und die Kurregion.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB.' },
@@ -1119,7 +1119,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Lieselotte P.', location: 'Nordhorn', text: 'Kaufberatung sehr professionell. Das Gutachten hat wichtige Details aufgezeigt.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Rechtssichere Gutachten für Bad Bentheim und die Grafschaft Bentheim.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Gutachten für Bad Bentheim und die Grafschaft Bentheim.' },
             { icon: '🏰', title: 'Burgstadt-Expertise', desc: 'Erfahrung mit den besonderen Immobilienlagen in der historischen Kaiserburgsstadt.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB.' },
@@ -1175,7 +1175,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Elfriede W.', location: 'Dissen', text: 'Kaufberatung sehr wertvoll. Das Gutachten hat uns vor einem Fehlkauf bewahrt.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Bad Laer und Umgebung.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Bad Laer und Umgebung.' },
             { icon: '🌿', title: 'Kurort-Expertise', desc: 'Erfahrung mit Kur- und Heilbadimmobilien in der attraktiven Jodsolebad-Region.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB.' },
@@ -1231,7 +1231,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Waltraud S.', location: 'Häger', text: 'Kaufberatung sehr hilfreich. Das Gutachten hat uns wichtige Details aufgezeigt.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Kirchlengern und dem Kreis Herford.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Kirchlengern und dem Kreis Herford.' },
             { icon: '📍', title: 'Regionale Kompetenz', desc: 'Tiefe Marktkenntnis für Kirchlengern, Bünde und das gesamte südliche OWL.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB.' },
@@ -1287,7 +1287,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Erika S.', location: 'Kirchlengern', text: 'Kaufberatung vor dem Hauskauf sehr hilfreich. Das Kurzgutachten hat uns vor einem Fehlkauf bewahrt.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Bünde und dem Kreis Herford.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Bünde und dem Kreis Herford.' },
             { icon: '🏭', title: 'Industriestandort-Expertise', desc: 'Erfahrung mit Gewerbeimmobilien in der ehemaligen Zigarrenstadt und ihrem Industriepark.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB.' },
@@ -1346,7 +1346,7 @@ export const cityPages: CityPageData[] = [
             { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige – Gutachten werden von Gerichten, Finanzämtern und Banken anerkannt.' },
             { icon: '🏔️', title: 'Teutoburger Wald Kenner', desc: 'Besondere Expertise für Wohnlagen am Dörenberg und im Teutoburger Wald.' },
             { icon: '⚡', title: 'Schnelle Gutachten', desc: 'Verkehrswertgutachten in der Regel innerhalb von 10 Werktagen.' },
-            { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – rechtssicher und anerkannt.' },
+            { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – und anerkannt.' },
             { icon: '🤝', title: 'Unabhängig', desc: 'Keine Vermittlungsabsichten – rein sachverständige Wertermittlung.' },
             { icon: '📞', title: 'Direkter Service', desc: 'Persönliche Erreichbarkeit ohne Warteschleifen.' },
         ],
@@ -1399,7 +1399,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Ursula M.', location: 'Holzhausen', text: 'Beleihungswertgutachten war kein Problem – die Bank war sofort zufrieden. Danke!' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Zertifizierte Sachverständige für rechtssichere Gutachten in Bissendorf und dem Landkreis Osnabrück.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Zertifizierte Sachverständige für Gutachten in Bissendorf und dem Landkreis Osnabrück.' },
             { icon: '🏡', title: 'Ländliche Expertise', desc: 'Erfahrung mit Hofstellen, Resthöfen und ländlichen Wohnimmobilien in der Haseregion.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen – Expressservice verfügbar.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – anerkannt vor Gericht, Finanzamt und Bank.' },
@@ -1455,10 +1455,10 @@ export const cityPages: CityPageData[] = [
             { name: 'Hildegard W.', location: 'Holzhausen', text: 'Kaufberatung vor dem Immobilienerwerb sehr hilfreich. Danke für die professionelle Arbeit!' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Hasbergen und Umgebung.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Hasbergen und Umgebung.' },
             { icon: '🌲', title: 'Teutoburger Wald Expertise', desc: 'Besondere Erfahrung mit Wohnlagen am Teutoburger Wald und der Ravensberger Mulde.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
-            { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – rechtssicher anerkannt.' },
+            { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB – anerkannt.' },
             { icon: '🤝', title: 'Neutral', desc: 'Unabhängige Wertermittlung ohne Interessenkonflikt.' },
             { icon: '📞', title: 'Direkter Kontakt', desc: 'Persönliche Beratung direkt beim Gutachter.' },
         ],
@@ -1511,7 +1511,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Renate S.', location: 'Holzhausen', text: 'Das Kurzgutachten für unseren Hausverkauf war sehr hilfreich. Der ermittelte Preis war realistisch und wir konnten entsprechend verhandeln.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Hilter und Umgebung.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Hilter und Umgebung.' },
             { icon: '🌲', title: 'Teutoburger Wald Expertise', desc: 'Erfahrung mit Wohnlagen am Teutoburger Wald und der Ravensberger Mulde.' },
             { icon: '⚡', title: 'Zügige Lieferung', desc: 'Verkehrswertgutachten in der Regel innerhalb von 10 Werktagen – Expressservice bei Bedarf.' },
             { icon: '🏭', title: 'Gewerbekompetenz', desc: 'Hilter als Wirtschaftsstandort – Erfahrung mit Betriebsimmobilien, Logistik und Textilgewerbe.' },
@@ -1567,7 +1567,7 @@ export const cityPages: CityPageData[] = [
             { name: 'Marianne K.', location: 'Hilter', text: 'Kaufberatung vor dem Hauskauf sehr hilfreich. Das Gutachten hat uns wichtige Hintergrundinfos gegeben.' },
         ],
         whyUs: [
-            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für rechtssichere Gutachten in Bad Iburg und Umgebung.' },
+            { icon: '🎓', title: 'DIA & BVS zertifiziert', desc: 'Staatlich anerkannte Sachverständige für Gutachten in Bad Iburg und Umgebung.' },
             { icon: '🏰', title: 'Schloss-Region Expertise', desc: 'Erfahrung mit den besonderen Immobilienlagen rund um Schloss Iburg und die Kurregion.' },
             { icon: '⚡', title: 'Schnelle Lieferung', desc: 'Gutachten in der Regel innerhalb von 10 Werktagen.' },
             { icon: '⚖️', title: 'Gerichtsverwertbar', desc: 'Alle Gutachten nach §194 BauGB.' },

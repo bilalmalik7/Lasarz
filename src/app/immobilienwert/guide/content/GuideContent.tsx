@@ -67,7 +67,7 @@ export default function GuideContent() {
   const costItems = [
     { type: 'Kurzgutachten', price: '€ 300 – 500', time: '3–5 Tage', badge: 'Einstieg', color: 'bg-green-100 text-green-800' },
     { type: 'Vollgutachten (ImmoWertV)', price: '€ 800 – 2.500', time: '7–14 Tage', badge: 'Empfohlen', color: 'bg-blue-100 text-blue-800' },
-    { type: 'Gerichtsfestes Gutachten', price: '€ 2.000 – 5.000+', time: '2–4 Wochen', badge: 'Rechtssicher', color: 'bg-purple-100 text-purple-800' },
+    { type: 'Gerichtsfestes Gutachten', price: '€ 2.000 – 5.000+', time: '2–4 Wochen', badge: '', color: 'bg-purple-100 text-purple-800' },
   ];
 
   return (
@@ -203,7 +203,7 @@ export default function GuideContent() {
                 <div>
                   <p className="text-gray-700 leading-relaxed mb-4">
                     Ein professionelles Immobiliengutachten ist weit mehr als eine einfache Schätzung. 
-                    Es ist das fundierte, rechtssichere Dokument, das auf Basis anerkannter Bewertungsverfahren 
+                    Es ist das fundierte, Dokument, das auf Basis anerkannter Bewertungsverfahren 
                     den tatsächlichen Verkehrswert Ihrer Immobilie bestimmt.
                   </p>
                   <p className="text-gray-700 leading-relaxed mb-6">
@@ -265,7 +265,7 @@ export default function GuideContent() {
                       <div>
                         <h4 className="font-bold text-amber-900 mb-1">Vorsicht bei Onlineschätzungen</h4>
                         <p className="text-amber-800 text-sm leading-relaxed">
-                          Kostenlose Online-Tools sind keine rechtssicheren Gutachten und haben 
+                          Kostenlose Online-Tools sind keine n Gutachten und haben 
                           Abweichungen von bis zu <strong>25 %</strong> vom tatsächlichen Marktwert.
                         </p>
                       </div>
@@ -861,7 +861,7 @@ export default function GuideContent() {
                       { phase: 'Aufwertung', tip: 'Kleine Schönheitsreparaturen: Streichen, Garten, Sauberkeit – großer Effekt' },
                       { phase: 'Marketing', tip: 'Professionelle Fotos, Grundriss, Exposé, Online-Portale (Immoscout, Immonet)' },
                       { phase: 'Besichtigungen', tip: 'Qualifizierte Interessenten filtern, ggf. mit Makler zusammenarbeiten' },
-                      { phase: 'Abwicklung', tip: 'Notar, Kaufvertrag, Übergabe – alles rechtssicher und termingerecht' },
+                      { phase: 'Abwicklung', tip: 'Notar, Kaufvertrag, Übergabe – alles und termingerecht' },
                     ].map((item, i) => (
                       <div key={i} className="flex gap-3">
                         <div className="flex-shrink-0 w-7 h-7 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 font-bold text-xs">
@@ -937,7 +937,7 @@ export default function GuideContent() {
                   <h3 className="font-bold text-gray-900 mb-4">10 wichtigste Erkenntnisse:</h3>
                   <ol className="space-y-3">
                     {[
-                      'Ein zertifiziertes Gutachten ist rechtssicher und gerichtsfest',
+                      'Ein zertifiziertes Gutachten ist und gerichtsfest',
                       'Online-Schätzungen ersetzen kein professionelles Gutachten',
                       'Die Kosten sind gering im Verhältnis zum Immobilienwert',
                       'Osnabrück zeigt stabiles Preiswachstum von +1,5–2,5% p.a.',
@@ -963,7 +963,7 @@ export default function GuideContent() {
                     {[
                       { icon: '📞', title: 'Kostenlose Erstberatung', desc: 'Rufen Sie uns an oder senden Sie eine Anfrage. Wir besprechen Ihren Bedarf und nennen ein unverbindliches Angebot.' },
                       { icon: '📅', title: 'Termin vereinbaren', desc: 'Wir koordinieren einen Besichtigungstermin, der zu Ihrem Zeitplan passt.' },
-                      { icon: '📄', title: 'Gutachten erhalten', desc: 'In 7–14 Tagen erhalten Sie Ihr professionelles, rechtssicheres Gutachten.' },
+                      { icon: '📄', title: 'Gutachten erhalten', desc: 'In 7–14 Tagen erhalten Sie Ihr professionelles, Gutachten.' },
                     ].map((s, i) => (
                       <div key={i} className="flex gap-3 p-4 bg-gray-50 rounded-xl">
                         <span className="text-2xl">{s.icon}</span>

@@ -33,7 +33,7 @@ const steps = [
     {
         num: '06',
         title: 'Gutachten',
-        desc: 'Sie erhalten Ihr fertiges, rechtssicheres Gutachten als gebundenes Exemplar und/oder als PDF. Alle Ergebnisse erläutern wir Ihnen gerne ausführlich.'
+        desc: 'Sie erhalten Ihr fertiges, Gutachten als gebundenes Exemplar und/oder als PDF. Alle Ergebnisse erläutern wir Ihnen gerne ausführlich.'
     }
 ];
 

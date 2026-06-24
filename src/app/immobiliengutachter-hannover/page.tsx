@@ -133,7 +133,7 @@ const hannoverData: PremiumCityData = {
         {
             icon: <FileText size={22} strokeWidth={1.8} />,
             title: 'Kurzgutachten & Wertindikation',
-            desc: 'Schnelle Immobilienbewertung für private Zwecke, Preisverhandlungen und erste Werteinschätzungen – kompakt, präzise und rechtssicher.',
+            desc: 'Schnelle Immobilienbewertung für private Zwecke, Preisverhandlungen und erste Werteinschätzungen – kompakt, präzise und .',
         },
         {
             icon: <Building size={22} strokeWidth={1.8} />,

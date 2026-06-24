@@ -24,7 +24,7 @@ export function Hero() {
                         Präzise Wertermittlung für Ihre Immobilien in Osnabrück.
                     </h1>
                     <p className="animate-fade-in delay-200" style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', marginBottom: 'var(--space-md)', maxWidth: '600px' }}>
-                        Regionale Expertise, rechtssichere Gutachten und Festpreisgarantie. Wir schützen Sie vor Fehlentscheidungen beim Kauf, Verkauf oder in rechtlichen Angelegenheiten.
+                        Regionale Expertise, Gutachten und Festpreisgarantie. Wir schützen Sie vor Fehlentscheidungen beim Kauf, Verkauf oder in rechtlichen Angelegenheiten.
                     </p>
                     <div className="flex gap-sm animate-fade-in delay-300" style={{ marginBottom: 'var(--space-xl)' }}>
                         <a href="/#leistungen" className="btn btn-primary">Wertermittlung anfragen</a>

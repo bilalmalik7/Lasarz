@@ -26,7 +26,7 @@ const OFFICES: City[] = [
     x: 310, y: 218,
     type: 'office',
     url: '/immobiliengutachter-osnabrueck',
-    description: 'Unser Hauptsitz. Zertifizierte Sachverständige für rechtssichere Verkehrswertgutachten in Osnabrück und der gesamten Region.',
+    description: 'Unser Hauptsitz. Zertifizierte Sachverständige für Verkehrswertgutachten in Osnabrück und der gesamten Region.',
     address: 'Katharinenstraße 111, 49078 Osnabrück',
     phone: '+49 (0) 541 - 600 99 220',
     email: 'osnabrueck@lasarz.com',

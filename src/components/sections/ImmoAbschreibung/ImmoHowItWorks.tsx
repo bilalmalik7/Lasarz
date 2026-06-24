@@ -17,7 +17,7 @@ export function ImmoHowItWorks() {
     },
     {
       title: "Zertifizierte Erstellung",
-      description: "Unsere ISO 17024 zertifizierten Gutachter erstellen Ihr rechtssicheres Gutachten nach BMF-Standard.",
+      description: "Unsere ISO 17024 zertifizierten Gutachter erstellen Ihr Gutachten nach BMF-Standard.",
       image: "/images/immo/step3.jpg"
     },
     {

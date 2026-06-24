@@ -27,7 +27,7 @@ const uspList = [
     {
         icon: <Eye size={28} />,
         title: 'Vier-Augen-Prinzip',
-        desc: 'Jedes Gutachten wird von einem weiteren Sachverständigen geprüft – für die höchstmögliche Qualität und Rechtssicherheit.',
+        desc: 'Jedes Gutachten wird von einem weiteren Sachverständigen geprüft – für die höchstmögliche Qualität und heit.',
     },
     {
         icon: <Target size={28} />,
@@ -66,7 +66,7 @@ export function WhyChooseUs() {
             {/* Background image with overlay */}
             <div style={{
                 position: 'absolute', inset: 0,
-                backgroundImage: 'url(/images/original_clone/MG_1880-1024x690.jpg)',
+                backgroundImage: 'url(/images/portrait.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed',

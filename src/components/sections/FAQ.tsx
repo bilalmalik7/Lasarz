@@ -9,7 +9,7 @@ export function FAQ() {
         },
         {
             question: 'Ist ein Verkehrswertgutachten vor Gericht gültig?',
-            answer: 'Ja, unsere Verkehrswertgutachten nach § 194 BauGB sind gerichts- und rechtssicher. Sie können bei Auseinandersetzungen, Scheidungen, Erbschaftssteuer oder Vormundschaften herangezogen werden.'
+            answer: 'Ja, unsere Verkehrswertgutachten nach § 194 BauGB sind gerichts- und . Sie können bei Auseinandersetzungen, Scheidungen, Erbschaftssteuer oder Vormundschaften herangezogen werden.'
         },
         {
             question: 'Wie lange dauert die Erstellung eines Gutachtens?',

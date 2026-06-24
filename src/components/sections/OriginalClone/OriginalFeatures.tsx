@@ -199,7 +199,7 @@ export function OriginalFeatures() {
                             Als <strong style={{ color: '#e8cc90' }}>Dipl.-Sachverständiger (DIA)</strong>, zertifiziert nach <strong style={{ color: '#e8cc90' }}>DIN EN ISO/IEC 17024</strong> und als <strong style={{ color: '#e8cc90' }}>TEGoVA Recognised European Valuer (REV)</strong> anerkannt, erstelle ich Ihnen gerichtsfeste Verkehrswertgutachten gemäß § 194 BauGB – für Erbschaft, Scheidung, steuerliche Bewertungen oder Immobilienkauf.
                         </p>
                         <p style={{ marginBottom: '2.5rem', fontSize: '1.05rem', lineHeight: 1.85, color: 'rgba(255,255,255,0.82)' }}>
-                            Mitglied im <strong style={{ color: '#e8cc90' }}>BVS – Bundesverband öffentlich bestellter und vereidigter sowie qualifizierter Sachverständiger e.V.</strong> Über 19 Jahre regionale Marktkenntnis und mehr als 3.500 erstellte Gutachten sprechen für sich.
+                            Mitglied im <strong style={{ color: '#e8cc90' }}>BVS – Bundesverband öffentlich bestellter und vereidigter sowie qualifizierter Sachverständiger e.V.</strong> Über 20+ Jahr regionale Marktkenntnis und mehr als 3.500 erstellte Gutachten sprechen für sich.
                         </p>
                         <Link href="/kontakt#kontaktformular" className="shimmer-btn" style={{
                             display: 'inline-flex', alignItems: 'center', gap: '0.6rem',

@@ -25,7 +25,7 @@ const packages = [
         badgeGradient: null,
         popular: false,
         features: [
-            'Kürzere Nutzungsdauer rechtssicher nachweisen',
+            'Kürzere Nutzungsdauer nachweisen',
             'Höhere AfA & Steuerersparnis für Vermieter',
             'Ortsbegehung durch Sachverständigen',
             'Schriftliche und fundierte Abhandlung',

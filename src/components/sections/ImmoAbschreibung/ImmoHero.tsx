@@ -78,7 +78,7 @@ export function ImmoHero() {
           </h1>
           
           <p className="text-xl md:text-2xl text-[#555555] mb-12 max-w-2xl reveal-on-scroll delay-100 italic">
-            "Mit einem zertifizierten <span className="font-bold text-[#1C2431]">Lasarz Gutachten</span> die Restnutzungsdauer Ihrer Immobilie rechtssicher verkürzen."
+            "Mit einem zertifizierten <span className="font-bold text-[#1C2431]">Lasarz Gutachten</span> die Restnutzungsdauer Ihrer Immobilie verkürzen."
           </p>
 
           <div className="w-full max-w-5xl immo-glass rounded-[2rem] p-8 md:p-12 shadow-2xl reveal-on-scroll delay-200">

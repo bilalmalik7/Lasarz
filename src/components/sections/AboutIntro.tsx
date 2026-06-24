@@ -87,7 +87,7 @@ export function AboutIntro() {
                             textShadow: '0 4px 25px rgba(0,0,0,0.4)'
                         }}
                     >
-                        Als <strong style={{ color: '#e8cc90' }}>zertifizierter Immobiliengutachter</strong> erstelle ich rechtssichere{' '}
+                        Als <strong style={{ color: '#e8cc90' }}>zertifizierter Immobiliengutachter</strong> erstelle ich {' '}
                         <span style={{ color: '#e8cc90' }}>Verkehrswertgutachten</span> im Sinne des § 194 BauGB
                     </motion.h2>
 

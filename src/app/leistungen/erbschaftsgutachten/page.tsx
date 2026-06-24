@@ -155,7 +155,7 @@ export default function ErbschaftsgutachtenPage() {
     const useCases = [
         { iconKey: 'landmark', title: 'Erbschaftssteuer', desc: 'Das Finanzamt setzt den Wert häufig zu hoch an. Ein unabhängiges Gutachten kann die Steuerlast signifikant senken – oft um 20–40 %.' },
         { iconKey: 'scale', title: 'Erbauseinandersetzung', desc: 'Wenn mehrere Erben beteiligt sind, schafft ein neutrales Gutachten die gemeinsame Grundlage für eine faire Aufteilung ohne Streit.' },
-        { iconKey: 'coins', title: 'Pflichtteilsberechnung', desc: 'Pflichtteilsansprüche basieren auf dem Nachlasswert. Unser Gutachten stellt sicher, dass der Wertansatz fair und rechtssicher ist.' },
+        { iconKey: 'coins', title: 'Pflichtteilsberechnung', desc: 'Pflichtteilsansprüche basieren auf dem Nachlasswert. Unser Gutachten stellt sicher, dass der Wertansatz fair und ist.' },
         { iconKey: 'refresh', title: 'Verkauf aus dem Nachlass', desc: 'Bevor die geerbte Immobilie verkauft wird: ein Gutachten schützt vor Unterpreisverkäufen und ermöglicht selbstbewusstes Verhandeln.' },
         { iconKey: 'home', title: 'Selbst bewohnen', desc: 'Wenn ein Erbe die Immobilie übernimmt, muss der Wert als Ausgleichszahlung gegenüber den Miterben festgestellt werden.' },
         { iconKey: 'filetext', title: 'Schenkung & Vorwegerbfolge', desc: 'Auch bei Schenkungen zu Lebzeiten wird ein Wertgutachten benötigt, um steuerliche Freibeträge optimal zu nutzen.' },

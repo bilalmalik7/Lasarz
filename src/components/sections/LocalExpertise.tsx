@@ -31,10 +31,10 @@ export const LocalExpertise = ({ city }: LocalExpertiseProps) => {
 
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', color: 'var(--text-secondary)', lineHeight: 1.8, fontSize: '1.1rem' }}>
                             <p>
-                                Seit über 19 Jahren sind wir fest in der Region <strong>{displayCity}</strong> verwurzelt. Wir kennen nicht nur die statistischen Marktzahlen, sondern verstehen die mikro-lokalen Besonderheiten der verschiedenen Stadtteile und Quartiere.
+                                Seit über 20+ Jahr sind wir fest in der Region <strong>{displayCity}</strong> verwurzelt. Wir kennen nicht nur die statistischen Marktzahlen, sondern verstehen die mikro-lokalen Besonderheiten der verschiedenen Stadtteile und Quartiere.
                             </p>
                             <p>
-                                Unsere Expertise erstreckt sich über das gesamte Umland. Als <strong>zertifizierte Immobiliengutachter</strong> – mit den Anerkennungen <strong>DIAzert (DIN EN ISO/IEC 17024)</strong>, <strong>TEGoVA REV</strong> und <strong>BVS e.V.</strong> – bieten wir Ihnen die notwendige Rechtssicherheit bei komplexen Entscheidungen.
+                                Unsere Expertise erstreckt sich über das gesamte Umland. Als <strong>zertifizierte Immobiliengutachter</strong> – mit den Anerkennungen <strong>DIAzert (DIN EN ISO/IEC 17024)</strong>, <strong>TEGoVA REV</strong> und <strong>BVS e.V.</strong> – bieten wir Ihnen die notwendige heit bei komplexen Entscheidungen.
                             </p>
 
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>

@@ -162,7 +162,7 @@ const newBlogPost = {
 <p>Ein professionelles Gutachten ist eine Investition in Ihre finanzielle Zukunft:</p>
 <ul>
   <li><strong>Risikoschutz:</strong> Vermeidung von Überschätzung oder Unterschätzung</li>
-  <li><strong>Rechtssicherheit:</strong> Gerichtsfeste Gutachten</li>
+  <li><strong>heit:</strong> Gerichtsfeste Gutachten</li>
   <li><strong>Verhandlungsposition:</strong> Fundierte Informationen</li>
   <li><strong>Finanzierung:</strong> Banken benötigen Gutachten</li>
   <li><strong>Steuerliche Vorteile:</strong> Optimierung bei Erbschaften</li>

@@ -109,7 +109,7 @@ const newBlogPost = {
 </ul>
 
 <h4>4. Zertifizierung des Gutachters</h4>
-<p>Ein zertifizierter Gutachter wie Marc-André Lasarz nach DIN EN ISO/IEC 17024 gewährleistet Qualität und Rechtssicherheit. Die Zertifizierung ist ein wichtiger Faktor für die Kosten.</p>
+<p>Ein zertifizierter Gutachter wie Marc-André Lasarz nach DIN EN ISO/IEC 17024 gewährleistet Qualität und heit. Die Zertifizierung ist ein wichtiger Faktor für die Kosten.</p>
 
 <h3>Was ist inkludiert in den Kosten?</h3>
 <p>Die Kosten für ein Immobilienbewertung in Osnabrück umfassen in der Regel folgende Leistungen:</p>
@@ -139,7 +139,7 @@ const newBlogPost = {
 <p>Ein günstigeres Gutachten ist nicht immer das beste Angebot. Ein professionelles Gutachten von Marc-André Lasarz in Osnabrück bietet folgende Vorteile:</p>
 
 <ul>
-    <li><strong>Rechtssicherheit:</strong> Gerichtsfeste Gutachten</li>
+    <li><strong>heit:</strong> Gerichtsfeste Gutachten</li>
     <li><strong>Qualität:</strong> Hochwertige Bewertung nach aktuellen Standards</li>
     <li><strong>Zeitersparnis:</strong> Schnelle Erstellung</li>
     <li><strong>Transparenz:</strong> Klare Argumentation und Nachvollziehbarkeit</li>
@@ -161,7 +161,7 @@ const newBlogPost = {
 <h3>Kosten für Immobilienbewertungen in Osnabrück – Fazit</h3>
 <p>Die Kosten für ein Immobiliengutachter in Osnabrück sind im Vergleich zur Verkaufssumme oder zur Investition minimal. Doch der Mehrwert ist enorm: Sie erhalten Sicherheit, erzielen den bestmöglichen Preis und minimieren rechtliche Risiken.</p>
 
-<p>Ein professionelles Gutachten ist eine Investition in Ihre finanzielle Zukunft. Die Kosten für ein Gutachten sind oft geringer als die möglichen Verluste durch eine falsche Bewertung. Wählen Sie einen zertifizierten Gutachter wie Marc-André Lasarz in Osnabrück für Qualität und Rechtssicherheit.</p>
+<p>Ein professionelles Gutachten ist eine Investition in Ihre finanzielle Zukunft. Die Kosten für ein Gutachten sind oft geringer als die möglichen Verluste durch eine falsche Bewertung. Wählen Sie einen zertifizierten Gutachter wie Marc-André Lasarz in Osnabrück für Qualität und heit.</p>
 
 <p>Kontaktieren Sie uns für ein unverbindliches Erstgespräch. Wir beraten Sie gerne zur individuellen Bewertung Ihres Immobilienwerts in Osnabrück und Umgebung.</p>
 

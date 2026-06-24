@@ -33,7 +33,7 @@ export default function UeberUnsPage() {
                             <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--accent-primary)', fontWeight: 400 }}>Marc-André Lasarz</h3>
 
                             <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '1.05rem', lineHeight: 1.7 }}>
-                                Als Geschäftsführer und zertifizierter Gutachter mit über 19 Jahren Fach- und Führungserfahrung in der Immobilienbranche verfüge ich über ausgeprägte Kompetenzen für die rechtssichere Planung und Umsetzung von Bewertungsprojekten.
+                                Als Geschäftsführer und zertifizierter Gutachter mit über 20+ Jahr Fach- und Führungserfahrung in der Immobilienbranche verfüge ich über ausgeprägte Kompetenzen für die Planung und Umsetzung von Bewertungsprojekten.
                             </p>
                             <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.05rem', lineHeight: 1.7 }}>
                                 Meine Spezialisierung liegt in der Erstellung gerichtsfester Verkehrswertgutachten und transparenter Wertindikationen für private und gewerbliche Kunden.

@@ -65,7 +65,7 @@ const newBlogPost = {
 
 <h3>Fazit: Sicherheit und Fairness im Erbfall</h3>
 <p>Ein Erbschaftsgutachten ist eine Investition in Gerechtigkeit und finanzielle Sicherheit. Es schützt Sie vor überhöhten Forderungen des Staates und hilft, den Familienfrieden zu bewahren. In Osnabrück und Umgebung ist Marc-André Lasarz Ihr kompetenter Partner für diese sensible Aufgabe.</p>
-<p>Lassen Sie sich in dieser schwierigen Zeit professionell unterstützen. Wir sorgen dafür, dass die Bewertung Ihrer Erbschaftsimmobilie absolut fair, transparent und rechtssicher erfolgt. Kontaktieren Sie uns für eine diskrete Beratung.</p>
+<p>Lassen Sie sich in dieser schwierigen Zeit professionell unterstützen. Wir sorgen dafür, dass die Bewertung Ihrer Erbschaftsimmobilie absolut fair, transparent und erfolgt. Kontaktieren Sie uns für eine diskrete Beratung.</p>
 
 <script type="application/ld+json">
 {

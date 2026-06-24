@@ -10,7 +10,7 @@ const faqs = [
     },
     {
         q: "Erkennt das Finanzamt Ihr Gutachten bei Erbschaft oder Schenkung an?",
-        a: "Ja, zwingend! Wir erstellen Verkehrswertgutachten nach § 194 BauGB. Ein solches Gutachten von einem zertifizierten Sachverständigen ist das rechtssichere Mittel zur Nachweisbarkeit des 'niedrigeren gemeinen Werts' gegenüber dem Finanzamt (§ 198 BewG). Online-Bewertungen oder Makler-Schätzungen reichen dem Finanzamt hingegen nicht aus."
+        a: "Ja, zwingend! Wir erstellen Verkehrswertgutachten nach § 194 BauGB. Ein solches Gutachten von einem zertifizierten Sachverständigen ist das Mittel zur Nachweisbarkeit des 'niedrigeren gemeinen Werts' gegenüber dem Finanzamt (§ 198 BewG). Online-Bewertungen oder Makler-Schätzungen reichen dem Finanzamt hingegen nicht aus."
     },
     {
         q: "Muss ich die Unterlagen alle selbst besorgen?",
@@ -34,7 +34,7 @@ const faqs = [
     },
     {
         q: "Warum sollte ich keinen Immobilienmakler für die Wertermittlung beauftragen?",
-        a: "Immobilienmakler bieten oft kostenlose Schätzungen an, die jedoch vor allem auf den schnellen Verkauf abzielen. Sie sind oft nicht neutral oder gerichtlich anerkannt. Ein unabhängiges Sachverständigenbüro arbeitet hingegen weisungsfrei, transparent und rechtssicher (z.B. für Finanzämter oder Gerichte) auf Basis gesetzlich normierter Verfahren."
+        a: "Immobilienmakler bieten oft kostenlose Schätzungen an, die jedoch vor allem auf den schnellen Verkauf abzielen. Sie sind oft nicht neutral oder gerichtlich anerkannt. Ein unabhängiges Sachverständigenbüro arbeitet hingegen weisungsfrei, transparent und (z.B. für Finanzämter oder Gerichte) auf Basis gesetzlich normierter Verfahren."
     },
     {
         q: "Können Sie auch Sonderimmobilien oder Spezialfälle bewerten?",

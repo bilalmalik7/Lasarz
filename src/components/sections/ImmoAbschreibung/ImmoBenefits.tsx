@@ -29,7 +29,7 @@ const benefits = [
     )
   },
   {
-    title: "Rechtssicherheit",
+    title: "heit",
     description: "Unsere Gutachten basieren auf der aktuellen Rechtsprechung des BFH und sind nach DIN EN ISO/IEC 17024 erstellt.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

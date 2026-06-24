@@ -136,7 +136,7 @@ export default function ImmobilienwertErmittelnPage() {
                             <p style={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
                                 Die Ermittlung des Immobilienwerts in Osnabrück und Umgebung ist ein komplexer Prozess, 
                                 der von verschiedenen Faktoren abhängt. Ein professioneller Immobiliengutachter verwendet 
-                                standardisierte Methoden, um eine objektive und rechtssichere Bewertung durchzuführen. 
+                                standardisierte Methoden, um eine objektive und Bewertung durchzuführen. 
                                 In diesem Artikel erklären wir Ihnen, wie ein Immobilienwert ermittelt wird und welche 
                                 Schritte dabei unbedingt beachtet werden müssen.
                             </p>

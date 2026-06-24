@@ -35,7 +35,7 @@ export default function TeamPage() {
                                     Mit über 25 Jahren Erfahrung in der Immobilienwirtschaft und einer tiefen Verwurzelung in der Region Osnabrück stehe ich für fachliche Exzellenz und absolute Unabhängigkeit.
                                 </p>
                                 <p>
-                                    Als <strong>zertifizierter Immobiliengutachter</strong> habe ich mich darauf spezialisiert, komplexe Wertermittlungen transparent, rechtssicher und für alle Beteiligten nachvollziehbar zu gestalten. Ob für private Verkaufsentscheidungen, gerichtliche Auseinandersetzungen oder steuerliche Zwecke – ich biete Ihnen die notwendige Klarheit für Ihre Immobilienentscheidungen.
+                                    Als <strong>zertifizierter Immobiliengutachter</strong> habe ich mich darauf spezialisiert, komplexe Wertermittlungen transparent, und für alle Beteiligten nachvollziehbar zu gestalten. Ob für private Verkaufsentscheidungen, gerichtliche Auseinandersetzungen oder steuerliche Zwecke – ich biete Ihnen die notwendige Klarheit für Ihre Immobilienentscheidungen.
                                 </p>
                                 <div style={{ marginTop: '1rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                                     <div className="glass-card" style={{ padding: '1.5rem' }}>
