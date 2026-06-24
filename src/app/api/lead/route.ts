@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
 export async function POST(request: Request) {
     try {
@@ -8,46 +8,20 @@ export async function POST(request: Request) {
 
         console.log(`Received lead submission [${type}]:`, data);
 
-        // Retrieve SMTP settings from environment variables
-        const smtpHost = process.env.SMTP_HOST;
-        const smtpPort = process.env.SMTP_PORT;
-        const smtpUser = process.env.SMTP_USER;
-        const smtpPass = process.env.SMTP_PASS;
-        const smtpFrom = process.env.SMTP_FROM || 'website@lasarz.com';
+        // Retrieve Resend configuration from environment variables
+        const resendApiKey = process.env.RESEND_API_KEY;
+        const resendFrom = process.env.RESEND_FROM || 'onboarding@resend.dev';
         const leadTargetEmail = process.env.LEAD_EMAIL || 'info@lasarz.com';
 
-        // Check if SMTP is configured, otherwise use Ethereal for testing
-        let transporter;
-        let isTestMode = false;
-
-        if (!smtpHost || !smtpPort || !smtpUser || !smtpPass) {
-            console.warn('⚠️ SMTP not configured — using Ethereal test account (emails viewable at preview URL)');
-            const testAccount = await nodemailer.createTestAccount();
-            transporter = nodemailer.createTransport({
-                host: 'smtp.ethereal.email',
-                port: 587,
-                secure: false,
-                auth: {
-                    user: testAccount.user,
-                    pass: testAccount.pass
-                }
-            });
-            isTestMode = true;
-        } else {
-            // Configure Nodemailer transporter with real SMTP
-            transporter = nodemailer.createTransport({
-                host: smtpHost,
-                port: parseInt(smtpPort, 10),
-                secure: smtpPort === '465',
-                auth: {
-                    user: smtpUser,
-                    pass: smtpPass
-                },
-                tls: {
-                    rejectUnauthorized: false
-                }
-            });
+        if (!resendApiKey) {
+            console.error('❌ RESEND_API_KEY is not configured in environment variables.');
+            return NextResponse.json(
+                { success: false, error: 'Resend API-Schlüssel ist nicht konfiguriert.' },
+                { status: 500 }
+            );
         }
+
+        const resend = new Resend(resendApiKey);
 
         // Construct HTML and Text email bodies based on form type
         let subject = '';
@@ -172,26 +146,25 @@ Adresse der Immobilie: ${data.address || '-'}
             emailHtml = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
         }
 
-        // Send the mail
-        const info = await transporter.sendMail({
-            from: `"Lasarz Website" <${smtpUser || 'test@lasarz.com'}>`,
+        // Send the mail via Resend
+        const { data: resendData, error: resendError } = await resend.emails.send({
+            from: resendFrom,
             to: leadTargetEmail,
             subject: subject,
             text: emailText,
             html: emailHtml
         });
 
-        // In test mode, log the Ethereal preview URL
-        if (isTestMode) {
-            const previewUrl = nodemailer.getTestMessageUrl(info);
-            console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-            console.log(`📧 TEST EMAIL PREVIEW: ${previewUrl}`);
-            console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-            return NextResponse.json({ success: true, message: 'Test-E-Mail gesendet! Preview-URL in der Konsole.', previewUrl });
+        if (resendError) {
+            console.error('❌ Resend email sending error:', resendError);
+            return NextResponse.json(
+                { success: false, error: resendError.message || 'Fehler beim Senden der E-Mail über Resend.' },
+                { status: 500 }
+            );
         }
 
-        console.log(`Email sent successfully for lead type [${type}] to ${leadTargetEmail}`);
-        return NextResponse.json({ success: true, message: 'Lead-E-Mail erfolgreich gesendet.' });
+        console.log(`Email sent successfully for lead type [${type}] via Resend to ${leadTargetEmail}. ID: ${resendData?.id}`);
+        return NextResponse.json({ success: true, message: 'Lead-E-Mail erfolgreich gesendet.', messageId: resendData?.id });
 
     } catch (error: any) {
         console.error('Error in lead API route:', error);
