@@ -146,13 +146,17 @@ Adresse der Immobilie: ${data.address || '-'}
             emailHtml = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
         }
 
+        // Extract customer email to set reply_to
+        const replyToEmail = data.email || data.mail || '';
+
         // Send the mail via Resend
         const { data: resendData, error: resendError } = await resend.emails.send({
             from: resendFrom,
             to: leadTargetEmail,
             subject: subject,
             text: emailText,
-            html: emailHtml
+            html: emailHtml,
+            ...(replyToEmail ? { reply_to: replyToEmail } : {})
         });
 
         if (resendError) {
